@@ -16,6 +16,31 @@ def downloadFile(url):
         print("下载失败")
         return None
 
+def removeDuplicateNode(proxyPool):
+    proxiesNames = []
+    proxies = []
+    for proxy in proxyPool:
+        if(proxy['name'] not in proxiesNames):
+            proxies.append(proxy)
+            proxiesNames.append(proxy['name'])
+    
+    return proxies
+
+def removeNotSupportCipher(proxyPool):
+    notSupportCipher = ['ss']
+    proxies = []
+    for proxy in proxyPool:
+        if('cipher' in proxy and proxy['cipher'] not in notSupportCipher):
+            proxies.append(proxy)
+    
+    return proxies
+
+def removeNodes(proxyPool):
+    proxies = removeDuplicateNode(proxyPool)
+    proxies = removeNotSupportCipher(proxies)
+
+    return proxies
+
 def getProxyFromSource(sourcePath):
     proxyPool = []
     sources = open(sourcePath, encoding='utf8').read().strip().splitlines()
@@ -25,15 +50,15 @@ def getProxyFromSource(sourcePath):
             file = yaml.load(download, Loader=yaml.FullLoader)
             proxyPool += file["proxies"]
 
-    return proxyPool
+    proxies = removeNodes(proxyPool)
 
-def creatConfig(proxies, defaultFile):
-    proxyCount = len(proxies)
+    return proxies
 
-    if(proxyCount == 0):
+def creatConfig(proxyPool, defaultFile):
+    if(len(proxyPool) == 0):
         return
-    else:
-        print("proxy count:", proxyCount)
+
+    print("proxy count:", len(proxies))
 
     defaultConfig = open(defaultFile, encoding='utf8').read()
     config = yaml.load(defaultConfig, Loader=yaml.FullLoader)
