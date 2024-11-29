@@ -8,13 +8,20 @@ downloadProxy = {
 
 def downloadFile(url):
     print("开始下载：{}".format(url), end=" ")
-    file = requests.get(url, proxies=downloadProxy)
-    if (file.status_code == 200):
-        print("下载成功")
-        return file.content
-    else:
-        print("下载失败")
-        return None
+    file = None
+    try:
+        req = requests.get(url, proxies=downloadProxy)
+        if (req.status_code == 200):
+            print("下载成功")
+            file =  req.content
+        else:
+            print("下载失败")
+    except requests.exceptions.SSLError:
+        print("SSLError 下载失败")
+    except requests.exceptions.MissingSchema:
+        print("Invalid URL: url")
+
+    return file
 
 def removeDuplicateNode(proxyPool):
     proxiesNames = []
@@ -41,25 +48,31 @@ def removeNodes(proxyPool):
 
     return proxies
 
+def parserSourceUrl(sourceUrl):
+    allUrl = []
+    for url in sourceUrl:
+        if (url.strip().startswith("#") or url.strip().startswith("//") or url.isspace() or len(url) == 0):
+            continue
+        allUrl.append(url)
+
+    return allUrl
+
 def getProxyFromSource(sourcePath):
     proxyPool = []
-    sources = open(sourcePath, encoding='utf8').read().strip().splitlines()
+    sources = parserSourceUrl(open(sourcePath, encoding='utf8').read().strip().splitlines())
     for url in sources:
         download = downloadFile(url)
         if(download != None):
             file = yaml.load(download, Loader=yaml.FullLoader)
             proxyPool += file["proxies"] if file["proxies"] != None else []
 
+    print("原始获取节点数量:", len(proxyPool))
     proxies = removeNodes(proxyPool)
+    print("删除不符合节点后，节点数量:", len(proxies))
 
     return proxies
 
 def creatConfig(proxyPool, defaultFile):
-    if(len(proxyPool) == 0):
-        return
-
-    print("proxy count:", len(proxies))
-
     defaultConfig = open(defaultFile, encoding='utf8').read()
     config = yaml.load(defaultConfig, Loader=yaml.FullLoader)
 
@@ -72,7 +85,13 @@ def creatConfig(proxyPool, defaultFile):
     with open('list.yaml', 'w', encoding='utf-8') as file:
         yaml.dump(config, file, allow_unicode=True)
 
+    print("生成clash订阅文件：list.yaml")
+
 sourcePath = "source.url"
 defaultConfigPath = "default.config"
 proxies = getProxyFromSource(sourcePath)
-creatConfig(proxies, defaultConfigPath)
+
+if(len(proxies) > 0):
+    creatConfig(proxies, defaultConfigPath)
+else:
+    print("未获取到有效节点，不生成clash订阅文件")
