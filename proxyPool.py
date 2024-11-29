@@ -48,7 +48,7 @@ def getProxyFromSource(sourcePath):
         download = downloadFile(url)
         if(download != None):
             file = yaml.load(download, Loader=yaml.FullLoader)
-            proxyPool += file["proxies"]
+            proxyPool += file["proxies"] if file["proxies"] != None else []
 
     proxies = removeNodes(proxyPool)
 
