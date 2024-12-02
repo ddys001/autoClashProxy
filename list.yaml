@@ -6,15 +6,9 @@ dns:
   fallback:
   - 1.1.1.1
   - 8.8.8.8
-  - 8.8.4.4
-  - tls://1.0.0.1:853
-  - tls://dns.google:853
   nameserver:
   - 119.29.29.29
-  - https://doh.pub/dns-query
-  - https://223.5.5.5/dns-query
-  - https://doh.360.cn/dns-query
-  - https://dns.alidns.com/dns-query
+  - 114.114.114.114
 external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
@@ -851,24 +845,49 @@ proxies:
   protocol: origin
   server: us-am3.eqnode.net
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: AM_1a0f1_0001
-  password: 6OAGLD+DOA6UcFp5Udf0r/UzyjwHV+yheNkoFDk6uL8=
-  port: 38753
-  server: 213.108.22.109
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: CN_1a0f1_0007
-  port: 31878
-  server: 183.236.48.143
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: JP_1a0f1_0058
+  name: CR_bda82_0008
+  network: ws
+  port: 2082
+  server: 190.93.245.80
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: FR_bda82_0015
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: GB_bda82_0016
+  network: ws
+  port: 15112
+  server: 5.39.254.196
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: JP_bda82_0020
   network: ws
   port: 80
   server: root.mid.al
@@ -880,52 +899,6 @@ proxies:
     headers:
       Host: kim.gov.kp
     path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  name: MX_1a0f1_0081
-  port: 18000
-  server: 79.127.229.54
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: fa1897db-1925-4c86-a495-939a959af900
-- cipher: aes-256-gcm
-  name: RU_1a0f1_0103
-  password: dongtaiwang.com
-  port: 32233
-  server: 185.22.152.125
-  type: ss
-- cipher: rc4-md5
-  name: SG_1a0f1_0112
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.45
-  type: ss
-- cipher: aes-128-cfb
-  name: US_1a0f1_0124
-  obfs: http_post
-  obfs-param: ''
-  password: +asd6a5s5df+
-  port: 443
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: nsus3.irundns.net
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: US_1a0f1_0149
-  network: ws
-  port: 2087
-  server: www.parsvds.com
-  servername: OfFEr.miRAcLestorY.ToP.
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: ad0a8c49-0785-46d9-bb14-2c3ab03a5dbb
-  ws-opts:
-    headers:
-      Host: OfFeR.MirAclestORy.tOP.
-    path: /
 - cipher: aes-256-cfb
   name: 🇺🇸_US_美国
   password: amazonskr05
@@ -2624,14 +2597,10 @@ proxy-groups:
   - 15|🇯🇵 日本特殊|@ripaojiedian
   - 15|🇸🇬 狮城特殊|@ripaojiedian
   - 0|-https://t.me/MrXbin-15
-  - AM_1a0f1_0001
-  - CN_1a0f1_0007
-  - JP_1a0f1_0058
-  - MX_1a0f1_0081
-  - RU_1a0f1_0103
-  - SG_1a0f1_0112
-  - US_1a0f1_0124
-  - US_1a0f1_0149
+  - CR_bda82_0008
+  - FR_bda82_0015
+  - GB_bda82_0016
+  - JP_bda82_0020
   - 🇺🇸_US_美国
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大
   - 🇺🇸_US_美国->🇨🇳_CN_中国
@@ -2837,14 +2806,10 @@ proxy-groups:
   - 15|🇯🇵 日本特殊|@ripaojiedian
   - 15|🇸🇬 狮城特殊|@ripaojiedian
   - 0|-https://t.me/MrXbin-15
-  - AM_1a0f1_0001
-  - CN_1a0f1_0007
-  - JP_1a0f1_0058
-  - MX_1a0f1_0081
-  - RU_1a0f1_0103
-  - SG_1a0f1_0112
-  - US_1a0f1_0124
-  - US_1a0f1_0149
+  - CR_bda82_0008
+  - FR_bda82_0015
+  - GB_bda82_0016
+  - JP_bda82_0020
   - 🇺🇸_US_美国
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大
   - 🇺🇸_US_美国->🇨🇳_CN_中国
@@ -2967,7 +2932,7 @@ proxy-groups:
   - 美国 025
   - 美国 027
   - 🇬🇧 高性价比机场:https://kfyun.uk
-  type: url-test
+  type: load-balance
   url: https://www.google.com/favicon.ico
 rule-providers:
   apple:
