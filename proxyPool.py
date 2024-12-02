@@ -1,9 +1,11 @@
 import requests
 import yaml
 
+from processProxy import *
+
 downloadProxy = {
-'http': '127.0.0.1:7890',
-'https': '127.0.0.1:7890',
+    'http':  'http://127.0.0.1:7890',
+    'https': 'http://127.0.0.1:7890',
 }
 
 def downloadFile(url):
@@ -20,33 +22,10 @@ def downloadFile(url):
         print("SSLError 下载失败")
     except requests.exceptions.MissingSchema:
         print("Invalid URL: url")
+    except requests.exceptions.ConnectionError:
+        print("Connection aborted")
 
     return file
-
-def removeDuplicateNode(proxyPool):
-    proxiesNames = []
-    proxies = []
-    for proxy in proxyPool:
-        if(proxy['name'] not in proxiesNames):
-            proxies.append(proxy)
-            proxiesNames.append(proxy['name'])
-    
-    return proxies
-
-def removeNotSupportCipher(proxyPool):
-    notSupportCipher = ['ss']
-    proxies = []
-    for proxy in proxyPool:
-        if('cipher' in proxy and proxy['cipher'] not in notSupportCipher):
-            proxies.append(proxy)
-    
-    return proxies
-
-def removeNodes(proxyPool):
-    proxies = removeDuplicateNode(proxyPool)
-    proxies = removeNotSupportCipher(proxies)
-
-    return proxies
 
 def parserSourceUrl(sourceUrl):
     allUrl = []
