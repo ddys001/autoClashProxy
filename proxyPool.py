@@ -27,9 +27,9 @@ def downloadFile(url):
 
     return file
 
-def parserSourceUrl(sourceUrl):
+def parserSourceUrl(sourceFile):
     allUrl = []
-    for url in sourceUrl:
+    for url in sourceFile:
         if (url.strip().startswith("#") or url.strip().startswith("//") or url.isspace() or len(url) == 0):
             continue
         allUrl.append(url)

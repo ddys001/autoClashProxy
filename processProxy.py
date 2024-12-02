@@ -1,12 +1,17 @@
 def removeDuplicateNode(proxyPool):
-    proxiesNames = []
-    proxies = []
-    for proxy in proxyPool:
-        if(proxy['name'] not in proxiesNames):
-            proxies.append(proxy)
-            proxiesNames.append(proxy['name'])
+    checkLists = ["name", "server"]
 
-    return proxies
+    allProxy = proxyPool
+    for item in checkLists:
+        proxiesItem  = []
+        proxies = []
+        for proxy in allProxy:
+            if(proxy[item] not in proxiesItem):
+                proxies.append(proxy)
+                proxiesItem.append(proxy[item])
+        allProxy = proxies
+
+    return allProxy
 
 def removeNotSupportCipher(proxyPool):
     notSupportCipher = ['ss']
