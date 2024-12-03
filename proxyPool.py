@@ -6,11 +6,14 @@ sys.path.append('.')
 
 from processProxy import *
 from parserUrl import *
+from autoPush import *
 
 downloadProxy = {
     'http':  'http://127.0.0.1:7890',
     'https': 'http://127.0.0.1:7890',
 }
+
+listFile = "list.yaml"
 
 def downloadFile(url):
     print("开始下载：{}".format(url), end=" ", flush=True)
@@ -56,10 +59,10 @@ def creatConfig(proxyPool, defaultFile):
     for group in config['proxy-groups']:
         group['proxies'] = proxiesNames if group['proxies'] == None else group['proxies'] + proxiesNames
 
-    with open('list.yaml', 'w', encoding='utf-8') as file:
+    with open(listFile, 'w', encoding='utf-8') as file:
         yaml.dump(config, file, allow_unicode=True)
 
-    print("生成clash订阅文件：list.yaml")
+    print("生成clash订阅文件：{}".format(listFile))
 
 sourcePath = "source.url"
 defaultConfigPath = "default.config"
@@ -67,5 +70,6 @@ proxies = getProxyFromSource(sourcePath)
 
 if(len(proxies) > 0):
     creatConfig(proxies, defaultConfigPath)
+    pushListFile(listFile)
 else:
     print("未获取到有效节点，不生成clash订阅文件")
