@@ -1,7 +1,11 @@
 import requests
 import yaml
 
+import sys
+sys.path.append('.')
+
 from processProxy import *
+from parserUrl import *
 
 downloadProxy = {
     'http':  'http://127.0.0.1:7890',
@@ -9,7 +13,7 @@ downloadProxy = {
 }
 
 def downloadFile(url):
-    print("开始下载：{}".format(url), end=" ")
+    print("开始下载：{}".format(url), end=" ", flush=True)
     file = None
     try:
         req = requests.get(url, proxies=downloadProxy)
@@ -26,15 +30,6 @@ def downloadFile(url):
         print("Connection aborted")
 
     return file
-
-def parserSourceUrl(sourceFile):
-    allUrl = []
-    for url in sourceFile:
-        if (url.strip().startswith("#") or url.strip().startswith("//") or url.isspace() or len(url) == 0):
-            continue
-        allUrl.append(url)
-
-    return allUrl
 
 def getProxyFromSource(sourcePath):
     proxyPool = []
