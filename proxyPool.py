@@ -21,7 +21,7 @@ def downloadFile(url):
     try:
         req = requests.get(url, proxies=downloadProxy)
         if (req.status_code == 200):
-            print("下载成功")
+            print("下载成功", end=" ", flush=True)
             file =  req.content
         else:
             print("下载失败")
@@ -40,8 +40,12 @@ def getProxyFromSource(sourcePath):
     for url in sources:
         download = downloadFile(url)
         if(download != None):
-            file = yaml.load(download, Loader=yaml.FullLoader)
-            proxyPool += file["proxies"] if file["proxies"] != None else []
+            try:
+                file = yaml.load(download, Loader=yaml.FullLoader)
+                proxyPool += file["proxies"] if file["proxies"] != None else []
+                print("成功获得节点")
+            except yaml.parser.ParserError:
+                print("解析节点失败")
 
     print("原始获取节点数量:", len(proxyPool))
     proxies = removeNodes(proxyPool)
