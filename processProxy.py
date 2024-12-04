@@ -22,8 +22,18 @@ def removeNotSupportCipher(proxyPool):
 
     return proxies
 
+def removeNotSupportUUID(proxyPool):
+    notSupportUUID = ['Free']
+    proxies = []
+    for proxy in proxyPool:
+        if('uuid' in proxy and proxy['uuid'] not in notSupportUUID):
+            proxies.append(proxy)
+
+    return proxies
+
 def removeNodes(proxyPool):
     proxies = removeDuplicateNode(proxyPool)
     proxies = removeNotSupportCipher(proxies)
+    proxies = removeNotSupportUUID(proxies)
 
     return proxies
