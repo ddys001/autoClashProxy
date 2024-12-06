@@ -520,43 +520,17 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 11|0|--43
-  network: ws
-  port: 2082
-  server: 190.93.245.174
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 11|0|--54
+  name: 11|0|--96
   network: ws
   port: 2095
-  server: 172.64.166.33
+  server: 172.64.167.25
   tls: false
   type: vmess
   uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   ws-opts:
     headers:
-      Host: ip12.6016725.xyz
+      Host: ip11.6016725.xyz
     path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 11|0|--112
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
 - alterId: 0
   cipher: auto
   name: 11|5|d*********g.com_0
@@ -903,16 +877,23 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-1
+  password: amazonskr05
+  port: 443
+  server: 3.1.195.116
+  type: ss
+- cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-2
   password: amazonskr05
   port: 443
-  server: 52.193.200.75
+  server: 34.222.145.191
   type: ss
-- cipher: aes-256-cfb
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-3
-  password: amazonskr05
+  password: 2y0tJ02XWp5AsdeMBgsZXx
   port: 443
-  server: 54.199.12.31
+  server: 54.251.126.150
   type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-4
@@ -920,52 +901,75 @@ proxies:
   port: 443
   server: 52.195.205.31
   type: ss
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-5
-  password: amazonskr05
-  port: 443
-  server: 18.141.184.102
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-6
-  password: 2y0tJ02XWp5AsdeMBgsZXx
-  port: 443
-  server: 54.251.126.150
+  password: dongtaiwang.com
+  port: 32233
+  server: 185.22.152.125
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-8
+  name: 0|-https://t.me/MrXbin-6
   password: amazonskr05
   port: 443
-  server: 54.169.5.182
+  server: 47.128.225.94
   type: ss
-  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-7
+  password: amazonskr05
+  port: 443
+  server: 3.1.203.16
+  type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-9
   password: amazonskr05
   port: 443
-  server: 54.203.119.192
+  server: 54.185.18.43
   type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-10
   password: amazonskr05
   port: 443
-  server: 34.215.84.62
+  server: 18.141.184.102
   type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-96
-  network: ws
-  port: 2095
-  server: 172.64.167.25
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip11.6016725.xyz
-    path: /github.com/Alvin9999
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-12
+  password: amazonskr05
+  port: 443
+  server: 52.193.200.75
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-13
+  password: amazonskr05
+  port: 443
+  server: 52.193.184.18
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-14
+  password: amazonskr05
+  port: 443
+  server: 13.212.36.13
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-15
+  password: amazonskr05
+  port: 443
+  server: 54.199.12.31
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-16
+  password: amazonskr05
+  port: 443
+  server: 34.219.118.99
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-30
+  obfs: tls1.2_ticket_auth
+  password: fou8MBGij
+  port: 8081
+  protocol: origin
+  server: us-am3.eqnode.net
+  type: ssr
 - name: 0,15|TW_speednode_0037
   password: 3e769264-67e5-44cc-98bc-4d0a6ba1febb
   port: 24235
@@ -1227,11 +1231,12 @@ proxies:
       Host: rezaping.ir
     path: /
 - cipher: aes-256-cfb
-  name: SG_61cc1_0035
+  name: SG_61cc1_0033
   password: amazonskr05
   port: 443
-  server: 3.1.203.16
+  server: 54.169.5.182
   type: ss
+  udp: true
 - alpn:
   - h3
   - h2
@@ -1263,6 +1268,12 @@ proxies:
   password: shadowsocks
   port: 443
   server: 184.170.241.194
+  type: ss
+- cipher: aes-256-cfb
+  name: US_61cc1_0040
+  password: amazonskr05
+  port: 443
+  server: 54.203.119.192
   type: ss
 - name: US_61cc1_0041
   network: ws
@@ -1503,6 +1514,18 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 🇺🇸_US_美国->🇨🇦_CA_加拿大
+  network: ws
+  port: 2082
+  server: 190.93.245.174
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
   name: 🇨🇷_CR_哥斯达黎加
   network: ws
   port: 2082
@@ -1726,12 +1749,6 @@ proxies:
     headers:
       host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- cipher: aes-256-cfb
-  name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
-  password: amazonskr05
-  port: 443
-  server: 54.185.18.43
-  type: ss
 - alterId: 0
   cipher: auto
   name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
@@ -2172,6 +2189,21 @@ proxies:
   ws-opts:
     headers:
       Host: ip3.6929198.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 美国 215
+  network: ws
+  port: 2095
+  server: 172.64.166.33
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip2.6016725.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -3570,281 +3602,80 @@ proxies:
     headers:
       Host: jp2.127414.xyz
     path: /
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 🇬🇧 高性价比机场:https://kfyun.uk
+  password: 6601fb90e9b3
+  port: 443
+  server: 127.0.0.1
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|--10
+  password: amazonskr05
+  port: 443
+  server: 34.215.84.62
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US 1.9MB/s
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 69.50.95.53
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   name: 未知
-  network: ws
-  password: bpb-trojan
+  password: NISHIKUITAN111
   port: 443
-  server: 86.38.214.132
+  server: 104.20.243.154
   skip-cert-verify: true
-  sni: bpb.my79801.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 未知2
-  password: NISHIKUITAN111
+  password: blue2024
   port: 443
-  server: 162.159.58.108
+  server: 104.26.7.89
   skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知3
+  password: blue2024
+  port: 443
+  server: 104.16.254.101
+  skip-cert-verify: true
+  sni: ha.lii2010.us.kg
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: aes-256-gcm
-  name: US 1.7MB/s
-  password: lGqs95QkFHo2NV
-  port: 5499
-  server: 23.157.40.89
+  name: US2 1.9MB/s
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 139.64.164.15
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  name: 未知3
-  network: ws
-  password: bpb-trojan
-  port: 2053
-  server: 188.114.97.88
-  skip-cert-verify: true
-  sni: G1-21N.paGEs.dev
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   name: 未知4
   password: NISHIKUITAN111
   port: 443
-  server: 104.25.99.96
+  server: 190.93.245.109
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: TW 87.9KB/s
-  password: f0e7fd1e-0469-415f-95da-774021f16f36
-  port: 40020
-  server: 103.115.108.83
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: 未知5
-  network: ws
-  password: 0792bb58-36ac-451e-a629-e363e53da93b
-  port: 443
-  server: 172.67.180.67
-  skip-cert-verify: true
-  sni: kafka.eula.cloudns.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知6
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.24.250.232
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知7
-  network: ws
-  password: auto
-  port: 443
-  server: 172.64.35.209
-  skip-cert-verify: true
-  sni: trojanmz.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US2 1.7MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 23.157.40.113
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US3 1.6MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 38.75.136.21
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 未知8 1.7MB/s
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 23.157.40.103
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: US4 22.0MB/s
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.243
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US5 1.8MB/s
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 38.121.43.51
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知9
-  password: blue2024
-  port: 443
-  server: 162.159.14.2
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知10
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.21.229
-  skip-cert-verify: true
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知11
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.21.84.200
-  skip-cert-verify: true
-  sni: zb.ylks.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知12
-  password: VvWvM0IP6whUKaMEuqeN6M
-  port: 41095
-  server: 147.45.136.147
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: US6 54.8MB/s
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.168
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US8 1.9MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 69.50.95.179
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知13
-  password: blue2024
-  port: 443
-  server: 104.17.48.63
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知14
-  password: blue2024
-  port: 443
-  server: 172.67.41.12
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国
-  password: blue2024
-  port: 443
-  server: 104.16.214.5
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国2
-  password: blue2024
-  port: 443
-  server: 104.17.45.90
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 未知15
-  network: ws
-  port: 9668
-  server: 176.32.33.100
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4c2a34ca-2da7-4c5c-9d74-6a3b0b586a47
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知16
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.188
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知17
-  network: ws
-  password: blue2024
-  port: 443
-  server: 198.41.215.238
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国3
-  password: blue2024
-  port: 443
-  server: 104.17.131.154
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知18
   network: ws
   password: blue2024
   port: 443
@@ -3855,231 +3686,25 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知19 1.7MB/s
-  password: qmOD5x09KyNNJ6USCZiQ4RvN2lSVQ6jzAEYmvrSLtRZsSX5gF6CfcElvUcuLlnZD
-  port: 29647
-  server: 94.131.96.213
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 🇺🇸US美国4
-  password: blue2024
-  port: 443
-  server: 190.93.244.61
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: US9
-  network: ws
+  name: 未知6
   password: NISHIKUITAN111
   port: 443
-  server: 162.120.94.3
-  skip-cert-verify: true
-  sni: zb.ylks.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知20
-  password: NISHIKUITAN111
-  port: 443
-  server: 190.93.244.77
+  server: 154.92.9.71
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: aes-256-gcm
-  name: US11 1.9MB/s
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 69.50.95.203
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 🇺🇸US美国5
-  password: blue2024
-  port: 443
-  server: 104.19.253.28
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US12 1.9MB/s
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 69.50.92.55
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US13 1.9MB/s
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 69.50.95.53
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知21
-  password: blue2024
-  port: 443
-  server: 104.27.207.92
-  skip-cert-verify: true
-  sni: tb.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: US14 21.8MB/s
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.244
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知22
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.25.124.93
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知24
-  password: NISHIKUITAN111
-  port: 443
-  server: 173.245.59.30
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知25
-  password: 8cb7ad4e-2d61-3950-bb33-1d2cc3e653dd
-  port: 443
-  server: 43.206.140.241
-  skip-cert-verify: true
-  sni: origin-a.akamaihd.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知26
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 94.242.228.50
-  skip-cert-verify: true
-  sni: zb.ylks.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知27
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.16.84.42
-  skip-cert-verify: true
-  sni: ha.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US15 1.9MB/s
+  name: US3 1.9MB/s
   password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 38.110.1.46
+  port: 3389
+  server: 23.157.40.47
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  name: 未知28
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.20.46.117
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知29
-  password: NISHIKUITAN111
-  port: 443
-  server: 173.245.58.34
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知30
-  network: ws
-  password: auto
-  port: 8443
-  server: 172.66.47.150
-  skip-cert-verify: true
-  sni: e9464f45.trauma-2r4.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知31
-  network: ws
-  password: auto
-  port: 8443
-  server: 162.159.128.233
-  skip-cert-verify: true
-  sni: e9464f45.trauma-2r4.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知32
-  network: tcp
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: 94.131.115.71
-  skip-cert-verify: true
-  sni: customer-94-131-115-71.stark-industries.solutions
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国6
-  password: blue2024
-  port: 443
-  server: 104.25.77.73
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知33
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.24.20.3
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国7
+  name: 未知7
   password: blue2024
   port: 443
   server: 198.41.209.124
@@ -4089,107 +3714,248 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知34
-  network: tcp
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: 95.164.38.151
+  cipher: aes-256-gcm
+  name: US4 2.0MB/s
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 142.202.49.84
   skip-cert-verify: true
-  sni: customer-95-164-38-151.stark-industries.solutions
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
-  name: 未知35
+  cipher: aes-128-gcm
+  name: 未知8 11.5MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知9
   network: tcp
-  password: telegram-id-directvpn
+  password: telegram-id-privatevpns
   port: 22222
-  server: 3.73.80.146
+  server: 51.24.23.205
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 🇺🇸US美国8
+  name: 未知10
+  network: http
+  password: f82c2052-7411-40e8-96ef-d433127979a6
+  port: 2096
+  server: my.jasrama.com
+  skip-cert-verify: true
+  sni: dalfak.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知11
   password: blue2024
   port: 443
-  server: 104.19.243.93
+  server: 172.64.35.217
   skip-cert-verify: true
-  sni: td.promote.icu
+  sni: hb.lii2010.us.kg
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: aes-256-gcm
-  name: US16 1.8MB/s
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 142.202.49.75
+  name: US5 1.9MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 139.64.165.144
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  name: 未知36
+  cipher: aes-256-gcm
+  name: US6 1.8MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 23.157.40.87
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知12
   password: NISHIKUITAN111
   port: 443
-  server: 164.38.155.246
+  server: 104.20.4.250
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 🇺🇸US美国9
-  password: blue2024
+  cipher: chacha20-ietf-poly1305
+  name: 未知13
+  password: 3d7uPkNdt1nGOMIWPUkhgW
   port: 443
-  server: 104.18.124.7
+  server: 158.255.214.213
   skip-cert-verify: true
-  sni: td.promote.icu
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
-  name: 未知37
+  name: 未知14
   network: ws
   password: blue2024
   port: 443
-  server: 104.25.226.234
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知38
-  password: NISHIKUITAN111
-  port: 443
-  server: 172.67.58.58
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知39
-  password: blue2024
-  port: 443
-  server: 198.41.219.138
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国10
-  password: blue2024
-  port: 443
-  server: 104.18.153.27
+  server: 104.24.92.234
   skip-cert-verify: true
   sni: td.promote.icu
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知40
+  name: 未知15
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.16.158.225
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US7 1.9MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 23.157.40.120
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知16
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 188.114.98.89
+  skip-cert-verify: true
+  sni: bpB-woRker-PanEL-AY6.pagEs.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知17
+  network: ws
+  password: trojan
+  port: 80
+  server: 162.159.152.2
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US8 1.8MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 69.50.95.179
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知18
+  password: 4uEQwGO5GC-6gMe4zFPVRQ
+  port: 1080
+  server: 82.115.5.141
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US9 1.9MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 38.110.1.46
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知19
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.19.224.216
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知20
+  password: blue2024
+  port: 443
+  server: 104.17.114.140
+  skip-cert-verify: true
+  sni: ha.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知21
+  password: NISHIKUITAN111
+  port: 443
+  server: 173.245.49.55
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知22
+  password: NISHIKUITAN111
+  port: 443
+  server: 141.101.113.229
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知23 2.8MB/s
+  password: qmOD5x09KyNNJ6USCZiQ4RvN2lSVQ6jzAEYmvrSLtRZsSX5gF6CfcElvUcuLlnZD
+  port: 29647
+  server: 94.131.96.213
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US10 1.9MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 38.110.1.3
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 1
+  cipher: auto
+  name: 未知24
+  network: ws
+  port: 443
+  server: d.ritchier.info
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: d.ritchier.info
+    path: linkvws
+- alterId: 0
+  name: 未知25
+  password: NISHIKUITAN111
+  port: 443
+  server: 198.41.205.240
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知26
   password: NISHIKUITAN111
   port: 443
   server: 185.176.24.134
@@ -4198,11 +3964,182 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知41
+  name: 未知27
+  network: ws
+  password: 98f0c223-cb75-4faa-859e-47110b1f052b
+  port: 2096
+  server: 104.21.69.44
+  skip-cert-verify: true
+  sni: iNTeRnET4EVERIeONe7.PaGes.DeV
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知28 2.6MB/s
+  password: 6W3KNlsw77BkOmhv36B76iKeOzNiECcO1qvmpvP2yTXCuODvctTKgRTNqc5dPRLY
+  port: 42658
+  server: 5.182.38.211
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知29
+  password: NISHIKUITAN222
+  port: 443
+  server: 104.17.58.219
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知30
   password: NISHIKUITAN111
   port: 443
-  server: 172.67.188.237
+  server: 188.164.158.111
   skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知31
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 141.11.203.203
+  skip-cert-verify: true
+  sni: za.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知32
+  password: blue2024
+  port: 443
+  server: 172.64.35.161
+  skip-cert-verify: true
+  sni: tb.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知33
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 92.53.190.218
+  skip-cert-verify: true
+  sni: za.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知34
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.16.218.64
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US11
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 44.195.205.119
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知35
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 77.37.33.8
+  skip-cert-verify: true
+  sni: zb.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US12 1.9MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.114.114.69
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知36
+  password: blue2024
+  port: 443
+  server: 104.17.33.7
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知37
+  password: blue2024
+  port: 443
+  server: 162.159.14.2
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知38
+  network: ws
+  password: 984e400bf5d541b7b0815913fe0c432a
+  port: 443
+  server: 104.16.159.5
+  skip-cert-verify: true
+  sni: bangladeshipatri.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知39
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 51.178.87.37
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US13 1.9MB/s
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 23.157.40.20
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知40
+  password: blue2024
+  port: 443
+  server: 173.245.49.131
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知41
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.17.147.167
+  skip-cert-verify: true
+  sni: ha.lii2010.us.kg
   tls: true
   type: trojan
   udp: true
@@ -4210,91 +4147,276 @@ proxies:
   name: 未知42
   password: NISHIKUITAN111
   port: 443
-  server: 104.20.17.65
+  server: 198.41.201.193
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
-  name: US20 1.7MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 23.157.40.26
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
   name: 未知43
-  password: 5mgZJzPv7hrLX4KMdPIeAW
-  port: 21771
-  server: 150.241.102.95
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US21 1.6MB/s
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 169.197.142.216
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: US22 28.1MB/s
-  password: 5cp9Z3iWnJZ2
+  network: ws
+  password: blue2024
   port: 443
-  server: 205.134.180.150
+  server: 162.159.44.192
   skip-cert-verify: true
+  sni: tb.promote.icu
   tls: true
-  type: ss
+  type: trojan
+  udp: true
 - alterId: 0
   name: 未知44
   password: NISHIKUITAN111
   port: 443
-  server: 104.26.2.143
+  server: 104.20.46.117
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 未知45
-  network: ws
   password: blue2024
   port: 443
-  server: 108.162.196.53
+  server: 104.19.222.79
   skip-cert-verify: true
-  sni: hb.lii2010.us.kg
+  sni: tb.promote.icu
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 未知46
-  network: ws
-  password: dba20dcb635e430fa4d3bfc303a149d2
+  password: NISHIKUITAN111
   port: 443
-  server: 104.19.171.4
+  server: 172.67.248.18
   skip-cert-verify: true
-  sni: jobscareertoday.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 未知47
   network: ws
-  password: NISHIKUITAN111
+  password: cb1f26aa437d4bfa9b841d28503ce8cc
   port: 443
-  server: 45.80.108.245
+  server: 198.41.220.5
   skip-cert-verify: true
-  sni: za.ylks.xyz
+  sni: jobscareertoday.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: US23
+  cipher: chacha20-ietf-poly1305
+  name: 未知48 3.1MB/s
+  password: qXvO7zYU7KeaB0Md7DQLow
+  port: 1080
+  server: 51.195.119.47
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知49
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.16.80.174
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知50 5.6MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 91.219.237.102
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知51
+  password: NISHIKUITAN111
+  port: 443
+  server: 185.135.9.41
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知52
+  password: AHIMpr0nVeVyLWv15dbTTX
+  port: 39764
+  server: 193.33.195.79
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知53
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.20.177.178
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 未知54 1.8MB/s
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知55
+  password: NISHIKUITAN111
+  port: 443
+  server: 198.41.208.50
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US15 1.9MB/s
+  password: lGqs95QkFHo2NV
+  port: 5499
+  server: 23.157.40.89
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: US16
+  network: ws
+  password: d6b6ea41-0950-4611-8246-224583e4ed1e
+  port: 443
+  server: 151.101.194.228
+  skip-cert-verify: true
+  sni: pscresearch.faculty.ucdavis.edu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知56
+  network: ws
+  password: blue2024
+  port: 443
+  server: 172.64.233.44
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知57
+  password: NISHIKUITAN111
+  port: 443
+  server: 162.159.20.97
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知58
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.18.74
+  skip-cert-verify: true
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知60
+  password: NISHIKUITAN111
+  port: 443
+  server: 173.245.49.248
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知61
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.17.176
+  skip-cert-verify: true
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知62
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.21.78
+  skip-cert-verify: true
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知63
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.19.168.73
+  skip-cert-verify: true
+  sni: ha.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US17 1.9MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.75.136.117
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知64
+  password: NISHIKUITAN111
+  port: 443
+  server: 172.66.42.99
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知65
+  password: NISHIKUITAN111
+  port: 443
+  server: 88.216.66.169
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知66
+  password: blue2024
+  port: 443
+  server: 104.18.84.67
+  skip-cert-verify: true
+  sni: ha.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知67
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 185.176.24.104
+  skip-cert-verify: true
+  sni: zb.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US18
   network: ws
   password: NISHIKUITAN111
   port: 443
@@ -4306,688 +4428,167 @@ proxies:
   udp: true
 - alterId: 0
   cipher: aes-256-gcm
-  name: 未知48 1.2MB/s
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 51.77.53.200
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知49 1.0MB/s
-  password: O4xHyEq9GnMgORYoDUDP8e
-  port: 15584
-  server: 213.108.23.243
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 🇺🇸US美国11
-  password: blue2024
-  port: 443
-  server: 162.159.152.49
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US24 1.9MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 142.202.48.105
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 🇺🇸US美国12
-  password: blue2024
-  port: 443
-  server: 213.241.198.4
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 未知50 1.7MB/s
+  name: US19 1.9MB/s
   password: PCnnH6SQSnfoS27
   port: 8091
-  server: 149.202.82.172
+  server: 139.64.165.115
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  name: 未知51
+  name: 未知68
+  network: ws
   password: blue2024
   port: 443
-  server: 173.245.49.131
+  server: 104.25.235.162
   skip-cert-verify: true
   sni: hb.lii2010.us.kg
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: US25
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.148.104.114
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知52
-  network: tcp
-  password: 4b040268-f3a5-4136-b1a9-506012e8e3d9
-  port: 443
-  server: 141.101.120.10
-  skip-cert-verify: true
-  sni: ssp2.100896.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知53
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 185.176.24.2
-  skip-cert-verify: true
-  sni: 403B3611-99bc-43B7-88d7-26ed5d0825a9-3.PaGes.deV
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知54
-  network: ws
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: 104.16.159.7
-  skip-cert-verify: true
-  sni: bangladeshipatri.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: HK
-  password: 6d247617-01a8-4720-9c4e-c5c68ebf75c5
-  port: 51161
-  server: 82.152.105.168
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US26 2.0MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 38.143.66.87
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US27 1.6MB/s
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 167.88.61.235
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知55
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 213.109.205.159
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: US28
-  network: ws
+  name: 未知69
   password: blue2024
   port: 443
-  server: 198.62.62.156
+  server: 104.17.103.130
   skip-cert-verify: true
-  sni: tb.promote.icu
+  sni: td.promote.icu
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知56
-  password: NISHIKUITAN111
+  name: 未知70
+  password: blue2024
   port: 443
-  server: 104.27.44.212
+  server: 108.162.198.6
   skip-cert-verify: true
+  sni: hb.lii2010.us.kg
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知57
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.18.250.112
-  skip-cert-verify: true
-  sni: zb.ylks.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知58
-  network: ws
-  password: PU3f7528NtNXnQqb9X263rGSD
-  port: 443
-  server: 195.133.11.229
-  skip-cert-verify: true
-  sni: get.fragmentary.info
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知59
-  network: ws
-  password: f0d584bc-342f-4443-ba24-79e4d0e504b1
-  port: 2052
-  server: 198.41.214.224
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知60
-  password: NISHIKUITAN111
-  port: 443
-  server: 172.67.233.168
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知61
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.27.25.157
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知62
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.17.152.243
-  skip-cert-verify: true
-  sni: bpb.my79801.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US29 1.7MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 23.157.40.47
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知63
-  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
-  port: 443
-  server: 48.210.227.130
-  skip-cert-verify: true
-  sni: vn.mjt000.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知64
-  network: ws
-  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  port: 2053
-  server: 23.227.38.208
-  skip-cert-verify: true
-  sni: bPB-V.pageS.dEV
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US30 1.9MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 69.50.92.72
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知65
-  password: NISHIKUITAN111
-  port: 443
-  server: 198.41.193.49
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知66
+  name: 未知71
   network: tcp
   password: bpb-trojan
   port: 443
-  server: 162.159.152.227
+  server: 162.159.152.35
   skip-cert-verify: true
   sni: cf.090227.xyz
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知67
+  cipher: aes-256-gcm
+  name: US20 1.9MB/s
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 23.150.152.56
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知72
+  network: tcp
+  password: bpb-trojan
+  port: 443
+  server: 162.159.153.172
+  skip-cert-verify: true
+  sni: cf.090227.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知73
+  password: NISHIKUITAN111
+  port: 443
+  server: 172.67.225.134
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US21 1.8MB/s
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 23.150.152.53
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US22 2.0MB/s
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.91.100.211
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知74
   password: blue2024
   port: 443
-  server: 104.26.6.112
+  server: 104.17.96.65
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 未知75
+  network: tcp
+  port: 7610
+  server: 94.130.190.88
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5480b44f-5823-4246-bb8e-8a371da6dc4c
+- alterId: 0
+  name: 未知76
+  password: blue2024
+  port: 443
+  server: 172.67.179.208
   skip-cert-verify: true
   sni: tb.promote.icu
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知68
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.20.167.224
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知69
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.27.99.161
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 未知70
-  password: 6601fb90e9b3
-  port: 443
-  server: 127.0.0.1
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 1
-  cipher: auto
-  name: 未知71
-  network: ws
-  port: 443
-  server: es.pulau.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: es.pulau.org
-    path: linkvws
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知72 1.8MB/s
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.181
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 🇺🇸US美国14
-  password: blue2024
-  port: 443
-  server: 172.64.235.138
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知73
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 188.42.88.52
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知74
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.22.59.104
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知75
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.18.19.56
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知76
-  password: NISHIKUITAN111
-  port: 443
-  server: 198.41.205.148
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   name: 未知77
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.18.113.114
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知78
-  password: NISHIKUITAN111
-  port: 443
-  server: 188.114.99.126
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: TW2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 211.22.161.134
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知79
   network: ws
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 104.17.147.11
-  skip-cert-verify: true
-  sni: jobscareerfortoday.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知80
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.24.207.14
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US32 1.7MB/s
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 23.157.40.87
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知81
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.20.162
-  skip-cert-verify: true
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US33 1.7MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.114.114.69
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 未知83 1.4MB/s
-  password: shadowsocks
-  port: 443
-  server: 149.34.244.77
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US34 1.9MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 69.50.95.191
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 🇺🇸US美国15
   password: blue2024
   port: 443
-  server: 104.20.25.245
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国16
-  password: blue2024
-  port: 443
-  server: 198.41.205.237
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知84
-  password: NISHIKUITAN111
-  port: 443
-  server: 198.41.205.240
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US35 1.9MB/s
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 69.50.95.101
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知85
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.21.26.75
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US37 1.9MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 38.91.100.211
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知86
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 188.114.98.89
-  skip-cert-verify: true
-  sni: bpB-woRker-PanEL-AY6.pagEs.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国17
-  password: blue2024
-  port: 443
-  server: 190.93.246.178
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知87
-  password: blue2024
-  port: 443
-  server: 198.41.215.83
+  server: 173.245.59.106
   skip-cert-verify: true
   sni: hb.lii2010.us.kg
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知88
+  name: 未知78
   network: ws
-  password: 6c0ed3fb-f0b0-5b53-a762-f8f8d832bdba
-  port: 2083
-  server: 104.20.5.134
-  skip-cert-verify: true
-  sni: vfarid.xcdi.wOrKERS.DEV
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国18
   password: blue2024
   port: 443
-  server: 104.18.121.158
+  server: 104.19.251.164
   skip-cert-verify: true
-  sni: td.promote.icu
+  sni: hb.lii2010.us.kg
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知89 367.9KB/s
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: series-a2-me.varzesh360.co
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知90
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.18.159.147
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知91
-  password: bpb-trojan
-  port: 443
-  server: 45.80.110.224
-  skip-cert-verify: true
-  sni: bpb.my79801.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知92
+  name: 未知79
   network: ws
   password: WOeXShhJpL
   port: 443
-  server: 104.17.8.124
+  server: 172.67.67.64
   skip-cert-verify: true
-  sni: 10jzus.zdzdzd.xyz
+  sni: 09jzus.zdzdzd.xyz
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知93
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.27.105.8
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US40 1.6MB/s
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 38.114.114.143
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US41 1.6MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 23.150.152.56
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知94
-  network: tcp
-  password: bpb-trojan
-  port: 443
-  server: 104.17.159.75
-  skip-cert-verify: true
-  sni: fcspring.ggff.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US42 1.7MB/s
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.75.136.108
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知95
+  name: 未知80
   network: ws
   password: dns68
   port: 443
@@ -4998,38 +4599,169 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: US43
+  name: 未知81
+  network: ws
   password: NISHIKUITAN111
   port: 443
-  server: 141.193.213.141
+  server: 185.159.247.167
+  skip-cert-verify: true
+  sni: za.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知82
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.24.40.237
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知96
+  name: 未知83
+  network: ws
+  password: auto
+  port: 443
+  server: 104.16.224.104
+  skip-cert-verify: true
+  sni: trojanmz.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知84
+  password: blue2024
+  port: 443
+  server: 190.93.247.128
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知85
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.19.243.142
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知86
   password: NISHIKUITAN111
   port: 443
-  server: 104.26.6.233
+  server: 198.41.193.191
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知97
+  name: 未知87
+  network: ws
   password: NISHIKUITAN111
   port: 443
-  server: 198.41.223.136
+  server: 92.53.190.87
+  skip-cert-verify: true
+  sni: zb.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: US23 28.9MB/s
+  network: tcp
+  port: 52143
+  server: 142.4.104.33
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 未知88
+  password: blue2024
+  port: 443
+  server: 104.16.179.237
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知89 14.7MB/s
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.133.0.49
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知90
+  password: blue2024
+  port: 443
+  server: 104.18.152.170
+  skip-cert-verify: true
+  sni: ha.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US24 1.9MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 23.157.40.26
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知92
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.19.51.192
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: US44
+  name: 未知93
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.24.10.122
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知94
+  password: NISHIKUITAN111
+  port: 443
+  server: 108.162.193.9
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知95
+  password: NISHIKUITAN111
+  port: 443
+  server: 190.93.246.45
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知96 70.7MB/s
   network: tcp
   password: telegram-id-directvpn
   port: 22222
-  server: 44.195.205.119
+  server: 15.157.178.155
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   tls: true
@@ -5037,37 +4769,30 @@ proxies:
   udp: true
 - alterId: 0
   cipher: aes-256-gcm
-  name: US45 1.9MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 23.134.94.168
+  name: 未知97 1.7MB/s
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 23.166.88.198
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
+  name: 未知98
+  network: ws
+  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  port: 443
+  server: 172.66.47.155
+  skip-cert-verify: true
+  sni: Bloom-cHh.PAGEs.DeV
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: aes-256-gcm
-  name: US46 1.7MB/s
+  name: US27 2.0MB/s
   password: e4FCWrgpkji3QY
   port: 9101
-  server: 23.157.40.5
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US47 1.9MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 38.86.135.117
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 未知98 1.7MB/s
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 23.157.88.61
+  server: 38.75.136.108
   skip-cert-verify: true
   tls: true
   type: ss
@@ -5075,70 +4800,35 @@ proxies:
   name: 未知99
   password: NISHIKUITAN111
   port: 443
-  server: 104.25.31.240
+  server: 104.26.12.193
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 未知100
-  network: tcp
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: customer-95-164-85-39.stark-industries.solutions
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国19
-  password: blue2024
-  port: 443
-  server: 104.21.97.149
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 1
-  cipher: auto
-  name: 未知101
-  network: ws
-  port: 443
-  server: be.kalavryta.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: be.kalavryta.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: US48 42.1MB/s
-  network: tcp
-  port: 52728
-  server: 141.11.251.231
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: d5e16b83-7b5c-45ea-d749-d6f6ad214447
-- alterId: 0
-  name: 未知102
   password: NISHIKUITAN111
   port: 443
-  server: 104.25.101.97
+  server: 141.11.202.133
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知103
+  cipher: aes-256-gcm
+  name: US28 1.9MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 23.157.40.85
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知102
   network: ws
   password: blue2024
   port: 443
-  server: 104.18.216.135
+  server: 104.18.127.92
   skip-cert-verify: true
   sni: ha.lii2010.us.kg
   tls: true
@@ -5146,6 +4836,456 @@ proxies:
   udp: true
 - alterId: 0
   name: 未知104
+  network: tcp
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  port: 443
+  server: 95.164.85.39
+  skip-cert-verify: true
+  sni: customer-95-164-85-39.stark-industries.solutions
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US29 1.9MB/s
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 38.143.66.87
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知105
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.56.96.162
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知106
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.25.99.96
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知108
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 77.75.199.86
+  skip-cert-verify: true
+  sni: za.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知109
+  network: ws
+  password: blue2024
+  port: 443
+  server: 162.159.44.159
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知110
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: 18.169.108.149
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知111 1.7MB/s
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知112
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.18.58.44
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知113
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.25.235.46
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知114
+  network: ws
+  password: PU3f7528NtNXnQqb9X263rGSD
+  port: 443
+  server: 195.133.11.229
+  skip-cert-verify: true
+  sni: get.fragmentary.info
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知115
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.21.33.65
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: US31 111.5MB/s
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US32 1.9MB/s
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 167.88.61.111
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知117
+  network: tcp
+  password: bpb-trojan
+  port: 443
+  server: 172.66.44.128
+  skip-cert-verify: true
+  sni: cf.090227.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知118
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.22.56.158
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知119 231.7KB/s
+  password: ug4Fu79SEREdFGlt2sUyT4
+  port: 2927
+  server: 95.164.9.144
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知120 44.3KB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.202
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知121
+  password: bpb-trojan
+  port: 443
+  server: 141.11.203.98
+  skip-cert-verify: true
+  sni: bpb.my79801.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知122
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.25.221.170
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知123
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 141.101.114.2
+  skip-cert-verify: true
+  sni: fcspring.ggff.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知124 21.5KB/s
+  password: qbY6=zGuFl
+  port: 37774
+  server: 150.241.95.63
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知125
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.17.36.105
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知126
+  password: blue2024
+  port: 443
+  server: 104.19.187.2
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US34 1.7MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 69.50.95.180
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 未知127
+  network: tcp
+  port: 50002
+  server: 47.92.152.169
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 未知128
+  network: httpupgrade
+  password: 2f1f7fbf-f37d-4275-c014-298a83f4e5a8
+  port: 80
+  server: 104.17.147.22
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US36 2.0MB/s
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 167.88.63.21
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知130
+  password: NISHIKUITAN111
+  port: 443
+  server: 89.117.112.181
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US37 1.9MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 23.157.40.5
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知131
+  network: ws
+  password: blue2024
+  port: 443
+  server: 173.245.59.6
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US38 1.9MB/s
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 38.114.114.143
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知132 93.6KB/s
+  password: u17T3BvpYaaiuW2c
+  port: 443
+  server: 3.28.245.104
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: US39
+  password: Yc2CtrIz8L
+  port: 16899
+  server: 2.58.87.221
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US40 1.9MB/s
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 38.75.136.21
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US41 1.9MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 23.157.40.113
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知133 1.8MB/s
+  password: afKAHp1VfRWZu91LIi9o0D
+  port: 58176
+  server: 94.228.165.178
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知134
+  password: NISHIKUITAN111
+  port: 443
+  server: 92.243.74.60
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知135 565.6KB/s
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 54.155.190.8
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知136
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.25.39.144
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知138
+  password: blue2024
+  port: 443
+  server: 104.19.185.248
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US43 1.9MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 38.91.100.199
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知139
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.22.241
+  skip-cert-verify: true
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: US44 63.2MB/s
+  password: 5cp9Z3iWnJZ2
+  port: 443
+  server: 205.134.180.151
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US45 913.2KB/s
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 69.50.95.174
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: US47 1.9MB/s
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 69.50.95.191
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知141
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.18.159.147
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知142
   password: NISHIKUITAN111
   port: 443
   server: 172.67.234.222
@@ -5154,197 +5294,51 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知105
-  password: NISHIKUITAN111
-  port: 443
-  server: 198.41.196.208
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知106
+  name: 未知143
   password: blue2024
   port: 443
-  server: 172.64.35.161
+  server: 104.16.136.223
   skip-cert-verify: true
-  sni: tb.promote.icu
+  sni: hb.lii2010.us.kg
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: US49
-  network: ws
-  password: 984e400bf5d541b7b0815913fe0c432a
+  name: 未知144
+  password: NISHIKUITAN111
   port: 443
-  server: 23.150.248.153
+  server: 162.159.19.226
   skip-cert-verify: true
-  sni: jobscareerforstudent.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知145
+  network: tcp
+  password: bpb-trojan
+  port: 443
+  server: 172.66.47.128
+  skip-cert-verify: true
+  sni: cf.090227.xyz
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: aes-256-gcm
-  name: US51 2.0MB/s
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 23.150.152.53
+  name: US51 1.6MB/s
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 23.150.152.16
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  name: 🇺🇸US美国20
-  password: blue2024
+  name: 未知146
+  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
   port: 443
-  server: 104.17.175.195
+  server: 48.210.227.130
   skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知108 106.1KB/s
-  password: Yduk2ad0ZOoHXCYBDfSCnw
-  port: 14939
-  server: 51.13.165.185
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知109
-  password: NISHIKUITAN111
-  port: 443
-  server: 198.41.223.8
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 未知110 29.5KB/s
-  network: ws
-  port: 2095
-  server: 162.159.45.115
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      host: c14.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知111 2.4MB/s
-  password: As=Qe0JVvH
-  port: 57263
-  server: 150.241.95.62
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知112
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.17.146.191
-  skip-cert-verify: true
-  sni: ha.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: US54
-  password: 8tInVZJa5h2EaggP
-  port: 443
-  server: 52.237.155.68
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知113
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.22.50.122
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知114
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 173.245.59.182
-  skip-cert-verify: true
-  sni: fcspring.ggff.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知115
-  network: grpc
-  password: 578ade22-1e58-4c37-ce01-bfad51a72c62
-  port: 8443
-  server: 104.17.147.22
-  skip-cert-verify: true
-  sni: 13l1.diginoshops10.ir
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知116
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.17.116.87
-  skip-cert-verify: true
-  sni: bpb.my79801.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知117
-  network: ws
-  password: blue2024
-  port: 443
-  server: 172.67.109.241
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知118
-  password: blue2024
-  port: 443
-  server: 172.64.35.217
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知119
-  network: ws
-  password: your_password
-  port: 443
-  server: 188.114.99.0
-  skip-cert-verify: true
-  sni: aws-ge-frankfurt-1.f1cflinea.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: US55
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 167.68.11.173
-  skip-cert-verify: true
-  sni: zb.ylks.xyz
+  sni: usla.mjt000.com
   tls: true
   type: trojan
   udp: true
@@ -5402,9 +5396,7 @@ proxy-groups:
   - '3,17|🇺🇸_US_美国 #22'
   - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
-  - 11|0|--43
-  - 11|0|--54
-  - 11|0|--112
+  - 11|0|--96
   - 11|5|d*********g.com_0
   - 11|5|d*********g.com_1
   - 11|5|d*********g.com_2
@@ -5438,15 +5430,21 @@ proxy-groups:
   - 15|🇰🇷 韩国特殊|@ripaojiedian
   - 15|🇯🇵 日本特殊|@ripaojiedian
   - 15|🇸🇬 狮城特殊|@ripaojiedian
+  - 0|-https://t.me/MrXbin-1
   - 0|-https://t.me/MrXbin-2
   - 0|-https://t.me/MrXbin-3
   - 0|-https://t.me/MrXbin-4
   - 0|-https://t.me/MrXbin-5
   - 0|-https://t.me/MrXbin-6
-  - 0|-https://t.me/MrXbin-8
+  - 0|-https://t.me/MrXbin-7
   - 0|-https://t.me/MrXbin-9
   - 0|-https://t.me/MrXbin-10
-  - 0|-https://t.me/MrXbin-96
+  - 0|-https://t.me/MrXbin-12
+  - 0|-https://t.me/MrXbin-13
+  - 0|-https://t.me/MrXbin-14
+  - 0|-https://t.me/MrXbin-15
+  - 0|-https://t.me/MrXbin-16
+  - 0|-https://t.me/MrXbin-30
   - 0,15|TW_speednode_0037
   - 13,14|香港|@ripaojiedian
   - 13,14,15|CN_speednode_0007
@@ -5475,10 +5473,11 @@ proxy-groups:
   - GB_61cc1_0025
   - JP_61cc1_0029
   - SE_61cc1_0030
-  - SG_61cc1_0035
+  - SG_61cc1_0033
   - SG_61cc1_0036
   - US_61cc1_0038
   - US_61cc1_0039
+  - US_61cc1_0040
   - US_61cc1_0041
   - US_61cc1_0042
   - US_61cc1_0043
@@ -5497,6 +5496,7 @@ proxy-groups:
   - US_61cc1_0058
   - 🇬🇧_GB_英国->🇨🇦_CA_加拿大
   - 🇬🇧_GB_英国
+  - 🇺🇸_US_美国->🇨🇦_CA_加拿大
   - 🇨🇷_CR_哥斯达黎加
   - 🇷🇺_RU_俄罗斯->🇨🇦_CA_加拿大
   - 🇬🇧_GB_英国->🇨🇦_CA_加拿大_1
@@ -5514,7 +5514,6 @@ proxy-groups:
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
   - 🇷🇺_RU_俄罗斯->🇨🇦_CA_加拿大_2
   - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大_2
-  - 🇺🇸_US_美国->🇸🇬_SG_新加坡
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
   - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大_3
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_5
@@ -5548,6 +5547,7 @@ proxy-groups:
   - 加拿大 017
   - 美国 017
   - 加拿大 103
+  - 美国 215
   - 加拿大 007
   - 美国 036
   - 美国 050
@@ -5652,187 +5652,185 @@ proxy-groups:
   - 美国 097
   - 美国 098
   - 加拿大 019
+  - 🇬🇧 高性价比机场:https://kfyun.uk
+  - 0|--10
+  - US 1.9MB/s
   - 未知
   - 未知2
-  - US 1.7MB/s
   - 未知3
+  - US2 1.9MB/s
   - 未知4
-  - TW 87.9KB/s
   - 未知5
   - 未知6
+  - US3 1.9MB/s
   - 未知7
-  - US2 1.7MB/s
-  - US3 1.6MB/s
-  - 未知8 1.7MB/s
-  - US4 22.0MB/s
-  - US5 1.8MB/s
+  - US4 2.0MB/s
+  - 未知8 11.5MB/s
   - 未知9
   - 未知10
   - 未知11
+  - US5 1.9MB/s
+  - US6 1.8MB/s
   - 未知12
-  - US6 54.8MB/s
-  - US8 1.9MB/s
   - 未知13
   - 未知14
-  - 🇺🇸US美国
-  - 🇺🇸US美国2
   - 未知15
+  - US7 1.9MB/s
   - 未知16
   - 未知17
-  - 🇺🇸US美国3
+  - US8 1.8MB/s
   - 未知18
-  - 未知19 1.7MB/s
-  - 🇺🇸US美国4
-  - US9
+  - US9 1.9MB/s
+  - 未知19
   - 未知20
-  - US11 1.9MB/s
-  - 🇺🇸US美国5
-  - US12 1.9MB/s
-  - US13 1.9MB/s
   - 未知21
-  - US14 21.8MB/s
   - 未知22
+  - 未知23 2.8MB/s
+  - US10 1.9MB/s
   - 未知24
   - 未知25
   - 未知26
   - 未知27
-  - US15 1.9MB/s
-  - 未知28
+  - 未知28 2.6MB/s
   - 未知29
   - 未知30
   - 未知31
   - 未知32
-  - 🇺🇸US美国6
   - 未知33
-  - 🇺🇸US美国7
   - 未知34
+  - US11
   - 未知35
-  - 🇺🇸US美国8
-  - US16 1.8MB/s
+  - US12 1.9MB/s
   - 未知36
-  - 🇺🇸US美国9
   - 未知37
   - 未知38
   - 未知39
-  - 🇺🇸US美国10
+  - US13 1.9MB/s
   - 未知40
   - 未知41
   - 未知42
-  - US20 1.7MB/s
   - 未知43
-  - US21 1.6MB/s
-  - US22 28.1MB/s
   - 未知44
   - 未知45
   - 未知46
   - 未知47
-  - US23
-  - 未知48 1.2MB/s
-  - 未知49 1.0MB/s
-  - 🇺🇸US美国11
-  - US24 1.9MB/s
-  - 🇺🇸US美国12
-  - 未知50 1.7MB/s
+  - 未知48 3.1MB/s
+  - 未知49
+  - 未知50 5.6MB/s
   - 未知51
-  - US25
   - 未知52
   - 未知53
-  - 未知54
-  - HK
-  - US26 2.0MB/s
-  - US27 1.6MB/s
+  - 未知54 1.8MB/s
   - 未知55
-  - US28
+  - US15 1.9MB/s
+  - US16
   - 未知56
   - 未知57
   - 未知58
-  - 未知59
   - 未知60
   - 未知61
   - 未知62
-  - US29 1.7MB/s
   - 未知63
+  - US17 1.9MB/s
   - 未知64
-  - US30 1.9MB/s
   - 未知65
   - 未知66
   - 未知67
+  - US18
+  - US19 1.9MB/s
   - 未知68
   - 未知69
   - 未知70
   - 未知71
-  - 未知72 1.8MB/s
-  - 🇺🇸US美国14
+  - US20 1.9MB/s
+  - 未知72
   - 未知73
+  - US21 1.8MB/s
+  - US22 2.0MB/s
   - 未知74
   - 未知75
   - 未知76
   - 未知77
   - 未知78
-  - TW2
   - 未知79
   - 未知80
-  - US32 1.7MB/s
   - 未知81
-  - US33 1.7MB/s
-  - 未知83 1.4MB/s
-  - US34 1.9MB/s
-  - 🇺🇸US美国15
-  - 🇺🇸US美国16
+  - 未知82
+  - 未知83
   - 未知84
-  - US35 1.9MB/s
   - 未知85
-  - US37 1.9MB/s
   - 未知86
-  - 🇺🇸US美国17
   - 未知87
+  - US23 28.9MB/s
   - 未知88
-  - 🇺🇸US美国18
-  - 未知89 367.9KB/s
+  - 未知89 14.7MB/s
   - 未知90
-  - 未知91
+  - US24 1.9MB/s
   - 未知92
   - 未知93
-  - US40 1.6MB/s
-  - US41 1.6MB/s
   - 未知94
-  - US42 1.7MB/s
   - 未知95
-  - US43
-  - 未知96
-  - 未知97
-  - US44
-  - US45 1.9MB/s
-  - US46 1.7MB/s
-  - US47 1.9MB/s
-  - 未知98 1.7MB/s
+  - 未知96 70.7MB/s
+  - 未知97 1.7MB/s
+  - 未知98
+  - US27 2.0MB/s
   - 未知99
   - 未知100
-  - 🇺🇸US美国19
-  - 未知101
-  - US48 42.1MB/s
+  - US28 1.9MB/s
   - 未知102
-  - 未知103
   - 未知104
+  - US29 1.9MB/s
   - 未知105
   - 未知106
-  - US49
-  - US51 2.0MB/s
-  - 🇺🇸US美国20
-  - 未知108 106.1KB/s
+  - 未知108
   - 未知109
-  - 未知110 29.5KB/s
-  - 未知111 2.4MB/s
+  - 未知110
+  - 未知111 1.7MB/s
   - 未知112
-  - US54
   - 未知113
   - 未知114
   - 未知115
-  - 未知116
+  - US31 111.5MB/s
+  - US32 1.9MB/s
   - 未知117
   - 未知118
-  - 未知119
-  - US55
+  - 未知119 231.7KB/s
+  - 未知120 44.3KB/s
+  - 未知121
+  - 未知122
+  - 未知123
+  - 未知124 21.5KB/s
+  - 未知125
+  - 未知126
+  - US34 1.7MB/s
+  - 未知127
+  - 未知128
+  - US36 2.0MB/s
+  - 未知130
+  - US37 1.9MB/s
+  - 未知131
+  - US38 1.9MB/s
+  - 未知132 93.6KB/s
+  - US39
+  - US40 1.9MB/s
+  - US41 1.9MB/s
+  - 未知133 1.8MB/s
+  - 未知134
+  - 未知135 565.6KB/s
+  - 未知136
+  - 未知138
+  - US43 1.9MB/s
+  - 未知139
+  - US44 63.2MB/s
+  - US45 913.2KB/s
+  - US47 1.9MB/s
+  - 未知141
+  - 未知142
+  - 未知143
+  - 未知144
+  - 未知145
+  - US51 1.6MB/s
+  - 未知146
   type: select
 - interval: 300
   name: automatic
@@ -5887,9 +5885,7 @@ proxy-groups:
   - '3,17|🇺🇸_US_美国 #22'
   - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
-  - 11|0|--43
-  - 11|0|--54
-  - 11|0|--112
+  - 11|0|--96
   - 11|5|d*********g.com_0
   - 11|5|d*********g.com_1
   - 11|5|d*********g.com_2
@@ -5923,15 +5919,21 @@ proxy-groups:
   - 15|🇰🇷 韩国特殊|@ripaojiedian
   - 15|🇯🇵 日本特殊|@ripaojiedian
   - 15|🇸🇬 狮城特殊|@ripaojiedian
+  - 0|-https://t.me/MrXbin-1
   - 0|-https://t.me/MrXbin-2
   - 0|-https://t.me/MrXbin-3
   - 0|-https://t.me/MrXbin-4
   - 0|-https://t.me/MrXbin-5
   - 0|-https://t.me/MrXbin-6
-  - 0|-https://t.me/MrXbin-8
+  - 0|-https://t.me/MrXbin-7
   - 0|-https://t.me/MrXbin-9
   - 0|-https://t.me/MrXbin-10
-  - 0|-https://t.me/MrXbin-96
+  - 0|-https://t.me/MrXbin-12
+  - 0|-https://t.me/MrXbin-13
+  - 0|-https://t.me/MrXbin-14
+  - 0|-https://t.me/MrXbin-15
+  - 0|-https://t.me/MrXbin-16
+  - 0|-https://t.me/MrXbin-30
   - 0,15|TW_speednode_0037
   - 13,14|香港|@ripaojiedian
   - 13,14,15|CN_speednode_0007
@@ -5960,10 +5962,11 @@ proxy-groups:
   - GB_61cc1_0025
   - JP_61cc1_0029
   - SE_61cc1_0030
-  - SG_61cc1_0035
+  - SG_61cc1_0033
   - SG_61cc1_0036
   - US_61cc1_0038
   - US_61cc1_0039
+  - US_61cc1_0040
   - US_61cc1_0041
   - US_61cc1_0042
   - US_61cc1_0043
@@ -5982,6 +5985,7 @@ proxy-groups:
   - US_61cc1_0058
   - 🇬🇧_GB_英国->🇨🇦_CA_加拿大
   - 🇬🇧_GB_英国
+  - 🇺🇸_US_美国->🇨🇦_CA_加拿大
   - 🇨🇷_CR_哥斯达黎加
   - 🇷🇺_RU_俄罗斯->🇨🇦_CA_加拿大
   - 🇬🇧_GB_英国->🇨🇦_CA_加拿大_1
@@ -5999,7 +6003,6 @@ proxy-groups:
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
   - 🇷🇺_RU_俄罗斯->🇨🇦_CA_加拿大_2
   - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大_2
-  - 🇺🇸_US_美国->🇸🇬_SG_新加坡
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
   - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大_3
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_5
@@ -6033,6 +6036,7 @@ proxy-groups:
   - 加拿大 017
   - 美国 017
   - 加拿大 103
+  - 美国 215
   - 加拿大 007
   - 美国 036
   - 美国 050
@@ -6137,187 +6141,185 @@ proxy-groups:
   - 美国 097
   - 美国 098
   - 加拿大 019
+  - 🇬🇧 高性价比机场:https://kfyun.uk
+  - 0|--10
+  - US 1.9MB/s
   - 未知
   - 未知2
-  - US 1.7MB/s
   - 未知3
+  - US2 1.9MB/s
   - 未知4
-  - TW 87.9KB/s
   - 未知5
   - 未知6
+  - US3 1.9MB/s
   - 未知7
-  - US2 1.7MB/s
-  - US3 1.6MB/s
-  - 未知8 1.7MB/s
-  - US4 22.0MB/s
-  - US5 1.8MB/s
+  - US4 2.0MB/s
+  - 未知8 11.5MB/s
   - 未知9
   - 未知10
   - 未知11
+  - US5 1.9MB/s
+  - US6 1.8MB/s
   - 未知12
-  - US6 54.8MB/s
-  - US8 1.9MB/s
   - 未知13
   - 未知14
-  - 🇺🇸US美国
-  - 🇺🇸US美国2
   - 未知15
+  - US7 1.9MB/s
   - 未知16
   - 未知17
-  - 🇺🇸US美国3
+  - US8 1.8MB/s
   - 未知18
-  - 未知19 1.7MB/s
-  - 🇺🇸US美国4
-  - US9
+  - US9 1.9MB/s
+  - 未知19
   - 未知20
-  - US11 1.9MB/s
-  - 🇺🇸US美国5
-  - US12 1.9MB/s
-  - US13 1.9MB/s
   - 未知21
-  - US14 21.8MB/s
   - 未知22
+  - 未知23 2.8MB/s
+  - US10 1.9MB/s
   - 未知24
   - 未知25
   - 未知26
   - 未知27
-  - US15 1.9MB/s
-  - 未知28
+  - 未知28 2.6MB/s
   - 未知29
   - 未知30
   - 未知31
   - 未知32
-  - 🇺🇸US美国6
   - 未知33
-  - 🇺🇸US美国7
   - 未知34
+  - US11
   - 未知35
-  - 🇺🇸US美国8
-  - US16 1.8MB/s
+  - US12 1.9MB/s
   - 未知36
-  - 🇺🇸US美国9
   - 未知37
   - 未知38
   - 未知39
-  - 🇺🇸US美国10
+  - US13 1.9MB/s
   - 未知40
   - 未知41
   - 未知42
-  - US20 1.7MB/s
   - 未知43
-  - US21 1.6MB/s
-  - US22 28.1MB/s
   - 未知44
   - 未知45
   - 未知46
   - 未知47
-  - US23
-  - 未知48 1.2MB/s
-  - 未知49 1.0MB/s
-  - 🇺🇸US美国11
-  - US24 1.9MB/s
-  - 🇺🇸US美国12
-  - 未知50 1.7MB/s
+  - 未知48 3.1MB/s
+  - 未知49
+  - 未知50 5.6MB/s
   - 未知51
-  - US25
   - 未知52
   - 未知53
-  - 未知54
-  - HK
-  - US26 2.0MB/s
-  - US27 1.6MB/s
+  - 未知54 1.8MB/s
   - 未知55
-  - US28
+  - US15 1.9MB/s
+  - US16
   - 未知56
   - 未知57
   - 未知58
-  - 未知59
   - 未知60
   - 未知61
   - 未知62
-  - US29 1.7MB/s
   - 未知63
+  - US17 1.9MB/s
   - 未知64
-  - US30 1.9MB/s
   - 未知65
   - 未知66
   - 未知67
+  - US18
+  - US19 1.9MB/s
   - 未知68
   - 未知69
   - 未知70
   - 未知71
-  - 未知72 1.8MB/s
-  - 🇺🇸US美国14
+  - US20 1.9MB/s
+  - 未知72
   - 未知73
+  - US21 1.8MB/s
+  - US22 2.0MB/s
   - 未知74
   - 未知75
   - 未知76
   - 未知77
   - 未知78
-  - TW2
   - 未知79
   - 未知80
-  - US32 1.7MB/s
   - 未知81
-  - US33 1.7MB/s
-  - 未知83 1.4MB/s
-  - US34 1.9MB/s
-  - 🇺🇸US美国15
-  - 🇺🇸US美国16
+  - 未知82
+  - 未知83
   - 未知84
-  - US35 1.9MB/s
   - 未知85
-  - US37 1.9MB/s
   - 未知86
-  - 🇺🇸US美国17
   - 未知87
+  - US23 28.9MB/s
   - 未知88
-  - 🇺🇸US美国18
-  - 未知89 367.9KB/s
+  - 未知89 14.7MB/s
   - 未知90
-  - 未知91
+  - US24 1.9MB/s
   - 未知92
   - 未知93
-  - US40 1.6MB/s
-  - US41 1.6MB/s
   - 未知94
-  - US42 1.7MB/s
   - 未知95
-  - US43
-  - 未知96
-  - 未知97
-  - US44
-  - US45 1.9MB/s
-  - US46 1.7MB/s
-  - US47 1.9MB/s
-  - 未知98 1.7MB/s
+  - 未知96 70.7MB/s
+  - 未知97 1.7MB/s
+  - 未知98
+  - US27 2.0MB/s
   - 未知99
   - 未知100
-  - 🇺🇸US美国19
-  - 未知101
-  - US48 42.1MB/s
+  - US28 1.9MB/s
   - 未知102
-  - 未知103
   - 未知104
+  - US29 1.9MB/s
   - 未知105
   - 未知106
-  - US49
-  - US51 2.0MB/s
-  - 🇺🇸US美国20
-  - 未知108 106.1KB/s
+  - 未知108
   - 未知109
-  - 未知110 29.5KB/s
-  - 未知111 2.4MB/s
+  - 未知110
+  - 未知111 1.7MB/s
   - 未知112
-  - US54
   - 未知113
   - 未知114
   - 未知115
-  - 未知116
+  - US31 111.5MB/s
+  - US32 1.9MB/s
   - 未知117
   - 未知118
-  - 未知119
-  - US55
+  - 未知119 231.7KB/s
+  - 未知120 44.3KB/s
+  - 未知121
+  - 未知122
+  - 未知123
+  - 未知124 21.5KB/s
+  - 未知125
+  - 未知126
+  - US34 1.7MB/s
+  - 未知127
+  - 未知128
+  - US36 2.0MB/s
+  - 未知130
+  - US37 1.9MB/s
+  - 未知131
+  - US38 1.9MB/s
+  - 未知132 93.6KB/s
+  - US39
+  - US40 1.9MB/s
+  - US41 1.9MB/s
+  - 未知133 1.8MB/s
+  - 未知134
+  - 未知135 565.6KB/s
+  - 未知136
+  - 未知138
+  - US43 1.9MB/s
+  - 未知139
+  - US44 63.2MB/s
+  - US45 913.2KB/s
+  - US47 1.9MB/s
+  - 未知141
+  - 未知142
+  - 未知143
+  - 未知144
+  - 未知145
+  - US51 1.6MB/s
+  - 未知146
   type: load-balance
   url: https://www.google.com/favicon.ico
 rule-providers:
