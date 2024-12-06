@@ -38,4 +38,4 @@ with open("list.yaml", encoding='utf8') as fp:
     for proxy in listFile['proxies']:
         if(pingTest(proxy["server"]) and connectPort(proxy["server"], proxy["port"])):
             Count += 1
-    print("pass count:", Count)
+    print("pass count: {}/{}".format(Count, len(listFile['proxies'])))
