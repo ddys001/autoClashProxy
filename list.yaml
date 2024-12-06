@@ -890,83 +890,77 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-2
-  password: amazonskr05
-  port: 443
-  server: 52.195.205.31
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-3
-  password: amazonskr05
-  port: 443
-  server: 13.212.36.13
-  type: ss
-- cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-5
   password: amazonskr05
   port: 443
-  server: 3.1.195.116
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-6
-  password: amazonskr05
-  port: 443
-  server: 18.141.184.102
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-8
-  password: amazonskr05
-  port: 443
-  server: 54.200.220.184
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-9
-  password: amazonskr05
-  port: 443
-  server: 47.128.246.130
+  server: 18.236.89.178
   type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-10
   password: amazonskr05
   port: 443
-  server: 54.203.119.192
+  server: 54.185.18.43
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-12
-  password: amazonskr05
-  port: 443
-  server: 52.193.184.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-22
-  password: amazonskr05
-  port: 443
-  server: 54.199.12.31
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-26
+  name: 0|-https://t.me/MrXbin-11
   password: amazonskr05
   port: 443
   server: 54.169.5.182
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-40
+  name: 0|-https://t.me/MrXbin-12
+  password: amazonskr05
+  port: 443
+  server: 44.244.25.243
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-14
+  password: amazonskr05
+  port: 443
+  server: 47.128.246.130
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-16
+  password: amazonskr05
+  port: 443
+  server: 13.212.36.13
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-17
+  password: amazonskr05
+  port: 443
+  server: 54.200.220.184
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-19
+  password: amazonskr05
+  port: 443
+  server: 34.215.84.62
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-30
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
   protocol: origin
   server: us-am3.eqnode.net
   type: ssr
-- name: 0,15|HK_speednode_0039
-  password: d75a2b07-34f4-454e-84ba-0de806c51b6d
-  port: 46509
-  server: dab1c8faaa893fecbc1e055db0894883.v1.cac.node-is.green
+- alterId: 1
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-78
+  network: ws
+  port: 443
+  server: 149.7.16.194
   skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
 - name: 13,14|香港|@ripaojiedian
   network: tcp
   password: DNUMdmnJ
@@ -1017,6 +1011,14 @@ proxies:
   password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
   port: 47580
   server: 26f3c1fb8b12d3dcbc594b4e5cad3f1a.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: ca1.bilibili.com
+  type: trojan
+  udp: true
+- name: 15|HK_speednode_0039
+  password: d75a2b07-34f4-454e-84ba-0de806c51b6d
+  port: 46509
+  server: dab1c8faaa893fecbc1e055db0894883.v1.cac.node-is.green
   skip-cert-verify: true
   sni: ca1.bilibili.com
   type: trojan
@@ -1195,6 +1197,13 @@ proxies:
     headers:
       Host: rezaping.ir
     path: /
+- cipher: aes-256-cfb
+  name: SG_05204_0043
+  password: amazonskr05
+  port: 443
+  server: 18.141.184.102
+  type: ss
+  udp: true
 - alpn:
   - h3
   - h2
@@ -1221,6 +1230,12 @@ proxies:
     headers:
       Host: IRANINGOAT2.IR
     path: /RsAMasAPMX5yb1YZ?ed=2560
+- cipher: aes-256-cfb
+  name: US_05204_0046
+  password: amazonskr05
+  port: 443
+  server: 54.203.119.192
+  type: ss
 - name: US_05204_0047
   network: ws
   port: 80
@@ -1651,12 +1666,6 @@ proxies:
     headers:
       host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- cipher: aes-256-cfb
-  name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
-  password: amazonskr05
-  port: 443
-  server: 54.185.18.43
-  type: ss
 - alterId: 0
   cipher: auto
   name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
@@ -3534,6 +3543,38 @@ proxies:
   server: 127.0.0.1
   tfo: false
   type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|--2
+  password: amazonskr05
+  port: 443
+  server: 52.195.205.31
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|--5
+  password: amazonskr05
+  port: 443
+  server: 3.1.195.116
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|--12
+  password: amazonskr05
+  port: 443
+  server: 52.193.184.18
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|--22
+  password: amazonskr05
+  port: 443
+  server: 54.199.12.31
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: aes-256-gcm
   name: US 1.9MB/s
@@ -5367,18 +5408,16 @@ proxy-groups:
   - 15|🇰🇷 韩国特殊|@ripaojiedian
   - 15|🇯🇵 日本特殊|@ripaojiedian
   - 15|🇸🇬 狮城特殊|@ripaojiedian
-  - 0|-https://t.me/MrXbin-2
-  - 0|-https://t.me/MrXbin-3
   - 0|-https://t.me/MrXbin-5
-  - 0|-https://t.me/MrXbin-6
-  - 0|-https://t.me/MrXbin-8
-  - 0|-https://t.me/MrXbin-9
   - 0|-https://t.me/MrXbin-10
+  - 0|-https://t.me/MrXbin-11
   - 0|-https://t.me/MrXbin-12
-  - 0|-https://t.me/MrXbin-22
-  - 0|-https://t.me/MrXbin-26
-  - 0|-https://t.me/MrXbin-40
-  - 0,15|HK_speednode_0039
+  - 0|-https://t.me/MrXbin-14
+  - 0|-https://t.me/MrXbin-16
+  - 0|-https://t.me/MrXbin-17
+  - 0|-https://t.me/MrXbin-19
+  - 0|-https://t.me/MrXbin-30
+  - 0|-https://t.me/MrXbin-78
   - 13,14|香港|@ripaojiedian
   - 13,14|日本|@ripaojiedian
   - 13,14|美国|@ripaojiedian
@@ -5386,6 +5425,7 @@ proxy-groups:
   - 15|HK_speednode_0036
   - 15|HK_speednode_0037
   - 15|HK_speednode_0038
+  - 15|HK_speednode_0039
   - 15|SE_speednode_0042
   - CN_05204_0001
   - CN_05204_0002
@@ -5406,8 +5446,10 @@ proxy-groups:
   - GB_05204_0034
   - JP_05204_0040
   - SE_05204_0041
+  - SG_05204_0043
   - SG_05204_0044
   - US_05204_0045
+  - US_05204_0046
   - US_05204_0047
   - US_05204_0048
   - US_05204_0049
@@ -5439,7 +5481,6 @@ proxy-groups:
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
   - 🇷🇺_RU_俄罗斯->🇨🇦_CA_加拿大_2
   - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大_2
-  - 🇺🇸_US_美国->🇸🇬_SG_新加坡
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
   - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大_3
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_5
@@ -5580,6 +5621,10 @@ proxy-groups:
   - 美国 098
   - 加拿大 019
   - 🇬🇧 高性价比机场:https://kfyun.uk
+  - 0|--2
+  - 0|--5
+  - 0|--12
+  - 0|--22
   - US 1.9MB/s
   - 未知
   - 未知2
@@ -5848,18 +5893,16 @@ proxy-groups:
   - 15|🇰🇷 韩国特殊|@ripaojiedian
   - 15|🇯🇵 日本特殊|@ripaojiedian
   - 15|🇸🇬 狮城特殊|@ripaojiedian
-  - 0|-https://t.me/MrXbin-2
-  - 0|-https://t.me/MrXbin-3
   - 0|-https://t.me/MrXbin-5
-  - 0|-https://t.me/MrXbin-6
-  - 0|-https://t.me/MrXbin-8
-  - 0|-https://t.me/MrXbin-9
   - 0|-https://t.me/MrXbin-10
+  - 0|-https://t.me/MrXbin-11
   - 0|-https://t.me/MrXbin-12
-  - 0|-https://t.me/MrXbin-22
-  - 0|-https://t.me/MrXbin-26
-  - 0|-https://t.me/MrXbin-40
-  - 0,15|HK_speednode_0039
+  - 0|-https://t.me/MrXbin-14
+  - 0|-https://t.me/MrXbin-16
+  - 0|-https://t.me/MrXbin-17
+  - 0|-https://t.me/MrXbin-19
+  - 0|-https://t.me/MrXbin-30
+  - 0|-https://t.me/MrXbin-78
   - 13,14|香港|@ripaojiedian
   - 13,14|日本|@ripaojiedian
   - 13,14|美国|@ripaojiedian
@@ -5867,6 +5910,7 @@ proxy-groups:
   - 15|HK_speednode_0036
   - 15|HK_speednode_0037
   - 15|HK_speednode_0038
+  - 15|HK_speednode_0039
   - 15|SE_speednode_0042
   - CN_05204_0001
   - CN_05204_0002
@@ -5887,8 +5931,10 @@ proxy-groups:
   - GB_05204_0034
   - JP_05204_0040
   - SE_05204_0041
+  - SG_05204_0043
   - SG_05204_0044
   - US_05204_0045
+  - US_05204_0046
   - US_05204_0047
   - US_05204_0048
   - US_05204_0049
@@ -5920,7 +5966,6 @@ proxy-groups:
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
   - 🇷🇺_RU_俄罗斯->🇨🇦_CA_加拿大_2
   - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大_2
-  - 🇺🇸_US_美国->🇸🇬_SG_新加坡
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
   - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大_3
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_5
@@ -6061,6 +6106,10 @@ proxy-groups:
   - 美国 098
   - 加拿大 019
   - 🇬🇧 高性价比机场:https://kfyun.uk
+  - 0|--2
+  - 0|--5
+  - 0|--12
+  - 0|--22
   - US 1.9MB/s
   - 未知
   - 未知2
