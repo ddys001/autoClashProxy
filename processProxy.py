@@ -1,3 +1,5 @@
+from testProxy import *
+
 def removeDuplicateNode(proxyPool): #删除重复节点
     checkLists = ["name", "server"]
 
@@ -34,9 +36,20 @@ def removeNotSupportUUID(proxyPool): #删除uuid不符合条件的节点
 
     return proxies
 
+def removePingFailPorxy(proxyPool):
+    proxies = []
+    for proxy in proxyPool:
+        host = proxy['server']
+        port = proxy['port']
+        if(pingTest(host) and connectPort(host, port)):
+             proxies.append(proxy)
+
+    return proxies
+
 def removeNodes(proxyPool):
     proxies = removeDuplicateNode(proxyPool)
     proxies = removeNotSupportCipher(proxies)
     proxies = removeNotSupportUUID(proxies)
+    proxies = removePingFailPorxy(proxies)
 
     return proxies

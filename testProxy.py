@@ -1,5 +1,4 @@
 import ping3
-import yaml
 import socket
 
 def pingTest(proxy):
@@ -11,7 +10,7 @@ def pingTest(proxy):
             pingPass = True
         else:
             print("Ping测试结果：{} 无法到达或超时".format(proxy))
-    except ping3.exceptions.PingError:
+    except Exception as e:
         print("节点无法连接")
 
     return pingPass
@@ -31,11 +30,3 @@ def connectPort(host, port):
     print("Port {} is {}.".format(port, "open" if(bOpen) else "close"))
 
     return bOpen
-
-Count=0
-with open("list.yaml", encoding='utf8') as fp:
-    listFile = yaml.load(fp.read(), Loader=yaml.FullLoader)
-    for proxy in listFile['proxies']:
-        if(pingTest(proxy["server"]) and connectPort(proxy["server"], proxy["port"])):
-            Count += 1
-    print("pass count: {}/{}".format(Count, len(listFile['proxies'])))
