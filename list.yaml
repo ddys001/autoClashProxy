@@ -103,17 +103,6 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '1,6|🇺🇸_US_美国 #11'
-  network: ws
-  port: 2086
-  server: 104.20.25.146
-  sni: ip14.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
   name: 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
   network: ws
   port: 2086
@@ -322,6 +311,16 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
+  name: '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
+  network: ws
+  port: 2082
+  server: 172.67.130.140
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
   name: '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
   network: ws
   port: 2086
@@ -332,29 +331,16 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 11|0|--24
-  network: ws
-  port: 2082
-  server: 190.93.245.80
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 11|0|--79
+  name: 11|0|--67
   network: ws
   port: 2095
-  server: 172.64.175.88
+  server: 172.64.166.8
   tls: false
   type: vmess
   uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   ws-opts:
     headers:
-      Host: ip9.6016725.xyz
+      Host: ip12.6016725.xyz
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -464,436 +450,74 @@ proxies:
   server: 3.38.151.109
   tfo: false
   type: ss
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-1
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 38.75.136.21
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-4
+  password: amazonskr05
+  port: 443
+  server: 52.195.205.31
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-7
+  password: amazonskr05
+  port: 443
+  server: 47.128.225.94
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-8
   password: amazonskr05
   port: 443
   server: 18.141.184.102
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-3
-  password: amazonskr05
-  port: 443
-  server: 52.195.205.31
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-4
-  password: 171pEaFf5HJtdAAI3L7r6A
-  port: 1080
-  server: 46.32.186.234
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-5
-  password: amazonskr05
-  port: 443
-  server: 47.128.225.94
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-6
-  password: amazonskr05
-  port: 443
-  server: 54.199.12.31
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-7
+  name: 0|-https://t.me/MrXbin-9
   password: amazonskr05
   port: 443
   server: 34.219.118.99
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-8
+  name: 0|-https://t.me/MrXbin-10
   password: amazonskr05
   port: 443
-  server: 52.193.184.18
+  server: 3.1.195.116
   type: ss
-- name: 13,14|香港|@ripaojiedian
-  network: tcp
-  password: DNUMdmnJ
-  port: 51377
-  server: 36.151.192.242
-  skip-cert-verify: true
-  type: trojan
-- name: 15|SE_speednode_0042
-  network: ws
-  password: 542f66d8-6b06-4340-a829-76d23db7ca80
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-11
+  password: amazonskr05
   port: 443
-  server: 185.146.173.42
-  skip-cert-verify: true
-  sni: fr1.trojanvpn.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: fr1.trojanvpn.xyz
-    path: /%2F
-- name: CN_e3681_0001
-  network: ws
+  server: 54.199.12.31
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-12
+  password: amazonskr05
   port: 443
-  server: 103.44.255.81
-  servername: v2.yunchun.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: v2.yunchun.top
-    path: /?ed=2048
-- alterId: 64
-  cipher: auto
-  name: CN_e3681_0002
-  port: 40565
-  server: 120.232.153.63
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: CN_e3681_0003
-  port: 31878
-  server: 183.236.48.143
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: CN_e3681_0014
-  port: 37614
-  server: 120.198.71.219
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  server: 34.215.84.62
+  type: ss
 - alterId: 0
   cipher: auto
-  name: GB_e3681_0034
-  network: ws
-  port: 23112
-  server: 5.39.254.196
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-  ws-opts:
-    path: /
-- name: SE_e3681_0041
-  network: ws
-  port: 80
-  server: 151.101.87.26
-  servername: rezaping.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: rezaping.ir
-    path: /
-- name: US_e3681_0045
-  network: ws
-  port: 80
-  server: 199.232.8.123
-  servername: IRANINGOAT2.IR
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d578322a-266b-479d-9eda-f1b41324e721
-  ws-opts:
-    headers:
-      Host: IRANINGOAT2.IR
-    path: /RsAMasAPMX5yb1YZ?ed=2560
-- name: US_e3681_0047
-  network: ws
-  port: 80
-  server: 140.248.139.207
-  servername: ELiV2--ELENA.COM
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 0fa9cf4a-7061-5239-9da9-f89a88b56390
-  ws-opts:
-    headers:
-      Host: ELiV2--ELENA.COM
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US_e3681_0048
-  network: ws
-  port: 2095
-  server: 104.18.114.40
-  servername: c15.6016725.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c15.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US_e3681_0049
-  network: ws
-  port: 2095
-  server: 104.18.114.50
-  servername: c15.6016725.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c15.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US_e3681_0050
-  network: ws
-  port: 2095
-  server: 104.18.114.5
-  servername: c15.6016725.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c15.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US_e3681_0051
-  network: ws
-  port: 2095
-  server: 104.18.114.35
-  servername: c15.6016725.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c15.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US_e3681_0052
-  network: ws
-  port: 2095
-  server: 104.21.238.188
-  servername: c15.6016725.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c15.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US_e3681_0053
-  network: ws
-  port: 2095
-  server: 104.18.114.38
-  servername: c15.6016725.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c15.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US_e3681_0054
-  network: ws
-  port: 2095
-  server: 104.18.114.45
-  servername: c15.6016725.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c15.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US_e3681_0055
-  network: ws
-  port: 2095
-  server: 104.18.114.30
-  servername: c15.6016725.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c15.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US_e3681_0056
-  network: ws
-  port: 2095
-  server: 104.18.114.44
-  servername: c15.6016725.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c15.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US_e3681_0057
-  network: ws
-  port: 2095
-  server: 104.18.114.48
-  servername: c15.6016725.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c15.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷_FR_法国->🇨🇦_CA_加拿大
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-46
   network: ws
   port: 2082
-  server: 146.19.21.61
+  server: 190.93.245.174
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
-      host: ip18.6929198.xyz
+      Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 🇧🇬_BG_保加利亚->🇨🇦_CA_加拿大
-  network: ws
-  port: 2082
-  server: 185.176.26.131
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇨🇦_CA_加拿大
-  network: ws
-  port: 2082
-  server: 167.68.5.24
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇪🇸_ES_西班牙->🇨🇦_CA_加拿大
-  network: ws
-  port: 2082
-  server: 185.238.228.210
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大
-  network: ws
-  port: 2082
-  server: 45.131.208.116
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇺🇦_UA_乌克兰->🇨🇦_CA_加拿大
-  network: ws
-  port: 2082
-  server: 31.43.179.32
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_1
-  network: ws
-  port: 2082
-  server: 185.193.31.108
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇱🇺_LU_卢森堡->🇨🇦_CA_加拿大
-  network: ws
-  port: 2082
-  server: 188.42.89.14
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_2
-  network: ws
-  port: 2082
-  server: 45.159.217.235
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-64
   network: ws
   port: 2082
   server: 190.93.245.103
@@ -901,2711 +525,430 @@ proxies:
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
-      host: ip18.6929198.xyz
+      Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大
-  network: ws
-  port: 2082
-  server: 185.148.105.154
+- name: 13,14|香港|@ripaojiedian
+  network: tcp
+  password: DNUMdmnJ
+  port: 51377
+  server: 36.151.192.242
   skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_3
-  network: ws
-  port: 2082
-  server: 45.159.216.191
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧_GB_英国->🇨🇦_CA_加拿大
-  network: ws
-  port: 2082
-  server: 188.244.122.175
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大
-  network: ws
-  port: 2082
-  server: 190.93.246.120
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-  network: ws
-  port: 2082
-  server: 104.254.140.141
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大_1
-  network: ws
-  port: 2082
-  server: 190.93.247.221
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
-  network: ws
-  port: 2082
-  server: 170.114.45.94
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
-  network: ws
-  port: 2082
-  server: 159.112.235.35
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_1
-  network: ws
-  port: 2082
-  server: 141.193.213.81
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_6
-  network: ws
-  port: 2082
-  server: 66.81.247.47
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_4
-  network: ws
-  port: 2082
-  server: 185.193.28.116
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_5
-  network: ws
-  port: 2082
-  server: 45.131.6.94
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
+  type: trojan
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_2
+  client-fingerprint: chrome
+  name: 0|--1
   password: amazonskr05
   port: 443
-  server: 34.222.145.191
+  server: 52.193.184.18
+  tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺_RU_俄罗斯->🇨🇦_CA_加拿大
-  network: ws
-  port: 2082
-  server: 193.9.49.23
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大_1
-  network: ws
-  port: 2082
-  server: 185.148.106.140
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_7
-  network: ws
-  port: 2082
-  server: 190.93.244.33
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_8
-  network: ws
-  port: 2082
-  server: 170.114.46.219
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 004
-  network: ws
-  port: 8080
-  server: 104.16.68.38
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: square-snowflake-486a.beshir-beisel.workers.dev
-    path: /
-- name: 加拿大 058
-  port: 8080
-  server: 104.17.148.22
-  skip-cert-verify: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|--2
+  password: amazonskr05
+  port: 443
+  server: 47.128.246.130
   tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 08bca69b-7dc9-460d-b149-0f4cb88a3971
-- alterId: 0
-  cipher: auto
-  name: 加拿大 138
-  network: ws
-  port: 2082
-  server: 104.19.45.17
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip6.6929198.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 002
-  network: ws
-  port: 2095
-  server: 104.20.17.186
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 001
-  network: ws
-  port: 2095
-  server: 104.26.5.113
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: /
-- delay: 989
-  name: 美国 005
-  network: ws
-  port: 2083
-  server: 192.0.54.6
-  servername: SB-1U6.PAgeS.dEv
-  tls: true
-  type: vless
-  uuid: fca01448-d84a-436e-9aec-3be1ebdfb350
-  ws-opts:
-    headers:
-      Host: SB-1U6.PAgeS.dEv
-    path: /urenftuu3z1kqryb/mtu4ljewms4ymdmumti3?ed=2560
-- delay: 1482
-  name: 美国 101
-  network: ws
-  port: 2087
-  server: 209.94.90.200
-  servername: Sb-1u6.paGEs.dEv
-  tls: true
-  type: vless
-  uuid: fca01448-d84a-436e-9aec-3be1ebdfb350
-  ws-opts:
-    headers:
-      Host: Sb-1u6.paGEs.dEv
-    path: /pc0cypuups4meoks/mtu4ljewms4ymdmumti3?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 美国 003
-  network: ws
-  port: 2082
-  server: 104.26.5.66
-  servername: ip26.6929198.xyz
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip26.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 016
-  network: ws
-  port: 2082
-  server: 162.159.140.45
-  servername: ip26.6929198.xyz
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip26.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 087
-  network: ws
-  port: 2082
-  server: 162.159.140.93
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 156
-  network: ws
-  port: 2095
-  server: 172.64.166.2
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: /
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|--3
+  password: amazonskr05
+  port: 443
+  server: 54.169.5.182
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|--7
+  password: amazonskr05
+  port: 443
+  server: 13.212.36.13
+  tfo: false
+  type: ss
 - client-fingerprint: chrome
-  name: 美国 167
+  name: 15|CA_speednode_0001
   network: ws
   port: 443
-  server: 199.34.228.182
-  servername: bpB005.paGeS.DEv
+  server: 199.212.90.40
+  servername: 6177.aespa.dynv6.net
   skip-cert-verify: false
   tfo: false
-  tls: false
+  tls: true
   type: vless
-  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
+  uuid: 11cf1fa6-a471-4025-8b60-ada97098eea8
   ws-opts:
     headers:
-      Host: bpB005.paGeS.DEv
-    path: /1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560security=tls
+      Host: 6177.aespa.dynv6.net
+    path: /?ed=2560fp=random
 - client-fingerprint: chrome
-  name: 美国 170
+  name: 15|CN_speednode_0002
   network: ws
-  port: 8443
-  server: 199.34.228.71
-  servername: bPb005.paGes.DEV
+  port: 443
+  server: 103.44.255.81
+  servername: v2.yunchun.top
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      Host: bPb005.paGes.DEV
-    path: /fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560security=tls
-- alterId: 0
-  cipher: auto
-  name: 美国 106
+      Host: v2.yunchun.top
+    path: /?ed=2048security=tls
+- client-fingerprint: chrome
+  name: 15|US_speednode_0097
   network: ws
   port: 80
-  server: 104.21.94.168
-  skip-cert-verify: true
+  server: 199.232.8.123
+  servername: IRANINGOAT2.IR
+  skip-cert-verify: false
+  tfo: false
   tls: false
-  type: vmess
-  udp: true
-  uuid: 4804f14b-c1f8-452d-a6ec-eff1490aeac9
+  type: vless
+  uuid: d578322a-266b-479d-9eda-f1b41324e721
   ws-opts:
     headers:
-      Host: hdfy6c1.freelines.net
-    path: /lRkGCkYS9X5GDNJYMWXN7kCm3lL
-- alterId: 0
-  cipher: auto
-  name: 加拿大 141
-  network: ws
-  port: 2095
-  server: 104.16.148.244
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 142
-  network: ws
-  port: 2052
-  server: 104.16.61.8
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: free.fnet00.workers.dev
-    path: /glweidf.sbs/linkws
-- alterId: 0
-  cipher: auto
-  name: 美国 018
-  network: ws
-  port: 2082
-  server: 104.19.59.89
-  servername: ip26.6929198.xyz
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip26.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 008
-  network: ws
-  port: 2082
-  server: 104.19.45.50
-  servername: ip26.6929198.xyz
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip26.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 017
-  network: ws
-  port: 2082
-  server: 104.19.42.49
-  skip-cert-verify: true
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 201
-  network: ws
-  port: 2096
-  server: 104.16.67.38
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  ws-opts:
-    headers:
-      Host: worker-flat-hat-00f2.ravapim426.workers.dev
-    path: /glweidf.cfd/linkws
-- alterId: 0
-  cipher: auto
-  delay: 1890
-  name: 美国 017
-  network: ws
-  port: 2082
-  server: 104.19.21.63
-  servername: ip3.6929198.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 103
-  network: ws
-  port: 2082
-  server: 23.227.38.3
-  servername: ip3.6929198.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 215
-  network: ws
-  port: 2095
-  server: 172.64.166.33
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 007
+      Host: IRANINGOAT2.IR
+    path: /RsAMasAPMX5yb1YZ?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0215
   network: ws
   port: 80
-  server: 198.41.209.70
+  server: 140.248.139.207
+  servername: ELiV2--ELENA.COM
   skip-cert-verify: false
+  tfo: false
   tls: false
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  type: vless
+  uuid: 0fa9cf4a-7061-5239-9da9-f89a88b56390
   ws-opts:
     headers:
-      Host: chunchuan.kejixiaoqi666.store
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 036
-  network: ws
-  port: 2082
-  server: 104.19.45.13
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  delay: 1122
-  name: 美国 050
-  network: ws
-  port: 2095
-  server: 104.19.55.49
-  servername: ip2.6016725.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 060
-  network: ws
-  port: 2095
-  server: 162.159.140.77
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 065
-  network: ws
-  port: 2082
-  server: 172.67.70.92
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 130
-  network: ws
-  port: 2095
-  server: 104.16.149.244
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 004
-  network: ws
-  port: 2082
-  server: 104.17.106.151
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 006
-  network: ws
-  port: 2082
-  server: 104.26.12.31
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip16.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 142
-  network: ws
-  port: 2095
-  server: 172.64.167.29
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 033
-  network: ws
-  port: 8080
-  server: 104.17.237.149
-  servername: 77744514375675832169113469546324.v2line.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: b224029a-8614-445b-b6f7-7dbad13b0c75
-  ws-opts:
-    headers:
-      Host: 77744514375675832169113469546324.v2line.net
-    path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
-- alterId: 0
-  cipher: auto
-  name: 美国 046
-  network: ws
-  port: 2082
-  server: 172.64.99.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 009
-  network: ws
-  port: 2095
-  server: 104.19.45.19
-  servername: c2.6016725.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c2.6016725.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 045
-  network: ws
-  port: 2095
-  server: 104.26.4.60
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 040
-  network: ws
-  port: 8880
-  server: 104.18.114.235
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 043
-  network: ws
-  port: 8880
-  server: 104.26.0.46
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 048
-  network: ws
-  port: 8880
-  server: 104.26.0.83
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 049
-  network: ws
-  port: 8880
-  server: 104.18.114.209
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 051
-  network: ws
-  port: 8880
-  server: 104.21.238.162
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 052
-  network: ws
-  port: 8880
-  server: 104.18.114.12
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 056
-  network: ws
-  port: 8880
-  server: 104.26.0.155
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 058
-  network: ws
-  port: 8880
-  server: 104.26.0.84
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 059
-  network: ws
-  port: 8880
-  server: 104.21.238.206
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 060
-  network: ws
-  port: 8880
-  server: 104.26.0.213
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 061
-  network: ws
-  port: 8880
-  server: 104.21.238.161
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 062
-  network: ws
-  port: 8880
-  server: 104.21.238.89
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 063
-  network: ws
-  port: 8880
-  server: 104.18.114.70
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 064
-  network: ws
-  port: 8880
-  server: 104.21.238.11
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 065
-  network: ws
-  port: 8880
-  server: 104.18.114.206
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 066
-  network: ws
-  port: 8880
-  server: 104.21.238.250
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 067
-  network: ws
-  port: 8880
-  server: 104.26.0.240
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 068
-  network: ws
-  port: 8880
-  server: 104.21.238.10
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 069
-  network: ws
-  port: 8880
-  server: 104.26.0.3
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 070
-  network: ws
-  port: 8880
-  server: 104.18.114.224
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 072
-  network: ws
-  port: 8880
-  server: 104.21.238.246
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 073
-  network: ws
-  port: 8880
-  server: 104.18.114.196
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 074
-  network: ws
-  port: 8880
-  server: 104.21.238.232
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 075
-  network: ws
-  port: 8880
-  server: 104.21.238.184
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 076
-  network: ws
-  port: 8880
-  server: 104.26.0.100
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 077
-  network: ws
-  port: 8880
-  server: 104.26.0.160
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 078
-  network: ws
-  port: 8880
-  server: 104.18.114.83
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 080
-  network: ws
-  port: 8880
-  server: 104.18.114.63
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 081
-  network: ws
-  port: 8880
-  server: 104.26.0.114
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 082
-  network: ws
-  port: 8880
-  server: 104.18.114.62
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 083
-  network: ws
-  port: 8880
-  server: 104.21.238.177
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 084
-  network: ws
-  port: 8880
-  server: 104.21.238.139
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 085
-  network: ws
-  port: 8880
-  server: 104.21.238.182
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 086
-  network: ws
-  port: 8880
-  server: 162.159.45.53
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 087
-  network: ws
-  port: 8880
-  server: 104.18.114.109
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 079
-  network: ws
-  port: 8880
-  server: 104.26.0.85
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 100
-  network: ws
-  port: 2086
-  server: 104.26.0.163
-  servername: p1.613055.xyz
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 102
-  network: ws
-  port: 2086
-  server: 104.26.0.246
-  servername: p1.613055.xyz
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 201
-  network: ws
-  port: 2086
-  server: 104.26.0.250
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 203
-  network: ws
-  port: 2082
-  server: 104.26.0.206
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 008
-  network: ws
-  port: 8880
-  server: 104.18.114.65
-  servername: m2.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m2.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 012
-  network: ws
-  port: 2086
-  server: 104.18.114.137
-  servername: p2.613055.xyz
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p2.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 014
-  network: ws
-  port: 2086
-  server: 162.159.45.28
-  type: vmess
-  udp: true
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 015
-  network: ws
-  port: 2086
-  server: 104.26.0.231
-  type: vmess
-  udp: true
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 020
-  network: ws
-  port: 2082
-  server: 162.159.45.102
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 024
-  network: ws
-  port: 2086
-  server: 104.21.238.158
-  servername: p2.613055.xyz
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p2.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 025
-  network: ws
-  port: 8880
-  server: 104.26.0.14
-  servername: m2.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m2.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 026
-  network: ws
-  port: 2082
-  server: 168.100.6.46
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 027
-  network: ws
-  port: 8880
-  server: 104.18.114.56
-  type: vmess
-  udp: true
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 029
-  network: ws
-  port: 2086
-  server: 104.21.238.163
-  type: vmess
-  udp: true
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 032
-  network: ws
-  port: 2095
-  server: 104.26.0.91
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 034
-  network: ws
-  port: 2082
-  server: 104.21.238.231
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 037
-  network: ws
-  port: 8880
-  server: 104.26.0.101
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 039
+      Host: ELiV2--ELENA.COM
+    path: /fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0022
   network: ws
   port: 443
-  server: 69.48.218.58
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      Host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 041
-  network: ws
-  port: 8880
-  server: 104.21.238.145
+  server: 172.66.47.181
+  servername: v2nGfaSt-Jcr.pagEs.Dev
+  skip-cert-verify: false
+  tfo: false
   tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 005
-  network: ws
-  port: 80
-  server: 162.159.136.98
-  type: vmess
-  udp: true
-  uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
-  ws-opts:
-    headers:
-      Host: rn2.hostmjj.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 009
-  network: ws
-  port: 8880
-  server: 104.21.238.85
-  servername: m10.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m10.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 019
-  network: ws
-  port: 2095
-  server: 172.64.167.8
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 021
-  network: ws
-  port: 2095
-  server: 104.26.5.145
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 023
-  network: ws
-  port: 2082
-  server: 104.26.5.67
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 042
-  network: ws
-  port: 2095
-  server: 104.26.5.123
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 054
-  network: ws
-  port: 2095
-  server: 172.64.166.20
-  type: vmess
-  udp: true
-  uuid: a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b
-  ws-opts:
-    headers:
-      Host: ip2.8084726.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 013
-  network: ws
-  port: 80
-  server: 172.64.155.209
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: 441e10f0-4c76-4d6c-97b9-83bbefcbc602
-  ws-opts:
-    headers:
-      Host: 39238319310964543920519489701900.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-    path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
-- alterId: 0
-  cipher: auto
-  name: 美国 055
-  network: ws
-  port: 2095
-  server: 104.19.45.42
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 014
-  network: ws
-  port: 2082
-  server: 104.26.5.103
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 088
-  network: ws
-  port: 2082
-  server: 205.233.181.63
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 091
+      Host: v2nGfaSt-Jcr.pagEs.Dev
+    path: /iGEuUkpVCbbe4l6w?ed=2560security=tls
+- client-fingerprint: chrome
+  name: 15|US_speednode_0036
   network: ws
   port: 443
-  server: 104.21.83.115
-  servername: hms02.fxiaomi.sbs
+  server: 172.66.47.142
+  servername: ers-5HT.paGes.dev
   skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  ws-opts:
-    headers:
-      Host: hms02.fxiaomi.sbs
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 092
-  network: ws
-  port: 443
-  server: 104.21.83.108
-  servername: hms02.fxiaomi.sbs
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  ws-opts:
-    headers:
-      Host: hms02.fxiaomi.sbs
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 013
-  network: ws
-  port: 8880
-  server: 104.18.114.117
-  servername: m1.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- client-fingerprint: random
-  name: 美国 011
-  network: ws
-  port: 27051
-  server: 103.170.72.129
-  servername: rix.tgzdyz2.top
-  skip-cert-verify: true
   tfo: false
   tls: true
   type: vless
-  uuid: b9dad5ed-74da-4a43-8145-90d06df1f890
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      Host: rix.tgzdyz2.top
-    path: /?ed=2560
-- name: 加拿大 020
+      Host: ers-5HT.paGes.dev
+    path: /rgSkbhkUyESpYaPN?ed=2560fp=randomized
+- client-fingerprint: chrome
+  name: 15|US_speednode_0155
   network: ws
-  port: 80
-  server: 104.16.208.16
-  servername: worker-winter-meadow-e881.test55.workers.dev
-  skip-cert-verify: true
+  port: 8880
+  server: 104.18.14.19
+  servername: falcunargo.d369616395.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vless
-  udp: true
-  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
+  uuid: cffb6eba-a33e-469f-9be0-b68cfec018e4
   ws-opts:
     headers:
-      Host: worker-winter-meadow-e881.test55.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /
-  xudp: true
-- name: 加拿大 021
+      Host: falcunargo.d369616395.workers.dev
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 15|US_speednode_0156
   network: ws
-  port: 2052
-  server: 104.16.215.113
+  port: 2095
+  server: 104.18.32.69
   servername: 21tg.459tj345.workers.dev
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vless
-  udp: true
   uuid: 33039dbe-8889-42f1-9aeb-ecfbfa2a1640
   ws-opts:
     headers:
       Host: 21tg.459tj345.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.101 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 加拿大 023
+    path: /?ed=2560fp=ios
+- client-fingerprint: chrome
+  name: 15|US_speednode_0162
   network: ws
   port: 8880
-  server: 104.16.221.27
-  servername: tel-irn-vpn.irnvpn.workers.dev
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 79a571fb-4fd2-4b87-9876-1b7d9728bb5c
-  ws-opts:
-    headers:
-      Host: tel-irn-vpn.irnvpn.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
-    path: /
-  xudp: true
-- name: 加拿大 024
-  network: ws
-  port: 8880
-  server: 104.16.28.34
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 96494ca5-6dcf-4d33-b94f-5c3485586095
-  ws-opts:
-    headers:
-      Host: hamedan.hiven33959.workers.dev
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-    path: /?ed=2048
-  xudp: true
-- name: 加拿大 026
-  network: ws
-  port: 8880
-  server: 104.16.30.34
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 58dbfb96-afac-4251-9189-137e883e65ab
-  ws-opts:
-    headers:
-      Host: worker-bitter-tooth-2833.geyoleg265.workers.dev
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/44.0.2403.157 Safari/537.36
-    path: /TELEGRAM-MARAMBASHI/?ed=2048
-  xudp: true
-- name: 加拿大 027
-  network: ws
-  port: 8880
-  server: 104.17.137.96
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 33f8c4f4-2515-4798-9ea0-15f2030ef4d8
-  ws-opts:
-    headers:
-      Host: bia-zod-falcunargo.545c437f13.workers.Dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.102 Safari/537.36
-    path: /?ed=2048
-  xudp: true
-- name: 加拿大 028
-  network: ws
-  port: 8080
-  server: 104.17.138.216
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: ecd404a2-70b2-4e89-8339-89536cdfae52
-  ws-opts:
-    headers:
-      Host: king1980us.50fo8itj.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /?ed=2048
-  xudp: true
-- name: 加拿大 030
-  network: ws
-  port: 2095
-  server: 104.17.140.65
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 131387aa-4b2a-43aa-bf7c-d94306ba55fb
-  ws-opts:
-    headers:
-      Host: 13tg.jpl8xmqb.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 美国 103
-  network: ws
-  port: 2052
-  server: 104.17.68.158
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 8c129b7d-c87f-42d7-bdac-55dfbfe88534
-  ws-opts:
-    headers:
-      Host: MAHdI-hECtorr.VIsoWE1371.wORKErS.dEV
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /ynhN8EYG1IwflCqC?ed=2560
-  xudp: true
-- name: 加拿大 031
-  network: ws
-  port: 80
-  server: 104.17.72.44
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 35323594-9ee2-4f06-ae14-3148b6950621
-  ws-opts:
-    headers:
-      Host: ooao14004.74gwenneth.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.106 Safari/537.36
-    path: /
-  xudp: true
-- name: 加拿大 032
-  network: ws
-  port: 2086
-  server: 104.17.73.22
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: b0a63ba3-6cb0-48de-a19d-12babdb0ba4d
-  ws-opts:
-    headers:
-      Host: 23tg.fh19yh0z.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.181 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 加拿大 033
-  network: ws
-  port: 8080
-  server: 104.17.74.34
-  servername: extERnAlnEt.EXTeRNAL-net.WorKers.DeV
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: extERnAlnEt.EXTeRNAL-net.WorKers.DeV
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.110 Safari/537.36
-    path: /dcjNLZe6XRpnDatU/OC4yMTkuNDIuNzI=
-  xudp: true
-- name: 加拿大 034
-  network: ws
-  port: 8080
-  server: 104.17.76.220
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: aa2dc840-be38-4b4d-a002-ba234999fd55
-  ws-opts:
-    headers:
-      Host: cdn-allxn--b6gaceuorg.l4o117en.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.75 Safari/537.36
-    path: /
-  xudp: true
-- name: 美国 104
-  network: ws
-  port: 2082
-  server: 104.18.14.19
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 131387aa-4b2a-43aa-bf7c-d94306ba55fb
-  ws-opts:
-    headers:
-      Host: 13tg.jpl8xmqb.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 美国 105
-  network: ws
-  port: 2095
-  server: 104.18.32.69
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: b0a63ba3-6cb0-48de-a19d-12babdb0ba4d
-  ws-opts:
-    headers:
-      Host: 23tg.fh19yh0z.workers.dev
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
-        Gecko) Chrome/11.0.696.3 Safari/534.24
-    path: /?ed=2560
-  xudp: true
-- name: 加拿大 035
-  network: ws
-  port: 8080
-  server: 104.19.129.70
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 47122ab9-134c-468e-efae-c411b44d85f0
-  ws-opts:
-    headers:
-      Host: JOiNMAiN.MRaLPHa-Vpn.CoM.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
-    path: /TELEGRAM-
-  xudp: true
-- name: 加拿大 036
-  network: ws
-  port: 8880
-  server: 104.19.134.234
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 075a365b-b0c7-4ba3-b5a6-597850c223f9
-  ws-opts:
-    headers:
-      Host: sinaazizpor.wapgiz.workers.dev
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10
-        (KHTML, like Gecko) Chrome/8.0.552.237 Safari/534.10
-    path: /?ed=2048
-  xudp: true
-- name: 加拿大 039
-  network: ws
-  port: 80
-  server: 104.19.154.58
-  servername: worker-winter-meadow-e881.test55.workers.dev
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
-  ws-opts:
-    headers:
-      Host: worker-winter-meadow-e881.test55.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /
-  xudp: true
-- name: 美国 108
-  network: ws
-  port: 80
-  server: 104.22.53.235
-  servername: cc.ailicf.us.kg
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
-  ws-opts:
-    headers:
-      Host: cc.ailicf.us.kg
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/50.0.2661.102 Safari/537.36
-    path: /b5cdabf0-e04
-  xudp: true
-- name: 美国 109
-  network: ws
-  port: 2052
-  server: 130.250.137.5
-  skip-cert-verify: true
+  server: 104.18.15.19
+  servername: falcunargo.d369616395.workers.dev
+  skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 17b42a04-83b8-4b93-b9f3-285d256d87d8
+  uuid: cffb6eba-a33e-469f-9be0-b68cfec018e4
   ws-opts:
     headers:
-      Host: shy-paper-dec6.congcong1412243609.workers.dev
-    path: /?ed=2560&proxyip=proxyip.us.fxxk.dedyn.io
-- name: 美国 110
-  network: ws
-  port: 8080
-  server: 141.101.113.215
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: b0a63ba3-6cb0-48de-a19d-12babdb0ba4d
-  ws-opts:
-    headers:
-      Host: 23tg.fh19yh0z.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- client-fingerprint: chrome
-  name: 美国 111
-  network: ws
-  port: 443
-  server: 151.101.66.133
-  servername: live.skornorth.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1500864d-420c-4d94-befa-eaf775821fa4
-  ws-opts:
-    headers:
-      Host: Namahdod.Ph.v2rray.ir
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J710F Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: '@ph_v2ray/?ed=2048'
-  xudp: true
-- name: 加拿大 042
-  network: ws
-  port: 2052
-  server: 162.159.130.103
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 636b1684-b26c-4a9c-bc6e-8e1197a36d74
-  ws-opts:
-    headers:
-      Host: workerr.hashdiler.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /t.me/Config_Station
-  xudp: true
-- name: 加拿大 043
-  network: ws
-  port: 80
-  server: 162.159.142.65
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: d663fecc-1f02-4e9e-8157-c33cdb30da23
-  ws-opts:
-    headers:
-      Host: sUB.veBoBE2961.WoRKeRs.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.110 Safari/537.36
-    path: /
-  xudp: true
-- name: 加拿大 047
-  network: ws
-  port: 8880
-  server: 162.159.143.30
-  servername: falcunargo-bia-zod.8fcd549b6a.workers.Dev
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: e9b29a36-f8dc-48ee-b5f9-e0e5be701d03
-  ws-opts:
-    headers:
-      Host: falcunargo-bia-zod.8fcd549b6a.workers.Dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  name: 加拿大 048
-  network: ws
-  port: 443
-  server: 162.159.152.220
-  servername: 1-79u.pages.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 1-79u.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: ?ed=2851
-  xudp: true
-- name: 加拿大 049
-  network: ws
-  port: 80
-  server: 162.159.153.2
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: f846c7b2-eca6-496a-9716-134e1b253be5
-  ws-opts:
-    headers:
-      Host: a.b.c.d.e.f.g.h.i.j.k.l.m.n.o.p.q.r.s.t.u.v.w.x.y.z.spdtest.com.x.x.x.x.x.x.x.x.x.x.x.x.x.hqmobin.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  name: 加拿大 050
-  network: ws
-  port: 443
-  server: 162.159.153.208
-  servername: 1-79u.pages.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 1-79u.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/65.0.3325.181 Safari/537.36
-    path: ?ed=2851
-  xudp: true
-- client-fingerprint: chrome
-  name: 加拿大 051
-  network: ws
-  port: 443
-  server: 162.159.153.212
-  servername: 1-79u.pages.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 1-79u.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: ?ed=2851
-  xudp: true
-- client-fingerprint: chrome
-  name: 加拿大 052
-  network: ws
-  port: 443
-  server: 162.159.153.250
-  servername: 1-79u.pages.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 1-79u.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.110 Safari/537.36
-    path: ?ed=2851
-  xudp: true
-- client-fingerprint: chrome
-  name: 加拿大 053
-  network: ws
-  port: 443
-  server: 162.159.153.93
-  servername: 1-79u.pages.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 1-79u.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: ?ed=2851
-  xudp: true
-- name: 美国 112
-  network: ws
-  port: 8080
-  server: 162.159.243.231
-  servername: cdn-allxn--b6gaceuorg.l4o117en.workers.dev
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: aa2dc840-be38-4b4d-a002-ba234999fd55
-  ws-opts:
-    headers:
-      Host: cdn-allxn--b6gaceuorg.l4o117en.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
-    path: /
-  xudp: true
-- name: 美国 113
-  network: ws
-  port: 80
-  server: 162.159.249.15
-  servername: worker-winter-meadow-e881.test55.workers.dev
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
-  ws-opts:
-    headers:
-      Host: worker-winter-meadow-e881.test55.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.106 Safari/537.36
-    path: /
-  xudp: true
-- name: 美国 114
-  network: ws
-  port: 8080
-  server: 162.159.252.234
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 79978027-ef16-4137-b18e-905f8c18f845
-  ws-opts:
-    headers:
-      Host: cdnanycasteuorg.fjacz6xe.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/68.0.3440.106 Safari/537.36
+      Host: falcunargo.d369616395.workers.dev
     path: /?ed=2048
-  xudp: true
-- name: 加拿大 054
-  network: ws
-  port: 80
-  server: 162.159.34.56
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: f846c7b2-eca6-496a-9716-134e1b253be5
-  ws-opts:
-    headers:
-      Host: a.b.c.d.e.f.g.h.i.j.k.l.m.n.o.p.q.r.s.t.u.v.w.x.y.z.spdtest.com.x.x.x.x.x.x.x.x.x.x.x.x.x.hqmobin.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/49.0.2623.110 Safari/537.36
-    path: /
-  xudp: true
 - client-fingerprint: chrome
-  name: 加拿大 055
-  network: ws
-  port: 443
-  server: 162.159.36.197
-  servername: 1-79u.pages.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 1-79u.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/39.0.2171.95 Safari/537.36
-    path: ?ed=2851
-  xudp: true
-- name: 美国 115
+  name: 15|US_speednode_0231
   network: ws
   port: 8880
-  server: 162.159.38.91
-  skip-cert-verify: true
+  server: 188.114.97.3
+  servername: falcunargo-channel.be3374a836.workers.Dev
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vless
-  udp: true
-  uuid: b0a63ba3-6cb0-48de-a19d-12babdb0ba4d
-  ws-opts:
-    headers:
-      Host: 23tg.fh19yh0z.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 美国 116
-  network: ws
-  port: 80
-  server: 162.159.39.175
-  servername: worker-winter-meadow-e881.test55.workers.dev
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
-  ws-opts:
-    headers:
-      Host: worker-winter-meadow-e881.test55.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/50.0.2661.94 Safari/537.36
-    path: /
-  xudp: true
-- name: 加拿大 056
-  network: ws
-  port: 2082
-  server: 162.159.46.68
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 131387aa-4b2a-43aa-bf7c-d94306ba55fb
-  ws-opts:
-    headers:
-      Host: 13tg.jpl8xmqb.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 加拿大 059
-  network: ws
-  port: 8080
-  server: 162.159.5.28
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: b0a63ba3-6cb0-48de-a19d-12babdb0ba4d
-  ws-opts:
-    headers:
-      Host: 23tg.fh19yh0z.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/41.0.2272.101 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 加拿大 061
-  network: ws
-  port: 8880
-  server: 162.159.83.112
-  skip-cert-verify: true
-  type: vless
-  udp: true
   uuid: 91d9b8d8-2aab-4e1a-9573-0d59e9cd7f8e
   ws-opts:
     headers:
       Host: falcunargo-channel.be3374a836.workers.Dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/45.0.2454.101 Safari/537.36
     path: /?ed=2048
-  xudp: true
-- name: 加拿大 062
-  network: ws
-  port: 8080
-  server: 172.64.155.187
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: b0a63ba3-6cb0-48de-a19d-12babdb0ba4d
-  ws-opts:
-    headers:
-      Host: 23tg.fh19yh0z.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 加拿大 067
-  network: ws
-  port: 8080
-  server: 172.64.84.90
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: aa2dc840-be38-4b4d-a002-ba234999fd55
-  ws-opts:
-    headers:
-      Host: cdn-allxn--b6gaceuorg.l4o117en.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.75 Safari/537.36
-    path: /
-  xudp: true
-- name: 加拿大 068
-  network: ws
-  port: 8880
-  server: 172.67.195.126
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 44ab0683-1a75-4859-88ce-ef9ffea53c91
-  ws-opts:
-    headers:
-      Host: falcunargo-telegram.384f2ed785.workers.Dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.76 Safari/537.36
-    path: /
-  xudp: true
-- name: 加拿大 069
-  network: ws
-  port: 8880
-  server: 172.67.2.238
-  servername: drvenom-tehran.lipoxag351.workers.dev
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 8e0cdac9-ab9d-4022-8325-7e482cb327e4
-  ws-opts:
-    headers:
-      Host: drvenom-tehran.lipoxag351.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
-    path: /TELEGRAM-MARAMBASHI/?ed=2048
-  xudp: true
-- name: 加拿大 070
+- client-fingerprint: chrome
+  name: 15|US_speednode_0260
   network: ws
   port: 80
-  server: 172.67.27.46
-  servername: cc.ailicf.us.kg
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
-  ws-opts:
-    headers:
-      Host: cc.ailicf.us.kg
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /b5cdabf0-e04
-  xudp: true
-- name: 美国 117
-  network: ws
-  port: 2052
-  server: 192.200.160.86
-  skip-cert-verify: true
+  server: 104.18.17.170
+  servername: worker-winter-meadow-e881.test55.workers.dev
+  skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 17b42a04-83b8-4b93-b9f3-285d256d87d8
+  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
   ws-opts:
     headers:
-      Host: shy-paper-dec6.congcong1412243609.workers.dev
-    path: /?ed=2560&proxyip=proxyip.us.fxxk.dedyn.io
-- name: 加拿大 072
+      Host: worker-winter-meadow-e881.test55.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 15|US_speednode_0263
   network: ws
   port: 80
-  server: 198.41.200.22
-  servername: esetsecuritylicense.mikon76654.workers.dev
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 572d1cbe-1c26-4765-8865-7ee3ad737c5a
-  ws-opts:
-    headers:
-      Host: esetsecuritylicense.mikon76654.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.112 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 美国 118
-  network: ws
-  port: 80
-  server: 198.41.218.111
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 76b3cbba-e6ac-485a-9481-336a0415eab9
-  ws-opts:
-    headers:
-      Host: OlD-disk-EFCd.JojAhoF109.WorKerS.DEv
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/45.0.2454.85 Safari/537.36
-    path: /odHGn0T9HGFXsTlN?ed=2560
-  xudp: true
-- name: 加拿大 073
-  network: ws
-  port: 8080
-  server: 198.41.222.222
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: b0a63ba3-6cb0-48de-a19d-12babdb0ba4d
-  ws-opts:
-    headers:
-      Host: 23tg.fh19yh0z.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- client-fingerprint: random
-  name: 美国 121
-  network: ws
-  port: 2053
-  server: 205.233.181.36
-  servername: rix.tgzdyz2.top
-  skip-cert-verify: true
+  server: 104.18.26.94
+  servername: sedalat.tatexe3807.workers.dev
+  skip-cert-verify: false
   tfo: false
-  tls: true
+  tls: false
   type: vless
-  uuid: b9dad5ed-74da-4a43-8145-90d06df1f890
+  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
   ws-opts:
     headers:
-      Host: rix.tgzdyz2.top
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 美国 122
+      Host: sedalat.tatexe3807.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 15|US_speednode_0264
+  network: ws
+  port: 80
+  server: 162.159.254.222
+  servername: worker-winter-meadow-e881.test55.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
+  ws-opts:
+    headers:
+      Host: worker-winter-meadow-e881.test55.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 15|US_speednode_0265
   network: ws
   port: 2086
-  server: 104.26.0.211
-  servername: p1.613055.xyz
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+  server: 104.18.10.128
+  servername: v2raynselling.kir-rasol-kir.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d345d11e-c424-4583-b36e-527ab1f0afa4
   ws-opts:
     headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 123
+      Host: v2raynselling.kir-rasol-kir.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 15|US_speednode_0267
   network: ws
-  port: 8880
-  server: 104.21.238.122
-  servername: m1.106778.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  port: 80
+  server: 104.18.27.94
+  servername: sedalat.tatexe3807.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
   ws-opts:
     headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 125
+      Host: sedalat.tatexe3807.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 15|US_speednode_0269
   network: ws
-  port: 8880
-  server: 104.26.0.63
-  servername: m1.106778.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  port: 80
+  server: 162.159.249.15
+  servername: worker-winter-meadow-e881.test55.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
   ws-opts:
     headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 127
+      Host: worker-winter-meadow-e881.test55.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 15|US_speednode_0270
   network: ws
-  port: 8880
-  server: 104.18.114.163
-  servername: m1.106778.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  port: 80
+  server: 172.64.40.169
+  servername: worker-winter-meadow-e881.test55.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
   ws-opts:
     headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 128
+      Host: worker-winter-meadow-e881.test55.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 15|US_speednode_0272
   network: ws
-  port: 8880
-  server: 104.18.114.243
-  servername: m1.106778.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  port: 80
+  server: 172.64.229.27
+  servername: worker-winter-meadow-e881.test55.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
   ws-opts:
     headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 129
+      Host: worker-winter-meadow-e881.test55.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 15|US_speednode_0277
   network: ws
-  port: 2086
-  server: 104.26.0.130
-  servername: p1.613055.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+  port: 80
+  server: 151.101.2.219
+  servername: Tehranc3.Org
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 9cf16370-7cb1-4d3c-aa56-7f45747939db
   ws-opts:
     headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 132
+      Host: Tehranc3.Org
+    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048
+- client-fingerprint: chrome
+  name: 15|US_speednode_0279
   network: ws
-  port: 2086
-  server: 104.21.238.118
-  servername: p1.613055.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+  port: 80
+  server: 151.101.194.219
+  servername: Tehranc1.Org
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: b7b5990f-cd48-45ad-b1d9-ce88b5010961
   ws-opts:
     headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 133
+      Host: Tehranc1.Org
+    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048
+- client-fingerprint: chrome
+  name: 15|US_speednode_0281
   network: ws
-  port: 2086
-  server: 104.26.0.230
-  servername: p1.613055.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+  port: 80
+  server: 151.101.130.219
+  servername: Tehranc1.Org
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: b7b5990f-cd48-45ad-b1d9-ce88b5010961
   ws-opts:
     headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 134
+      Host: Tehranc1.Org
+    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048
+- client-fingerprint: chrome
+  name: 15|US_speednode_0286
   network: ws
-  port: 2086
-  server: 104.21.238.225
-  servername: p1.613055.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+  port: 80
+  server: 104.19.154.58
+  servername: worker-winter-meadow-e881.test55.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
   ws-opts:
     headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 135
+      Host: worker-winter-meadow-e881.test55.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 15|US_speednode_0290
   network: ws
-  port: 2086
-  server: 104.18.114.134
-  servername: p1.613055.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+  port: 80
+  server: 151.101.194.165
+  servername: UNLIMITEDDEV.channel-telegram-1.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 4578fed6-8a28-44b1-b853-c2e4a5b020be
   ws-opts:
     headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 136
+      Host: UNLIMITEDDEV.channel-telegram-1.ir
+    path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480
+- client-fingerprint: chrome
+  name: 15|US_speednode_0297
   network: ws
-  port: 8880
-  server: 104.21.238.143
-  servername: m1.106778.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  port: 80
+  server: 104.16.58.162
+  servername: worker-winter-meadow-e881.test55.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
   ws-opts:
     headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 137
+      Host: worker-winter-meadow-e881.test55.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 15|US_speednode_0303
   network: ws
-  port: 2086
-  server: 104.21.238.61
-  servername: p1.613055.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+  port: 80
+  server: 188.114.97.171
+  servername: ooao14004.74gwenneth.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 35323594-9ee2-4f06-ae14-3148b6950621
   ws-opts:
     headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 138
-  network: ws
-  port: 8880
-  server: 104.18.114.152
-  servername: m1.106778.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 139
-  network: ws
-  port: 2086
-  server: 104.21.238.189
-  servername: p1.613055.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 141
-  network: ws
-  port: 8880
-  server: 104.18.114.17
-  servername: m1.106778.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 143
-  network: ws
-  port: 2086
-  server: 104.21.238.108
-  servername: p1.613055.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 144
-  network: ws
-  port: 2086
-  server: 104.18.114.172
-  servername: p1.613055.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 145
-  network: ws
-  port: 2086
-  server: 104.18.114.120
-  servername: p1.613055.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
+      Host: ooao14004.74gwenneth.workers.dev
+    path: /fp=chrome
 - alterId: 0
   name: 未知
-  password: NISHIKUITAN111
+  network: ws
+  password: bpb-trojan
   port: 443
-  server: 104.24.184.159
+  server: 104.17.152.243
   skip-cert-verify: true
+  sni: bpb.my79801.com
   tls: true
   type: trojan
   udp: true
@@ -3614,978 +957,24 @@ proxies:
   network: ws
   password: blue2024
   port: 443
-  server: 172.64.235.138
+  server: 104.27.55.88
   skip-cert-verify: true
-  sni: td.promote.icu
+  sni: hb.lii2010.us.kg
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 未知3
-  network: ws
-  password: 2df56fd0-d1b7-4793-b877-acd356d960f7
-  port: 443
-  server: 172.67.204.84
+  network: tcp
+  password: e0eddd4c-7a08-41e9-82dc-53228a9348cf
+  port: 8080
+  server: 188.132.232.4
   skip-cert-verify: true
-  sni: pages.dev
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 未知4
-  network: ws
-  password: WOeXShhJpL
-  port: 443
-  server: 172.67.34.71
-  skip-cert-verify: true
-  sni: 10jzus.zdzdzd.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知5
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 77.37.33.8
-  skip-cert-verify: true
-  sni: zb.ylks.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知6
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.22.60.224
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知8
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.24.207.14
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知9 62.4KB/s
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.236.108.80
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知10
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.27.65.15
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知12
-  password: blue2024
-  port: 443
-  server: 104.19.253.28
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知13
-  password: blue2024
-  port: 443
-  server: 104.17.71.89
-  skip-cert-verify: true
-  sni: ha.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知14
-  network: ws
-  password: trojan
-  port: 2053
-  server: 104.18.4.250
-  skip-cert-verify: true
-  sni: ana-service-anaservice--anaservice-antenircomorg.fmwlmluu.workers.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 未知15
-  password: b12360f4-33ba-4c9b-ae0c-3da5f8c6ed05
-  port: 19994
-  server: 45.142.246.232
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: US7 11.7MB/s
-  password: xjN4xcuPGg55
-  port: 45800
-  server: 152.70.115.209
-  skip-cert-verify: true
-  sni: h.522226.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知16
-  network: ws
-  password: 5495ebe2-dc52-4cb4-8f25-2a13877183e6
-  port: 443
-  server: 185.146.173.32
-  skip-cert-verify: true
-  sni: de1.trojanvpn.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知17
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.18.255.98
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知19
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.17.13.218
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知20
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.21.6.215
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知22
-  password: blue2024
-  port: 443
-  server: 198.41.192.0
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国
-  password: blue2024
-  port: 443
-  server: 104.20.73.186
-  skip-cert-verify: true
-  sni: ta.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知23
-  password: blue2024
-  port: 443
-  server: 104.17.40.244
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: US8
-  network: ws
-  port: 31005
-  server: 38.11.50.78
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      host: www.65420682.xyz
-    path: /path/1732664957182
-- alterId: 0
-  name: 未知26
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.19.3
-  skip-cert-verify: true
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知27
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.25.118.140
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知28
-  password: blue2024
-  port: 443
-  server: 104.17.48.63
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知29
-  password: NISHIKUITAN111
-  port: 443
-  server: 190.93.246.45
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知31
-  network: ws
-  password: NISHIKUITAN222
-  port: 443
-  server: 173.245.59.61
-  skip-cert-verify: true
-  sni: in.ylks.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知32
-  network: ws
-  password: bpb-trojan
-  port: 2053
-  server: 104.18.34.21
-  skip-cert-verify: true
-  sni: bpB-worKER-paneL1-e4p.pAGes.dEV
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知33
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.18.127.92
-  skip-cert-verify: true
-  sni: ha.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知34
-  password: blue2024
-  port: 443
-  server: 104.21.197.136
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知35
-  password: blue2024
-  port: 443
-  server: 104.24.48.31
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知38
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.17.191.37
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇨🇳CN中国
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知39
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.17.255.213
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知40
-  password: blue2024
-  port: 443
-  server: 104.16.179.237
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知42
-  network: ws
-  password: auto
-  port: 443
-  server: 104.21.69.44
-  skip-cert-verify: true
-  sni: pAges.dEv.
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知43
-  password: NISHIKUITAN111
-  port: 443
-  server: 92.243.74.60
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知44
-  password: NISHIKUITAN111
-  port: 443
-  server: 198.41.197.79
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知45
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.148.107.11
-  skip-cert-verify: true
-  sni: zb.ylks.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知46
-  network: ws
-  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  port: 80
-  server: 167.82.30.71
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知47
-  password: blue2024
-  port: 443
-  server: 172.67.75.248
-  skip-cert-verify: true
-  sni: ha.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: HK
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 47580
-  server: 18.166.210.61
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知49
-  password: blue2024
-  port: 443
-  server: 108.162.195.199
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知50 12.1MB/s
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.236.119.153
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知54
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.19.214.179
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知55
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.25.31.240
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知56
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.16.146.105
-  skip-cert-verify: true
-  sni: ha.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知58
-  network: ws
-  password: blue2024
-  port: 443
-  server: 108.162.193.164
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: US18
-  password: NISHIKUITAN111
-  port: 443
-  server: 45.159.218.103
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知59
-  network: ws
-  password: blue2024
-  port: 443
-  server: 190.93.246.178
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知62
-  network: ws
-  password: auto
-  port: 443
-  server: 104.19.174.68
-  skip-cert-verify: true
-  sni: trojanfree-76s.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知65
-  network: ws
-  password: blue2024
-  port: 443
-  server: 172.64.201.25
-  skip-cert-verify: true
-  sni: tb.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国2
-  password: blue2024
-  port: 443
-  server: 162.159.0.198
-  skip-cert-verify: true
-  sni: ta.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知66
-  password: NISHIKUITAN111
-  port: 443
-  server: 141.101.121.18
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知68
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.17.76.107
-  skip-cert-verify: true
-  sni: bpb.my79801.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知70
-  network: ws
-  password: blue2024
-  port: 443
-  server: 173.245.59.6
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知71
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.17.147.167
-  skip-cert-verify: true
-  sni: ha.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知73
-  network: ws
-  password: dns68
-  port: 443
-  server: 66.179.48.88
-  skip-cert-verify: true
-  sni: trojan.putata.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知74
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.18.170.217
-  skip-cert-verify: true
-  sni: ha.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知75
-  network: ws
-  password: aee423ce-e4b0-4555-b5b7-486dd0284fd2
-  port: 443
-  server: 185.146.173.34
-  skip-cert-verify: true
-  sni: nl1.trojanvpn.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知76
-  password: NISHIKUITAN111
-  port: 443
-  server: 198.41.212.233
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知79
-  password: NISHIKUITAN111
-  port: 443
-  server: 173.245.49.125
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知81
-  password: NISHIKUITAN111
-  port: 443
-  server: 108.162.192.252
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知82
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.19.224.216
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知83
-  password: NISHIKUITAN111
-  port: 443
-  server: 194.36.55.28
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: US28
-  network: ws
-  password: dns68
-  port: 443
-  server: 199.68.156.68
-  skip-cert-verify: true
-  sni: trojan.putata.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知84
-  network: tcp
-  password: 6aa14e75-7d01-472b-8983-00ce703963c0
-  port: 1001
-  server: 188.245.114.237
-  skip-cert-verify: true
-  sni: The-Ashegh.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知85
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.20.151.19
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知86
-  network: ws
-  password: blue2024
-  port: 443
-  server: 108.162.195.203
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知87
-  network: ws
-  password: UipJV58NIw
-  port: 443
-  server: 104.16.11.112
-  skip-cert-verify: true
-  sni: t2.rtx.al
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知88
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.18.211.40
-  skip-cert-verify: true
-  sni: ha.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知89
-  password: blue2024
-  port: 443
-  server: 104.25.94.47
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知90
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.20.8.252
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知91
-  password: blue2024
-  port: 443
-  server: 108.162.195.161
-  skip-cert-verify: true
-  sni: tb.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知92
-  network: ws
-  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  port: 2083
-  server: 104.18.39.232
-  skip-cert-verify: true
-  sni: ArGodev11222.PaGes.Dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知93
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.16.84.42
-  skip-cert-verify: true
-  sni: ha.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知94
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.20.216.58
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知96
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.25.53.167
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知97
-  password: NISHIKUITAN111
-  port: 443
-  server: 162.159.133.112
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知98
-  network: tcp
-  password: bpb-trojan
-  port: 443
-  server: 162.159.152.2
-  skip-cert-verify: true
-  sni: visa.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知100
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 185.174.138.239
-  skip-cert-verify: true
-  sni: bpb.my79801.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知102
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.17.44.80
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: TW
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.136
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知103
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.16.160.38
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知104
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 185.176.24.2
-  skip-cert-verify: true
-  sni: 403B3611-99bc-43B7-88d7-26ed5d0825a9-3.PaGes.deV
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知105
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.18.19.56
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知108
-  password: NISHIKUITAN111
-  port: 443
-  server: 162.159.19.226
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知109
-  password: NISHIKUITAN111
-  port: 443
-  server: 172.66.42.99
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知110
-  password: blue2024
-  port: 443
-  server: 162.159.141.145
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国3
-  password: blue2024
-  port: 443
-  server: 172.64.83.38
-  skip-cert-verify: true
-  sni: ta.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国4
-  password: blue2024
-  port: 443
-  server: 104.16.3.132
-  skip-cert-verify: true
-  sni: ta.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知111
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.18.215.15
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知112
-  network: ws
-  password: auto
-  port: 8443
-  server: 172.66.44.106
-  skip-cert-verify: true
-  sni: e9464f45.trauma-2r4.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知113
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.16.72.34
-  skip-cert-verify: true
-  sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知114
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.17.36.105
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知115
-  password: NISHIKUITAN111
-  port: 443
-  server: 198.41.201.193
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知116
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.29.101.57
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知117
   network: ws
   password: blue2024
   port: 443
@@ -4596,207 +985,1324 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: auto
-  name: HK3 78.4KB/s
-  network: ws
-  port: 17530
-  server: 141.11.216.151
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fc7eb111-1292-4706-f4fb-afba1958924c
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 未知121
-  network: tcp
-  port: 40804
-  server: 185.226.119.85
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6e61b771-f2c2-40e1-9725-6cad0065a264
-- alterId: 0
-  name: 未知122
-  password: blue2024
-  port: 443
-  server: 104.25.171.193
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知123
+  name: 未知5
   network: ws
   password: auto
   port: 443
-  server: 104.20.22.241
+  server: 104.20.19.218
   skip-cert-verify: true
   sni: b96ef9ae.trojanfree-76s.pages.dev
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知125
-  password: G!yBwPWH3Vao
-  port: 810
-  server: 51.178.87.37
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知126
-  password: blue2024
-  port: 443
-  server: 162.159.22.138
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知128
+  name: US
+  network: ws
   password: NISHIKUITAN111
   port: 443
-  server: 104.19.44.160
+  server: 69.48.218.190
   skip-cert-verify: true
+  sni: za.ylks.xyz
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知129
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.16.143.66
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知130
+  name: 未知6
   password: blue2024
   port: 443
-  server: 190.93.246.151
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知131
-  network: tcp
-  password: bpb-trojan
-  port: 443
-  server: 162.159.153.161
-  skip-cert-verify: true
-  sni: cf.090227.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知132
-  network: ws
-  password: auto
-  port: 443
-  server: 162.159.44.176
-  skip-cert-verify: true
-  sni: trojanmz.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知134
-  network: ws
-  password: f0d584bc-342f-4443-ba24-79e4d0e504b1
-  port: 2052
-  server: 198.41.214.224
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 1
-  cipher: auto
-  name: 未知135
-  network: ws
-  port: 443
-  server: 104.21.84.114
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: be.hkddisney.org
-    path: linkvws
-- alterId: 0
-  name: 未知136
-  password: blue2024
-  port: 443
-  server: 104.17.246.107
-  skip-cert-verify: true
-  sni: ha.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知138
-  password: blue2024
-  port: 443
-  server: 104.16.252.52
+  server: 104.25.77.73
   skip-cert-verify: true
   sni: td.promote.icu
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知139
+  name: 未知7
+  password: blue2024
+  port: 443
+  server: 104.16.113.194
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知8
+  password: U2EIOHS5CMFms1vO5IhbJW
+  port: 443
+  server: 195.74.86.162
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知9
+  password: blue2024
+  port: 443
+  server: 104.17.57.75
+  skip-cert-verify: true
+  sni: ta.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知10
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.16.150.188
+  skip-cert-verify: true
+  sni: bpb.my79801.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知11
+  network: ws
+  password: bf7e1009-1574-44f7-86df-6cbecd338477
+  port: 443
+  server: 172.66.47.106
+  skip-cert-verify: true
+  sni: pardazeshvpn-tg18.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知12
+  password: 4ea1d07c-41c2-42b5-954d-414fee051856
+  port: 46002
+  server: 112.3.28.12
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知14
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.18.198.40
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知16
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.27.18.180
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知17
+  password: blue2024
+  port: 443
+  server: 172.67.73.216
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知18
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 34.250.138.168
+  server: 15.236.119.153
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知140
+  name: 未知19
   password: NISHIKUITAN111
   port: 443
-  server: 188.114.96.219
+  server: 162.159.35.22
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知141
+  name: 未知20
+  network: ws
+  password: trojan
+  port: 443
+  server: 104.21.3.52
+  skip-cert-verify: true
+  sni: test-a23.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知21
+  network: ws
+  password: blue2024
+  port: 443
+  server: 172.64.35.192
+  skip-cert-verify: true
+  sni: tb.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知23
+  network: ws
+  password: blue2024
+  port: 443
+  server: 162.159.82.231
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知24
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.18.127.92
+  skip-cert-verify: true
+  sni: ha.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知26
+  network: ws
+  password: 9d5e7586-64e1-4c29-9d47-6cbbd57fe8d1
+  port: 8443
+  server: 104.16.190.131
+  skip-cert-verify: true
+  sni: pardazeshvpn-tg48.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知27
+  network: ws
+  password: auto
+  port: 443
+  server: 104.21.21.129
+  skip-cert-verify: true
+  sni: trojanmz.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知28
   password: NISHIKUITAN111
   port: 443
-  server: 141.101.122.171
+  server: 104.25.221.170
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知31
+  password: blue2024
+  port: 443
+  server: 104.26.7.112
+  skip-cert-verify: true
+  sni: tb.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知33
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.20.84.240
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知34
+  password: NISHIKUITAN111
+  port: 443
+  server: 190.93.244.235
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US9
+  password: NISHIKUITAN111
+  port: 443
+  server: 45.159.218.249
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知35
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.19.190.86
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知36
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.17.208
+  skip-cert-verify: true
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知37
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.21.26.75
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知38
+  password: blue2024
+  port: 443
+  server: 104.16.3.132
+  skip-cert-verify: true
+  sni: ta.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知39
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.26.2.143
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知40
+  password: blue2024
+  port: 443
+  server: 162.159.141.145
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知41
+  password: blue2024
+  port: 443
+  server: 104.17.71.89
+  skip-cert-verify: true
+  sni: ha.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知42
+  password: bpb-trojan
+  port: 443
+  server: 141.11.203.98
+  skip-cert-verify: true
+  sni: bpb.my79801.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知43
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.16.23.120
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知44
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.96.13.141
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知45
+  network: ws
+  password: blue2024
+  port: 443
+  server: 108.162.193.55
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知46
+  password: NISHIKUITAN111
+  port: 443
+  server: 188.244.122.175
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知47
+  network: tcp
+  password: 6aa14e75-7d01-472b-8983-00ce703963c0
+  port: 1001
+  server: 188.245.114.237
+  skip-cert-verify: true
+  sni: The-Ashegh.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知48
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.17.157.109
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知49
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.22.111
+  skip-cert-verify: true
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知50
+  password: NISHIKUITAN111
+  port: 443
+  server: 188.114.96.18
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知52
+  network: ws
+  password: 54ef4ecf-ff37-436a-be13-95c8a8a1114d
+  port: 443
+  server: 188.42.145.159
+  skip-cert-verify: true
+  sni: VIrgiNiavPn-nL.pagEs.dEv
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知53
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.19.251.164
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知54
+  network: httpupgrade
+  password: 2f1f7fbf-f37d-4275-c014-298a83f4e5a8
+  port: 80
+  server: 104.17.148.22
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知55
+  password: bpb-trojan
+  port: 443
+  server: 104.27.9.13
+  skip-cert-verify: true
+  sni: adagio.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知56
+  network: ws
+  password: 2e3562a819634de686ade78e434c0963
+  port: 443
+  server: 104.17.147.5
+  skip-cert-verify: true
+  sni: jobscareertoday.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知57
+  password: NISHIKUITAN111
+  port: 443
+  server: 108.162.192.102
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知58
+  network: ws
+  password: a64f0cea-ca89-40e6-b316-b3badff1eb90
+  port: 443
+  server: 104.18.5.250
+  skip-cert-verify: true
+  sni: iSaa1.PAGeS.DeV
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知59
+  password: NISHIKUITAN111
+  port: 443
+  server: 141.11.202.133
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US14
+  network: ws
+  password: 984e400bf5d541b7b0815913fe0c432a
+  port: 443
+  server: 23.150.248.153
+  skip-cert-verify: true
+  sni: jobscareerforstudent.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知60
+  password: NISHIKUITAN111
+  port: 443
+  server: 172.67.216.159
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知61
+  network: ws
+  password: 71409d3e488548e8bb076d229778f008
+  port: 443
+  server: 104.17.147.77
+  skip-cert-verify: true
+  sni: bangladeshipatri.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知62
+  password: blue2024
+  port: 443
+  server: 104.18.152.170
+  skip-cert-verify: true
+  sni: ha.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知63
+  password: blue2024
+  port: 443
+  server: 162.159.128.183
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US16
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 167.68.11.173
+  skip-cert-verify: true
+  sni: zb.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 未知65 15.8MB/s
+  network: ws
+  port: 2087
+  server: 104.26.14.16
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f35b713b-6d59-4323-bbdc-e9c4c4497755
+  ws-opts:
+    headers:
+      host: OfFeR.MirAclestORy.tOP.
+    path: /
+- alterId: 0
+  name: 未知66
+  network: ws
+  password: auto
+  port: 2087
+  server: 104.17.147.22
+  skip-cert-verify: true
+  sni: abbas.ab841vpn.workers.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知67
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 54.78.182.145
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知68
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 156.229.48.127
+  skip-cert-verify: true
+  sni: za.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知69
+  password: NISHIKUITAN111
+  port: 443
+  server: 172.67.250.67
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知70
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.169.37.120
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知71
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 62.72.166.57
+  skip-cert-verify: true
+  sni: za.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US18
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 162.120.94.3
+  skip-cert-verify: true
+  sni: zb.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知73
+  password: blue2024
+  port: 443
+  server: 104.20.2.145
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知74
+  password: blue2024
+  port: 443
+  server: 104.17.49.15
+  skip-cert-verify: true
+  sni: ha.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知75
+  network: ws
+  password: dns68
+  port: 2087
+  server: 206.238.237.1
+  skip-cert-verify: true
+  sni: trojan.putata.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知76
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.20.12.219
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知77
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.23.132.150
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 未知79
+  network: tcp
+  port: 50004
+  server: 112.132.212.19
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 未知80
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.17.211.250
+  skip-cert-verify: true
+  sni: bpb.my79801.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知81
+  password: blue2024
+  port: 443
+  server: 104.18.153.27
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知82
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.25.80.35
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知83
+  network: ws
+  password: 15f34214-d8de-41e9-ba72-93daeafc59ef
+  port: 2087
+  server: 172.64.155.209
+  skip-cert-verify: true
+  sni: subhiddify.mmdv2.host
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知84
+  network: ws
+  password: NISHIKUITAN222
+  port: 443
+  server: 173.245.59.61
+  skip-cert-verify: true
+  sni: in.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知85
+  network: ws
+  password: WOeXShhJpL
+  port: 443
+  server: 104.18.71.140
+  skip-cert-verify: true
+  sni: 09jzus.zdzdzd.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知86
+  network: ws
+  password: auto
+  port: 8443
+  server: 172.66.47.150
+  skip-cert-verify: true
+  sni: e9464f45.trauma-2r4.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知87
+  network: ws
+  password: blue2024
+  port: 443
+  server: 108.162.196.53
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 未知88
+  password: 70GnyrLzWcRT4wUaVM0Sus
+  port: 65262
+  server: 62.133.63.21
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知90
+  network: ws
+  password: 3df56fd0-d1b7-4793-b877-acd356d960f3
+  port: 443
+  server: 172.66.44.56
+  skip-cert-verify: true
+  sni: pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知93
+  password: NISHIKUITAN111
+  port: 443
+  server: 198.41.204.50
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US25
+  network: ws
+  password: blue2024
+  port: 443
+  server: 198.62.62.156
+  skip-cert-verify: true
+  sni: tb.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知96
+  network: ws
+  password: blue2024
+  port: 443
+  server: 162.159.44.155
+  skip-cert-verify: true
+  sni: tb.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知97
+  password: blue2024
+  port: 443
+  server: 104.17.87.167
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知98
+  network: ws
+  password: auto
+  port: 443
+  server: 104.21.72.108
+  skip-cert-verify: true
+  sni: esetsecuritylicense1.cxlrazo.workers.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知99
+  network: ws
+  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  port: 2053
+  server: 23.227.38.208
+  skip-cert-verify: true
+  sni: bPB-V.pageS.dEV
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知100
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.17.191.37
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知101
+  password: blue2024
+  port: 443
+  server: 104.16.20.118
+  skip-cert-verify: true
+  sni: tb.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知102
+  password: blue2024
+  port: 443
+  server: 198.41.192.0
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知104
+  password: NISHIKUITAN111
+  port: 443
+  server: 172.67.113.251
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知105
+  password: NISHIKUITAN111
+  port: 443
+  server: 198.41.201.193
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知107
+  network: ws
+  password: NISHIKUITAN222
+  port: 443
+  server: 141.101.120.208
+  skip-cert-verify: true
+  sni: in.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知108
+  password: blue2024
+  port: 443
+  server: 104.16.36.151
+  skip-cert-verify: true
+  sni: ha.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: HK3 49.3KB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知109
+  password: NISHIKUITAN111
+  port: 443
+  server: 172.67.49.68
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知110
+  password: NISHIKUITAN111
+  port: 443
+  server: 172.67.133.80
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知112
+  network: ws
+  password: 2df56fd0-d1b7-4793-b877-acd356d960f7
+  port: 443
+  server: 172.67.204.84
+  skip-cert-verify: true
+  sni: pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知113
+  password: NISHIKUITAN111
+  port: 443
+  server: 89.117.112.181
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知114
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.16.146.105
+  skip-cert-verify: true
+  sni: ha.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US28
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.129.164.50
+  skip-cert-verify: true
+  sni: zb.ylks.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知115
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.18.197.61
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知116
+  password: NISHIKUITAN111
+  port: 443
+  server: 146.19.21.61
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: HK4
-  password: woGi6ZwrKjCZglY9CrexNw
-  port: 36766
-  server: 141.98.234.195
+  name: 未知117
+  password: vntxqHhPINXu5Ag6876fXO
+  port: 1080
+  server: 51.195.220.179
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  name: 未知143
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.20.194.11
+  name: 未知118
+  password: NISHIKUITAN111
+  port: 443
+  server: 31.22.116.151
   skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知119
+  password: blue2024
+  port: 443
+  server: 188.114.96.186
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知123
+  password: blue2024
+  port: 443
+  server: 172.64.35.217
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知124
+  password: 7f0c6140-b151-11ef-990d-1239d0255272
+  port: 443
+  server: 51.210.182.170
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知125
+  network: tcp
+  password: bpb-trojan
+  port: 443
+  server: 104.18.86.204
+  skip-cert-verify: true
+  sni: 102.djR999998.Eu.orG
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知126
+  network: ws
+  password: blue2024
+  port: 443
+  server: 108.162.195.155
+  skip-cert-verify: true
+  sni: tb.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知127
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.24.14.219
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知128
+  password: blue2024
+  port: 443
+  server: 104.16.38.173
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知130
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 188.114.96.34
+  skip-cert-verify: true
+  sni: fcspring.ggff.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知133
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.25.118.140
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知134
+  password: blue2024
+  port: 443
+  server: 198.41.215.83
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知135
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.24.20.206
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知136
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.19.243.142
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知137
+  network: ws
+  password: 669d0ac7b5b64ebbb1abb75d5d540a5c
+  port: 443
+  server: 104.16.159.6
+  skip-cert-verify: true
+  sni: bangladeshipatri.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知139
+  password: blue2024
+  port: 443
+  server: 162.159.39.190
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知140
+  network: ws
+  password: blue2024
+  port: 443
+  server: 172.64.35.199
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知141
+  password: blue2024
+  port: 443
+  server: 190.93.244.61
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知142
+  network: ws
+  password: 45d5c2fa-58f7-4f2a-811b-c44cc51e8668
+  port: 443
+  server: 190.93.247.155
+  skip-cert-verify: true
+  sni: is2.trojanvpn.xyz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知143
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.25.103.196
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知144
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.18.149.198
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知145
+  network: ws
+  password: 6285e567-0c25-4ce2-a2fa-80517c1345e1
+  port: 2096
+  server: 172.67.214.246
+  skip-cert-verify: true
+  sni: 1223-9ux.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知146
+  password: blue2024
+  port: 443
+  server: 104.17.28.100
+  skip-cert-verify: true
+  sni: td.promote.icu
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知147
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.20.162
+  skip-cert-verify: true
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知148
+  password: NISHIKUITAN111
+  port: 443
+  server: 104.18.144.43
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知149
+  network: ws
+  password: auto
+  port: 443
+  server: 108.162.195.209
+  skip-cert-verify: true
+  sni: trojanmz.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知150
+  password: NISHIKUITAN111
+  port: 443
+  server: 198.41.205.240
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知151
+  password: blue2024
+  port: 443
+  server: 172.64.35.159
+  skip-cert-verify: true
+  sni: hb.lii2010.us.kg
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知152
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 190.93.246.121
+  skip-cert-verify: true
+  sni: fcspring.ggff.net
   tls: true
   type: trojan
   udp: true
@@ -4812,7 +2318,6 @@ proxy-groups:
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
   - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
-  - '1,6|🇺🇸_US_美国 #11'
   - 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
   - '1,6|🇺🇸_US_美国 #12'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
@@ -4832,9 +2337,9 @@ proxy-groups:
   - '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
   - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
   - '3,17|🇺🇸_US_美国 #21'
+  - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
-  - 11|0|--24
-  - 11|0|--79
+  - 11|0|--67
   - 11|5|d*********g.com_0
   - 11|5|d*********g.com_1
   - 11|5|d*********g.com_2
@@ -4845,352 +2350,179 @@ proxy-groups:
   - 15|🇯🇵 日本特殊|@ripaojiedian
   - 15|🇸🇬 狮城特殊|@ripaojiedian
   - 0|-https://t.me/MrXbin-1
-  - 0|-https://t.me/MrXbin-3
   - 0|-https://t.me/MrXbin-4
-  - 0|-https://t.me/MrXbin-5
-  - 0|-https://t.me/MrXbin-6
   - 0|-https://t.me/MrXbin-7
   - 0|-https://t.me/MrXbin-8
+  - 0|-https://t.me/MrXbin-9
+  - 0|-https://t.me/MrXbin-10
+  - 0|-https://t.me/MrXbin-11
+  - 0|-https://t.me/MrXbin-12
+  - 0|-https://t.me/MrXbin-46
+  - 0|-https://t.me/MrXbin-64
   - 13,14|香港|@ripaojiedian
-  - 15|SE_speednode_0042
-  - CN_e3681_0001
-  - CN_e3681_0002
-  - CN_e3681_0003
-  - CN_e3681_0014
-  - GB_e3681_0034
-  - SE_e3681_0041
-  - US_e3681_0045
-  - US_e3681_0047
-  - US_e3681_0048
-  - US_e3681_0049
-  - US_e3681_0050
-  - US_e3681_0051
-  - US_e3681_0052
-  - US_e3681_0053
-  - US_e3681_0054
-  - US_e3681_0055
-  - US_e3681_0056
-  - US_e3681_0057
-  - 🇫🇷_FR_法国->🇨🇦_CA_加拿大
-  - 🇧🇬_BG_保加利亚->🇨🇦_CA_加拿大
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大
-  - 🇪🇸_ES_西班牙->🇨🇦_CA_加拿大
-  - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大
-  - 🇺🇦_UA_乌克兰->🇨🇦_CA_加拿大
-  - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_1
-  - 🇱🇺_LU_卢森堡->🇨🇦_CA_加拿大
-  - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_2
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-  - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大
-  - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_3
-  - 🇬🇧_GB_英国->🇨🇦_CA_加拿大
-  - 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-  - 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大_1
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
-  - 🇺🇸_US_美国_1
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_6
-  - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_4
-  - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_5
-  - 🇺🇸_US_美国_2
-  - 🇷🇺_RU_俄罗斯->🇨🇦_CA_加拿大
-  - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大_1
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_7
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_8
-  - 加拿大 004
-  - 加拿大 058
-  - 加拿大 138
-  - 美国 002
-  - 美国 001
-  - 美国 005
-  - 美国 101
-  - 美国 003
-  - 加拿大 016
-  - 加拿大 087
-  - 美国 156
-  - 美国 167
-  - 美国 170
-  - 美国 106
-  - 加拿大 141
-  - 加拿大 142
-  - 美国 018
-  - 加拿大 008
-  - 加拿大 017
-  - 加拿大 201
-  - 美国 017
-  - 加拿大 103
-  - 美国 215
-  - 加拿大 007
-  - 美国 036
-  - 美国 050
-  - 加拿大 060
-  - 加拿大 065
-  - 美国 130
-  - 美国 004
-  - 美国 006
-  - 美国 142
-  - 美国 033
-  - 美国 046
-  - 美国 009
-  - 美国 045
-  - 美国 040
-  - 美国 043
-  - 美国 048
-  - 美国 049
-  - 美国 051
-  - 美国 052
-  - 美国 056
-  - 美国 058
-  - 美国 059
-  - 美国 060
-  - 美国 061
-  - 美国 062
-  - 美国 063
-  - 美国 064
-  - 美国 065
-  - 美国 066
-  - 美国 067
-  - 美国 068
-  - 美国 069
-  - 美国 070
-  - 美国 072
-  - 美国 073
-  - 美国 074
-  - 美国 075
-  - 美国 076
-  - 美国 077
-  - 美国 078
-  - 美国 080
-  - 美国 081
-  - 美国 082
-  - 美国 083
-  - 美国 084
-  - 美国 085
-  - 美国 086
-  - 美国 087
-  - 美国 079
-  - 美国 100
-  - 美国 102
-  - 美国 201
-  - 美国 203
-  - 美国 008
-  - 美国 012
-  - 美国 014
-  - 美国 015
-  - 美国 020
-  - 美国 024
-  - 美国 025
-  - 美国 026
-  - 美国 027
-  - 美国 029
-  - 美国 032
-  - 美国 034
-  - 美国 037
-  - 美国 039
-  - 美国 041
-  - 加拿大 005
-  - 加拿大 009
-  - 美国 019
-  - 美国 021
-  - 美国 023
-  - 美国 042
-  - 美国 054
-  - 加拿大 013
-  - 美国 055
-  - 加拿大 014
-  - 美国 088
-  - 美国 091
-  - 美国 092
-  - 美国 013
-  - 美国 011
-  - 加拿大 020
-  - 加拿大 021
-  - 加拿大 023
-  - 加拿大 024
-  - 加拿大 026
-  - 加拿大 027
-  - 加拿大 028
-  - 加拿大 030
-  - 美国 103
-  - 加拿大 031
-  - 加拿大 032
-  - 加拿大 033
-  - 加拿大 034
-  - 美国 104
-  - 美国 105
-  - 加拿大 035
-  - 加拿大 036
-  - 加拿大 039
-  - 美国 108
-  - 美国 109
-  - 美国 110
-  - 美国 111
-  - 加拿大 042
-  - 加拿大 043
-  - 加拿大 047
-  - 加拿大 048
-  - 加拿大 049
-  - 加拿大 050
-  - 加拿大 051
-  - 加拿大 052
-  - 加拿大 053
-  - 美国 112
-  - 美国 113
-  - 美国 114
-  - 加拿大 054
-  - 加拿大 055
-  - 美国 115
-  - 美国 116
-  - 加拿大 056
-  - 加拿大 059
-  - 加拿大 061
-  - 加拿大 062
-  - 加拿大 067
-  - 加拿大 068
-  - 加拿大 069
-  - 加拿大 070
-  - 美国 117
-  - 加拿大 072
-  - 美国 118
-  - 加拿大 073
-  - 美国 121
-  - 美国 122
-  - 美国 123
-  - 美国 125
-  - 美国 127
-  - 美国 128
-  - 美国 129
-  - 美国 132
-  - 美国 133
-  - 美国 134
-  - 美国 135
-  - 美国 136
-  - 美国 137
-  - 美国 138
-  - 美国 139
-  - 美国 141
-  - 美国 143
-  - 美国 144
-  - 美国 145
+  - 0|--1
+  - 0|--2
+  - 0|--3
+  - 0|--7
+  - 15|CA_speednode_0001
+  - 15|CN_speednode_0002
+  - 15|US_speednode_0097
+  - 15|US_speednode_0215
+  - 15|US_speednode_0022
+  - 15|US_speednode_0036
+  - 15|US_speednode_0155
+  - 15|US_speednode_0156
+  - 15|US_speednode_0162
+  - 15|US_speednode_0231
+  - 15|US_speednode_0260
+  - 15|US_speednode_0263
+  - 15|US_speednode_0264
+  - 15|US_speednode_0265
+  - 15|US_speednode_0267
+  - 15|US_speednode_0269
+  - 15|US_speednode_0270
+  - 15|US_speednode_0272
+  - 15|US_speednode_0277
+  - 15|US_speednode_0279
+  - 15|US_speednode_0281
+  - 15|US_speednode_0286
+  - 15|US_speednode_0290
+  - 15|US_speednode_0297
+  - 15|US_speednode_0303
   - 未知
   - 未知2
   - 未知3
   - 未知4
   - 未知5
+  - US
   - 未知6
+  - 未知7
   - 未知8
-  - 未知9 62.4KB/s
+  - 未知9
   - 未知10
+  - 未知11
   - 未知12
-  - 未知13
   - 未知14
-  - 未知15
-  - US7 11.7MB/s
   - 未知16
   - 未知17
+  - 未知18
   - 未知19
   - 未知20
-  - 未知22
-  - 🇺🇸US美国
+  - 未知21
   - 未知23
-  - US8
+  - 未知24
   - 未知26
   - 未知27
   - 未知28
-  - 未知29
   - 未知31
-  - 未知32
   - 未知33
   - 未知34
+  - US9
   - 未知35
+  - 未知36
+  - 未知37
   - 未知38
-  - 🇨🇳CN中国
   - 未知39
   - 未知40
+  - 未知41
   - 未知42
   - 未知43
   - 未知44
   - 未知45
   - 未知46
   - 未知47
-  - HK
+  - 未知48
   - 未知49
-  - 未知50 12.1MB/s
+  - 未知50
+  - 未知52
+  - 未知53
   - 未知54
   - 未知55
   - 未知56
+  - 未知57
   - 未知58
-  - US18
   - 未知59
+  - US14
+  - 未知60
+  - 未知61
   - 未知62
-  - 未知65
-  - 🇺🇸US美国2
+  - 未知63
+  - US16
+  - 未知65 15.8MB/s
   - 未知66
+  - 未知67
   - 未知68
+  - 未知69
   - 未知70
   - 未知71
+  - US18
   - 未知73
   - 未知74
   - 未知75
   - 未知76
+  - 未知77
   - 未知79
+  - 未知80
   - 未知81
   - 未知82
   - 未知83
-  - US28
   - 未知84
   - 未知85
   - 未知86
   - 未知87
   - 未知88
-  - 未知89
   - 未知90
-  - 未知91
-  - 未知92
   - 未知93
-  - 未知94
+  - US25
   - 未知96
   - 未知97
   - 未知98
+  - 未知99
   - 未知100
+  - 未知101
   - 未知102
-  - TW
-  - 未知103
   - 未知104
   - 未知105
+  - 未知107
   - 未知108
+  - HK3 49.3KB/s
   - 未知109
   - 未知110
-  - 🇺🇸US美国3
-  - 🇺🇸US美国4
-  - 未知111
   - 未知112
   - 未知113
   - 未知114
+  - US28
   - 未知115
   - 未知116
   - 未知117
-  - HK3 78.4KB/s
-  - 未知121
-  - 未知122
+  - 未知118
+  - 未知119
   - 未知123
+  - 未知124
   - 未知125
   - 未知126
+  - 未知127
   - 未知128
-  - 未知129
   - 未知130
-  - 未知131
-  - 未知132
+  - 未知133
   - 未知134
   - 未知135
   - 未知136
-  - 未知138
+  - 未知137
   - 未知139
   - 未知140
   - 未知141
-  - HK4
+  - 未知142
   - 未知143
+  - 未知144
+  - 未知145
+  - 未知146
+  - 未知147
+  - 未知148
+  - 未知149
+  - 未知150
+  - 未知151
+  - 未知152
   type: select
 - interval: 300
   name: automatic
@@ -5203,7 +2535,6 @@ proxy-groups:
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
   - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
-  - '1,6|🇺🇸_US_美国 #11'
   - 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
   - '1,6|🇺🇸_US_美国 #12'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
@@ -5223,9 +2554,9 @@ proxy-groups:
   - '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
   - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
   - '3,17|🇺🇸_US_美国 #21'
+  - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
-  - 11|0|--24
-  - 11|0|--79
+  - 11|0|--67
   - 11|5|d*********g.com_0
   - 11|5|d*********g.com_1
   - 11|5|d*********g.com_2
@@ -5236,352 +2567,179 @@ proxy-groups:
   - 15|🇯🇵 日本特殊|@ripaojiedian
   - 15|🇸🇬 狮城特殊|@ripaojiedian
   - 0|-https://t.me/MrXbin-1
-  - 0|-https://t.me/MrXbin-3
   - 0|-https://t.me/MrXbin-4
-  - 0|-https://t.me/MrXbin-5
-  - 0|-https://t.me/MrXbin-6
   - 0|-https://t.me/MrXbin-7
   - 0|-https://t.me/MrXbin-8
+  - 0|-https://t.me/MrXbin-9
+  - 0|-https://t.me/MrXbin-10
+  - 0|-https://t.me/MrXbin-11
+  - 0|-https://t.me/MrXbin-12
+  - 0|-https://t.me/MrXbin-46
+  - 0|-https://t.me/MrXbin-64
   - 13,14|香港|@ripaojiedian
-  - 15|SE_speednode_0042
-  - CN_e3681_0001
-  - CN_e3681_0002
-  - CN_e3681_0003
-  - CN_e3681_0014
-  - GB_e3681_0034
-  - SE_e3681_0041
-  - US_e3681_0045
-  - US_e3681_0047
-  - US_e3681_0048
-  - US_e3681_0049
-  - US_e3681_0050
-  - US_e3681_0051
-  - US_e3681_0052
-  - US_e3681_0053
-  - US_e3681_0054
-  - US_e3681_0055
-  - US_e3681_0056
-  - US_e3681_0057
-  - 🇫🇷_FR_法国->🇨🇦_CA_加拿大
-  - 🇧🇬_BG_保加利亚->🇨🇦_CA_加拿大
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大
-  - 🇪🇸_ES_西班牙->🇨🇦_CA_加拿大
-  - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大
-  - 🇺🇦_UA_乌克兰->🇨🇦_CA_加拿大
-  - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_1
-  - 🇱🇺_LU_卢森堡->🇨🇦_CA_加拿大
-  - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_2
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-  - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大
-  - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_3
-  - 🇬🇧_GB_英国->🇨🇦_CA_加拿大
-  - 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-  - 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大_1
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
-  - 🇺🇸_US_美国_1
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_6
-  - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_4
-  - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_5
-  - 🇺🇸_US_美国_2
-  - 🇷🇺_RU_俄罗斯->🇨🇦_CA_加拿大
-  - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大_1
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_7
-  - 🇺🇸_US_美国->🇨🇦_CA_加拿大_8
-  - 加拿大 004
-  - 加拿大 058
-  - 加拿大 138
-  - 美国 002
-  - 美国 001
-  - 美国 005
-  - 美国 101
-  - 美国 003
-  - 加拿大 016
-  - 加拿大 087
-  - 美国 156
-  - 美国 167
-  - 美国 170
-  - 美国 106
-  - 加拿大 141
-  - 加拿大 142
-  - 美国 018
-  - 加拿大 008
-  - 加拿大 017
-  - 加拿大 201
-  - 美国 017
-  - 加拿大 103
-  - 美国 215
-  - 加拿大 007
-  - 美国 036
-  - 美国 050
-  - 加拿大 060
-  - 加拿大 065
-  - 美国 130
-  - 美国 004
-  - 美国 006
-  - 美国 142
-  - 美国 033
-  - 美国 046
-  - 美国 009
-  - 美国 045
-  - 美国 040
-  - 美国 043
-  - 美国 048
-  - 美国 049
-  - 美国 051
-  - 美国 052
-  - 美国 056
-  - 美国 058
-  - 美国 059
-  - 美国 060
-  - 美国 061
-  - 美国 062
-  - 美国 063
-  - 美国 064
-  - 美国 065
-  - 美国 066
-  - 美国 067
-  - 美国 068
-  - 美国 069
-  - 美国 070
-  - 美国 072
-  - 美国 073
-  - 美国 074
-  - 美国 075
-  - 美国 076
-  - 美国 077
-  - 美国 078
-  - 美国 080
-  - 美国 081
-  - 美国 082
-  - 美国 083
-  - 美国 084
-  - 美国 085
-  - 美国 086
-  - 美国 087
-  - 美国 079
-  - 美国 100
-  - 美国 102
-  - 美国 201
-  - 美国 203
-  - 美国 008
-  - 美国 012
-  - 美国 014
-  - 美国 015
-  - 美国 020
-  - 美国 024
-  - 美国 025
-  - 美国 026
-  - 美国 027
-  - 美国 029
-  - 美国 032
-  - 美国 034
-  - 美国 037
-  - 美国 039
-  - 美国 041
-  - 加拿大 005
-  - 加拿大 009
-  - 美国 019
-  - 美国 021
-  - 美国 023
-  - 美国 042
-  - 美国 054
-  - 加拿大 013
-  - 美国 055
-  - 加拿大 014
-  - 美国 088
-  - 美国 091
-  - 美国 092
-  - 美国 013
-  - 美国 011
-  - 加拿大 020
-  - 加拿大 021
-  - 加拿大 023
-  - 加拿大 024
-  - 加拿大 026
-  - 加拿大 027
-  - 加拿大 028
-  - 加拿大 030
-  - 美国 103
-  - 加拿大 031
-  - 加拿大 032
-  - 加拿大 033
-  - 加拿大 034
-  - 美国 104
-  - 美国 105
-  - 加拿大 035
-  - 加拿大 036
-  - 加拿大 039
-  - 美国 108
-  - 美国 109
-  - 美国 110
-  - 美国 111
-  - 加拿大 042
-  - 加拿大 043
-  - 加拿大 047
-  - 加拿大 048
-  - 加拿大 049
-  - 加拿大 050
-  - 加拿大 051
-  - 加拿大 052
-  - 加拿大 053
-  - 美国 112
-  - 美国 113
-  - 美国 114
-  - 加拿大 054
-  - 加拿大 055
-  - 美国 115
-  - 美国 116
-  - 加拿大 056
-  - 加拿大 059
-  - 加拿大 061
-  - 加拿大 062
-  - 加拿大 067
-  - 加拿大 068
-  - 加拿大 069
-  - 加拿大 070
-  - 美国 117
-  - 加拿大 072
-  - 美国 118
-  - 加拿大 073
-  - 美国 121
-  - 美国 122
-  - 美国 123
-  - 美国 125
-  - 美国 127
-  - 美国 128
-  - 美国 129
-  - 美国 132
-  - 美国 133
-  - 美国 134
-  - 美国 135
-  - 美国 136
-  - 美国 137
-  - 美国 138
-  - 美国 139
-  - 美国 141
-  - 美国 143
-  - 美国 144
-  - 美国 145
+  - 0|--1
+  - 0|--2
+  - 0|--3
+  - 0|--7
+  - 15|CA_speednode_0001
+  - 15|CN_speednode_0002
+  - 15|US_speednode_0097
+  - 15|US_speednode_0215
+  - 15|US_speednode_0022
+  - 15|US_speednode_0036
+  - 15|US_speednode_0155
+  - 15|US_speednode_0156
+  - 15|US_speednode_0162
+  - 15|US_speednode_0231
+  - 15|US_speednode_0260
+  - 15|US_speednode_0263
+  - 15|US_speednode_0264
+  - 15|US_speednode_0265
+  - 15|US_speednode_0267
+  - 15|US_speednode_0269
+  - 15|US_speednode_0270
+  - 15|US_speednode_0272
+  - 15|US_speednode_0277
+  - 15|US_speednode_0279
+  - 15|US_speednode_0281
+  - 15|US_speednode_0286
+  - 15|US_speednode_0290
+  - 15|US_speednode_0297
+  - 15|US_speednode_0303
   - 未知
   - 未知2
   - 未知3
   - 未知4
   - 未知5
+  - US
   - 未知6
+  - 未知7
   - 未知8
-  - 未知9 62.4KB/s
+  - 未知9
   - 未知10
+  - 未知11
   - 未知12
-  - 未知13
   - 未知14
-  - 未知15
-  - US7 11.7MB/s
   - 未知16
   - 未知17
+  - 未知18
   - 未知19
   - 未知20
-  - 未知22
-  - 🇺🇸US美国
+  - 未知21
   - 未知23
-  - US8
+  - 未知24
   - 未知26
   - 未知27
   - 未知28
-  - 未知29
   - 未知31
-  - 未知32
   - 未知33
   - 未知34
+  - US9
   - 未知35
+  - 未知36
+  - 未知37
   - 未知38
-  - 🇨🇳CN中国
   - 未知39
   - 未知40
+  - 未知41
   - 未知42
   - 未知43
   - 未知44
   - 未知45
   - 未知46
   - 未知47
-  - HK
+  - 未知48
   - 未知49
-  - 未知50 12.1MB/s
+  - 未知50
+  - 未知52
+  - 未知53
   - 未知54
   - 未知55
   - 未知56
+  - 未知57
   - 未知58
-  - US18
   - 未知59
+  - US14
+  - 未知60
+  - 未知61
   - 未知62
-  - 未知65
-  - 🇺🇸US美国2
+  - 未知63
+  - US16
+  - 未知65 15.8MB/s
   - 未知66
+  - 未知67
   - 未知68
+  - 未知69
   - 未知70
   - 未知71
+  - US18
   - 未知73
   - 未知74
   - 未知75
   - 未知76
+  - 未知77
   - 未知79
+  - 未知80
   - 未知81
   - 未知82
   - 未知83
-  - US28
   - 未知84
   - 未知85
   - 未知86
   - 未知87
   - 未知88
-  - 未知89
   - 未知90
-  - 未知91
-  - 未知92
   - 未知93
-  - 未知94
+  - US25
   - 未知96
   - 未知97
   - 未知98
+  - 未知99
   - 未知100
+  - 未知101
   - 未知102
-  - TW
-  - 未知103
   - 未知104
   - 未知105
+  - 未知107
   - 未知108
+  - HK3 49.3KB/s
   - 未知109
   - 未知110
-  - 🇺🇸US美国3
-  - 🇺🇸US美国4
-  - 未知111
   - 未知112
   - 未知113
   - 未知114
+  - US28
   - 未知115
   - 未知116
   - 未知117
-  - HK3 78.4KB/s
-  - 未知121
-  - 未知122
+  - 未知118
+  - 未知119
   - 未知123
+  - 未知124
   - 未知125
   - 未知126
+  - 未知127
   - 未知128
-  - 未知129
   - 未知130
-  - 未知131
-  - 未知132
+  - 未知133
   - 未知134
   - 未知135
   - 未知136
-  - 未知138
+  - 未知137
   - 未知139
   - 未知140
   - 未知141
-  - HK4
+  - 未知142
   - 未知143
+  - 未知144
+  - 未知145
+  - 未知146
+  - 未知147
+  - 未知148
+  - 未知149
+  - 未知150
+  - 未知151
+  - 未知152
   type: load-balance
   url: https://www.google.com/favicon.ico
 rule-providers:
