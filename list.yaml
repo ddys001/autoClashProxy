@@ -57,12 +57,6 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- cipher: aes-256-cfb
-  name: 1|_FR_->_RU_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 163.172.64.22
-  type: ss
 - alterId: 0
   cipher: auto
   name: '1,6|🇺🇸_US_美国 #10'
@@ -107,23 +101,6 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- cipher: aes-256-cfb
-  name: 1|_US__5
-  password: amazonskr05
-  port: 443
-  server: 3.39.227.28
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
-  network: ws
-  port: 2052
-  server: cfcdn2.sanfencdn9.com
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
-  ws-opts: {}
 - alterId: 0
   cipher: auto
   name: '1,6|🇺🇸_US_美国 #11'
@@ -135,12 +112,6 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- cipher: aes-256-gcm
-  name: 1|_US__7
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 38.114.114.207
-  type: ss
 - alterId: 0
   cipher: auto
   name: 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
@@ -151,12 +122,6 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- cipher: chacha20-ietf-poly1305
-  name: 1|_US_->_ES_
-  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
-  port: 59019
-  server: fuck5.mmmmmmmmmm.cfd
-  type: ss
 - alterId: 0
   cipher: auto
   name: '1,6|🇺🇸_US_美国 #12'
@@ -212,18 +177,6 @@ proxies:
   type: vmess
   uuid: d6b6d982-d52f-465a-b988-85670b23f64a
   ws-opts: {}
-- cipher: aes-256-cfb
-  name: 1|_SG_
-  password: amazonskr05
-  port: 443
-  server: 54.179.87.28
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 1|_US__11
-  password: nEyOTWmtPG5tdgZqMQEq4R
-  port: 29814
-  server: 51.141.73.244
-  type: ss
 - alterId: 0
   cipher: auto
   name: '1,6|🇺🇸_US_美国 #15'
@@ -235,12 +188,6 @@ proxies:
   type: vmess
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   ws-opts: {}
-- cipher: aes-256-cfb
-  name: 1|_CN_
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
 - alterId: 0
   cipher: auto
   name: '1,6|🇺🇸_US_美国 #16'
@@ -286,16 +233,6 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 2|🇩🇪_DE_德国
-  network: ws
-  port: 45103
-  server: de-frankfurt-oracle-b26cf5.ip1.shop
-  tls: false
-  type: vmess
-  uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
   name: 2|🇺🇸_US_美国
   network: ws
   port: 2052
@@ -309,49 +246,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|🇷🇺_RU_俄罗斯联邦
-  network: tcp
-  port: 35972
-  server: 45.147.200.170
-  tls: false
-  type: vmess
-  uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5
-- alterId: 0
-  cipher: auto
-  name: '2|🇷🇺_RU_俄罗斯联邦 #1'
-  network: ws
-  port: 12910
-  server: 45.136.245.240
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '2|🇺🇸_US_美国 #1'
-  network: ws
-  port: 2052
-  server: hk.wish.ml
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      Host: us6_0.wish.ml
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '2|🇺🇸_US_美国 #2'
-  network: ws
-  port: 34053
-  server: us-sanfrancisco-02.t3csyun.buzz
-  tls: false
-  type: vmess
-  uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
   name: 2|🇺🇸_US_美国->🇮🇳_IN_印度
   network: ws
   port: 2052
@@ -363,29 +257,6 @@ proxies:
     headers:
       Host: in4.wish.ml
     path: /
-- alterId: 0
-  cipher: auto
-  name: '2|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
-  network: ws
-  port: 2052
-  server: 172.67.164.78
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      Host: in3.wish.ml
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2|🇨🇳_CN_中国->🇺🇸_US_美国
-  network: ws
-  port: 16928
-  server: vip3.niuniupremium.xyz
-  tls: false
-  type: vmess
-  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
-  ws-opts: {}
 - alterId: 0
   cipher: auto
   name: '2|🇺🇸_US_美国 #3'
@@ -409,16 +280,6 @@ proxies:
     headers:
       Host: s1c.v2.v001sss.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  name: '3,17|🇺🇸_US_美国 #20'
-  network: ws
-  port: 2082
-  server: cfcdn1.sanfencdn9.com
-  tls: false
-  type: vmess
-  uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e
-  ws-opts: {}
 - alterId: 0
   cipher: auto
   name: '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
@@ -451,35 +312,6 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
-  network: ws
-  port: 16928
-  server: 120.232.240.56
-  tls: false
-  type: vmess
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-opts: {}
-- alterId: 64
-  cipher: auto
-  name: '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
-  network: tcp
-  port: 54002
-  server: 183.240.235.162
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
-  network: ws
-  port: 2052
-  server: p3.v2raybrasil.cloud
-  tls: false
-  type: vmess
-  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
   name: '3,17|🇺🇸_US_美国 #21'
   network: ws
   port: 2086
@@ -487,26 +319,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '3,17|🇺🇸_US_美国 #22'
-  network: ws
-  port: 8080
-  server: russia.com
-  tls: false
-  type: vmess
-  uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
-  network: ws
-  port: 2082
-  server: 172.67.130.140
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts: {}
 - alterId: 0
   cipher: auto
@@ -518,6 +330,32 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 11|0|--24
+  network: ws
+  port: 2082
+  server: 190.93.245.80
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 11|0|--79
+  network: ws
+  port: 2095
+  server: 172.64.175.88
+  tls: false
+  type: vmess
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip9.6016725.xyz
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
   name: 11|5|d*********g.com_0
@@ -574,56 +412,6 @@ proxies:
     headers:
       Host: http1.9290254.xyz
     path: github.com/Alvin9999
-- alterId: 64
-  cipher: auto
-  name: 11,16|香港3|@ripaojiedian
-  network: tcp
-  port: '32193'
-  server: 120.198.71.214
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 11,16|香港5|@ripaojiedian
-  network: tcp
-  port: '58831'
-  server: 183.236.48.163
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 11,16|香港7|@ripaojiedian
-  network: tcp
-  port: '46602'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 11,16|美国2|@ripaojiedian
-  network: tcp
-  port: '58831'
-  server: 120.232.153.27
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '11|16|d*********g.com_2 #1'
-  network: tcp
-  port: '443'
-  server: 42.236.73.72
-  servername: www.zitian.cn
-  tls: true
-  type: vmess
-  uuid: 044f0177-0675-4dcf-89d4-804b6788e518
 - alterId: 0
   cipher: auto
   name: 12|github.com/freefq - 印度  2
@@ -640,47 +428,6 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: 12|github.com/freefq - 美国CloudFla...
-  network: ws
-  port: 8080
-  server: www.darkroom.lol
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.darkroom.lol
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '12|github.com/freefq - 美国CloudFla... #1'
-  network: ws
-  port: 8880
-  server: server31.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
-  ws-opts:
-    headers:
-      Host: server31.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 12|github.com/freefq - 广东省移动 7
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
   name: '12|github.com/freefq - 美国CloudFla... #2'
   network: ws
   port: 8880
@@ -693,125 +440,6 @@ proxies:
     headers:
       Host: server26.beheshtbaneh.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 12|github.com/freefq - 美国Fastly全球...
-  network: ws
-  port: 443
-  server: gov.uk
-  tls: true
-  type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
-  ws-opts:
-    headers:
-      Host: zheshiscp.com
-    path: /77848824
-- alterId: 0
-  cipher: auto
-  name: '12|github.com/freefq - 美国CloudFla... #3'
-  network: ws
-  port: 8880
-  server: server32.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
-  ws-opts:
-    headers:
-      Host: server32.beheshtbaneh.com
-    path: /
-- name: 15|tg频道:@ripaojiedian
-  port: 4000
-  server: hk9.ftq.ink
-  tls: true
-  type: http
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 15|🇻🇳 越南|@ripaojiedian
-  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
-  port: 443
-  server: vn.mjt000.com
-  skip-cert-verify: false
-  sni: vn.mjt000.com
-  tfo: false
-  tls: false
-  type: trojan
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港4|@ripaojiedian
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54002
-  server: h-k02.loveroise.com
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港6|@ripaojiedian
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54000
-  server: h-k01.loveroise.com
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: 15|🇭🇰 香港8|@ripaojiedian
-  network: ws
-  password: ouo
-  port: 18443
-  server: 18.162.246.4
-  skip-cert-verify: false
-  sni: tr.koiok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koiok.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 15|🇹🇼 台湾|@ripaojiedian
-  network: ws
-  password: ouo
-  port: 81
-  server: 210.61.97.241
-  skip-cert-verify: false
-  sni: tr.koiok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koiok.us.kg
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇯🇵 日本3|@ripaojiedian
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54102
-  server: j-p04.loveroise.com
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇰🇷 韩国|@ripaojiedian
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54008
-  server: k-r01.loveroise.com
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇰🇷 韩国3|@ripaojiedian
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54012
-  server: k-r03.loveroise.com
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇸🇬 新加坡|@ripaojiedian
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54030
-  server: s-g04.loveroise.com
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇰🇷 韩国特殊|@ripaojiedian
@@ -879,59 +507,6 @@ proxies:
   port: 443
   server: 52.193.184.18
   type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-11
-  obfs: tls1.2_ticket_auth
-  password: fou8MBGij
-  port: 8081
-  protocol: origin
-  server: us-am3.eqnode.net
-  type: ssr
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-24
-  network: ws
-  port: 2082
-  server: 190.93.245.80
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-40
-  network: ws
-  port: 443
-  server: irvideo.cfd
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-79
-  network: ws
-  port: 2095
-  server: 172.64.175.88
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip9.6016725.xyz
-    path: /github.com/Alvin9999
 - name: 13,14|香港|@ripaojiedian
   network: tcp
   password: DNUMdmnJ
@@ -939,62 +514,6 @@ proxies:
   server: 36.151.192.242
   skip-cert-verify: true
   type: trojan
-- name: 13,14|日本2|@ripaojiedian
-  network: tcp
-  password: 50cce31a-d637-4058-b2cd-9362de722d64
-  port: 22269
-  server: aafrtpfxr.jpl04i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 13,14|美国|@ripaojiedian
-  network: tcp
-  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
-  port: 443
-  server: usla.mjt000.com
-  skip-cert-verify: false
-  sni: usla.mjt000.com
-  type: trojan
-- name: 15|HK_speednode_0035
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 40913
-  server: 16ab1c69cdfdbf898aa6c5c5131dfa99.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: hk12.bilibili.com
-  type: trojan
-  udp: true
-- name: 15|HK_speednode_0036
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 49468
-  server: e365c3a06d49e21c6027fce9ee36f181.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: us1.bilibili.com
-  type: trojan
-  udp: true
-- name: 15|HK_speednode_0037
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 48385
-  server: eef72d13ad096a6703aabd5bae809848.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: de1.bilibili.com
-  type: trojan
-  udp: true
-- name: 15|HK_speednode_0038
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 47580
-  server: 26f3c1fb8b12d3dcbc594b4e5cad3f1a.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
-  udp: true
-- name: 15|HK_speednode_0039
-  password: d75a2b07-34f4-454e-84ba-0de806c51b6d
-  port: 46509
-  server: dab1c8faaa893fecbc1e055db0894883.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
-  udp: true
 - name: 15|SE_speednode_0042
   network: ws
   password: 542f66d8-6b06-4340-a829-76d23db7ca80
@@ -1038,24 +557,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: CN_e3681_0004
-  password: 0cd4f4c0-9d64-48d8-a89b-ce2e85d84386
-  port: 19027
-  server: yy.vyunyunnode.top
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: CN_e3681_0011
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54032
-  server: t-wn01.loveroise.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: CN_e3681_0013
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54100
-  server: j-p03.loveroise.com
-  type: ss
 - alterId: 64
   cipher: auto
   name: CN_e3681_0014
@@ -1065,73 +566,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: CN_e3681_0015
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54004
-  server: h-k03.loveroise.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: CN_e3681_0016
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54096
-  server: j-p01.loveroise.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: CN_e3681_0018
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54014
-  server: k-r04.loveroise.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: CN_e3681_0022
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54038
-  server: t-wn04.loveroise.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: CN_e3681_0023
-  password: F585FCDB-6351-48D4-82C1-599B5447A589
-  port: 40020
-  server: soontw.soon.guru
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: CN_e3681_0024
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54028
-  server: s-g03.loveroise.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: CN_e3681_0025
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54098
-  server: j-p02.loveroise.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: CN_e3681_0029
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54024
-  server: s-g01.loveroise.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: CN_e3681_0031
-  password: f0e7fd1e-0469-415f-95da-774021f16f36
-  port: 40003
-  server: soonjp.soon.guru
-  type: ss
-- name: DE_e3681_0032
-  network: ws
-  port: 443
-  server: 138.68.112.54
-  servername: Farsroid.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 8b33a80c-6a4b-4d07-90a3-342b76a66b79
-  ws-opts:
-    headers:
-      Host: Farsroid.ir
-    path: /BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN?ed=443
 - alterId: 0
   cipher: auto
   name: GB_e3681_0034
@@ -1144,24 +578,6 @@ proxies:
   uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
   ws-opts:
     path: /
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: JP_e3681_0040
-  network: ws
-  port: 443
-  server: Zmaoz.Faculty.UcdavIS.Edu
-  servername: Zmaoz.Faculty.UcdavIS.Edu.
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 35017be6-5b1c-4cd4-a248-95c4a99a46b1
-  ws-opts:
-    headers:
-      Host: meloch-de.com
-    path: /@melov2ray/ws?e@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpnd=2048
 - name: SE_e3681_0041
   network: ws
   port: 80
@@ -1175,19 +591,6 @@ proxies:
     headers:
       Host: rezaping.ir
     path: /
-- alpn:
-  - h3
-  - h2
-  - http%2F1.1
-  name: SG_e3681_0044
-  network: tcp
-  port: 443
-  server: 152.42.238.145
-  servername: aka.ms
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 4f0bc55f-8824-4a09-a868-33ad3dd8fa26
 - name: US_e3681_0045
   network: ws
   port: 80
@@ -1201,12 +604,6 @@ proxies:
     headers:
       Host: IRANINGOAT2.IR
     path: /RsAMasAPMX5yb1YZ?ed=2560
-- cipher: aes-256-cfb
-  name: US_e3681_0046
-  password: amazonskr05
-  port: 443
-  server: 54.203.119.192
-  type: ss
 - name: US_e3681_0047
   network: ws
   port: 80
@@ -1520,12 +917,6 @@ proxies:
     headers:
       host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-  password: 9ffcf7da-fc63-450a-b586-7416558075c9
-  port: 51105
-  server: a.naiun.node-is.green
-  type: ss
 - alterId: 0
   cipher: auto
   name: 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_3
@@ -1824,18 +1215,6 @@ proxies:
     headers:
       Host: Sb-1u6.paGEs.dEv
     path: /pc0cypuups4meoks/mtu4ljewms4ymdmumti3?ed=2560
-- name: 加拿大 210
-  network: ws
-  port: 2095
-  server: www.speedtest.net
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: a70e1ca7-0cfa-5d07-b068-ca7657f9aba8
-  ws-opts:
-    headers:
-      Host: www.digikala.com.joinTelegram.mosiv2.fi3.vless.Sitespeedtest.net.
-    path: /join-
 - alterId: 0
   cipher: auto
   name: 美国 003
@@ -1923,20 +1302,6 @@ proxies:
     path: /fxhhv799mihz1xxp/mtuyljy3ljiznc40oq==?ed=2560security=tls
 - alterId: 0
   cipher: auto
-  name: 美国 071
-  network: ws
-  port: 443
-  server: speedtest.net
-  servername: mehrjavan.ir
-  tls: true
-  type: vmess
-  uuid: 57727d7d-8873-4000-b3f4-33a93fcfdd51
-  ws-opts:
-    headers:
-      Host: mehrjavan.ir
-    path: /m28jcoZZUhkqg6pk11
-- alterId: 0
-  cipher: auto
   name: 美国 106
   network: ws
   port: 80
@@ -1982,36 +1347,6 @@ proxies:
     path: /glweidf.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: 美国 016
-  network: ws
-  port: 2095
-  server: www.visa.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- client-fingerprint: chrome
-  name: 美国 126
-  network: ws
-  port: 80
-  server: www.wto.org
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 113dd109-540e-4497-9d47-eed30315260f
-  ws-opts:
-    headers:
-      Host: edgetunnel.2424014450.workers.dev
-    path: /proxyIP=proxyip.oracle.fxxk.dedyn.io
-- alterId: 0
-  cipher: auto
   name: 美国 018
   network: ws
   port: 2082
@@ -2023,20 +1358,6 @@ proxies:
     headers:
       Host: ip26.6929198.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 098
-  network: ws
-  port: 80
-  server: cf.hy2.one
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 299ea574-3ca4-4264-9116-1d67d1eb90b1
-  ws-opts:
-    headers:
-      Host: tw02.hy2.one
-    path: /af323d
 - alterId: 0
   cipher: auto
   name: 加拿大 008
@@ -2167,21 +1488,6 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  delay: 1580
-  name: 加拿大 025
-  network: ws
-  port: 2082
-  server: icook.tw
-  servername: ip3.6929198.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
   name: 加拿大 060
   network: ws
   port: 2095
@@ -2224,21 +1530,6 @@ proxies:
     headers:
       Host: ip2.6016725.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 131
-  network: ws
-  port: 2086
-  server: s2.db-link02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ac9c5899-29ee-3139-a2ae-b5803a68524f
-  ws-opts:
-    headers:
-      Host: 100-36-256-124.s2.db-link02.top
-    path: /dabai.in104.16.98.32
 - alterId: 0
   cipher: auto
   name: 美国 004
@@ -2312,30 +1603,6 @@ proxies:
     headers:
       Host: ip3.6929198.xyz
     path: github.com/Alvin9999
-- name: 加拿大 038
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: visa.cn
-  sni: bpbpanel.ac.cn.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: bpbpanel.ac.cn.eu.org
-    path: /tr
-- alterId: 0
-  cipher: auto
-  name: 美国 007
-  network: ws
-  port: 2095
-  server: singapore.com
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip11.6016725.xyz
-    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
   name: 美国 009
@@ -2822,20 +2089,6 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 加拿大 037
-  network: ws
-  port: 2095
-  server: ip.sb
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip8.6016725.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 美国 079
   network: ws
   port: 8880
@@ -3035,48 +2288,6 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 加拿大 002
-  network: ws
-  port: 443
-  server: visa.com
-  servername: xjp.daluquan.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 302fe943-4bbe-4cd6-bdbd-4446aeb72b1e
-  ws-opts:
-    headers:
-      Host: xjp.daluquan.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 003
-  network: ws
-  port: 2052
-  server: yx.sulink.one
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5aa4e545-cfd6-41f4-802d-89893fdbbcf2
-  ws-opts:
-    headers:
-      Host: tw02.xn--io0a7iw0ab67b.xyz
-    path: /
-- name: 美国 030
-  network: ws
-  port: 2086
-  server: ccy.colacloud.free.hr
-  tls: false
-  type: vless
-  udp: true
-  uuid: cad177f1-8ec2-4fa1-acde-ef3560effef1
-  ws-opts:
-    headers:
-      Host: caaa.colacloud.free.hr
-    path: /xxxzzz
-- alterId: 0
-  cipher: auto
   name: 美国 032
   network: ws
   port: 2095
@@ -3153,19 +2364,6 @@ proxies:
     headers:
       Host: rn2.hostmjj.com
     path: /
-- client-fingerprint: ios
-  name: 美国 031
-  network: tcp
-  port: 18443
-  reality-opts:
-    public-key: 8233FxCRw1a_aCJ8d1HwHBMD_fABUNNW7rsrFe3vK0s
-    short-id: e6658462
-  server: phx-plus-1ddns.faforex.eu.org
-  servername: www.tesla.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 596940b0-1c0e-4686-9f8f-f4b0ee4c2ef7
 - alterId: 0
   cipher: auto
   name: 加拿大 009
@@ -3178,19 +2376,6 @@ proxies:
   ws-opts:
     headers:
       Host: m10.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 010
-  network: ws
-  port: 2082
-  server: japan.com
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -3243,19 +2428,6 @@ proxies:
   ws-opts:
     headers:
       Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 047
-  network: ws
-  port: 2082
-  server: 104.19.21.71
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -3326,63 +2498,6 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国 089
-  network: ws
-  port: 80
-  server: jp2.1vpn.sbs
-  tls: false
-  type: vmess
-  udp: true
-  uuid: df4a2a93-6717-4f90-9856-36d7a44639cc
-  ws-opts:
-    headers:
-      Host: jp2.1vpn.sbs
-    path: /kiulujunuqs
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 美国 090
-  network: tcp
-  port: 50002
-  reality-opts:
-    public-key: Yn0atGB5uY5DZbhh2G1cOfeoNRDoRQ_v0pvyBZcx2w4
-    short-id: 6b6dbc62
-  server: node-us-2.sudatech.store
-  servername: www.douyin.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1671ecb9-1242-487b-99ea-27054874c27f
-- alterId: 0
-  cipher: auto
-  name: 美国 010
-  network: ws
-  port: 443
-  server: sgcft01.xqc.best
-  servername: d16henb377mok4.cloudfront.net
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 04da9c6c-509e-4d9b-ac97-a5d595db9f9b
-  ws-opts:
-    headers:
-      Host: d16henb377mok4.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 加拿大 011
-  network: ws
-  port: 2052
-  server: jx.jixingnetwork.sbs
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fb92324e-6a01-48b9-9adb-1ea67af6e09c
-  ws-opts:
-    headers:
-      Host: rb03.jixingnetwork.sbs
-    path: /
-- alterId: 0
-  cipher: auto
   name: 美国 091
   network: ws
   port: 443
@@ -3424,104 +2539,6 @@ proxies:
     headers:
       Host: m1.106778.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 094
-  network: ws
-  port: 80
-  server: it2.127414.xyz
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 75254130-d819-49f3-b5ce-9543b3b47056
-  ws-opts:
-    headers:
-      Host: it2.127414.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 001
-  network: ws
-  port: 80
-  server: au2.127414.xyz
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 75254130-d819-49f3-b5ce-9543b3b47056
-  ws-opts:
-    headers:
-      Host: au2.127414.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 095
-  network: ws
-  port: 80
-  server: ae2.127414.xyz
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 75254130-d819-49f3-b5ce-9543b3b47056
-  ws-opts:
-    headers:
-      Host: ae2.127414.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 096
-  network: ws
-  port: 80
-  server: de2.127414.xyz
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 75254130-d819-49f3-b5ce-9543b3b47056
-  ws-opts:
-    headers:
-      Host: de2.127414.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 097
-  network: ws
-  port: 8080
-  server: de-new01.daluquan.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 302fe943-4bbe-4cd6-bdbd-4446aeb72b1e
-  ws-opts:
-    headers:
-      Host: de-new01.daluquan.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 098
-  network: ws
-  port: 80
-  server: in2.127414.xyz
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 75254130-d819-49f3-b5ce-9543b3b47056
-  ws-opts:
-    headers:
-      Host: in2.127414.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 019
-  network: ws
-  port: 80
-  server: jp2.127414.xyz
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 75254130-d819-49f3-b5ce-9543b3b47056
-  ws-opts:
-    headers:
-      Host: jp2.127414.xyz
-    path: /
 - client-fingerprint: random
   name: 美国 011
   network: ws
@@ -4583,62 +3600,6 @@ proxies:
     headers:
       Host: p1.613055.xyz
     path: github.com/Alvin9999
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 🇬🇧 高性价比机场:https://kfyun.uk
-  password: 6601fb90e9b3
-  port: 443
-  server: 127.0.0.1
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 0|--4
-  password: X7eoEBrARWsBUiVfchVEdH
-  port: 443
-  server: 185.77.217.121
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--5
-  password: amazonskr05
-  port: 443
-  server: 18.236.89.178
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--7
-  password: amazonskr05
-  port: 443
-  server: 3.1.195.116
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 0|--8
-  password: 6OAGLD+DOA6UcFp5Udf0r/UzyjwHV+yheNkoFDk6uL8=
-  port: 38753
-  server: 213.108.22.109
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--11
-  password: amazonskr05
-  port: 443
-  server: 54.169.5.182
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--15
-  password: amazonskr05
-  port: 443
-  server: 34.215.84.62
-  tfo: false
-  type: ss
 - alterId: 0
   name: 未知
   password: NISHIKUITAN111
@@ -4659,15 +3620,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US 1.9MB/s
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 69.50.95.53
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: 未知3
   network: ws
@@ -4691,15 +3643,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-128-gcm
-  name: US2 80.6MB/s
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.244
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: 未知5
   network: ws
   password: NISHIKUITAN111
@@ -4719,45 +3662,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US3 2.0MB/s
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 38.110.1.105
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: US4 99.3MB/s
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.243
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知7
-  network: tcp
-  password: bpb-trojan
-  port: 443
-  server: 162.159.153.172
-  skip-cert-verify: true
-  sni: cf.090227.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: US5 22.1MB/s
-  network: tcp
-  port: 52143
-  server: 142.4.104.33
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   name: 未知8
   password: NISHIKUITAN111
@@ -4790,17 +3694,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知11
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.74.128.63
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   name: 未知12
   password: blue2024
   port: 443
@@ -4810,15 +3703,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US6 1.9MB/s
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 38.143.66.87
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: 未知13
   password: blue2024
@@ -4880,15 +3764,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知18
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.23.132.150
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   name: 未知19
   password: NISHIKUITAN111
   port: 443
@@ -4906,15 +3781,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 未知21 1.8MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 149.202.82.172
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: 未知22
   password: blue2024
@@ -4942,25 +3808,6 @@ proxies:
   server: 104.17.40.244
   skip-cert-verify: true
   sni: td.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知24 6.2MB/s
-  password: O4xHyEq9GnMgORYoDUDP8e
-  port: 15584
-  server: 213.108.23.243
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知25
-  network: tcp
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: customer-95-164-38-151.stark-industries.solutions
-  skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
@@ -5018,15 +3865,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知30 1.7MB/s
-  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
-  port: 42029
-  server: 208.67.105.196
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: 未知31
   network: ws
   password: NISHIKUITAN222
@@ -5080,33 +3918,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
-  name: US10 2.0MB/s
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 38.121.43.204
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知37 4.4MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 45.154.206.192
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US11 1.9MB/s
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 69.50.95.103
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: 未知38
   network: ws
   password: blue2024
@@ -5117,15 +3928,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US12 2.0MB/s
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.91.100.211
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 🇨🇳CN中国
@@ -5154,20 +3956,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 未知41
-  network: ws
-  port: 40413
-  server: 45.67.32.147
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 93ef2025-b198-4a30-8be4-b90c1bce3f02
-  ws-opts:
-    headers:
-      host: jh57.dumbppl.lovestoblog.com
-    path: /makeacall
 - alterId: 0
   name: 未知42
   network: ws
@@ -5229,16 +4017,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知48
-  password: wkmY1R4EcP
-  port: 443
-  server: 65.20.115.19
-  skip-cert-verify: true
-  sni: myket.io
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   name: HK
   password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
   port: 47580
@@ -5266,44 +4044,6 @@ proxies:
   server: 15.236.119.153
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知52 417.7KB/s
-  password: qbY6=zGuFl
-  port: 37774
-  server: 150.241.95.63
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US13 2.0MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 38.75.136.21
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US14 1.8MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 23.157.40.119
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知53
-  network: grpc
-  password: 578ade22-1e58-4c37-ce01-bfad51a72c62
-  port: 8443
-  server: WwW.SpEEdTesT.NeT
-  skip-cert-verify: true
-  sni: 13l1.diginoshops10.ir
   tls: true
   type: trojan
   udp: true
@@ -5339,33 +4079,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
-  name: US15 1.9MB/s
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 69.50.95.203
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 未知57 12.4MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US17 2.0MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 69.50.93.86
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: 未知58
   network: ws
   password: blue2024
@@ -5397,53 +4110,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
-  name: US19 1.9MB/s
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 23.157.40.47
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US20 1.9MB/s
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 38.114.114.69
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US22 1.9MB/s
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 169.197.142.216
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知60
-  network: tcp
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: 185.231.206.12
-  skip-cert-verify: true
-  sni: customer-185-231-206-12.stark-industries.solutions
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US23 1.9MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 38.86.135.117
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: 未知62
   network: ws
   password: auto
@@ -5466,15 +4132,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-128-gcm
-  name: US24 35.3MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.132
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: 🇺🇸US美国2
   password: blue2024
   port: 443
@@ -5494,42 +4151,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
-  name: US25 1.9MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 23.157.40.26
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US26 1.9MB/s
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 38.121.43.142
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知67
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.27.63.104
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: US27 23.3MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 64.74.163.130
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: 未知68
   network: ws
   password: bpb-trojan
@@ -5540,15 +4161,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知69 8.6MB/s
-  password: LcEDAhRkNrjwB16SvN5d7fAmpswtGTAexB1qdzmeFrg=
-  port: 24064
-  server: 150.241.68.171
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: 未知70
   network: ws
@@ -5568,15 +4180,6 @@ proxies:
   server: 104.17.147.167
   skip-cert-verify: true
   sni: ha.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 未知72
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.24.20.3
-  skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
@@ -5623,15 +4226,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知77
-  password: 5curKZ6sP6tHAA46YIav-w
-  port: 1080
-  server: 147.45.179.104
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: 未知79
   password: NISHIKUITAN111
   port: 443
@@ -5640,15 +4234,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 未知80 1.7MB/s
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 23.166.88.198
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: 未知81
   password: NISHIKUITAN111
@@ -5719,15 +4304,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-128-gcm
-  name: US29 111.4MB/s
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.168
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: 未知87
   network: ws
   password: UipJV58NIw
@@ -5738,15 +4314,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US30 1.9MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 38.110.1.197
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: 未知88
   network: ws
@@ -5768,15 +4335,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US31 1.9MB/s
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 69.50.92.72
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: 未知90
   password: NISHIKUITAN111
@@ -5828,17 +4386,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知95
-  network: tcp
-  password: 6aa14e75-7d01-472b-8983-00ce703963c0
-  port: 1001
-  server: tu.hideabr.ir
-  skip-cert-verify: true
-  sni: The-Ashegh.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   name: 未知96
   network: ws
   password: blue2024
@@ -5866,35 +4413,6 @@ proxies:
   server: 162.159.152.2
   skip-cert-verify: true
   sni: visa.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: US32
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 204.93.210.216
-  skip-cert-verify: true
-  sni: zb.ylks.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US33 24.6MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 38.75.136.49
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 未知99
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.24.242.244
-  skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
@@ -5956,24 +4474,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知106 826.9KB/s
-  password: MdeeQzzQP9HTGvy3NKC9FR
-  port: 12575
-  server: 89.185.84.185
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知107 10.6MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.202
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: 未知108
   password: NISHIKUITAN111
@@ -6096,24 +4596,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知118
-  password: VvWvM0IP6whUKaMEuqeN6M
-  port: 41095
-  server: 147.45.136.147
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 未知119 1.7MB/s
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 51.77.53.200
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   name: HK3 78.4KB/s
   network: ws
@@ -6125,24 +4607,6 @@ proxies:
   uuid: fc7eb111-1292-4706-f4fb-afba1958924c
   ws-opts:
     path: /
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US36 1.9MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 23.157.40.103
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知120
-  password: oJyi0e2r4em1pXTG274jzR
-  port: 23831
-  server: 207.154.193.100
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
   name: 未知121
@@ -6176,15 +4640,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 未知124 1.8MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 154.90.63.193
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
   name: 未知125
   password: G!yBwPWH3Vao
   port: 810
@@ -6202,15 +4657,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 未知127 1.9MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 158.51.123.253
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: 未知128
   password: NISHIKUITAN111
@@ -6262,17 +4708,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 未知133 3.3MB/s
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.178.254.153
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   name: 未知134
   network: ws
   password: f0d584bc-342f-4443-ba24-79e4d0e504b1
@@ -6307,24 +4742,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
-  name: US40 2.0MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 23.150.152.16
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US41 2.0MB/s
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 69.50.95.191
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: 未知138
   password: blue2024
   port: 443
@@ -6334,15 +4751,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: US42 1.9MB/s
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 38.75.137.105
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: 未知139
   network: tcp
@@ -6374,15 +4782,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 未知142 10.9MB/s
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.181
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
   name: HK4
   password: woGi6ZwrKjCZglY9CrexNw
   port: 36766
@@ -6409,78 +4808,39 @@ proxy-groups:
   - '1,6|🇺🇸_US_美国 #8'
   - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
-  - 1|_FR_->_RU_
   - '1,6|🇺🇸_US_美国 #10'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
   - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
-  - 1|_US__5
-  - '1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
   - '1,6|🇺🇸_US_美国 #11'
-  - 1|_US__7
   - 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-  - 1|_US_->_ES_
   - '1,6|🇺🇸_US_美国 #12'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
   - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
   - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
   - '1,6|🇺🇸_US_美国 #14'
-  - 1|_SG_
-  - 1|_US__11
   - '1,6|🇺🇸_US_美国 #15'
-  - 1|_CN_
   - '1,6|🇺🇸_US_美国 #16'
   - '1,6|🇺🇸_US_美国 #17'
   - '1,6|🇺🇸_US_美国 #18'
   - '1,6|🇺🇸_US_美国 #19'
-  - 2|🇩🇪_DE_德国
   - 2|🇺🇸_US_美国
-  - 2|🇷🇺_RU_俄罗斯联邦
-  - '2|🇷🇺_RU_俄罗斯联邦 #1'
-  - '2|🇺🇸_US_美国 #1'
-  - '2|🇺🇸_US_美国 #2'
   - 2|🇺🇸_US_美国->🇮🇳_IN_印度
-  - '2|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
-  - 2|🇨🇳_CN_中国->🇺🇸_US_美国
   - '2|🇺🇸_US_美国 #3'
   - 2|🇺🇸_US_美国->🇫🇷_FR_法国
-  - '3,17|🇺🇸_US_美国 #20'
   - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
   - '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
   - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
-  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
-  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
-  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
   - '3,17|🇺🇸_US_美国 #21'
-  - '3,17|🇺🇸_US_美国 #22'
-  - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
+  - 11|0|--24
+  - 11|0|--79
   - 11|5|d*********g.com_0
   - 11|5|d*********g.com_1
   - 11|5|d*********g.com_2
   - 11|5|d*********g.com_3
-  - 11,16|香港3|@ripaojiedian
-  - 11,16|香港5|@ripaojiedian
-  - 11,16|香港7|@ripaojiedian
-  - 11,16|美国2|@ripaojiedian
-  - '11|16|d*********g.com_2 #1'
   - 12|github.com/freefq - 印度  2
-  - 12|github.com/freefq - 美国CloudFla...
-  - '12|github.com/freefq - 美国CloudFla... #1'
-  - 12|github.com/freefq - 广东省移动 7
   - '12|github.com/freefq - 美国CloudFla... #2'
-  - 12|github.com/freefq - 美国Fastly全球...
-  - '12|github.com/freefq - 美国CloudFla... #3'
-  - 15|tg频道:@ripaojiedian
-  - 15|🇻🇳 越南|@ripaojiedian
-  - 15|🇭🇰 香港4|@ripaojiedian
-  - 15|🇭🇰 香港6|@ripaojiedian
-  - 15|🇭🇰 香港8|@ripaojiedian
-  - 15|🇹🇼 台湾|@ripaojiedian
-  - 15|🇯🇵 日本3|@ripaojiedian
-  - 15|🇰🇷 韩国|@ripaojiedian
-  - 15|🇰🇷 韩国3|@ripaojiedian
-  - 15|🇸🇬 新加坡|@ripaojiedian
   - 15|🇰🇷 韩国特殊|@ripaojiedian
   - 15|🇯🇵 日本特殊|@ripaojiedian
   - 15|🇸🇬 狮城特殊|@ripaojiedian
@@ -6491,42 +4851,15 @@ proxy-groups:
   - 0|-https://t.me/MrXbin-6
   - 0|-https://t.me/MrXbin-7
   - 0|-https://t.me/MrXbin-8
-  - 0|-https://t.me/MrXbin-11
-  - 0|-https://t.me/MrXbin-24
-  - 0|-https://t.me/MrXbin-40
-  - 0|-https://t.me/MrXbin-79
   - 13,14|香港|@ripaojiedian
-  - 13,14|日本2|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
-  - 15|HK_speednode_0035
-  - 15|HK_speednode_0036
-  - 15|HK_speednode_0037
-  - 15|HK_speednode_0038
-  - 15|HK_speednode_0039
   - 15|SE_speednode_0042
   - CN_e3681_0001
   - CN_e3681_0002
   - CN_e3681_0003
-  - CN_e3681_0004
-  - CN_e3681_0011
-  - CN_e3681_0013
   - CN_e3681_0014
-  - CN_e3681_0015
-  - CN_e3681_0016
-  - CN_e3681_0018
-  - CN_e3681_0022
-  - CN_e3681_0023
-  - CN_e3681_0024
-  - CN_e3681_0025
-  - CN_e3681_0029
-  - CN_e3681_0031
-  - DE_e3681_0032
   - GB_e3681_0034
-  - JP_e3681_0040
   - SE_e3681_0041
-  - SG_e3681_0044
   - US_e3681_0045
-  - US_e3681_0046
   - US_e3681_0047
   - US_e3681_0048
   - US_e3681_0049
@@ -6549,7 +4882,6 @@ proxy-groups:
   - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_2
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
   - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
   - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_3
   - 🇬🇧_GB_英国->🇨🇦_CA_加拿大
   - 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大
@@ -6573,21 +4905,16 @@ proxy-groups:
   - 美国 001
   - 美国 005
   - 美国 101
-  - 加拿大 210
   - 美国 003
   - 加拿大 016
   - 加拿大 087
   - 美国 156
   - 美国 167
   - 美国 170
-  - 美国 071
   - 美国 106
   - 加拿大 141
   - 加拿大 142
-  - 美国 016
-  - 美国 126
   - 美国 018
-  - 加拿大 098
   - 加拿大 008
   - 加拿大 017
   - 加拿大 201
@@ -6597,18 +4924,14 @@ proxy-groups:
   - 加拿大 007
   - 美国 036
   - 美国 050
-  - 加拿大 025
   - 加拿大 060
   - 加拿大 065
   - 美国 130
-  - 美国 131
   - 美国 004
   - 美国 006
   - 美国 142
   - 美国 033
   - 美国 046
-  - 加拿大 038
-  - 美国 007
   - 美国 009
   - 美国 045
   - 美国 040
@@ -6646,7 +4969,6 @@ proxy-groups:
   - 美国 085
   - 美国 086
   - 美国 087
-  - 加拿大 037
   - 美国 079
   - 美国 100
   - 美国 102
@@ -6662,42 +4984,25 @@ proxy-groups:
   - 美国 026
   - 美国 027
   - 美国 029
-  - 加拿大 002
-  - 加拿大 003
-  - 美国 030
   - 美国 032
   - 美国 034
   - 美国 037
   - 美国 039
   - 美国 041
   - 加拿大 005
-  - 美国 031
   - 加拿大 009
-  - 加拿大 010
   - 美国 019
   - 美国 021
   - 美国 023
   - 美国 042
-  - 美国 047
   - 美国 054
   - 加拿大 013
   - 美国 055
   - 加拿大 014
   - 美国 088
-  - 美国 089
-  - 美国 090
-  - 美国 010
-  - 加拿大 011
   - 美国 091
   - 美国 092
   - 美国 013
-  - 美国 094
-  - 加拿大 001
-  - 美国 095
-  - 美国 096
-  - 美国 097
-  - 美国 098
-  - 加拿大 019
   - 美国 011
   - 加拿大 020
   - 加拿大 021
@@ -6768,115 +5073,68 @@ proxy-groups:
   - 美国 143
   - 美国 144
   - 美国 145
-  - 🇬🇧 高性价比机场:https://kfyun.uk
-  - 0|--4
-  - 0|--5
-  - 0|--7
-  - 0|--8
-  - 0|--11
-  - 0|--15
   - 未知
   - 未知2
-  - US 1.9MB/s
   - 未知3
   - 未知4
-  - US2 80.6MB/s
   - 未知5
   - 未知6
-  - US3 2.0MB/s
-  - US4 99.3MB/s
-  - 未知7
-  - US5 22.1MB/s
   - 未知8
   - 未知9 62.4KB/s
   - 未知10
-  - 未知11
   - 未知12
-  - US6 1.9MB/s
   - 未知13
   - 未知14
   - 未知15
   - US7 11.7MB/s
   - 未知16
   - 未知17
-  - 未知18
   - 未知19
   - 未知20
-  - 未知21 1.8MB/s
   - 未知22
   - 🇺🇸US美国
   - 未知23
-  - 未知24 6.2MB/s
-  - 未知25
   - US8
   - 未知26
   - 未知27
   - 未知28
   - 未知29
-  - 未知30 1.7MB/s
   - 未知31
   - 未知32
   - 未知33
   - 未知34
   - 未知35
-  - US10 2.0MB/s
-  - 未知37 4.4MB/s
-  - US11 1.9MB/s
   - 未知38
-  - US12 2.0MB/s
   - 🇨🇳CN中国
   - 未知39
   - 未知40
-  - 未知41
   - 未知42
   - 未知43
   - 未知44
   - 未知45
   - 未知46
   - 未知47
-  - 未知48
   - HK
   - 未知49
   - 未知50 12.1MB/s
-  - 未知52 417.7KB/s
-  - US13 2.0MB/s
-  - US14 1.8MB/s
-  - 未知53
   - 未知54
   - 未知55
   - 未知56
-  - US15 1.9MB/s
-  - 未知57 12.4MB/s
-  - US17 2.0MB/s
   - 未知58
   - US18
   - 未知59
-  - US19 1.9MB/s
-  - US20 1.9MB/s
-  - US22 1.9MB/s
-  - 未知60
-  - US23 1.9MB/s
   - 未知62
   - 未知65
-  - US24 35.3MB/s
   - 🇺🇸US美国2
   - 未知66
-  - US25 1.9MB/s
-  - US26 1.9MB/s
-  - 未知67
-  - US27 23.3MB/s
   - 未知68
-  - 未知69 8.6MB/s
   - 未知70
   - 未知71
-  - 未知72
   - 未知73
   - 未知74
   - 未知75
   - 未知76
-  - 未知77
   - 未知79
-  - 未知80 1.7MB/s
   - 未知81
   - 未知82
   - 未知83
@@ -6884,32 +5142,23 @@ proxy-groups:
   - 未知84
   - 未知85
   - 未知86
-  - US29 111.4MB/s
   - 未知87
-  - US30 1.9MB/s
   - 未知88
   - 未知89
-  - US31 1.9MB/s
   - 未知90
   - 未知91
   - 未知92
   - 未知93
   - 未知94
-  - 未知95
   - 未知96
   - 未知97
   - 未知98
-  - US32
-  - US33 24.6MB/s
-  - 未知99
   - 未知100
   - 未知102
   - TW
   - 未知103
   - 未知104
   - 未知105
-  - 未知106 826.9KB/s
-  - 未知107 10.6MB/s
   - 未知108
   - 未知109
   - 未知110
@@ -6922,35 +5171,24 @@ proxy-groups:
   - 未知115
   - 未知116
   - 未知117
-  - 未知118
-  - 未知119 1.7MB/s
   - HK3 78.4KB/s
-  - US36 1.9MB/s
-  - 未知120
   - 未知121
   - 未知122
   - 未知123
-  - 未知124 1.8MB/s
   - 未知125
   - 未知126
-  - 未知127 1.9MB/s
   - 未知128
   - 未知129
   - 未知130
   - 未知131
   - 未知132
-  - 未知133 3.3MB/s
   - 未知134
   - 未知135
   - 未知136
-  - US40 2.0MB/s
-  - US41 2.0MB/s
   - 未知138
-  - US42 1.9MB/s
   - 未知139
   - 未知140
   - 未知141
-  - 未知142 10.9MB/s
   - HK4
   - 未知143
   type: select
@@ -6961,78 +5199,39 @@ proxy-groups:
   - '1,6|🇺🇸_US_美国 #8'
   - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
-  - 1|_FR_->_RU_
   - '1,6|🇺🇸_US_美国 #10'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
   - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
-  - 1|_US__5
-  - '1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
   - '1,6|🇺🇸_US_美国 #11'
-  - 1|_US__7
   - 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-  - 1|_US_->_ES_
   - '1,6|🇺🇸_US_美国 #12'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
   - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
   - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
   - '1,6|🇺🇸_US_美国 #14'
-  - 1|_SG_
-  - 1|_US__11
   - '1,6|🇺🇸_US_美国 #15'
-  - 1|_CN_
   - '1,6|🇺🇸_US_美国 #16'
   - '1,6|🇺🇸_US_美国 #17'
   - '1,6|🇺🇸_US_美国 #18'
   - '1,6|🇺🇸_US_美国 #19'
-  - 2|🇩🇪_DE_德国
   - 2|🇺🇸_US_美国
-  - 2|🇷🇺_RU_俄罗斯联邦
-  - '2|🇷🇺_RU_俄罗斯联邦 #1'
-  - '2|🇺🇸_US_美国 #1'
-  - '2|🇺🇸_US_美国 #2'
   - 2|🇺🇸_US_美国->🇮🇳_IN_印度
-  - '2|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
-  - 2|🇨🇳_CN_中国->🇺🇸_US_美国
   - '2|🇺🇸_US_美国 #3'
   - 2|🇺🇸_US_美国->🇫🇷_FR_法国
-  - '3,17|🇺🇸_US_美国 #20'
   - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
   - '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
   - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
-  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
-  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
-  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
   - '3,17|🇺🇸_US_美国 #21'
-  - '3,17|🇺🇸_US_美国 #22'
-  - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
+  - 11|0|--24
+  - 11|0|--79
   - 11|5|d*********g.com_0
   - 11|5|d*********g.com_1
   - 11|5|d*********g.com_2
   - 11|5|d*********g.com_3
-  - 11,16|香港3|@ripaojiedian
-  - 11,16|香港5|@ripaojiedian
-  - 11,16|香港7|@ripaojiedian
-  - 11,16|美国2|@ripaojiedian
-  - '11|16|d*********g.com_2 #1'
   - 12|github.com/freefq - 印度  2
-  - 12|github.com/freefq - 美国CloudFla...
-  - '12|github.com/freefq - 美国CloudFla... #1'
-  - 12|github.com/freefq - 广东省移动 7
   - '12|github.com/freefq - 美国CloudFla... #2'
-  - 12|github.com/freefq - 美国Fastly全球...
-  - '12|github.com/freefq - 美国CloudFla... #3'
-  - 15|tg频道:@ripaojiedian
-  - 15|🇻🇳 越南|@ripaojiedian
-  - 15|🇭🇰 香港4|@ripaojiedian
-  - 15|🇭🇰 香港6|@ripaojiedian
-  - 15|🇭🇰 香港8|@ripaojiedian
-  - 15|🇹🇼 台湾|@ripaojiedian
-  - 15|🇯🇵 日本3|@ripaojiedian
-  - 15|🇰🇷 韩国|@ripaojiedian
-  - 15|🇰🇷 韩国3|@ripaojiedian
-  - 15|🇸🇬 新加坡|@ripaojiedian
   - 15|🇰🇷 韩国特殊|@ripaojiedian
   - 15|🇯🇵 日本特殊|@ripaojiedian
   - 15|🇸🇬 狮城特殊|@ripaojiedian
@@ -7043,42 +5242,15 @@ proxy-groups:
   - 0|-https://t.me/MrXbin-6
   - 0|-https://t.me/MrXbin-7
   - 0|-https://t.me/MrXbin-8
-  - 0|-https://t.me/MrXbin-11
-  - 0|-https://t.me/MrXbin-24
-  - 0|-https://t.me/MrXbin-40
-  - 0|-https://t.me/MrXbin-79
   - 13,14|香港|@ripaojiedian
-  - 13,14|日本2|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
-  - 15|HK_speednode_0035
-  - 15|HK_speednode_0036
-  - 15|HK_speednode_0037
-  - 15|HK_speednode_0038
-  - 15|HK_speednode_0039
   - 15|SE_speednode_0042
   - CN_e3681_0001
   - CN_e3681_0002
   - CN_e3681_0003
-  - CN_e3681_0004
-  - CN_e3681_0011
-  - CN_e3681_0013
   - CN_e3681_0014
-  - CN_e3681_0015
-  - CN_e3681_0016
-  - CN_e3681_0018
-  - CN_e3681_0022
-  - CN_e3681_0023
-  - CN_e3681_0024
-  - CN_e3681_0025
-  - CN_e3681_0029
-  - CN_e3681_0031
-  - DE_e3681_0032
   - GB_e3681_0034
-  - JP_e3681_0040
   - SE_e3681_0041
-  - SG_e3681_0044
   - US_e3681_0045
-  - US_e3681_0046
   - US_e3681_0047
   - US_e3681_0048
   - US_e3681_0049
@@ -7101,7 +5273,6 @@ proxy-groups:
   - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_2
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
   - 🇱🇹_LT_立陶宛->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
   - 🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_3
   - 🇬🇧_GB_英国->🇨🇦_CA_加拿大
   - 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大
@@ -7125,21 +5296,16 @@ proxy-groups:
   - 美国 001
   - 美国 005
   - 美国 101
-  - 加拿大 210
   - 美国 003
   - 加拿大 016
   - 加拿大 087
   - 美国 156
   - 美国 167
   - 美国 170
-  - 美国 071
   - 美国 106
   - 加拿大 141
   - 加拿大 142
-  - 美国 016
-  - 美国 126
   - 美国 018
-  - 加拿大 098
   - 加拿大 008
   - 加拿大 017
   - 加拿大 201
@@ -7149,18 +5315,14 @@ proxy-groups:
   - 加拿大 007
   - 美国 036
   - 美国 050
-  - 加拿大 025
   - 加拿大 060
   - 加拿大 065
   - 美国 130
-  - 美国 131
   - 美国 004
   - 美国 006
   - 美国 142
   - 美国 033
   - 美国 046
-  - 加拿大 038
-  - 美国 007
   - 美国 009
   - 美国 045
   - 美国 040
@@ -7198,7 +5360,6 @@ proxy-groups:
   - 美国 085
   - 美国 086
   - 美国 087
-  - 加拿大 037
   - 美国 079
   - 美国 100
   - 美国 102
@@ -7214,42 +5375,25 @@ proxy-groups:
   - 美国 026
   - 美国 027
   - 美国 029
-  - 加拿大 002
-  - 加拿大 003
-  - 美国 030
   - 美国 032
   - 美国 034
   - 美国 037
   - 美国 039
   - 美国 041
   - 加拿大 005
-  - 美国 031
   - 加拿大 009
-  - 加拿大 010
   - 美国 019
   - 美国 021
   - 美国 023
   - 美国 042
-  - 美国 047
   - 美国 054
   - 加拿大 013
   - 美国 055
   - 加拿大 014
   - 美国 088
-  - 美国 089
-  - 美国 090
-  - 美国 010
-  - 加拿大 011
   - 美国 091
   - 美国 092
   - 美国 013
-  - 美国 094
-  - 加拿大 001
-  - 美国 095
-  - 美国 096
-  - 美国 097
-  - 美国 098
-  - 加拿大 019
   - 美国 011
   - 加拿大 020
   - 加拿大 021
@@ -7320,115 +5464,68 @@ proxy-groups:
   - 美国 143
   - 美国 144
   - 美国 145
-  - 🇬🇧 高性价比机场:https://kfyun.uk
-  - 0|--4
-  - 0|--5
-  - 0|--7
-  - 0|--8
-  - 0|--11
-  - 0|--15
   - 未知
   - 未知2
-  - US 1.9MB/s
   - 未知3
   - 未知4
-  - US2 80.6MB/s
   - 未知5
   - 未知6
-  - US3 2.0MB/s
-  - US4 99.3MB/s
-  - 未知7
-  - US5 22.1MB/s
   - 未知8
   - 未知9 62.4KB/s
   - 未知10
-  - 未知11
   - 未知12
-  - US6 1.9MB/s
   - 未知13
   - 未知14
   - 未知15
   - US7 11.7MB/s
   - 未知16
   - 未知17
-  - 未知18
   - 未知19
   - 未知20
-  - 未知21 1.8MB/s
   - 未知22
   - 🇺🇸US美国
   - 未知23
-  - 未知24 6.2MB/s
-  - 未知25
   - US8
   - 未知26
   - 未知27
   - 未知28
   - 未知29
-  - 未知30 1.7MB/s
   - 未知31
   - 未知32
   - 未知33
   - 未知34
   - 未知35
-  - US10 2.0MB/s
-  - 未知37 4.4MB/s
-  - US11 1.9MB/s
   - 未知38
-  - US12 2.0MB/s
   - 🇨🇳CN中国
   - 未知39
   - 未知40
-  - 未知41
   - 未知42
   - 未知43
   - 未知44
   - 未知45
   - 未知46
   - 未知47
-  - 未知48
   - HK
   - 未知49
   - 未知50 12.1MB/s
-  - 未知52 417.7KB/s
-  - US13 2.0MB/s
-  - US14 1.8MB/s
-  - 未知53
   - 未知54
   - 未知55
   - 未知56
-  - US15 1.9MB/s
-  - 未知57 12.4MB/s
-  - US17 2.0MB/s
   - 未知58
   - US18
   - 未知59
-  - US19 1.9MB/s
-  - US20 1.9MB/s
-  - US22 1.9MB/s
-  - 未知60
-  - US23 1.9MB/s
   - 未知62
   - 未知65
-  - US24 35.3MB/s
   - 🇺🇸US美国2
   - 未知66
-  - US25 1.9MB/s
-  - US26 1.9MB/s
-  - 未知67
-  - US27 23.3MB/s
   - 未知68
-  - 未知69 8.6MB/s
   - 未知70
   - 未知71
-  - 未知72
   - 未知73
   - 未知74
   - 未知75
   - 未知76
-  - 未知77
   - 未知79
-  - 未知80 1.7MB/s
   - 未知81
   - 未知82
   - 未知83
@@ -7436,32 +5533,23 @@ proxy-groups:
   - 未知84
   - 未知85
   - 未知86
-  - US29 111.4MB/s
   - 未知87
-  - US30 1.9MB/s
   - 未知88
   - 未知89
-  - US31 1.9MB/s
   - 未知90
   - 未知91
   - 未知92
   - 未知93
   - 未知94
-  - 未知95
   - 未知96
   - 未知97
   - 未知98
-  - US32
-  - US33 24.6MB/s
-  - 未知99
   - 未知100
   - 未知102
   - TW
   - 未知103
   - 未知104
   - 未知105
-  - 未知106 826.9KB/s
-  - 未知107 10.6MB/s
   - 未知108
   - 未知109
   - 未知110
@@ -7474,35 +5562,24 @@ proxy-groups:
   - 未知115
   - 未知116
   - 未知117
-  - 未知118
-  - 未知119 1.7MB/s
   - HK3 78.4KB/s
-  - US36 1.9MB/s
-  - 未知120
   - 未知121
   - 未知122
   - 未知123
-  - 未知124 1.8MB/s
   - 未知125
   - 未知126
-  - 未知127 1.9MB/s
   - 未知128
   - 未知129
   - 未知130
   - 未知131
   - 未知132
-  - 未知133 3.3MB/s
   - 未知134
   - 未知135
   - 未知136
-  - US40 2.0MB/s
-  - US41 2.0MB/s
   - 未知138
-  - US42 1.9MB/s
   - 未知139
   - 未知140
   - 未知141
-  - 未知142 10.9MB/s
   - HK4
   - 未知143
   type: load-balance
