@@ -7,6 +7,7 @@ sys.path.append('.')
 from processProxy import *
 from parserUrl import *
 from autoPush import *
+from createGroup import *
 
 downloadProxy = {
     'http':  'http://127.0.0.1:7890',
@@ -60,8 +61,20 @@ def creatConfig(proxyPool, defaultFile):
     proxiesNames = [proxy['name'] for proxy in proxies]
 
     config['proxies'] = proxies if config['proxies'] == None else config['proxies'] + proxies
-    for group in config['proxy-groups']:
-        group['proxies'] = proxiesNames if group['proxies'] == None else group['proxies'] + proxiesNames
+
+    config['proxy-groups'] = []
+    config['proxy-groups'].append(createGroup("proxinode", "select", ["select country", "automatic"] + proxiesNames))
+    config['proxy-groups'].append(createGroup("automatic", "load-balance", proxiesNames))
+
+    selectCountry = createGroup("select country", "select", [])
+
+    countryGroup = createLocationProxyGroup(proxies)
+    for country in countryGroup:
+        selectCountry['proxies'].append(country)
+        config['proxy-groups'].append(countryGroup[country])
+
+    config['proxy-groups'].append(selectCountry)
+
 
     with open(listFile, 'w', encoding='utf-8') as file:
         yaml.dump(config, file, allow_unicode=True)

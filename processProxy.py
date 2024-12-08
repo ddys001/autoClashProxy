@@ -46,10 +46,21 @@ def removePingFailPorxy(proxyPool):
 
     return proxies
 
+def removeNotSupportType(proxyPool): #删除type不符合条件的节点
+    notSupportType = ['vless']
+    proxies = []
+    for proxy in proxyPool:
+        if('type' in proxy and proxy['type'] in notSupportType):
+            continue
+        proxies.append(proxy)
+
+    return proxies
+
 def removeNodes(proxyPool):
     proxies = removeDuplicateNode(proxyPool)
     proxies = removeNotSupportCipher(proxies)
     proxies = removeNotSupportUUID(proxies)
+    proxies = removeNotSupportType(proxies)
     proxies = removePingFailPorxy(proxies)
 
     return proxies
