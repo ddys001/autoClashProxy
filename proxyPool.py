@@ -63,10 +63,10 @@ def creatConfig(proxyPool, defaultFile):
     config['proxies'] = proxies if config['proxies'] == None else config['proxies'] + proxies
 
     config['proxy-groups'] = []
-    config['proxy-groups'].append(createGroup("proxinode", "select", ["select country", "automatic"] + proxiesNames))
-    config['proxy-groups'].append(createGroup("automatic", "load-balance", proxiesNames))
+    config['proxy-groups'].append(createGroup("proxinode", "select", ["选择地区", "自动选择", "手动选择"]))
+    config['proxy-groups'].append(createGroup("自动选择", "load-balance", proxiesNames))
 
-    selectCountry = createGroup("select country", "select", [])
+    selectCountry = createGroup("选择地区", "select", [])
 
     countryGroup = createLocationProxyGroup(proxies)
     allCountry = []
@@ -75,6 +75,8 @@ def creatConfig(proxyPool, defaultFile):
         allCountry.append(countryGroup[country])
 
     config['proxy-groups'].append(selectCountry)
+    config['proxy-groups'].append(createGroup("手动选择", "select", proxiesNames))
+
     config['proxy-groups'] += allCountry
 
 
