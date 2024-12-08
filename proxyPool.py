@@ -69,11 +69,13 @@ def creatConfig(proxyPool, defaultFile):
     selectCountry = createGroup("select country", "select", [])
 
     countryGroup = createLocationProxyGroup(proxies)
+    allCountry = []
     for country in countryGroup:
         selectCountry['proxies'].append(country)
-        config['proxy-groups'].append(countryGroup[country])
+        allCountry.append(countryGroup[country])
 
     config['proxy-groups'].append(selectCountry)
+    config['proxy-groups'] += allCountry
 
 
     with open(listFile, 'w', encoding='utf-8') as file:
