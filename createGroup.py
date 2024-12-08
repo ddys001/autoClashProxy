@@ -12,10 +12,9 @@ def getPorxyCountry(proxy):
     country = "未知地区"
     try:
         ip = socket.gethostbyname(proxy['server'])
-        data = requests.get(f"http://demo.ip-api.com/json/{ip}?fields=66842623&lang=zh-CN", proxies=httpProxy).text
+        data = requests.get(f"http://ip.plyz.net/ip.ashx?ip={ip}", proxies=httpProxy).text
         if(len(data) != 0):
-            data = json.loads(data)
-            country = data['country'] if (data['status'] == "success") else "未知地区"
+            country = data.split("|")[1].split()[0]
     except Exception as e:
         print(e)
 
