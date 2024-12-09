@@ -8,7 +8,7 @@ httpProxy = {
     'https': 'http://127.0.0.1:7890',
 }
 
-def getPorxyCountry(proxy):
+def getPorxyCountry(index, proxy):
     country = "未知地区"
     try:
         ip = socket.gethostbyname(proxy['server'])
@@ -18,7 +18,7 @@ def getPorxyCountry(proxy):
     except Exception as e:
         print(e)
 
-    print(f"{proxy['server']} {country}")
+    print(f"节点{index}: {proxy['server']} {country}")
     return country
 
 def createGroup(name, groupType, proxies):
@@ -38,8 +38,8 @@ def createLocationProxyGroup(proxies):
     print("按照ip地址查询节点所属地区")
 
     location = dict()
-    for proxy in proxies:
-        country = getPorxyCountry(proxy)
+    for index, proxy in enumerate(proxies):
+        country = getPorxyCountry(index+1, proxy)
         countryGroup = location[country] if (country in location) else createGroup(country, "load-balance", [])
         countryGroup['proxies'].append(proxy['name'])
 
