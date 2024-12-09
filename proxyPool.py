@@ -16,8 +16,8 @@ downloadProxy = {
 
 listFile = "list.yaml"
 
-def downloadFile(url):
-    print("开始下载：{}".format(url), end=" ", flush=True)
+def downloadFile(index, url):
+    print("开始下载url{}：{}".format(index, url), end=" ", flush=True)
     file = None
     try:
         req = requests.get(url, proxies=downloadProxy)
@@ -38,8 +38,8 @@ def downloadFile(url):
 def getProxyFromSource(sourcePath):
     proxyPool = []
     sources = parserSourceUrl(open(sourcePath, encoding='utf8').read().strip().splitlines())
-    for url in sources:
-        download = downloadFile(url)
+    for index, url in enumerate(sources):
+        download = downloadFile(index+1, url)
         if(download != None):
             try:
                 file = yaml.load(download, Loader=yaml.FullLoader)
