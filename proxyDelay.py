@@ -3,7 +3,7 @@ import yaml
 
 def getProxyDelay(index, proxyName):
     bPassTest = False
-    url = f"http://127.0.0.1:59319/proxies/{proxyName}/delay?timeout=3000&url=http:%2F%2Fwww.gstatic.com%2Fgenerate_204"
+    url = f"http://127.0.0.1:59319/proxies/{proxyName}/delay?timeout=3000&url=http://www.gstatic.com/generate_204"
     header = {
                 "Authorization": "Bearer f8db5010-566d-409e-b06e-3553c06123c8",
              }
