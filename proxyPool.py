@@ -65,8 +65,8 @@ if(len(sys.argv) > 1):
         print("未获取到有效节点，不生成fake config文件")
 else:
     proxies = teseAllProxy()
-    if(len(proxies) > 0):
+    if(len(proxies) > 20):
         creatConfig(proxies, defaultConfigPath)
         pushListFile("list.yaml")
     else:
-        print("未获取到有效节点，不生成config文件")
+        print("获取的有效节点不足，不生成config文件")

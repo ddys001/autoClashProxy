@@ -3,12 +3,19 @@ import yaml
 
 def getProxyDelay(index, proxyName):
     bPassTest = False
-    url = f"http://127.0.0.1:59319/proxies/{proxyName}/delay?timeout=3000&url=http://www.gstatic.com/generate_204"
+
+    port = 52039
+    url = f"http://127.0.0.1:{port}/proxies/{proxyName}/delay"
     header = {
                 "Authorization": "Bearer f8db5010-566d-409e-b06e-3553c06123c8",
              }
 
-    delay = eval(requests.get(url, headers=header).text)
+    param = {
+                "timeout": "3000",
+                "url": "http://www.gstatic.com/generate_20"
+    }
+
+    delay = eval(requests.get(url, headers=header, params=param).text)
 
     if("delay" in delay):
         delay = delay["delay"]
@@ -31,6 +38,9 @@ def teseAllProxy():
         for index, proxy in enumerate(allProxy):
             if(getProxyDelay(index+1, proxy['name'])):
                 passProxy.append(proxy)
+
+            if(index % 30 == 0):
+                print(f"测试正常节点: {len(passProxy)}/{len(allProxy)}")
 
         print(f"测试正常节点: {len(passProxy)}/{len(allProxy)}")
 
