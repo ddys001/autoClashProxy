@@ -42,7 +42,7 @@ def creatFakeConfig(proxies, defaultFile):
 
     config['proxies'] = proxies if config['proxies'] == None else config['proxies'] + proxies
 
-    config['proxy-groups'] = [createGroup("proxinode", "select", proxiesNames)]
+    config['proxy-groups'] = [createGroup("proxinode", "load-balance", proxiesNames)]
 
     with open(fakeConfig, 'w', encoding='utf-8') as file:
         yaml.dump(config, file, allow_unicode=True)

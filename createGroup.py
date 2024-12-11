@@ -28,7 +28,7 @@ def createGroup(name, groupType, proxies):
         "proxies"  : proxies,
     }
 
-    if(groupType == "load-balance"):
+    if(groupType == "load-balance" or groupType == "url-test"):
         group['url'] = "https://www.google.com/favicon.ico"
         group["interval"] = 300
 
