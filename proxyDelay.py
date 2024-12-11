@@ -1,8 +1,8 @@
 import requests
 import yaml
 
-def getProxyDelay(proxyName):
-    bTimeOut = True
+def getProxyDelay(index, proxyName):
+    bPassTest = False
     url = f"http://127.0.0.1:59319/proxies/{proxyName}/delay?timeout=3000&url=http:%2F%2Fwww.gstatic.com%2Fgenerate_204"
     header = {
                 "Authorization": "Bearer f8db5010-566d-409e-b06e-3553c06123c8",
@@ -12,24 +12,27 @@ def getProxyDelay(proxyName):
 
     if("delay" in delay):
         delay = delay["delay"]
-        bTimeOut = False
+        bPassTest = True
     elif("message" in delay):
         delay = delay["message"]
     else:
         assert(0)
 
-    print(f"{proxyName}: {delay}")
+    print(f"节点{index}: {proxyName}: {delay}")
 
-    return bTimeOut
+    return bPassTest
 
 def teseAllProxy():
     passProxy=[]
     with open("fakeList.yaml", encoding='utf8') as fp:
         listFile = yaml.load(fp.read(), Loader=yaml.FullLoader)
         allProxy = listFile['proxies']
-        for proxy in allProxy:
-            if(not getProxyDelay(proxy['name'])):
+        print(f"测试节点总数为：{len(allProxy)}")
+        for index, proxy in enumerate(allProxy):
+            if(getProxyDelay(index+1, proxy['name'])):
                 passProxy.append(proxy)
+
+        print(f"测试正常节点: {len(passProxy)}/{len(allProxy)}")
 
     return passProxy
 
@@ -39,7 +42,7 @@ if __name__ == "__main__":
     with open("fakeList.yaml", encoding='utf8') as fp:
         listFile = yaml.load(fp.read(), Loader=yaml.FullLoader)
         allProxy = listFile['proxies']
-        for proxy in allProxy:
-            passCount = passCount + (0 if getProxyDelay(proxy['name']) else 1)
+        for index, proxy in enumerate(allProxy):
+            passCount = passCount + (1 if getProxyDelay(index+1, proxy['name']) else 0)
 
     print(f"测试正常节点{passCount}/{len(allProxy)}")

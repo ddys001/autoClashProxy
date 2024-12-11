@@ -17,7 +17,7 @@ downloadProxy = {
 }
 
 def downloadFile(index, url):
-    print("开始下载url{}：{}".format(index, url), end=" ", flush=True)
+    print("开始下载{}：{}".format(index, url), end=" ", flush=True)
     file = None
     try:
         req = requests.get(url, proxies=downloadProxy)
@@ -61,10 +61,12 @@ if(len(sys.argv) > 1):
     proxies = getProxyFromSource(sourcePath)
     if(len(proxies) > 0):
         creatFakeConfig(proxies, defaultConfigPath)
-        #pushListFile(listFile)
     else:
-        print("未获取到有效节点，不生成clash订阅文件")
+        print("未获取到有效节点，不生成fake config文件")
 else:
     proxies = teseAllProxy()
-    creatConfig(proxies, defaultConfigPath)
-    pushListFile("list.yaml")
+    if(len(proxies) > 0):
+        creatConfig(proxies, defaultConfigPath)
+        pushListFile("list.yaml")
+    else:
+        print("未获取到有效节点，不生成config文件")
