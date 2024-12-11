@@ -66,6 +66,6 @@ def removeNodes(proxyPool):
     proxies = removeNotSupportCipher(proxies)
     proxies = removeNotSupportUUID(proxies)
     proxies = removeNotSupportType(proxies)
-    proxies = removePingFailPorxy(proxies)
+    #proxies = removePingFailPorxy(proxies)
 
     return proxies

@@ -8,13 +8,13 @@ from processProxy import *
 from parserUrl import *
 from autoPush import *
 from createGroup import *
+from createConfigYaml import *
+from proxyDelay import *
 
 downloadProxy = {
     'http':  'http://127.0.0.1:7890',
     'https': 'http://127.0.0.1:7890',
 }
-
-listFile = "list.yaml"
 
 def downloadFile(index, url):
     print("开始下载url{}：{}".format(index, url), end=" ", flush=True)
@@ -54,43 +54,17 @@ def getProxyFromSource(sourcePath):
 
     return proxies
 
-def creatConfig(proxyPool, defaultFile):
-    defaultConfig = open(defaultFile, encoding='utf8').read()
-    config = yaml.load(defaultConfig, Loader=yaml.FullLoader)
-
-    proxiesNames = [proxy['name'] for proxy in proxies]
-
-    config['proxies'] = proxies if config['proxies'] == None else config['proxies'] + proxies
-
-    config['proxy-groups'] = []
-    config['proxy-groups'].append(createGroup("proxinode", "select", ["选择地区", "自动选择", "手动选择"]))
-    config['proxy-groups'].append(createGroup("自动选择", "load-balance", proxiesNames))
-
-    selectCountry = createGroup("选择地区", "select", [])
-
-    countryGroup = createLocationProxyGroup(proxies)
-    allCountry = []
-    for country in countryGroup:
-        selectCountry['proxies'].append(country)
-        allCountry.append(countryGroup[country])
-
-    config['proxy-groups'].append(selectCountry)
-    config['proxy-groups'].append(createGroup("手动选择", "select", proxiesNames))
-
-    config['proxy-groups'] += allCountry
-
-
-    with open(listFile, 'w', encoding='utf-8') as file:
-        yaml.dump(config, file, allow_unicode=True)
-
-    print("生成clash订阅文件：{}".format(listFile))
-
 sourcePath = "source.url"
 defaultConfigPath = "default.config"
-proxies = getProxyFromSource(sourcePath)
 
-if(len(proxies) > 0):
-    creatConfig(proxies, defaultConfigPath)
-    pushListFile(listFile)
+if(len(sys.argv) > 1):
+    proxies = getProxyFromSource(sourcePath)
+    if(len(proxies) > 0):
+        creatFakeConfig(proxies, defaultConfigPath)
+        #pushListFile(listFile)
+    else:
+        print("未获取到有效节点，不生成clash订阅文件")
 else:
-    print("未获取到有效节点，不生成clash订阅文件")
+    proxies = teseAllProxy()
+    creatConfig(proxies, defaultConfigPath)
+    pushListFile("list.yaml")
