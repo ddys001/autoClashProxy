@@ -44,6 +44,7 @@ def createLocationProxyGroup(proxies):
     for index, proxy in enumerate(proxies):
         country = getPorxyCountry(index+1, proxy)
         countryGroup = location[country] if (country in location) else createGroup(country, "url-test", [])
+        proxy['name'] = f"{country}-{len(countryGroup['proxies']) + 1}"
         countryGroup['proxies'].append(proxy['name'])
 
         location[country] = countryGroup

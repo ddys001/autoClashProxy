@@ -8,6 +8,8 @@ def creatConfig(proxies, defaultFile):
     defaultConfig = open(defaultFile, encoding='utf8').read()
     config = yaml.load(defaultConfig, Loader=yaml.FullLoader)
 
+    countryGroup = createLocationProxyGroup(proxies)
+
     proxiesNames = [proxy['name'] for proxy in proxies]
 
     config['proxies'] = proxies if config['proxies'] == None else config['proxies'] + proxies
@@ -18,7 +20,6 @@ def creatConfig(proxies, defaultFile):
 
     selectCountry = createGroup("选择地区", "select", [])
 
-    countryGroup = createLocationProxyGroup(proxies)
     allCountry = []
     for country in countryGroup:
         selectCountry['proxies'].append(country)

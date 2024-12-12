@@ -47,15 +47,4 @@ def teseAllProxy():
     return passProxy
 
 if __name__ == "__main__":
-    passCount = 0
-    proxyCount = 0
-    with open("fakeList.yaml", encoding='utf8') as fp:
-        listFile = yaml.load(fp.read(), Loader=yaml.FullLoader)
-        allProxy = listFile['proxies']
-        for index, proxy in enumerate(allProxy):
-            passCount = passCount + (1 if getProxyDelay(index+1, proxy['name']) else 0)
-
-            if(((index + 1) % 30) == 0):
-                print(f"测试正常节点: {passCount}/{len(index + 1)}")
-
-    print(f"测试正常节点{passCount}/{len(allProxy)}")
+    teseAllProxy()
