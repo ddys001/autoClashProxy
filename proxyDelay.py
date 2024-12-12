@@ -12,7 +12,7 @@ def getProxyDelay(index, proxyName):
 
     param = {
                 "timeout": "3000",
-                "url": "http://www.gstatic.com/generate_20"
+                "url": "https://twitter.com/favicon.ico"
     }
 
     delay = eval(requests.get(url, headers=header, params=param).text)
@@ -39,8 +39,8 @@ def teseAllProxy():
             if(getProxyDelay(index+1, proxy['name'])):
                 passProxy.append(proxy)
 
-            if(index % 30 == 0):
-                print(f"测试正常节点: {len(passProxy)}/{len(allProxy)}")
+            if(((index + 1) % 30) == 0):
+                print(f"测试正常节点: {len(passProxy)}/{index + 1}")
 
         print(f"测试正常节点: {len(passProxy)}/{len(allProxy)}")
 
@@ -54,5 +54,8 @@ if __name__ == "__main__":
         allProxy = listFile['proxies']
         for index, proxy in enumerate(allProxy):
             passCount = passCount + (1 if getProxyDelay(index+1, proxy['name']) else 0)
+
+            if(((index + 1) % 30) == 0):
+                print(f"测试正常节点: {passCount}/{len(index + 1)}")
 
     print(f"测试正常节点{passCount}/{len(allProxy)}")

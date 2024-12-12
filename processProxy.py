@@ -59,6 +59,8 @@ def removeNotSupportType(proxyPool): #删除type不符合条件的节点
             continue
         proxies.append(proxy)
 
+    print(f"after removeNotSupportType, 剩余节点数量{len(proxies)}")
+
     return proxies
 
 def removeNodes(proxyPool):

@@ -22,14 +22,17 @@ def getPorxyCountry(index, proxy):
     return country
 
 def createGroup(name, groupType, proxies):
+    allType = ['select', 'load-balance', 'url-test', 'fallback']
+    assert(groupType in allType)
+
     group = {
         "name"     : name,
         "type"     : groupType,
         "proxies"  : proxies,
     }
 
-    if(groupType == "load-balance" or groupType == "url-test"):
-        group['url'] = "https://www.google.com/favicon.ico"
+    if(groupType != "select"):
+        group['url'] = "https://twitter.com/favicon.ico"
         group["interval"] = 300
 
     return group
@@ -40,7 +43,7 @@ def createLocationProxyGroup(proxies):
     location = dict()
     for index, proxy in enumerate(proxies):
         country = getPorxyCountry(index+1, proxy)
-        countryGroup = location[country] if (country in location) else createGroup(country, "load-balance", [])
+        countryGroup = location[country] if (country in location) else createGroup(country, "url-test", [])
         countryGroup['proxies'].append(proxy['name'])
 
         location[country] = countryGroup
