@@ -15,8 +15,7 @@ def creatConfig(proxies, defaultFile):
     config['proxies'] = proxies if config['proxies'] == None else config['proxies'] + proxies
 
     config['proxy-groups'] = []
-    config['proxy-groups'].append(createGroup("proxinode", "select", ["选择地区", "自动选择", "手动选择"]))
-    config['proxy-groups'].append(createGroup("自动选择", "url-test", proxiesNames))
+    config['proxy-groups'].append(createGroup("proxinode", "select", ["选择地区", "延迟最低", "故障转移", "负载均衡", "手动选择"]))
 
     selectCountry = createGroup("选择地区", "select", [])
 
@@ -26,6 +25,9 @@ def creatConfig(proxies, defaultFile):
         allCountry.append(countryGroup[country])
 
     config['proxy-groups'].append(selectCountry)
+    config['proxy-groups'].append(createGroup("延迟最低", "url-test", proxiesNames))
+    config['proxy-groups'].append(createGroup("故障转移", "fallback", proxiesNames))
+    config['proxy-groups'].append(createGroup("负载均衡", "load-balance", proxiesNames))
     config['proxy-groups'].append(createGroup("手动选择", "select", proxiesNames))
 
     config['proxy-groups'] += allCountry
