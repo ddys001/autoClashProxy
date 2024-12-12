@@ -45,6 +45,25 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 11|0|--94
+  network: tcp
+  port: 443
+  server: suddaehihub.sudda.store
+  tls: true
+  type: vmess
+  uuid: ad2cea64-7ce8-46eb-b898-5b3a0937416f
+- alterId: 0
+  cipher: auto
+  name: 11,16|香港3|@ripaojiedian
+  network: tcp
+  port: '39041'
+  server: hk1.tiljkc.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
 - alterId: 64
   cipher: auto
   name: 11,16|香港7|@ripaojiedian
@@ -55,34 +74,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 11|14|香港9|@ripaojiedian
+  name: 11,16|日本4|@ripaojiedian
   network: tcp
-  port: '41490'
-  server: 183.236.48.143
+  port: '38951'
+  server: jp1.tiljkc.top
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
 - name: 15|tg频道:@ripaojiedian
   port: 4000
   server: hk9.ftq.ink
   tls: true
   type: http
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 15|🇻🇳 越南|@ripaojiedian
-  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
-  port: 443
-  server: vn.mjt000.com
-  skip-cert-verify: false
-  sni: vn.mjt000.com
-  tfo: false
-  tls: false
-  type: trojan
-  uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇭🇰 香港6|@ripaojiedian
@@ -91,12 +97,28 @@ proxies:
   server: h-k01.loveroise.com
   tfo: false
   type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港9|@ripaojiedian
+  password: 5BPUP4YJFYRRQK13
+  port: 15013
+  server: 113.99.142.152
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 15|🇯🇵 日本3|@ripaojiedian
+  name: 15|🇯🇵 日本2|@ripaojiedian
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54102
-  server: j-p04.loveroise.com
+  port: 54096
+  server: j-p01.loveroise.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 15|🇰🇷 韩国|@ripaojiedian
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  port: 54014
+  server: k-r04.loveroise.com
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -107,52 +129,72 @@ proxies:
   server: s-g03.loveroise.com
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇺🇸 美国3|@ripaojiedian
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 38.110.1.252
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 15|🇯🇵 日本特殊|@ripaojiedian
+  name: 15|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.141.231.184
+  server: 54.151.196.32
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 16|香港3|@ripaojiedian
+- name: 0,15|US_speednode_0039
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  port: 443
+  server: 142.202.48.220
+  skip-cert-verify: true
+  sni: sherasheba.com
+  type: trojan
+- name: 0,15|HK_speednode_0011
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 44991
+  server: 0bce075b5465c22ad8c82382a5df74ad.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: us1.bilibili.com
+  type: trojan
+  udp: true
+- name: 0,15|US_speednode_0041
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  port: 443
+  server: sherasheba.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 0,15|HK_speednode_0010
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 41790
+  server: ddbfb45e8b47580a5b2c2b5e43fa9213.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: us1.bilibili.com
+  type: trojan
+- name: 0,15|HK_speednode_0006
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 49782
+  server: 7c0bb8d8872425b41520a1a9ad77fa89.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: jp12.bilibili.com
+  type: trojan
+- name: 0,15|HK_speednode_0005
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 49089
+  server: eb0aa4fcce49b0399bc0f109cd6a0296.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: jp12.bilibili.com
+  type: trojan
+  udp: true
+- name: 0,15|HK_speednode_0004
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 48539
+  server: 1906e95f0a4e34cca3d5618e3498505d.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
+- name: 13,14|香港|@ripaojiedian
   network: tcp
-  port: '39041'
-  server: hk1.tiljkc.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
-- alterId: 0
-  cipher: auto
-  name: 16|日本4|@ripaojiedian
-  network: tcp
-  port: '38951'
-  server: jp1.tiljkc.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
-- alterId: 0
-  cipher: auto
-  name: 16|美国2|@ripaojiedian
-  network: tcp
-  port: '46051'
-  server: us1.tiljkc.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
+  password: DNUMdmnJ
+  port: 42395
+  server: 36.151.192.239
+  skip-cert-verify: true
+  type: trojan
 - name: 13,14|香港2|@ripaojiedian
   network: tcp
   password: QwwHvrnN
@@ -167,94 +209,131 @@ proxies:
   server: 36.151.192.198
   skip-cert-verify: true
   type: trojan
-- name: 13,14|美国|@ripaojiedian
-  network: tcp
-  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
+- cipher: aes-256-gcm
+  name: 13|🇯🇵 日本5|@ripaojiedian
+  password: LKX69P4C7CNLBQJ2
+  port: 18016
+  server: 219.135.227.209
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 13|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
   port: 443
-  server: usla.mjt000.com
-  skip-cert-verify: false
-  sni: usla.mjt000.com
-  type: trojan
-- name: 15|CN_speednode_0002
-  password: 6307d00e-56e0-4d0d-afe9-254155638bdf
-  port: 21042
-  server: 219.135.231.205
-  skip-cert-verify: true
-  type: trojan
+  server: 52.38.9.34
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 43.203.255.151
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 13|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.194.222.57
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LV_01bad_0013
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 46.183.217.232
+  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: CN_57f3c_0011
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54004
-  server: h-k03.loveroise.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: DE_57f3c_0020
-  password: 2EtPqn6HYjUNcHohLfUpFQwnfjCCQ5mh1mJdEMCBucuWZ9P1udkRKHnVxuo55k1KXz2Fo6jrgt18W66opty1e4bm1jzfCfBb
-  port: 50841
-  server: 84.19.31.63
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: GB_57f3c_0023
-  network: ws
-  port: 23120
-  server: 5.39.254.196
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: PL_57f3c_0056
+  name: PL_01bad_0022
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_1
-  network: ws
-  port: 2086
-  server: 104.21.238.72
-  type: vmess
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  ws-opts:
-    headers:
-      host: e5.808075.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_2
-  network: ws
-  port: 2086
-  server: 104.18.114.144
-  type: vmess
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  ws-opts:
-    headers:
-      host: e5.808075.xyz
-    path: github.com/Alvin9999
 - cipher: aes-256-cfb
-  name: 🇸🇬_SG_新加坡->🇺🇸_US_美国
+  name: 🇺🇸_US_美国
   password: amazonskr05
   port: 443
-  server: 54.151.223.9
+  server: 52.89.164.115
   type: ss
 - alterId: 0
   cipher: auto
-  name: 美国 102
+  name: 🇫🇷_FR_法国->🇨🇦_CA_加拿大
   network: ws
-  port: 2086
-  server: 104.26.0.246
-  servername: p1.613055.xyz
+  port: 2082
+  server: 45.80.111.9
+  skip-cert-verify: true
+  sni: ''
   type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
-      Host: p1.613055.xyz
+      host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- cipher: aes-256-cfb
+  name: 🇺🇸_US_美国_2
+  password: amazonskr05
+  port: 443
+  server: 54.244.200.142
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸_US_美国_3
+  password: amazonskr05
+  port: 443
+  server: 34.211.105.26
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 美国 058
+  network: ws
+  port: 8880
+  server: 104.26.0.84
+  servername: m1.106778.xyz
+  type: vmess
+  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  ws-opts:
+    headers:
+      Host: m1.106778.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 美国 065
+  network: ws
+  port: 8880
+  server: 104.18.114.206
+  servername: m1.106778.xyz
+  type: vmess
+  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  ws-opts:
+    headers:
+      Host: m1.106778.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 美国 073
+  network: ws
+  port: 8880
+  server: 104.18.114.196
+  servername: m1.106778.xyz
+  type: vmess
+  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  ws-opts:
+    headers:
+      Host: m1.106778.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 美国 074
+  network: ws
+  port: 8880
+  server: 104.21.238.232
+  servername: m1.106778.xyz
+  type: vmess
+  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  ws-opts:
+    headers:
+      Host: m1.106778.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -269,19 +348,6 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 029
-  network: ws
-  port: 2086
-  server: 104.21.238.163
-  type: vmess
-  udp: true
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
   name: 美国 035
@@ -310,42 +376,16 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 加拿大 009
+  name: 美国 055
   network: ws
-  port: 8880
-  server: 104.21.238.85
-  servername: m10.106778.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m10.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 010
-  network: ws
-  port: 2082
-  server: japan.com
+  port: 2095
+  server: 104.19.45.42
   type: vmess
   udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   ws-opts:
     headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 047
-  network: ws
-  port: 2082
-  server: 104.19.21.71
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
+      Host: ip2.6016725.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -362,37 +402,36 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国 013
+  name: 美国 088
   network: ws
-  port: 8880
-  server: 104.18.114.117
-  servername: m1.106778.xyz
+  port: 2082
+  server: 205.233.181.63
   type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  udp: true
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国 145
+  name: 美国 021
   network: ws
-  port: 2086
-  server: 104.18.114.120
-  servername: p1.613055.xyz
-  skip-cert-verify: true
+  port: 2082
+  server: 159.112.235.35
   type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+  udp: true
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 加拿大 091
+  name: 加拿大 096
   network: ws
   port: 2086
-  server: 104.18.114.138
+  server: 104.18.114.26
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -404,10 +443,25 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 加拿大 101
+  name: 美国 166
+  network: ws
+  port: 2086
+  server: 104.18.114.202
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+  ws-opts:
+    headers:
+      Host: p1.613055.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 加拿大 131
   network: ws
   port: 2082
-  server: 104.18.114.35
+  server: 104.18.114.192
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -419,18 +473,18 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 加拿大 111
+  name: 加拿大 137
   network: ws
-  port: 2095
-  server: 104.26.0.202
+  port: 2082
+  server: 104.18.114.216
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
-      Host: c3.6016725.xyz
+      Host: e4.6929198.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -449,102 +503,39 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 加拿大 149
-  network: ws
-  port: 2086
-  server: 104.21.238.119
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 151
-  network: ws
-  port: 8880
-  server: 104.26.0.176
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 172
-  network: ws
-  port: 2082
-  server: 104.21.238.104
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国 185
-  network: ws
-  port: 2082
-  server: 104.21.238.58
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 192
-  network: ws
-  port: 8880
-  server: 104.21.238.179
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 加拿大 193
-  network: ws
-  port: 8880
-  server: 104.26.0.171
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
   name: 美国 191
   network: ws
   port: 2082
   server: 185.148.104.251
   skip-cert-verify: true
   tls: false
+  type: vmess
+  udp: true
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 美国 011
+  network: ws
+  port: 2082
+  server: 167.68.5.24
+  type: vmess
+  udp: true
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 美国 116
+  network: ws
+  port: 2082
+  server: 199.181.197.184
+  sni: ''
   type: vmess
   udp: true
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -567,34 +558,37 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 新加坡 001
-  network: ws
-  port: 23451
-  server: westsg2-ddns.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 402e6de3-9dfc-480c-af0b-387cb6b85717
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|--60
+  name: 0|--41
   password: amazonskr05
   port: 443
-  server: 34.208.196.91
+  server: 54.200.220.184
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 0|--43
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 51.158.244.38
   tfo: false
   type: ss
 - alterId: 0
-  name: 未知80
+  name: 未知2
+  password: 6307d00e-56e0-4d0d-afe9-254155638bdf
+  port: 21019
+  server: 219.135.231.205
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知141
   network: tcp
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   port: 22222
-  server: 13.48.114.37
+  server: 15.157.235.10
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   tls: true
@@ -606,6 +600,18 @@ proxies:
   network: ws
   port: '2082'
   server: 45.85.118.234
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: '0'
+  cipher: auto
+  name: 🇬🇧_英国_22
+  network: ws
+  port: '2082'
+  server: 45.8.211.242
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
@@ -636,18 +642,6 @@ proxies:
     headers:
       host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- alterId: '0'
-  cipher: auto
-  name: 🇬🇧_英国_28
-  network: ws
-  port: '2082'
-  server: 194.36.55.4
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
 - cipher: chacha20-ietf-poly1305
   name: 🏳️_未知_15
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
@@ -660,12 +654,30 @@ proxies:
   port: 54012
   server: k-r03.loveroise.com
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️_未知_19
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  port: 54030
+  server: s-g04.loveroise.com
+  type: ss
 - alterId: '0'
   cipher: auto
-  name: 🇲🇩_摩尔多瓦
+  name: 🇪🇸_西班牙_7
   network: ws
   port: '2082'
-  server: 185.170.166.26
+  server: 185.238.228.210
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵_日本_17
+  network: ws
+  port: '2082'
+  server: 91.193.58.5
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
@@ -686,30 +698,6 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: '0'
   cipher: auto
-  name: 🇺🇸_美国_315
-  network: ws
-  port: '2082'
-  server: 190.93.244.228
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_316
-  network: ws
-  port: '2082'
-  server: 190.93.245.168
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: '0'
-  cipher: auto
   name: 🇺🇸_美国_317
   network: ws
   port: '2082'
@@ -722,10 +710,34 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: '0'
   cipher: auto
-  name: 🇺🇸_美国_320
+  name: 🇺🇸_美国_318
   network: ws
   port: '2082'
-  server: 190.93.245.103
+  server: 190.93.244.1
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_321
+  network: ws
+  port: '2082'
+  server: 190.93.245.174
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_325
+  network: ws
+  port: '2082'
+  server: 190.93.245.80
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
@@ -782,18 +794,6 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: '0'
   cipher: auto
-  name: 🇱🇺_卢森堡_8
-  network: ws
-  port: '2082'
-  server: 188.42.88.198
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: '0'
-  cipher: auto
   name: 🇱🇹_立陶宛_14
   network: ws
   port: '2082'
@@ -842,18 +842,6 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: '0'
   cipher: auto
-  name: 🇳🇱_荷兰_26
-  network: ws
-  port: '2082'
-  server: 45.159.216.191
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: '0'
-  cipher: auto
   name: 🇳🇱_荷兰_28
   network: ws
   port: '2082'
@@ -890,18 +878,6 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: '0'
   cipher: auto
-  name: 🇳🇱_荷兰_31
-  network: ws
-  port: '2082'
-  server: 185.193.30.187
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: '0'
-  cipher: auto
   name: 🇳🇱_荷兰_32
   network: ws
   port: '2082'
@@ -918,18 +894,6 @@ proxies:
   network: ws
   port: '2082'
   server: 45.159.217.235
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇷_哥斯达黎加_1
-  network: ws
-  port: '2082'
-  server: 190.93.247.23
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
@@ -962,34 +926,10 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: '0'
   cipher: auto
-  name: 🇨🇷_哥斯达黎加_4
+  name: 🇨🇷_哥斯达黎加_7
   network: ws
   port: '2082'
-  server: 190.93.246.120
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇷_哥斯达黎加_5
-  network: ws
-  port: '2082'
-  server: 190.93.247.203
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇷_哥斯达黎加_6
-  network: ws
-  port: '2082'
-  server: 190.93.247.221
+  server: 190.93.246.226
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
@@ -1002,18 +942,6 @@ proxies:
   network: ws
   port: '2082'
   server: 190.93.247.170
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇷_哥斯达黎加_9
-  network: ws
-  port: '2082'
-  server: 190.93.246.178
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
@@ -1056,12 +984,30 @@ proxies:
     headers:
       host: ip18.6929198.xyz
     path: /github.com/Alvin9999
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪_德国_6
+  password: 2EtPqn6HYjUNcHohLfUpFQwnfjCCQ5mh1mJdEMCBucuWZ9P1udkRKHnVxuo55k1KXz2Fo6jrgt18W66opty1e4bm1jzfCfBb
+  port: 50841
+  server: 84.19.31.63
+  type: ss
 - alterId: '0'
   cipher: auto
   name: 🇩🇰_丹麦
   network: ws
   port: '2082'
   server: 195.85.59.158
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: '0'
+  cipher: auto
+  name: 🇦🇺_澳大利亚_33
+  network: ws
+  port: '2082'
+  server: 192.65.217.254
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
@@ -1078,244 +1024,275 @@ proxy-groups:
 - interval: 300
   name: 自动选择
   proxies: &id001
+  - 11|0|--94
+  - 11,16|香港3|@ripaojiedian
   - 11,16|香港7|@ripaojiedian
-  - 11|14|香港9|@ripaojiedian
+  - 11,16|日本4|@ripaojiedian
   - 15|tg频道:@ripaojiedian
-  - 15|🇻🇳 越南|@ripaojiedian
   - 15|🇭🇰 香港6|@ripaojiedian
-  - 15|🇯🇵 日本3|@ripaojiedian
+  - 15|🇭🇰 香港9|@ripaojiedian
+  - 15|🇯🇵 日本2|@ripaojiedian
+  - 15|🇰🇷 韩国|@ripaojiedian
   - 15|🇸🇬 新加坡|@ripaojiedian
-  - 15|🇺🇸 美国3|@ripaojiedian
-  - 15|🇯🇵 日本特殊|@ripaojiedian
-  - 16|香港3|@ripaojiedian
-  - 16|日本4|@ripaojiedian
-  - 16|美国2|@ripaojiedian
+  - 15|🇰🇷 韩国特殊|@ripaojiedian
+  - 0,15|US_speednode_0039
+  - 0,15|HK_speednode_0011
+  - 0,15|US_speednode_0041
+  - 0,15|HK_speednode_0010
+  - 0,15|HK_speednode_0006
+  - 0,15|HK_speednode_0005
+  - 0,15|HK_speednode_0004
+  - 13,14|香港|@ripaojiedian
   - 13,14|香港2|@ripaojiedian
   - 13,14|日本|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
-  - 15|CN_speednode_0002
-  - CN_57f3c_0011
-  - DE_57f3c_0020
-  - GB_57f3c_0023
-  - PL_57f3c_0056
-  - 🇺🇸_US_美国_1
+  - 13|🇯🇵 日本5|@ripaojiedian
+  - 13|🇰🇷 韩国特殊|@ripaojiedian
+  - 13|🇯🇵 日本特殊|@ripaojiedian
+  - 13|🇸🇬 狮城特殊|@ripaojiedian
+  - LV_01bad_0013
+  - PL_01bad_0022
+  - 🇺🇸_US_美国
+  - 🇫🇷_FR_法国->🇨🇦_CA_加拿大
   - 🇺🇸_US_美国_2
-  - 🇸🇬_SG_新加坡->🇺🇸_US_美国
-  - 美国 102
+  - 🇺🇸_US_美国_3
+  - 美国 058
+  - 美国 065
+  - 美国 073
+  - 美国 074
   - 美国 028
-  - 美国 029
   - 美国 035
   - 美国 038
-  - 加拿大 009
-  - 加拿大 010
-  - 美国 047
+  - 美国 055
   - 美国 057
-  - 美国 013
-  - 美国 145
-  - 加拿大 091
-  - 加拿大 101
-  - 加拿大 111
+  - 美国 088
+  - 美国 021
+  - 加拿大 096
+  - 美国 166
+  - 加拿大 131
+  - 加拿大 137
   - 加拿大 140
-  - 加拿大 149
-  - 加拿大 151
-  - 加拿大 172
-  - 美国 185
-  - 加拿大 192
-  - 加拿大 193
   - 美国 191
+  - 美国 011
+  - 美国 116
   - 德国 001
-  - 新加坡 001
-  - 0|--60
-  - 未知80
+  - 0|--41
+  - 0|--43
+  - 未知2
+  - 未知141
   - 🇬🇧_英国_21
+  - 🇬🇧_英国_22
   - 🇬🇧_英国_24
   - 🇬🇧_英国_26
-  - 🇬🇧_英国_28
   - 🏳️_未知_15
   - 🏳️_未知_17
-  - 🇲🇩_摩尔多瓦
+  - 🏳️_未知_19
+  - 🇪🇸_西班牙_7
+  - 🇯🇵_日本_17
   - 🇺🇸_美国_313
-  - 🇺🇸_美国_315
-  - 🇺🇸_美国_316
   - 🇺🇸_美国_317
-  - 🇺🇸_美国_320
+  - 🇺🇸_美国_318
+  - 🇺🇸_美国_321
+  - 🇺🇸_美国_325
   - 🇺🇸_美国_327
   - 🇺🇸_美国_329
   - 🇺🇸_美国_333
   - 🇺🇸_美国_334
-  - 🇱🇺_卢森堡_8
   - 🇱🇹_立陶宛_14
   - 🇱🇹_立陶宛_15
   - 🇳🇱_荷兰_23
   - 🇳🇱_荷兰_24
-  - 🇳🇱_荷兰_26
   - 🇳🇱_荷兰_28
   - 🇳🇱_荷兰_29
   - 🇳🇱_荷兰_30
-  - 🇳🇱_荷兰_31
   - 🇳🇱_荷兰_32
   - 🇳🇱_荷兰_33
-  - 🇨🇷_哥斯达黎加_1
   - 🇨🇷_哥斯达黎加_2
   - 🇨🇷_哥斯达黎加_3
-  - 🇨🇷_哥斯达黎加_4
-  - 🇨🇷_哥斯达黎加_5
-  - 🇨🇷_哥斯达黎加_6
+  - 🇨🇷_哥斯达黎加_7
   - 🇨🇷_哥斯达黎加_8
-  - 🇨🇷_哥斯达黎加_9
   - 🇷🇺_俄罗斯_16
   - 🇷🇺_俄罗斯_17
   - 🇷🇺_俄罗斯_18
+  - 🇩🇪_德国_6
   - 🇩🇰_丹麦
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  - 🇦🇺_澳大利亚_33
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - name: 选择地区
   proxies:
+  - 新加坡
   - 中国
   - 美国
-  - 新加坡
-  - 德国
-  - 英国
+  - 韩国
+  - 日本
+  - 拉脱维亚
+  - 乌克兰
   - 土耳其
+  - 加拿大
   - 立陶宛
   - 白俄罗斯
-  - 瑞典
-  - 摩尔多瓦
-  - 卢森堡
+  - 英国
+  - 俄罗斯
+  - 西班牙
   - 荷兰
   - 哥斯达黎加
-  - 俄罗斯
+  - 德国
   - 丹麦
+  - 澳大利亚
   type: select
 - name: 手动选择
   proxies: *id001
   type: select
 - interval: 300
+  name: 新加坡
+  proxies:
+  - 11|0|--94
+  - 15|🇰🇷 韩国特殊|@ripaojiedian
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
   name: 中国
   proxies:
+  - 11,16|香港3|@ripaojiedian
   - 11,16|香港7|@ripaojiedian
-  - 11|14|香港9|@ripaojiedian
-  - 15|🇻🇳 越南|@ripaojiedian
+  - 11,16|日本4|@ripaojiedian
   - 15|🇭🇰 香港6|@ripaojiedian
-  - 15|🇯🇵 日本3|@ripaojiedian
+  - 15|🇭🇰 香港9|@ripaojiedian
+  - 15|🇯🇵 日本2|@ripaojiedian
+  - 15|🇰🇷 韩国|@ripaojiedian
   - 15|🇸🇬 新加坡|@ripaojiedian
-  - 16|香港3|@ripaojiedian
-  - 16|日本4|@ripaojiedian
-  - 16|美国2|@ripaojiedian
+  - 0,15|HK_speednode_0004
+  - 13,14|香港|@ripaojiedian
   - 13,14|香港2|@ripaojiedian
   - 13,14|日本|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
-  - 15|CN_speednode_0002
-  - CN_57f3c_0011
+  - 13|🇯🇵 日本5|@ripaojiedian
+  - 未知2
   - 🏳️_未知_15
   - 🏳️_未知_17
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  - 🏳️_未知_19
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
   name: 美国
   proxies:
   - 15|tg频道:@ripaojiedian
-  - 15|🇺🇸 美国3|@ripaojiedian
-  - PL_57f3c_0056
-  - 🇺🇸_US_美国_1
+  - 0,15|US_speednode_0039
+  - 0,15|HK_speednode_0011
+  - 0,15|US_speednode_0041
+  - 0,15|HK_speednode_0010
+  - 0,15|HK_speednode_0006
+  - 0,15|HK_speednode_0005
+  - 13|🇰🇷 韩国特殊|@ripaojiedian
+  - PL_01bad_0022
+  - 🇺🇸_US_美国
   - 🇺🇸_US_美国_2
-  - 美国 102
+  - 🇺🇸_US_美国_3
+  - 美国 058
+  - 美国 065
+  - 美国 073
+  - 美国 074
   - 美国 028
-  - 美国 029
   - 美国 038
-  - 加拿大 009
-  - 加拿大 010
-  - 美国 047
+  - 美国 055
   - 美国 057
-  - 美国 013
-  - 美国 145
-  - 加拿大 091
-  - 加拿大 101
-  - 加拿大 111
+  - 美国 021
+  - 加拿大 096
+  - 美国 166
+  - 加拿大 131
+  - 加拿大 137
   - 加拿大 140
-  - 加拿大 149
-  - 加拿大 151
-  - 加拿大 172
-  - 美国 185
-  - 加拿大 192
-  - 加拿大 193
-  - 新加坡 001
-  - 0|--60
+  - 美国 011
+  - 美国 116
+  - 0|--41
+  - 0|--43
+  - 未知141
   - 🇺🇸_美国_313
-  - 🇺🇸_美国_315
-  - 🇺🇸_美国_316
   - 🇺🇸_美国_317
-  - 🇺🇸_美国_320
+  - 🇺🇸_美国_318
+  - 🇺🇸_美国_321
+  - 🇺🇸_美国_325
   - 🇺🇸_美国_327
   - 🇺🇸_美国_329
   - 🇺🇸_美国_333
   - 🇺🇸_美国_334
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 新加坡
+  name: 韩国
   proxies:
-  - 15|🇯🇵 日本特殊|@ripaojiedian
-  - 🇸🇬_SG_新加坡->🇺🇸_US_美国
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  - 13|🇯🇵 日本特殊|@ripaojiedian
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 德国
+  name: 日本
   proxies:
-  - DE_57f3c_0020
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  - 13|🇸🇬 狮城特殊|@ripaojiedian
+  - 🇯🇵_日本_17
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 英国
+  name: 拉脱维亚
   proxies:
-  - GB_57f3c_0023
-  - 🇬🇧_英国_21
-  - 🇬🇧_英国_24
-  - 🇬🇧_英国_26
-  - 🇬🇧_英国_28
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  - LV_01bad_0013
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 乌克兰
+  proxies:
+  - 🇫🇷_FR_法国->🇨🇦_CA_加拿大
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
   name: 土耳其
   proxies:
   - 美国 035
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 加拿大
+  proxies:
+  - 美国 088
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
   name: 立陶宛
   proxies:
   - 美国 191
   - 🇱🇹_立陶宛_14
   - 🇱🇹_立陶宛_15
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
   name: 白俄罗斯
   proxies:
   - 德国 001
   - 🇳🇱_荷兰_23
-  - 🇳🇱_荷兰_26
   - 🇳🇱_荷兰_33
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 瑞典
+  name: 英国
   proxies:
-  - 未知80
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  - 🇬🇧_英国_21
+  - 🇬🇧_英国_24
+  - 🇬🇧_英国_26
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 摩尔多瓦
+  name: 俄罗斯
   proxies:
-  - 🇲🇩_摩尔多瓦
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  - 🇬🇧_英国_22
+  - 🇷🇺_俄罗斯_16
+  - 🇷🇺_俄罗斯_17
+  - 🇷🇺_俄罗斯_18
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 卢森堡
+  name: 西班牙
   proxies:
-  - 🇱🇺_卢森堡_8
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  - 🇪🇸_西班牙_7
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
   name: 荷兰
   proxies:
@@ -1323,37 +1300,36 @@ proxy-groups:
   - 🇳🇱_荷兰_28
   - 🇳🇱_荷兰_29
   - 🇳🇱_荷兰_30
-  - 🇳🇱_荷兰_31
   - 🇳🇱_荷兰_32
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
   name: 哥斯达黎加
   proxies:
-  - 🇨🇷_哥斯达黎加_1
   - 🇨🇷_哥斯达黎加_2
   - 🇨🇷_哥斯达黎加_3
-  - 🇨🇷_哥斯达黎加_4
-  - 🇨🇷_哥斯达黎加_5
-  - 🇨🇷_哥斯达黎加_6
+  - 🇨🇷_哥斯达黎加_7
   - 🇨🇷_哥斯达黎加_8
-  - 🇨🇷_哥斯达黎加_9
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 俄罗斯
+  name: 德国
   proxies:
-  - 🇷🇺_俄罗斯_16
-  - 🇷🇺_俄罗斯_17
-  - 🇷🇺_俄罗斯_18
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  - 🇩🇪_德国_6
+  type: url-test
+  url: https://twitter.com/favicon.ico
 - interval: 300
   name: 丹麦
   proxies:
   - 🇩🇰_丹麦
-  type: load-balance
-  url: https://www.google.com/favicon.ico
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 澳大利亚
+  proxies:
+  - 🇦🇺_澳大利亚_33
+  type: url-test
+  url: https://twitter.com/favicon.ico
 rule-providers:
   apple:
     behavior: domain
@@ -1450,3 +1426,4 @@ rules:
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
 - MATCH,proxinode
+socks-port: 7891
