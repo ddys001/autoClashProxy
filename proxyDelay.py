@@ -12,7 +12,8 @@ def getProxyDelay(index, proxyName):
 
     param = {
                 "timeout": "3000",
-                "url": "https://twitter.com/favicon.ico"
+                #"url": "https://twitter.com/favicon.ico"
+                "url": "https://www.youtube.com/generate_204"
     }
 
     delay = eval(requests.get(url, headers=header, params=param).text)
