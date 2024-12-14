@@ -5,21 +5,18 @@ import sys
 sys.path.append('.')
 
 from processProxy import *
-from parserUrl import *
 from autoPush import *
-from createGroup import *
 from createConfigYaml import *
-from proxyDelay import *
-
-downloadProxy = {
-    'http':  'http://127.0.0.1:7890',
-    'https': 'http://127.0.0.1:7890',
-}
 
 def downloadFile(index, url):
     print("开始下载{}：{}".format(index, url), end=" ", flush=True)
     file = None
     try:
+        downloadProxy = {
+                            'http':  'http://127.0.0.1:7890',
+                            'https': 'http://127.0.0.1:7890',
+                        }
+
         req = requests.get(url, proxies=downloadProxy)
         if (req.status_code == 200):
             print("下载成功", end=" ", flush=True)
@@ -35,6 +32,21 @@ def downloadFile(index, url):
 
     return file
 
+def parserSourceUrl(sourceFile):
+    print("解析到以下有效的url:")
+    allUrl = []
+    for url in sourceFile:
+        if (url.strip().startswith("#") or url.strip().startswith("//")): #删除注释
+            continue
+        if (url.isspace() or len(url) == 0): #删除空行
+            continue
+        if(url not in allUrl): #删除重复url
+            allUrl.append(url)
+            print(url)
+
+    print("解析完成，共获得{}个有效url".format(len(allUrl)))
+    return allUrl
+
 def getProxyFromSource(sourcePath):
     proxyPool = []
     sources = parserSourceUrl(open(sourcePath, encoding='utf8').read().strip().splitlines())
@@ -45,8 +57,8 @@ def getProxyFromSource(sourcePath):
                 file = yaml.load(download, Loader=yaml.FullLoader)
                 proxyPool += file["proxies"] if file["proxies"] != None else []
                 print("成功获得节点")
-            except yaml.parser.ParserError:
-                print("解析节点失败")
+            except Exception as e:
+                print(f"解析节点失败。 Error：{e}")
 
     print("原始获取节点数量:", len(proxyPool))
     proxies = removeNodes(proxyPool)
@@ -56,17 +68,19 @@ def getProxyFromSource(sourcePath):
 
 sourcePath = "source.url"
 defaultConfigPath = "default.config"
+configFile = "list.yaml"
 
+minProxy = 10
 if(len(sys.argv) > 1):
     proxies = getProxyFromSource(sourcePath)
-    if(len(proxies) > 0):
-        creatFakeConfig(proxies, defaultConfigPath)
+    if(len(proxies) > minProxy):
+        creatTestConfig(proxies, defaultConfigPath, configFile)
     else:
         print("未获取到有效节点，不生成fake config文件")
 else:
-    proxies = teseAllProxy()
-    if(len(proxies) > 20):
-        creatConfig(proxies, defaultConfigPath)
-        pushListFile("list.yaml")
+    proxies = teseAllProxy(configFile)
+    if(len(proxies) > minProxy):
+        creatConfig(proxies, defaultConfigPath, configFile)
+        pushListFile(configFile)
     else:
         print("获取的有效节点不足，不生成config文件")

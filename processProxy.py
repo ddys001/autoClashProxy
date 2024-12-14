@@ -1,4 +1,5 @@
-from testProxy import *
+import requests
+import yaml
 
 def removeDuplicateNode(proxyPool): #删除重复节点
     checkLists = ["name", "server"]
@@ -39,18 +40,6 @@ def removeNotSupportUUID(proxyPool): #删除uuid不符合条件的节点
     print(f"after removeNotSupportUUID, 剩余节点数量{len(proxies)}")
     return proxies
 
-def removePingFailPorxy(proxyPool):
-    print("开始测试节点的可连接性：")
-    proxies = []
-    for index, proxy in enumerate(proxyPool):
-        host = proxy['server']
-        port = proxy['port']
-        if(pingTest(index+1, host) and connectPort(host, port)):
-            proxies.append(proxy)
-
-    print(f"after removePingFailPorxy, 剩余节点数量{len(proxies)}")
-    return proxies
-
 def removeNotSupportType(proxyPool): #删除type不符合条件的节点
     notSupportType = ['vless']
     proxies = []
@@ -68,6 +57,54 @@ def removeNodes(proxyPool):
     proxies = removeNotSupportCipher(proxies)
     proxies = removeNotSupportUUID(proxies)
     proxies = removeNotSupportType(proxies)
-    #proxies = removePingFailPorxy(proxies)
 
     return proxies
+
+def getProxyDelay(index, proxyName):
+    bPassTest = False
+
+    port = 34885
+    Authorization = "d53df256-8f1b-4f9b-b730-6a4e947104b6"
+    url = f"http://127.0.0.1:{port}/proxies/{proxyName}/delay"
+    header = {
+                "Authorization": f"Bearer {Authorization}",
+             }
+
+    param = {
+                "timeout": "3000",
+                "url": "https://www.youtube.com/generate_204"
+            }
+
+    delay = eval(requests.get(url, headers=header, params=param).text)
+
+    if("delay" in delay):
+        delay = delay["delay"]
+        bPassTest = True
+    elif("message" in delay):
+        delay = delay["message"]
+    else:
+        assert(0)
+
+    print(f"节点{index}: {proxyName}: {delay}")
+
+    return bPassTest
+
+def teseAllProxy(configFile):
+    passProxy=[]
+    with open(configFile, encoding='utf8') as fp:
+        listFile = yaml.load(fp.read(), Loader=yaml.FullLoader)
+        allProxy = listFile['proxies']
+        print(f"测试节点总数为：{len(allProxy)}")
+        for index, proxy in enumerate(allProxy):
+            if(getProxyDelay(index+1, proxy['name'])):
+                passProxy.append(proxy)
+
+            if(((index + 1) % 30) == 0):
+                print(f"测试正常节点: {len(passProxy)}/{index + 1}")
+
+        print(f"测试正常节点: {len(passProxy)}/{len(allProxy)}")
+
+    return passProxy
+
+if __name__ == "__main__":
+    teseAllProxy("list.yaml")

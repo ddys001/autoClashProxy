@@ -1,10 +1,58 @@
 import yaml
-from createGroup import *
+import requests
+import socket
+import yaml
+import json
 
-listFile = "list.yaml"
-fakeConfig = "fakeList.yaml"
+httpProxy = {
+    'http':  'http://127.0.0.1:7890',
+    'https': 'http://127.0.0.1:7890',
+}
 
-def creatConfig(proxies, defaultFile):
+def getPorxyCountry(index, proxy):
+    country = "未知地区"
+    try:
+        ip = socket.gethostbyname(proxy['server'])
+        data = requests.get(f"http://ip.plyz.net/ip.ashx?ip={ip}", proxies=httpProxy).text
+        if(len(data) != 0):
+            country = data.split("|")[1].split()[0]
+    except Exception as e:
+        print(e)
+
+    print(f"节点{index}: {proxy['server']} {country}")
+    return country
+
+def createGroup(name, groupType, proxies):
+    allType = ['select', 'load-balance', 'url-test', 'fallback']
+    assert(groupType in allType)
+
+    group = {
+        "name"     : name,
+        "type"     : groupType,
+        "proxies"  : proxies,
+    }
+
+    if(groupType != "select"):
+        group['url'] = "https://twitter.com/favicon.ico"
+        group["interval"] = 300
+
+    return group
+
+def createLocationProxyGroup(proxies):
+    print("按照ip地址查询节点所属地区")
+
+    location = dict()
+    for index, proxy in enumerate(proxies):
+        country = getPorxyCountry(index+1, proxy)
+        countryGroup = location[country] if (country in location) else createGroup(country, "url-test", [])
+        proxy['name'] = f"{country}-{len(countryGroup['proxies']) + 1}"
+        countryGroup['proxies'].append(proxy['name'])
+
+        location[country] = countryGroup
+
+    return location
+
+def creatConfig(proxies, defaultFile, configFile):
     defaultConfig = open(defaultFile, encoding='utf8').read()
     config = yaml.load(defaultConfig, Loader=yaml.FullLoader)
 
@@ -32,12 +80,12 @@ def creatConfig(proxies, defaultFile):
 
     config['proxy-groups'] += allCountry
 
-    with open(listFile, 'w', encoding='utf-8') as file:
+    with open(configFile, 'w', encoding='utf-8') as file:
         yaml.dump(config, file, allow_unicode=True)
 
-    print("生成clash订阅文件：{}".format(listFile))
+    print("生成clash订阅文件：{}".format(configFile))
 
-def creatFakeConfig(proxies, defaultFile):
+def creatTestConfig(proxies, defaultFile, testFile):
     defaultConfig = open(defaultFile, encoding='utf8').read()
     config = yaml.load(defaultConfig, Loader=yaml.FullLoader)
 
@@ -47,7 +95,13 @@ def creatFakeConfig(proxies, defaultFile):
 
     config['proxy-groups'] = [createGroup("proxinode", "url-test", proxiesNames)]
 
-    with open(fakeConfig, 'w', encoding='utf-8') as file:
+    with open(testFile, 'w', encoding='utf-8') as file:
         yaml.dump(config, file, allow_unicode=True)
 
-    print("生成clash订阅文件：{}".format(fakeConfig))
+    print("生成clash订阅文件：{}".format(testFile))
+
+if __name__ == "__main__":
+    configFile = "list.yaml"
+    with open("configFile", encoding='utf8') as fp:
+        listFile = yaml.load(fp.read(), Loader=yaml.FullLoader)
+        createLocationProxyGroup(listFile['proxies'])
