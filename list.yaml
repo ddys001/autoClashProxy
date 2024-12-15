@@ -3,17 +3,7 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 内网IP-1
-  network: tcp
-  port: '38953'
-  server: jp1.tiljkc.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8995f5b8-6ad5-3c29-836f-ec8baa292ba0
-- name: 内网IP-2
+- name: 内网IP-1
   port: 4000
   server: hk9.ftq.ink
   tls: true
@@ -23,162 +13,26 @@ proxies:
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 54.248.142.136
+  server: 43.207.81.209
   tfo: false
   type: ss
 - name: 中国-1
-  network: tcp
-  password: DNUMdmnJ
-  port: 42395
-  server: 36.151.192.239
-  skip-cert-verify: true
-  type: trojan
-- name: 中国-2
   network: tcp
   password: QwwHvrnN
   port: 38698
   server: 36.151.192.198
   skip-cert-verify: true
   type: trojan
-- name: 内网IP-3
-  password: '3648425794742788096'
-  port: 443
-  server: loving-boa.treefrog761.one
-  skip-cert-verify: false
-  sni: loving-boa.treefrog761.one
-  type: trojan
-  udp: true
-- name: 内网IP-4
+- name: 内网IP-2
   password: '3648425794742788096'
   port: 443
   server: prime-gator.treefrog761.one
   skip-cert-verify: false
   sni: prime-gator.treefrog761.one
   type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: 中国-3
-  port: 45402
-  server: 183.236.48.158
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 美国-1
-  network: ws
-  port: 8880
-  server: 162.159.45.208
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-2
-  network: ws
-  port: 8880
-  server: 162.159.45.238
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-3
-  network: ws
-  port: 8880
-  server: 162.159.45.219
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-4
-  network: ws
-  port: 8880
-  server: 162.159.45.246
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- cipher: chacha20-ietf-poly1305
-  name: 瑞士-1
-  password: 3Vkbowf0PLHJkVMmPFjcA7i/j0ABb6EbYtbe/Xrwuds=
-  port: 59923
-  server: 138.124.51.236
-  type: ss
-- cipher: aes-256-cfb
-  name: 俄罗斯-1
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 217.30.10.18
-  type: ss
-- name: 荷兰-1
-  password: '3648425794742788096'
-  port: 443
-  server: 5.8.35.208
-  skip-cert-verify: false
-  sni: loving-boa.treefrog761.one
-  type: trojan
-- name: 荷兰-2
-  password: '3648425794742788096'
-  port: 443
-  server: 5.8.35.140
-  skip-cert-verify: false
-  sni: prime-gator.treefrog761.one
-  type: trojan
-- cipher: aes-256-cfb
-  name: 美国-5
-  password: amazonskr05
-  port: 443
-  server: 52.89.164.115
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-6
-  password: amazonskr05
-  port: 443
-  server: 34.215.84.62
-  type: ss
-- alpn:
-  - http/1.1
-  name: 英国-1
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.42.222.251
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 美国-7
   network: ws
   port: 8880
   server: 104.18.114.200
@@ -191,7 +45,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-8
+  name: 美国-2
   network: ws
   port: 8880
   server: 104.26.0.124
@@ -204,7 +58,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-9
+  name: 美国-3
   network: ws
   port: 8880
   server: 104.18.114.210
@@ -217,7 +71,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-10
+  name: 美国-4
   network: ws
   port: 8880
   server: 104.18.114.219
@@ -230,7 +84,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-11
+  name: 美国-5
   network: ws
   port: 8880
   server: 104.26.0.149
@@ -243,7 +97,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-12
+  name: 美国-6
   network: ws
   port: 8880
   server: 104.21.238.44
@@ -256,7 +110,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-13
+  name: 美国-7
   network: ws
   port: 8880
   server: 104.18.114.143
@@ -269,20 +123,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-14
-  network: ws
-  port: 8880
-  server: 104.26.0.118
-  servername: m1.155857.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.155857.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-15
+  name: 美国-8
   network: ws
   port: 8880
   server: 104.18.114.88
@@ -295,7 +136,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-16
+  name: 美国-9
   network: ws
   port: 8880
   server: 104.21.238.236
@@ -308,7 +149,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-17
+  name: 美国-10
   network: ws
   port: 8880
   server: 162.159.45.141
@@ -321,7 +162,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-18
+  name: 美国-11
   network: ws
   port: 8880
   server: 104.21.238.63
@@ -334,7 +175,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-19
+  name: 美国-12
   network: ws
   port: 2086
   server: 104.21.238.46
@@ -347,7 +188,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-20
+  name: 美国-13
   network: ws
   port: 2086
   server: 104.26.0.98
@@ -360,7 +201,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-21
+  name: 美国-14
   network: ws
   port: 8880
   server: 104.21.238.27
@@ -373,7 +214,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-22
+  name: 美国-15
   network: ws
   port: 8880
   server: 104.21.238.128
@@ -386,7 +227,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-23
+  name: 美国-16
   network: ws
   port: 8880
   server: 104.18.114.31
@@ -399,7 +240,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-24
+  name: 美国-17
   network: ws
   port: 8880
   server: 104.18.114.178
@@ -412,7 +253,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 美国-25
+  name: 美国-18
   network: ws
   port: 8880
   server: 104.26.0.12
@@ -423,35 +264,103 @@ proxies:
     headers:
       Host: m8.155857.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-26
-  network: ws
-  port: 8880
-  server: 104.21.238.97
-  servername: m1.155857.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.155857.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  name: 中国-4
+- name: 内网IP-3
   network: tcp
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 46758
-  server: 218.190.230.207
+  password: '3648425794742788096'
+  port: 443
+  server: loving-boa.treefrog761.one
   skip-cert-verify: true
-  sni: hk12.bilibili.com
-  tls: true
+  sni: loving-boa.treefrog761.one
   type: trojan
   udp: true
+- name: 荷兰-1
+  network: tcp
+  password: '3648425794742788096'
+  port: 443
+  server: 5.8.35.140
+  skip-cert-verify: true
+  sni: prime-gator.treefrog761.one
+  type: trojan
+  udp: true
+- name: 荷兰-2
+  network: tcp
+  password: '3648425794742788096'
+  port: 443
+  server: 5.8.35.208
+  skip-cert-verify: true
+  sni: loving-boa.treefrog761.one
+  type: trojan
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 内网IP-4
+  network: ws
+  port: '2086'
+  server: shs.xiaoqi666.xyz
+  type: vmess
+  uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
+  ws-opts:
+    headers:
+      host: shs.xiaoqi666.xyz
+    path: /
+- cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 18.143.139.72
+  type: ss
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: 中国-2
+  port: 40972
+  server: 120.232.153.63
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+- cipher: chacha20-ietf-poly1305
+  name: 内网IP-5
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 日本-2
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: 160.19.78.75
+  type: ss
+  udp: true
+- name: 内网IP-6
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 46758
+  server: hgc.node-is.green
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 美国-27
+  name: 美国-19
+  network: ws
+  port: 2086
+  server: 104.26.0.5
+  servername: e1.285581.xyz
+  type: vmess
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  ws-opts:
+    headers:
+      Host: e1.285581.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 美国-20
   network: ws
   port: 8880
   server: 104.18.114.3
@@ -466,7 +375,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 美国-28
+  name: 美国-21
   network: ws
   port: 2086
   server: 104.18.114.119
@@ -481,7 +390,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 美国-29
+  name: 美国-22
   network: ws
   port: 8880
   server: 104.18.114.97
@@ -492,6 +401,28 @@ proxies:
     headers:
       Host: m1.155857.xyz
     path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 美国-23
+  network: ws
+  port: 8880
+  server: 162.159.45.246
+  servername: m20.155857.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  ws-opts:
+    headers:
+      Host: m20.155857.xyz
+    path: /github.com/Alvin9999
+- cipher: chacha20-ietf-poly1305
+  name: 内网IP-7
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a1.samanehha.co
+  type: ss
 proxy-groups:
 - name: proxinode
   proxies:
@@ -506,33 +437,22 @@ proxy-groups:
   - 日本
   - 中国
   - 美国
-  - 瑞士
-  - 俄罗斯
   - 荷兰
-  - 英国
+  - 新加坡
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
   - 内网IP-1
-  - 内网IP-2
   - 日本-1
   - 中国-1
-  - 中国-2
-  - 内网IP-3
-  - 内网IP-4
-  - 中国-3
+  - 内网IP-2
   - 美国-1
   - 美国-2
   - 美国-3
   - 美国-4
-  - 瑞士-1
-  - 俄罗斯-1
-  - 荷兰-1
-  - 荷兰-2
   - 美国-5
   - 美国-6
-  - 英国-1
   - 美国-7
   - 美国-8
   - 美国-9
@@ -545,18 +465,21 @@ proxy-groups:
   - 美国-16
   - 美国-17
   - 美国-18
+  - 内网IP-3
+  - 荷兰-1
+  - 荷兰-2
+  - 内网IP-4
+  - 新加坡-1
+  - 中国-2
+  - 内网IP-5
+  - 日本-2
+  - 内网IP-6
   - 美国-19
   - 美国-20
   - 美国-21
   - 美国-22
   - 美国-23
-  - 美国-24
-  - 美国-25
-  - 美国-26
-  - 中国-4
-  - 美国-27
-  - 美国-28
-  - 美国-29
+  - 内网IP-7
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
@@ -576,6 +499,7 @@ proxy-groups:
   name: 日本
   proxies:
   - 日本-1
+  - 日本-2
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
@@ -583,8 +507,6 @@ proxy-groups:
   proxies:
   - 中国-1
   - 中国-2
-  - 中国-3
-  - 中国-4
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
@@ -613,24 +535,6 @@ proxy-groups:
   - 美国-21
   - 美国-22
   - 美国-23
-  - 美国-24
-  - 美国-25
-  - 美国-26
-  - 美国-27
-  - 美国-28
-  - 美国-29
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 瑞士
-  proxies:
-  - 瑞士-1
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 俄罗斯
-  proxies:
-  - 俄罗斯-1
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
@@ -641,9 +545,9 @@ proxy-groups:
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 英国
+  name: 新加坡
   proxies:
-  - 英国-1
+  - 新加坡-1
   type: url-test
   url: https://twitter.com/favicon.ico
 rule-providers:
