@@ -69,8 +69,9 @@ def creatConfig(proxies, defaultFile, configFile):
 
     allCountry = []
     for country in countryGroup:
-        selectCountry['proxies'].append(country)
-        allCountry.append(countryGroup[country])
+        if(country != "内网IP"):
+            selectCountry['proxies'].append(country)
+            allCountry.append(countryGroup[country])
 
     config['proxy-groups'].append(selectCountry)
     config['proxy-groups'].append(createGroup("延迟最低", "url-test", proxiesNames))
