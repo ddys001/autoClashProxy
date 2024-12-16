@@ -20,7 +20,7 @@ def downloadFile(index, url):
         req = requests.get(url, proxies=downloadProxy)
         if (req.status_code == 200):
             print("下载成功", end=" ", flush=True)
-            file =  req.text
+            file =  req.text.replace("!<str> ", "")
         else:
             print("下载失败")
     except requests.exceptions.SSLError:
@@ -30,7 +30,7 @@ def downloadFile(index, url):
     except requests.exceptions.ConnectionError:
         print("Connection aborted")
 
-    return file.replace("!<str> ", "")
+    return file
 
 def parserSourceUrl(sourceFile):
     print("解析到以下有效的url:")
@@ -70,17 +70,19 @@ sourcePath = "source.url"
 defaultConfigPath = "default.config"
 configFile = "list.yaml"
 
-minProxy = 10
-if(len(sys.argv) > 1):
+minProxy = 20
+if(len(sys.argv) == 2 and sys.argv[1] == "-f"): #第一次生成config文件，里面包含所有从网上获取的节点
     proxies = getProxyFromSource(sourcePath)
     if(len(proxies) > minProxy):
         creatTestConfig(proxies, defaultConfigPath, configFile)
     else:
-        print("未获取到有效节点，不生成fake config文件")
-else:
+        print("未获取到有效节点，不生成config文件")
+elif(len(sys.argv) == 2 and sys.argv[1] == "-d"): #第二次生成config文件，删除延迟不符合要求的节点。并将文件上传至github
     proxies = teseAllProxy(configFile)
     if(len(proxies) > minProxy):
         creatConfig(proxies, defaultConfigPath, configFile)
         pushListFile(configFile)
     else:
         print("获取的有效节点不足，不生成config文件")
+else:
+    print("invalid parma")
