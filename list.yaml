@@ -3,719 +3,169 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 18.141.187.153
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 54.248.142.136
+  tfo: false
+  type: ss
 - name: 中国-1
-  network: tcp
-  password: DNUMdmnJ
-  port: 42395
-  server: 36.151.192.239
-  skip-cert-verify: true
-  type: trojan
-- name: 中国-2
   network: tcp
   password: QwwHvrnN
   port: 25241
   server: 36.151.192.203
   skip-cert-verify: true
   type: trojan
-- name: 中国-3
+- name: 中国-2
   network: tcp
   password: QwwHvrnN
   port: 38698
   server: 36.151.192.198
   skip-cert-verify: true
   type: trojan
-- name: 内网IP-1
-  password: '3648425794742788096'
-  port: 443
-  server: prime-gator.treefrog761.one
-  skip-cert-verify: false
-  sni: prime-gator.treefrog761.one
-  type: trojan
 - alterId: 64
   cipher: auto
-  name: 中国-4
+  name: 中国-3
   port: 45402
   server: 183.236.48.158
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - fast.com
-    method: GET
-    path:
-    - /
-  name: 德国-1
-  network: http
-  port: 54031
-  server: 49.13.126.136
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8990eb2e-510d-4431-ad8d-b5c488d03936
-- alterId: 0
-  cipher: auto
-  name: 美国-1
-  network: ws
-  port: 8880
-  server: 162.159.45.238
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-2
-  network: ws
-  port: 8880
-  server: 162.159.45.219
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-3
-  network: ws
-  port: 8880
-  server: 162.159.45.208
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-4
-  network: ws
-  port: 8880
-  server: 104.21.238.44
-  servername: m8.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m8.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-5
-  network: ws
-  port: 8880
-  server: 162.159.45.141
-  servername: m8.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m8.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-6
-  network: ws
-  port: 8880
-  server: 104.18.114.219
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-7
-  network: ws
-  port: 2086
-  server: 104.21.238.195
-  servername: e1.285581.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  ws-opts:
-    headers:
-      Host: e1.285581.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-8
-  network: ws
-  port: 8880
-  server: 104.21.238.203
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-9
-  network: ws
-  port: 8880
-  server: 104.18.114.200
-  servername: m8.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m8.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-10
-  network: ws
-  port: 8880
-  server: 104.18.114.88
-  servername: m8.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m8.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-11
-  network: ws
-  port: 8880
-  server: 104.18.114.31
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-12
-  network: ws
-  port: 8880
-  server: 104.18.114.143
-  servername: m1.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-13
-  network: ws
-  port: 8880
-  server: 104.21.238.27
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-14
-  network: ws
-  port: 8880
-  server: 104.18.114.242
-  servername: m1.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-15
-  network: ws
-  port: 8880
-  server: 104.21.238.128
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-16
-  network: ws
-  port: 8880
-  server: 104.21.238.113
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-17
-  network: ws
-  port: 8880
-  server: 104.21.238.193
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-18
-  network: ws
-  port: 8880
-  server: 104.18.114.178
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-19
-  network: ws
-  port: 2086
-  server: 104.18.114.14
-  servername: e1.285581.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  ws-opts:
-    headers:
-      Host: e1.285581.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-20
-  network: ws
-  port: 8880
-  server: 162.159.45.100
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-21
-  network: ws
-  port: 8880
-  server: 104.21.238.236
-  servername: m8.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m8.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-22
-  network: ws
-  port: 2086
-  server: 104.21.238.46
-  servername: e1.285581.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  ws-opts:
-    headers:
-      Host: e1.285581.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-23
-  network: ws
-  port: 8880
-  server: 104.18.114.147
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-24
-  network: ws
-  port: 8880
-  server: 104.18.114.42
-  servername: m8.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m8.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-25
-  network: ws
-  port: 8880
-  server: 104.21.238.97
-  servername: m1.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-26
-  network: ws
-  port: 8880
-  server: 104.26.0.124
-  servername: m8.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m8.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-27
-  network: ws
-  port: 8880
-  server: 104.18.114.3
-  servername: m1.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-28
-  network: ws
-  port: 8880
-  server: 104.18.114.97
-  servername: m1.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-29
-  network: ws
-  port: 2086
-  server: 104.18.114.119
-  servername: e1.285581.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  ws-opts:
-    headers:
-      Host: e1.285581.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-30
-  network: ws
-  port: 8880
-  server: 104.26.0.149
-  servername: m8.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m8.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-31
-  network: ws
-  port: 2086
-  server: 104.26.0.5
-  servername: e1.285581.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  ws-opts:
-    headers:
-      Host: e1.285581.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-32
-  network: ws
-  port: 8880
-  server: 104.26.0.3
-  servername: m8.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m8.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-33
-  network: ws
-  port: 8880
-  server: 104.21.238.10
-  servername: m20.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-34
-  network: ws
-  port: 2086
-  server: 104.26.0.98
-  servername: e1.285581.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  ws-opts:
-    headers:
-      Host: e1.285581.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-35
-  network: ws
-  port: 8880
-  server: 104.26.0.40
-  servername: m8.155857.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m8.155857.xyz
-    path: /github.com/Alvin9999
-- cipher: aes-256-cfb
-  name: 俄罗斯-1
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 217.30.10.18
+- cipher: chacha20-ietf-poly1305
+  name: 拉脱维亚-1
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 46.183.217.232
   type: ss
-- name: 荷兰-1
-  password: '3648425794742788096'
-  port: 443
-  server: 5.8.35.208
-  skip-cert-verify: false
-  sni: loving-boa.treefrog761.one
-  type: trojan
-- name: 荷兰-2
-  password: '3648425794742788096'
-  port: 443
-  server: 5.8.35.140
-  skip-cert-verify: false
-  sni: prime-gator.treefrog761.one
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 内网IP-2
+  name: 日本-2
   network: ws
   port: 80
-  server: gost.cloudflare.182682.xyz
-  skip-cert-verify: true
+  server: root.mid.al
+  type: vmess
+  uuid: a983c698-cae4-4254-d047-51898ccd8ee7
+  ws-opts:
+    headers:
+      host: kim.gov.kp
+    path: /aries?ed=2048
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 中国-4
+  password: ab8b625c-efb8-45cd-b509-c7cceabe0cc6
+  port: 40003
+  server: soonjp.soon.guru
   tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  ws-opts:
-    headers:
-      Host: gost.naiunclient.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国-36
-  network: ws
-  port: 2086
-  server: 104.26.0.57
-  servername: watt-miss-semester-slots.trycloudflare.com
-  type: vmess
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  ws-opts:
-    headers:
-      Host: watt-miss-semester-slots.trycloudflare.com
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-37
-  network: ws
-  port: 8880
-  server: 104.18.114.210
-  servername: m20.155857.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m20.155857.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 美国-38
-  network: ws
-  port: 8880
-  server: 104.21.238.63
-  servername: m8.155857.xyz
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m8.155857.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 美国-39
-  password: u17T3BvpYaaiuW2c
-  port: 443
-  server: 40.172.71.144
-  skip-cert-verify: true
-  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 中国-5
+  password: ZV4YVDAYK5O0H3QP
+  port: 17005
+  server: 113.99.142.153
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 美国-40
+  client-fingerprint: chrome
+  name: 韩国-1
   password: amazonskr05
   port: 443
-  server: 35.88.126.102
+  server: 3.36.126.174
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-2
+  password: amazonskr05
+  port: 443
+  server: 13.125.90.251
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-3
+  password: amazonskr05
+  port: 443
+  server: 43.203.219.196
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-2
+  password: amazonskr05
+  port: 443
+  server: 18.143.139.72
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 内网IP-3
-  network: ws
-  port: 80
-  server: speed.cloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 日本-3
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
   udp: true
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: 7ehhjdelicate-unit-e634.bowik41429.workers.dev
-    path: /glweidf.sbs/linkws
 - alterId: 64
   cipher: auto
-  name: 中国-5
-  port: 40972
-  server: 120.232.153.63
+  name: 中国-6
+  port: 41490
+  server: 183.236.48.143
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 澳大利亚-1
+  password: 94d219c9-1afc-4d42-b090-8b3794764380
+  port: 443
+  server: 160.30.21.105
+  skip-cert-verify: true
+  sni: std1.loadingip.com
+  type: trojan
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 美国-41
-  network: ws
-  port: 2086
-  server: 104.18.114.153
-  servername: p22.403677.xyz
+  name: 俄罗斯-1
+  network: tcp
+  port: 40380
+  server: 91.199.84.112
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p22.403677.xyz
-    path: github.com/Alvin9999
+  uuid: 13364789-a8b2-4bcd-8df7-a794fb6f87e5
+  ws-headers:
+    Host: 91.199.84.112
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 美国-1
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 54.184.77.199
+  type: ssr
+- cipher: aes-256-cfb
+  name: 美国-2
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 52.41.180.11
+  type: ssr
+- cipher: rc4-md5
+  name: 新加坡-3
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.45
+  type: ss
 proxy-groups:
 - name: proxinode
   proxies:
@@ -727,68 +177,38 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
+  - 新加坡
+  - 日本
   - 中国
-  - 德国
-  - 美国
+  - 拉脱维亚
+  - 韩国
+  - 澳大利亚
   - 俄罗斯
-  - 荷兰
+  - 美国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
+  - 新加坡-1
+  - 日本-1
   - 中国-1
   - 中国-2
   - 中国-3
-  - 内网IP-1
+  - 拉脱维亚-1
+  - 日本-2
   - 中国-4
-  - 德国-1
+  - 中国-5
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 新加坡-2
+  - 日本-3
+  - 中国-6
+  - 澳大利亚-1
+  - 俄罗斯-1
   - 美国-1
   - 美国-2
-  - 美国-3
-  - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
-  - 美国-8
-  - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
-  - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 美国-17
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 美国-23
-  - 美国-24
-  - 美国-25
-  - 美国-26
-  - 美国-27
-  - 美国-28
-  - 美国-29
-  - 美国-30
-  - 美国-31
-  - 美国-32
-  - 美国-33
-  - 美国-34
-  - 美国-35
-  - 俄罗斯-1
-  - 荷兰-1
-  - 荷兰-2
-  - 内网IP-2
-  - 美国-36
-  - 美国-37
-  - 美国-38
-  - 美国-39
-  - 美国-40
-  - 内网IP-3
-  - 中国-5
-  - 美国-41
+  - 新加坡-3
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
@@ -805,6 +225,22 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
+  - 日本-3
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
   name: 中国
   proxies:
   - 中国-1
@@ -812,58 +248,27 @@ proxy-groups:
   - 中国-3
   - 中国-4
   - 中国-5
+  - 中国-6
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 德国
+  name: 拉脱维亚
   proxies:
-  - 德国-1
+  - 拉脱维亚-1
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 美国
+  name: 韩国
   proxies:
-  - 美国-1
-  - 美国-2
-  - 美国-3
-  - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
-  - 美国-8
-  - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
-  - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 美国-17
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 美国-23
-  - 美国-24
-  - 美国-25
-  - 美国-26
-  - 美国-27
-  - 美国-28
-  - 美国-29
-  - 美国-30
-  - 美国-31
-  - 美国-32
-  - 美国-33
-  - 美国-34
-  - 美国-35
-  - 美国-36
-  - 美国-37
-  - 美国-38
-  - 美国-39
-  - 美国-40
-  - 美国-41
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 澳大利亚
+  proxies:
+  - 澳大利亚-1
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
@@ -873,10 +278,10 @@ proxy-groups:
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 荷兰
+  name: 美国
   proxies:
-  - 荷兰-1
-  - 荷兰-2
+  - 美国-1
+  - 美国-2
   type: url-test
   url: https://twitter.com/favicon.ico
 rule-providers:
