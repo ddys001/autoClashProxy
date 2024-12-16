@@ -20,7 +20,7 @@ def downloadFile(index, url):
         req = requests.get(url, proxies=downloadProxy)
         if (req.status_code == 200):
             print("下载成功", end=" ", flush=True)
-            file =  req.content
+            file =  req.text
         else:
             print("下载失败")
     except requests.exceptions.SSLError:
@@ -30,7 +30,7 @@ def downloadFile(index, url):
     except requests.exceptions.ConnectionError:
         print("Connection aborted")
 
-    return file
+    return file.replace("!<str> ", "")
 
 def parserSourceUrl(sourceFile):
     print("解析到以下有效的url:")
