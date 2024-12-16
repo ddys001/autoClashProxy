@@ -3,127 +3,35 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 18.141.187.153
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 54.248.142.136
-  tfo: false
-  type: ss
-- name: 中国-1
+- alterId: 64
+  cipher: auto
+  name: 中国-1
+  network: tcp
+  port: '46602'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 美国-1
+  port: 4000
+  server: hk9.ftq.ink
+  tls: true
+  type: http
+- name: 中国-2
   network: tcp
   password: QwwHvrnN
   port: 25241
   server: 36.151.192.203
   skip-cert-verify: true
   type: trojan
-- name: 中国-2
+- name: 中国-3
   network: tcp
   password: QwwHvrnN
   port: 38698
   server: 36.151.192.198
   skip-cert-verify: true
   type: trojan
-- alterId: 64
-  cipher: auto
-  name: 中国-3
-  port: 45402
-  server: 183.236.48.158
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 拉脱维亚-1
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 46.183.217.232
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 日本-2
-  network: ws
-  port: 80
-  server: root.mid.al
-  type: vmess
-  uuid: a983c698-cae4-4254-d047-51898ccd8ee7
-  ws-opts:
-    headers:
-      host: kim.gov.kp
-    path: /aries?ed=2048
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 中国-4
-  password: ab8b625c-efb8-45cd-b509-c7cceabe0cc6
-  port: 40003
-  server: soonjp.soon.guru
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 中国-5
-  password: ZV4YVDAYK5O0H3QP
-  port: 17005
-  server: 113.99.142.153
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 3.36.126.174
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 韩国-2
-  password: amazonskr05
-  port: 443
-  server: 13.125.90.251
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 韩国-3
-  password: amazonskr05
-  port: 443
-  server: 43.203.219.196
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 18.143.139.72
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 日本-3
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: 中国-6
-  port: 41490
-  server: 183.236.48.143
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 澳大利亚-1
   password: 94d219c9-1afc-4d42-b090-8b3794764380
   port: 443
@@ -131,41 +39,75 @@ proxies:
   skip-cert-verify: true
   sni: std1.loadingip.com
   type: trojan
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 俄罗斯-1
-  network: tcp
-  port: 40380
-  server: 91.199.84.112
-  skip-cert-verify: true
-  tls: true
+  name: 中国-4
+  port: 34493
+  server: 120.198.71.214
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: 13364789-a8b2-4bcd-8df7-a794fb6f87e5
-  ws-headers:
-    Host: 91.199.84.112
-  ws-path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 中国-5
+  port: 40002
+  server: 183.236.48.163
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
-  name: 美国-1
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 54.184.77.199
-  type: ssr
-- cipher: aes-256-cfb
+  client-fingerprint: chrome
   name: 美国-2
-  obfs: plain
   password: amazonskr05
   port: 443
-  protocol: origin
-  server: 52.41.180.11
-  type: ssr
-- cipher: rc4-md5
-  name: 新加坡-3
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.45
+  server: 18.237.72.225
+  tfo: false
   type: ss
+- name: 中国-6
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 46259
+  server: hgc.node-is.green
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  tfo: false
+  type: trojan
+  udp: true
+- name: 日本-1
+  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
+  port: 21112
+  server: 146.56.158.235
+  skip-cert-verify: true
+  sni: gevent.gmarket.co.kr
+  tfo: false
+  type: trojan
+  udp: true
+- name: 美国-3
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 49905
+  server: e4c1bc175d6f9a37ba43483b3d008728.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: de1.bilibili.com
+  tfo: false
+  type: trojan
+  udp: true
+- name: 美国-4
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 49905
+  server: eeaa7ed9a53f5bb5260e79cd2bbd9823.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: de1.bilibili.com
+  tfo: false
+  type: trojan
+  udp: true
+- name: 中国-7
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 47249
+  server: 8dab945f6519cada5b92a0149679c88d.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: ca1.bilibili.com
+  type: trojan
 proxy-groups:
 - name: proxinode
   proxies:
@@ -177,38 +119,27 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 新加坡
-  - 日本
   - 中国
-  - 拉脱维亚
-  - 韩国
-  - 澳大利亚
-  - 俄罗斯
   - 美国
+  - 澳大利亚
+  - 日本
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-1
-  - 日本-1
   - 中国-1
+  - 美国-1
   - 中国-2
   - 中国-3
-  - 拉脱维亚-1
-  - 日本-2
+  - 澳大利亚-1
   - 中国-4
   - 中国-5
-  - 韩国-1
-  - 韩国-2
-  - 韩国-3
-  - 新加坡-2
-  - 日本-3
-  - 中国-6
-  - 澳大利亚-1
-  - 俄罗斯-1
-  - 美国-1
   - 美国-2
-  - 新加坡-3
+  - 中国-6
+  - 日本-1
+  - 美国-3
+  - 美国-4
+  - 中国-7
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
@@ -225,22 +156,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  - 日本-3
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
   name: 中国
   proxies:
   - 中国-1
@@ -249,20 +164,16 @@ proxy-groups:
   - 中国-4
   - 中国-5
   - 中国-6
+  - 中国-7
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 拉脱维亚
+  name: 美国
   proxies:
-  - 拉脱维亚-1
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
-  - 韩国-3
+  - 美国-1
+  - 美国-2
+  - 美国-3
+  - 美国-4
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
@@ -272,16 +183,9 @@ proxy-groups:
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 俄罗斯
+  name: 日本
   proxies:
-  - 俄罗斯-1
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 美国
-  proxies:
-  - 美国-1
-  - 美国-2
+  - 日本-1
   type: url-test
   url: https://twitter.com/favicon.ico
 rule-providers:
