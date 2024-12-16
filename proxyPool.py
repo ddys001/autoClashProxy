@@ -71,14 +71,22 @@ defaultConfigPath = "default.config"
 configFile = "list.yaml"
 
 minProxy = 20
-if(len(sys.argv) == 2 and sys.argv[1] == "-f"): #第一次生成config文件，里面包含所有从网上获取的节点
+maxProxy = 50
+if(len(sys.argv) == 2 and sys.argv[1] == "-l"): #第一次生成config文件，里面包含list.yaml里的所有节点
+    proxies = yaml.load(open(configFile, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
+    proxies = removeNodes(proxies)
+    if(len(proxies) > minProxy):
+        creatTestConfig(proxies, defaultConfigPath, configFile)
+    else:
+        print("未获取到有效节点，不生成config文件")
+elif(len(sys.argv) == 2 and sys.argv[1] == "-f"): #第一次生成config文件，里面包含所有从网上获取的节点
     proxies = getProxyFromSource(sourcePath)
     if(len(proxies) > minProxy):
         creatTestConfig(proxies, defaultConfigPath, configFile)
     else:
         print("未获取到有效节点，不生成config文件")
 elif(len(sys.argv) == 2 and sys.argv[1] == "-d"): #第二次生成config文件，删除延迟不符合要求的节点。并将文件上传至github
-    proxies = teseAllProxy(configFile)
+    proxies = teseAllProxy(configFile, maxProxy)
     if(len(proxies) > minProxy):
         creatConfig(proxies, defaultConfigPath, configFile)
         pushListFile(configFile)

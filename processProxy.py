@@ -1,5 +1,6 @@
 import requests
 import yaml
+import random
 
 def removeDuplicateNode(proxyPool): #删除重复节点
     checkLists = ["name", "server"]
@@ -41,7 +42,7 @@ def removeNotSupportUUID(proxyPool): #删除uuid不符合条件的节点
     return proxies
 
 def removeNotSupportType(proxyPool): #删除type不符合条件的节点
-    notSupportType = ['vless']
+    notSupportType = ['vless', 'hysteria', 'hysteria2']
     proxies = []
     for proxy in proxyPool:
         if('type' in proxy and proxy['type'] in notSupportType):
@@ -89,12 +90,13 @@ def getProxyDelay(index, proxyName):
 
     return bPassTest
 
-def teseAllProxy(configFile):
+def teseAllProxy(configFile, maxProxy):
     passProxy=[]
     with open(configFile, encoding='utf8') as fp:
         listFile = yaml.load(fp.read(), Loader=yaml.FullLoader)
         allProxy = listFile['proxies']
         print(f"测试节点总数为：{len(allProxy)}")
+        random.shuffle(allProxy)
         for index, proxy in enumerate(allProxy):
             if(getProxyDelay(index+1, proxy['name'])):
                 passProxy.append(proxy)
@@ -102,9 +104,14 @@ def teseAllProxy(configFile):
             if(((index + 1) % 30) == 0):
                 print(f"测试正常节点: {len(passProxy)}/{index + 1}")
 
+            if(len(passProxy) > maxProxy): #获得有效的的节点数已经足够多 退出测试
+                print("获得预期最大节点数量，退出延迟测试。")
+                break
+
         print(f"测试正常节点: {len(passProxy)}/{len(allProxy)}")
 
     return passProxy
 
 if __name__ == "__main__":
-    teseAllProxy("list.yaml")
+    maxProxy = 50
+    teseAllProxy("list.yaml", maxProxy)
