@@ -3,7 +3,7 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- name: 未知地区-1
+- name: 美国-1
   password: telegram-id-directvpn
   port: 22222
   server: 44.198.219.9
@@ -11,14 +11,14 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: aes-256-cfb
-  name: 未知地区-2
+  name: 韩国-1
   password: amazonskr05
   port: 443
   server: 54.180.229.222
   type: ss
 - alterId: 64
   cipher: auto
-  name: 未知地区-3
+  name: 中国-1
   port: 34493
   server: 120.198.71.214
   skip-cert-verify: false
@@ -27,7 +27,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 未知地区-4
+  name: 中国-2
   port: 40002
   server: 183.236.48.163
   skip-cert-verify: false
@@ -35,14 +35,14 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: 未知地区-5
+  name: 美国-2
   password: xjzsiMfTByKjA9URbdXWNp
   port: 32091
   server: 51.120.1.158
   type: ss
 - alterId: 0
   cipher: auto
-  name: 未知地区-6
+  name: 美国-3
   network: ws
   port: 2087
   server: 206.238.237.86
@@ -55,14 +55,14 @@ proxies:
       Host: argo12.zjccc.nyc.mn
     path: /serv00?ed=2048
 - cipher: chacha20-ietf
-  name: 未知地区-7
+  name: 中国-3
   password: asd123456
   port: 8388
   server: 194.41.59.80
   type: ss
 - alterId: 64
   cipher: auto
-  name: 未知地区-8
+  name: 中国-4
   network: tcp
   port: '46602'
   server: 183.236.51.23
@@ -72,7 +72,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 未知地区-9
+  name: 美国-4
   network: ws
   port: 443
   server: 16.724064.xyz
@@ -85,25 +85,25 @@ proxies:
       Host: 16.724064.xyz
     path: /zlppvws
 - cipher: chacha20-ietf
-  name: 未知地区-10
+  name: 中国-5
   password: asd123456
   port: 8388
   server: 154.197.98.64
   type: ss
 - cipher: aes-256-cfb
-  name: 未知地区-11
+  name: 英国-1
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.15.82
   type: ss
 - cipher: aes-256-cfb
-  name: 未知地区-12
+  name: 韩国-2
   password: amazonskr05
   port: 443
   server: 52.79.248.193
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 未知地区-13
+  name: 美国-5
   password: MB9JPCHgZtwzQZ2jy3gMrz2fCIjT6M4FJMbfemIc4XCBcplL
   port: 51348
   server: 74.119.193.157
@@ -119,24 +119,27 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 未知地区
+  - 美国
+  - 韩国
+  - 中国
+  - 英国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 未知地区-1
-  - 未知地区-2
-  - 未知地区-3
-  - 未知地区-4
-  - 未知地区-5
-  - 未知地区-6
-  - 未知地区-7
-  - 未知地区-8
-  - 未知地区-9
-  - 未知地区-10
-  - 未知地区-11
-  - 未知地区-12
-  - 未知地区-13
+  - 美国-1
+  - 韩国-1
+  - 中国-1
+  - 中国-2
+  - 美国-2
+  - 美国-3
+  - 中国-3
+  - 中国-4
+  - 美国-4
+  - 中国-5
+  - 英国-1
+  - 韩国-2
+  - 美国-5
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
@@ -153,21 +156,36 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 未知地区
+  name: 美国
   proxies:
-  - 未知地区-1
-  - 未知地区-2
-  - 未知地区-3
-  - 未知地区-4
-  - 未知地区-5
-  - 未知地区-6
-  - 未知地区-7
-  - 未知地区-8
-  - 未知地区-9
-  - 未知地区-10
-  - 未知地区-11
-  - 未知地区-12
-  - 未知地区-13
+  - 美国-1
+  - 美国-2
+  - 美国-3
+  - 美国-4
+  - 美国-5
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 中国
+  proxies:
+  - 中国-1
+  - 中国-2
+  - 中国-3
+  - 中国-4
+  - 中国-5
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
   type: url-test
   url: https://twitter.com/favicon.ico
 rule-providers:
