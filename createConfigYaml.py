@@ -2,7 +2,6 @@ import yaml
 import requests
 import socket
 import yaml
-import json
 
 def getPorxyCountry(index, proxy, httpProxy, httpsProxy):
     country = "未知地区"
@@ -13,7 +12,7 @@ def getPorxyCountry(index, proxy, httpProxy, httpsProxy):
                 }
 
         ip = socket.gethostbyname(proxy['server'])
-        data = requests.get(f"http://ip.plyz.net/ip.ashx?ip={ip}", proxies=httpsProxy).text
+        data = requests.get(f"http://ip.plyz.net/ip.ashx?ip={ip}", proxies=proxies).text
         if(len(data) != 0):
             country = data.split("|")[1].split()[0]
     except Exception as e:
@@ -102,7 +101,7 @@ def creatTestConfig(proxies, defaultFile, testFile):
     print("生成clash配置文件：{}".format(testFile))
 
 if __name__ == "__main__":
-    configFile = "list.yaml"
-    with open("configFile", encoding='utf8') as fp:
+    profileFile = "list.yaml"
+    with open(profileFile, encoding='utf8') as fp:
         listFile = yaml.load(fp.read(), Loader=yaml.FullLoader)
         createLocationProxyGroup(listFile['proxies'])

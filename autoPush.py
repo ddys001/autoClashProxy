@@ -3,7 +3,7 @@ import git
 def pushRepo(retry): #将提交推送至github
     repo = git.Repo(".")
     for i in range(retry):
-        print(f"开始第{i + 1}次推送。", end="", flush=True)
+        print(f"开始第{i + 1}次推送：", end="", flush=True)
         try:
             repo.remotes.origin.push()
             print("推送成功。")
@@ -21,9 +21,9 @@ def pushFile(file, retry): #检查文件是否有修改，如果有修改，则�
 
     listStatus = repo.git.status(file)
     if ("modified" in listStatus):
-        print("本地配置文件已更新，开始推送至github。")
+        print(f"{file}已更新，开始推送至github。")
         repo.git.add(file)
         repo.git.commit("-m", f"更新{file}")
         pushRepo(retry)
     else:
-        print("本地配置文件未更新，无需推送至github。")
+        print(f"{file}未更新，无需推送至github。")

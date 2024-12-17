@@ -83,14 +83,15 @@ parser.add_argument("--nopush", action='store_true', help="不将生成的clash�
 parser.add_argument("--retry", type=int, default=5, help="推送至github失败后重试的次数。默认数值为5次")
 
 createClash = parser.add_mutually_exclusive_group(required=True)
-createClash.add_argument("--local", action='store_true', help="对--file指定文件进行处理后，生成需要进行延迟测试的clash配置文件")
-createClash.add_argument("--download", action='store_true', help="下载公开的订阅文件，在本地生成--file指定的clash配置文件。该文件未经延迟测试")
-createClash.add_argument("--delay", action='store_true', help="对指定的配置文件进行延迟测试，生成--file指定的配置文件")
+createClash.add_argument("--local", action='store_true', help="对--file指定文件进行处理后，生成延迟测试所需要的clash配置文件")
+createClash.add_argument("--download", action='store_true', help="下载公开的订阅文件，在本地生成--file指定的延迟测试所需要的clash配置文件。")
+createClash.add_argument("--delay", action='store_true', help="对指定的配置文件进行延迟测试，生成--file指定的配置文件。默认成功后会推送至github")
+createClash.add_argument("--location", action='store_true', help="对--file指定文件节点按照地区分类后生成配置文件。默认成功后会推送至github")
 createClash.add_argument("--onlypush", action='store_true', help="只推送提交至github")
 
 args = parser.parse_args()
 
-print(f"生成配置文件所需的最小节点数量为：{args.min}")
+print(f"自动生成配置文件所需的最小节点数量为：{args.min}")
 if(args.local): #处理指定的clash配置文件，删除里面不符合要求的节点，生成新的配置文件
     print(f"开始处理文件{args.file}，删除其中不符合要求的节点。")
     proxies = yaml.load(open(args.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
@@ -116,6 +117,14 @@ elif(args.delay): #对配置文件中的节点进行延迟测试，删除延迟�
             print("指定不推送至github")
     else:
         print("有效节点数量不足，不生成clash配置文件")
+elif(args.location):
+    print("开始按照地区对接点进行分类。")
+    proxies = yaml.load(open(args.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
+    creatConfig(proxies, args.config, args.file, args.http, args.https)
+    if(not args.nopush):
+        pushFile(args.file, args.retry)
+    else:
+        print("指定不推送至github")
 elif(args.onlypush):
     pushRepo(args.retry)
 else:
