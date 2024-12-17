@@ -61,19 +61,17 @@ def removeNodes(proxyPool):
 
     return proxies
 
-def getProxyDelay(index, proxyName):
+def getProxyDelay(index, proxyName, port, Authorization, timeout, testurl):
     bPassTest = False
 
-    port = 34885
-    Authorization = "d53df256-8f1b-4f9b-b730-6a4e947104b6"
     url = f"http://127.0.0.1:{port}/proxies/{proxyName}/delay"
     header = {
                 "Authorization": f"Bearer {Authorization}",
              }
 
     param = {
-                "timeout": "3000",
-                "url": "https://www.youtube.com/generate_204"
+                "timeout": timeout,
+                "url": testurl
             }
 
     delay = eval(requests.get(url, headers=header, params=param).text)
@@ -90,23 +88,28 @@ def getProxyDelay(index, proxyName):
 
     return bPassTest
 
-def teseAllProxy(configFile, maxProxy):
+def teseAllProxy(configFile, maxProxy, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6", timeout=3000, testurl="https://www.youtube.com/generate_204"):
     passProxy=[]
     with open(configFile, encoding='utf8') as fp:
         listFile = yaml.load(fp.read(), Loader=yaml.FullLoader)
         allProxy = listFile['proxies']
+        print(f"延迟测试超时时间为：{timeout}")
+        print(f"延迟测试url为：{testurl}")
         print(f"测试节点总数为：{len(allProxy)}")
         random.shuffle(allProxy)
-        for index, proxy in enumerate(allProxy):
-            if(getProxyDelay(index+1, proxy['name'])):
-                passProxy.append(proxy)
+        try:
+            for index, proxy in enumerate(allProxy):
+                if(getProxyDelay(index+1, proxy['name'], port, Authorization, timeout, testurl)):
+                    passProxy.append(proxy)
 
-            if(((index + 1) % 30) == 0):
-                print(f"测试正常节点: {len(passProxy)}/{index + 1}")
+                if(((index + 1) % 30) == 0):
+                    print(f"测试正常节点: {len(passProxy)}/{index + 1}")
 
-            if(len(passProxy) > maxProxy): #获得有效的的节点数已经足够多 退出测试
-                print("获得预期最大节点数量，退出延迟测试。")
-                break
+                if(len(passProxy) == maxProxy): #获得有效的的节点数已经足够多 退出测试
+                    print("获得预期最大节点数量，退出延迟测试。")
+                    break
+        except KeyboardInterrupt:
+            print("强制退出，延迟测试结束。")
 
         print(f"测试正常节点: {len(passProxy)}/{len(allProxy)}")
 
