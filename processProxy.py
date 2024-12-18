@@ -109,7 +109,9 @@ def teseAllProxy(configFile, maxProxy, port=34885, Authorization="d53df256-8f1b-
                     print("获得预期最大节点数量，退出延迟测试。")
                     break
         except KeyboardInterrupt:
-            print("强制退出，延迟测试结束。")
+            print("取消测试，延迟测试结束。")
+        except Exception as e:
+            print(f"发生错误：{e}。延迟测试结束。")
 
         print(f"测试正常节点: {len(passProxy)}/{len(allProxy)}")
 
