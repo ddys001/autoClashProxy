@@ -20,7 +20,7 @@ def removeDuplicateNode(proxyPool): #删除重复节点
     return allProxy
 
 def removeNotSupportCipher(proxyPool): #删除cipher不符合条件的节点
-    notSupportCipher = ['ss']
+    notSupportCipher = ['ss', "chacha20-poly1305"]
     proxies = []
     for proxy in proxyPool:
         if('cipher' in proxy and proxy['cipher'] in notSupportCipher):
