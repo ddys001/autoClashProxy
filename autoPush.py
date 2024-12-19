@@ -4,10 +4,13 @@ def pushRepo(retry): #将提交推送至github
     repo = git.Repo(".")
     for i in range(retry):
         print(f"开始第{i + 1}次推送：", end="", flush=True)
-        message = repo.remotes.origin.push()
-        if (not message.error):
-            print("推送成功。")
-            break
+        try:
+            message = repo.remotes.origin.push()
+            if (not message.error):
+                print("推送成功。")
+                break
+        except Exception as e:
+            print(e)
 
         if (i == (retry - 1)):
             print("达到最大重试次数，退出推送。")
