@@ -118,7 +118,7 @@ elif(args.delay): #对配置文件中的节点进行延迟测试，删除延迟�
     else:
         print("有效节点数量不足，不生成clash配置文件")
 elif(args.location):
-    print("开始按照地区对接点进行分类。")
+    print("开始按照地区对节点进行分类。")
     proxies = yaml.load(open(args.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
     creatConfig(proxies, args.config, args.file, args.http, args.https)
     if(not args.nopush):

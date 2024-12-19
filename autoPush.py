@@ -4,16 +4,12 @@ def pushRepo(retry): #将提交推送至github
     repo = git.Repo(".")
     for i in range(retry):
         print(f"开始第{i + 1}次推送：", end="", flush=True)
-        try:
-            repo.remotes.origin.push()
+        message = repo.remotes.origin.push()
+        if (not message.error):
             print("推送成功。")
             break
-        except git.exc.GitCommandError:
-            print("推送失败。", end="", flush=True)
 
-        if(i < (retry - 1)):
-            print("准备重新推送。")
-        else:
+        if (i == (retry - 1)):
             print("达到最大重试次数，退出推送。")
 
 def pushFile(file, retry): #检查文件是否有修改，如果有修改，则将修改推送至github
