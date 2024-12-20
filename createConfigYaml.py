@@ -13,10 +13,15 @@ def getPorxyCountry(index, proxy, httpProxy, httpsProxy):
 
         ip = socket.gethostbyname(proxy['server'])
         data = requests.get(f"http://ip.plyz.net/ip.ashx?ip={ip}", proxies=proxies).text
-        if(len(data) != 0):
+        if (len(data) != 0):
             country = data.split("|")[1].split()[0]
     except Exception as e:
         print(e)
+
+    #当clash在tun模式下开启fake-ip时，socket.gethostbyname获得的是一个假的内网地址
+    #目前统一将内网地址的结果改为未知地区
+    if (country == "内网IP"):
+        country = "未知地区"
 
     print(f"节点{index}: {proxy['server']} {country}")
     return country
@@ -68,9 +73,8 @@ def creatConfig(proxies, defaultFile, configFile, httpProxy, httpsProxy):
 
     allCountry = []
     for country in countryGroup:
-        if(country != "内网IP"):
-            selectCountry['proxies'].append(country)
-            allCountry.append(countryGroup[country])
+        selectCountry['proxies'].append(country)
+        allCountry.append(countryGroup[country])
 
     config['proxy-groups'].append(selectCountry)
     config['proxy-groups'].append(createGroup("延迟最低", "url-test", proxiesNames))
