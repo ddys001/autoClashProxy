@@ -16,48 +16,31 @@ def removeDuplicateNode(proxyPool): #删除重复节点
             proxiesItem.append(proxy[item])
         allProxy = proxies
 
-    print(f"after removeDuplicateNode, 剩余节点数量{len(allProxy)}")
+        print(f"after removeDuplicate_{item}, 剩余节点数量{len(allProxy)}")
+
     return allProxy
 
-def removeNotSupportCipher(proxyPool): #删除cipher不符合条件的节点
-    notSupportCipher = ['ss', "chacha20-poly1305"]
-    proxies = []
-    for proxy in proxyPool:
-        if('cipher' in proxy and proxy['cipher'] in notSupportCipher):
-            continue
-        proxies.append(proxy)
+def removeNotSupportNode(proxyPool): #删除clash不支持的节点
+    notSupportItems = {
+        "cipher" : ['ss', "chacha20-poly1305"],
+        "uuid"   : ['Free'],
+        "type"   : ['vless', 'hysteria', 'hysteria2']
+    }
 
-    print(f"after removeNotSupportCipher, 剩余节点数量{len(proxies)}")
-    return proxies
-
-def removeNotSupportUUID(proxyPool): #删除uuid不符合条件的节点
-    notSupportUUID = ['Free']
-    proxies = []
-    for proxy in proxyPool:
-        if('uuid' in proxy and proxy['uuid'] in notSupportUUID):
-            continue
-        proxies.append(proxy)
-
-    print(f"after removeNotSupportUUID, 剩余节点数量{len(proxies)}")
-    return proxies
-
-def removeNotSupportType(proxyPool): #删除type不符合条件的节点
-    notSupportType = ['vless', 'hysteria', 'hysteria2']
-    proxies = []
-    for proxy in proxyPool:
-        if('type' in proxy and proxy['type'] in notSupportType):
-            continue
-        proxies.append(proxy)
-
-    print(f"after removeNotSupportType, 剩余节点数量{len(proxies)}")
+    for item in notSupportItems.keys():
+        proxies = []
+        for proxy in proxyPool:
+            if(item in proxy and proxy[item] in notSupportItems[item]):
+                continue
+            proxies.append(proxy)
+        proxyPool = proxies
+        print(f"after removeNotSupport_{item}, 剩余节点数量{len(proxies)}")
 
     return proxies
 
 def removeNodes(proxyPool):
     proxies = removeDuplicateNode(proxyPool)
-    proxies = removeNotSupportCipher(proxies)
-    proxies = removeNotSupportUUID(proxies)
-    proxies = removeNotSupportType(proxies)
+    proxies = removeNotSupportNode(proxies)
 
     return proxies
 
