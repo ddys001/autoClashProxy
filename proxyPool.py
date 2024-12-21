@@ -76,7 +76,7 @@ parser.add_argument("--https", type=str, default="http://127.0.0.1:7890", help="
 parser.add_argument("--port", type=int, default=34885, help="指定clash web ui的prot")
 parser.add_argument("--auth", type=str, default="d53df256-8f1b-4f9b-b730-6a4e947104b6", help="指定clash web ui的Authorization")
 parser.add_argument("--min", type=int, default=10, help="生成clash配置文件所需要的最少节点数量.默认数值为10")
-parser.add_argument("--max", type=int, default=50, help="延迟测试中通过测试的最大节点数量。超过这个数字后，将停止延迟测试。默认数值为50")
+parser.add_argument("--max", type=int, default=20, help="延迟测试中通过测试的最大节点数量。超过这个数字后，将停止延迟测试。默认数值为20")
 parser.add_argument("--timeout", type=int, default=3000, help="延迟测试运行的时间")
 parser.add_argument("--testurl", type=str, default="https://www.youtube.com/generate_204", help="指定延迟测试使用的url")
 parser.add_argument("--nopush", action='store_true', help="不将生成的clash配置文件上传至github")
