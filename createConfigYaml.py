@@ -37,7 +37,7 @@ def createGroup(name, groupType, proxies):
     }
 
     if(groupType != "select"):
-        group['url'] = "https://twitter.com/favicon.ico"
+        group['url'] = "https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico"
         group["interval"] = 300
 
     return group

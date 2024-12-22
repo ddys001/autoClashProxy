@@ -44,6 +44,30 @@ def removeNodes(proxyPool):
 
     return proxies
 
+def enableNewConfig(configPath, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6"):
+    url = f"http://127.0.0.1:{port}/configs"
+
+    header = {
+                "Authorization": f"Bearer {Authorization}",
+             }
+
+    param = {
+                "force": "true"
+            }
+
+    body = {
+                "path": configPath
+            }
+
+    code = requests.put(url, headers=header, params=param, json=body).status_code
+
+    if code == 204:
+        print("config文件加载成功")
+        return True
+    else:
+        print("config文件加载失败")
+        return False
+
 def getProxyDelay(index, proxyName, port, Authorization, timeout, testurl):
     bPassTest = False
 
@@ -101,5 +125,8 @@ def teseAllProxy(configFile, maxProxy, port=34885, Authorization="d53df256-8f1b-
     return passProxy
 
 if __name__ == "__main__":
-    maxProxy = 50
-    teseAllProxy("list.yaml", maxProxy)
+    #maxProxy = 50
+    #teseAllProxy("list.yaml", maxProxy)
+
+    configPath = "/home/bob/autoClashProxy/list.yaml"
+    enableNewConfig(configPath)

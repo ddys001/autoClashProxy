@@ -2,6 +2,8 @@ import requests
 import yaml
 import argparse
 
+import os
+
 import sys
 sys.path.append('.')
 
@@ -79,7 +81,7 @@ parser.add_argument("--min", type=int, default=10, help="生成clash配置文件
 parser.add_argument("--max", type=int, default=20, help="延迟测试中通过测试的最大节点数量。超过这个数字后，将停止延迟测试。默认数值为20")
 parser.add_argument("--timeout", type=int, default=3000, help="延迟测试运行的时间")
 parser.add_argument("--testurl", type=str, default="https://www.youtube.com/generate_204", help="指定延迟测试使用的url")
-parser.add_argument("--nopush", action='store_true', help="不将生成的clash配置文件上传至github")
+parser.add_argument("--push", action='store_true', help="将生成的clash配置文件上传至github")
 parser.add_argument("--retry", type=int, default=5, help="推送至github失败后重试的次数。默认数值为5次")
 
 createClash = parser.add_mutually_exclusive_group(required=True)
@@ -88,8 +90,25 @@ createClash.add_argument("--download", action='store_true', help="下载公开�
 createClash.add_argument("--delay", action='store_true', help="对指定的配置文件进行延迟测试，生成--file指定的配置文件。默认成功后会推送至github")
 createClash.add_argument("--location", action='store_true', help="对--file指定文件节点按照地区分类后生成配置文件。默认成功后会推送至github")
 createClash.add_argument("--onlypush", action='store_true', help="只推送提交至github")
+createClash.add_argument("--update", action='store_true', help="更新配置文件，并将其推送至github")
 
 args = parser.parse_args()
+
+def DownloadProxy():
+    proxies = getProxyFromSource(args.urlfile, args.http, args.https)
+    if(len(proxies) > args.min):
+        creatTestConfig(proxies, args.config, args.file)
+    else:
+        print("有效节点数量不足，不生成clash配置文件")
+
+def getProxyDelay():
+    proxies = teseAllProxy(args.file, args.max, args.port, args.auth, args.timeout, args.testurl)
+    if(len(proxies) > args.min):
+        creatConfig(proxies, args.config, args.file, args.http, args.https)
+    else:
+        print("有效节点数量不足，不生成clash配置文件")
+
+pushConfig = args.push
 
 print(f"自动生成配置文件所需的最小节点数量为：{args.min}")
 if(args.local): #处理指定的clash配置文件，删除里面不符合要求的节点，生成新的配置文件
@@ -101,31 +120,27 @@ if(args.local): #处理指定的clash配置文件，删除里面不符合要求�
     else:
         print("有效节点数量不足，不生成clash配置文件")
 elif(args.download): #根据urlfile文件中的订阅链接下载配置文件，删除里面不符合要求的节点，生成新的配置文件
-    proxies = getProxyFromSource(args.urlfile, args.http, args.https)
-    if(len(proxies) > args.min):
-        creatTestConfig(proxies, args.config, args.file)
-    else:
-        print("有效节点数量不足，不生成clash配置文件")
+    DownloadProxy()
 elif(args.delay): #对配置文件中的节点进行延迟测试，删除延迟不符合要求的节点。
     print(f"延迟测试通过的最大节点数量：{args.max}")
-    proxies = teseAllProxy(args.file, args.max, args.port, args.auth, args.timeout, args.testurl)
-    if(len(proxies) > args.min):
-        creatConfig(proxies, args.config, args.file, args.http, args.https)
-        if(not args.nopush):
-            pushFile(args.file, args.retry)
-        else:
-            print("指定不推送至github")
-    else:
-        print("有效节点数量不足，不生成clash配置文件")
+    getProxyDelay()
 elif(args.location):
     print("开始按照地区对节点进行分类。")
     proxies = yaml.load(open(args.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
     creatConfig(proxies, args.config, args.file, args.http, args.https)
-    if(not args.nopush):
-        pushFile(args.file, args.retry)
+elif(args.update):
+    DownloadProxy()
+    if(enableNewConfig(f"{os.getcwd()}/{args.file}")):
+        getProxyDelay()
+        pushConfig = True
+        enableNewConfig(f"{os.getcwd()}/{args.file}")
     else:
-        print("指定不推送至github")
+        print("更新失败")
+        pushConfig = True
 elif(args.onlypush):
     pushRepo(args.retry)
 else:
     print("invalid parma")
+
+if(pushConfig):
+    pushFile(args.file, args.retry)
