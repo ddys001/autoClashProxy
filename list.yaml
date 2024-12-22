@@ -3,231 +3,261 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 美国-1
-  network: ws
-  port: 8443
-  server: 172.67.133.78
-  servername: lax2.ibgfw.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
-  ws-opts:
-    headers:
-      Host: lax2.ibgfw.top
-    path: /dyajvws
-- cipher: aes-256-cfb
-  name: 土耳其-1
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.123.101.241
-  type: ss
-- name: 未知地区-1
-  password: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
-  port: 443
-  server: bz02.ssr.ee
-  skip-cert-verify: false
-  sni: bz02.ssr.ee
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 美国-2
-  network: ws
-  port: 8443
-  server: 104.21.13.222
-  servername: lax2.ibgfw.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
-  ws-opts:
-    headers:
-      Host: lax2.ibgfw.top
-    path: /dyajvws
-- cipher: chacha20-ietf-poly1305
   name: 俄罗斯-1
-  password: ebrYpJsRfFtlKuO2HygBoD
-  port: 20255
-  server: 62.133.63.154
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: 中国-1
-  network: tcp
-  port: '51704'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
+  network: ws
+  port: '8443'
+  server: 94.247.142.198
+  tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      host: lax1.ibgfw.top
+    path: /xrenvws
+- alterId: '0'
   cipher: auto
-  name: 德国-1
-  port: 4035
-  server: 138.201.44.49
-  skip-cert-verify: false
-  tls: false
+  name: 亚美尼亚-1
+  network: ws
+  port: '8443'
+  server: 188.164.159.102
+  tls: true
   type: vmess
-  uuid: 9398b3da-690f-4648-abb7-9c4118449159
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
+  ws-opts:
+    headers:
+      host: lax2.ibgfw.top
+    path: /dyajvws
 - alpn:
   - http/1.1
-  name: 德国-2
+  name: 德国-1
   network: tcp
   password: telegram-id-directvpn
   port: 22222
   server: 3.64.159.223
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 未知地区-2
+- name: 中国-1
   network: tcp
-  password: 47a91992-6b70-4bb8-8c5f-f9600e0ba2da
-  port: 40801
-  server: r1.xinyo.me
-  skip-cert-verify: false
-  sni: node.xinyo.vip
-  type: trojan
-- name: 英国-1
-  password: UO2beikcWh
-  port: 33261
-  server: 38.59.245.38
+  password: QwwHvrnN
+  port: 36442
+  server: 223.113.54.145
   skip-cert-verify: true
   type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 拉脱维亚-1
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 46.183.217.232
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: amazonskr05
+  name: 未知地区-1
+  password: u17T3BvpYaaiuW2c
   port: 443
-  server: 3.35.206.24
+  server: series-a2-mec.varzesh360.co
   type: ss
+- alterId: '0'
+  cipher: auto
+  name: 阿塞拜疆-1
+  network: ws
+  port: '8443'
+  server: 5.10.246.166
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      host: lax1.ibgfw.top
+    path: /xrenvws
+- alterId: '0'
+  cipher: auto
+  name: 英国-1
+  network: ws
+  port: '8443'
+  server: 77.75.199.6
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      host: lax1.ibgfw.top
+    path: /xrenvws
+- name: 美国-1
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.157.109.216
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: '0'
+  cipher: auto
+  name: 印度-1
+  network: ws
+  port: '8443'
+  server: 14.102.229.82
+  tls: true
+  type: vmess
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
+  ws-opts:
+    headers:
+      host: lax2.ibgfw.top
+    path: /dyajvws
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 13.230.239.136
-  tfo: false
+  server: 13.114.67.166
   type: ss
 - alterId: 0
   cipher: auto
-  name: 未知地区-3
-  network: ws
-  port: 80
-  server: upos-sz-mirrorcf1ov.bilivideo.com
-  skip-cert-verify: false
+  name: 德国-2
+  network: tcp
+  port: 4035
+  server: 138.201.44.49
   tls: false
   type: vmess
-  uuid: 74133cf5-3e95-4f79-8379-7977f94c493a
+  uuid: 9398b3da-690f-4648-abb7-9c4118449159
+- alterId: '0'
+  cipher: auto
+  name: 保加利亚-1
+  network: ws
+  port: '8443'
+  server: 185.176.26.209
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
   ws-opts:
     headers:
-      Host: argo9.zjccc.nyc.mn
-    path: /74133cf5-3e95-4f79-8379-7977f94c493a-vm?ed=2048
+      host: lax1.ibgfw.top
+    path: /xrenvws
 - cipher: rc4-md5
-  name: 美国-3
-  obfs: plain
+  client-fingerprint: chrome
+  name: 英国-2
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  protocol: origin
-  server: 51.158.244.38
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-4
-  password: amazonskr05
-  port: 443
-  server: 54.201.174.149
+  server: 146.70.61.18
+  tfo: false
   type: ss
-  udp: true
-- name: 爱尔兰-1
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.214.243.84
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 爱尔兰-2
+- alterId: '0'
+  cipher: auto
+  name: 德国-3
+  network: ws
+  port: '8443'
+  server: 77.37.33.244
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      host: lax1.ibgfw.top
+    path: /xrenvws
+- name: 美国-2
   password: telegram-id-directvpn
   port: 22222
-  server: 52.49.151.83
+  server: 3.13.57.141
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   tfo: false
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 18.181.152.92
-  type: ss
-- name: 瑞典-1
+- alterId: '0'
+  cipher: auto
+  name: 卢森堡-1
+  network: ws
+  port: '8443'
+  server: 94.242.230.119
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      host: lax1.ibgfw.top
+    path: /xrenvws
+- name: 美国-3
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.48.90.200
+  server: 13.61.56.232
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
-  tfo: false
   type: trojan
-  udp: true
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 未知地区-4
+  name: 乌克兰-1
   network: ws
-  port: 443
-  server: us16.998998.best
-  servername: server9.998877.best
-  skip-cert-verify: false
+  port: '8443'
+  server: 45.80.111.223
   tls: true
   type: vmess
-  uuid: 11338fbe-71f7-47da-bc29-e74780eda3d3
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
   ws-opts:
     headers:
-      Host: server9.998877.best
-    path: /drtyhiknu/kf/sgi
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 日本-3
-  password: amazonskr05
-  port: 443
-  server: 18.179.197.216
-  tfo: false
+      host: lax1.ibgfw.top
+    path: /xrenvws
+- cipher: chacha20-ietf-poly1305
+  name: 美国-4
+  password: 2S39h4RMyPdGcfcltg1rwD
+  port: 55305
+  server: 64.227.183.64
   type: ss
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 未知地区-5
-  network: ws
-  port: 443
-  server: us19.998998.best
-  servername: server2-1.998877.best
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 11338fbe-71f7-47da-bc29-e74780eda3d3
-  ws-opts:
-    headers:
-      Host: server2.998877.best
-    path: /setfdg/sdfg/sgi?ed=2560
-- cipher: aes-256-gcm
   name: 俄罗斯-2
-  password: dongtaiwang.com
-  port: 23456
-  server: 185.22.155.228
+  network: ws
+  port: '8443'
+  server: 213.241.198.57
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      host: lax1.ibgfw.top
+    path: /xrenvws
+- cipher: aes-256-cfb
+  name: 土耳其-1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.123.101.241
   type: ss
-- name: 英国-2
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.24.5.11
+- alterId: '0'
+  cipher: auto
+  name: 白俄罗斯-1
+  network: ws
+  port: '8443'
+  server: 45.159.218.144
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      host: lax1.ibgfw.top
+    path: /xrenvws
+- name: 中国-2
+  password: QwwHvrnN
+  port: 34185
+  server: 36.151.192.201
   skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tfo: false
   type: trojan
-  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 西班牙-1
+  network: ws
+  port: '8443'
+  server: 194.59.5.221
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      host: lax1.ibgfw.top
+    path: /xrenvws
+- alterId: '0'
+  cipher: auto
+  name: 斯洛文尼亚-1
+  network: ws
+  port: '8443'
+  server: 92.53.190.226
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      host: lax1.ibgfw.top
+    path: /xrenvws
 proxy-groups:
 - name: proxinode
   proxies:
@@ -239,62 +269,114 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
-  - 土耳其
-  - 未知地区
   - 俄罗斯
-  - 中国
+  - 亚美尼亚
   - 德国
+  - 中国
+  - 未知地区
+  - 阿塞拜疆
   - 英国
-  - 拉脱维亚
-  - 韩国
+  - 美国
+  - 印度
   - 日本
-  - 爱尔兰
-  - 瑞典
+  - 保加利亚
+  - 卢森堡
+  - 乌克兰
+  - 土耳其
+  - 白俄罗斯
+  - 西班牙
+  - 斯洛文尼亚
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-1
-  - 土耳其-1
-  - 未知地区-1
-  - 美国-2
   - 俄罗斯-1
-  - 中国-1
+  - 亚美尼亚-1
   - 德国-1
-  - 德国-2
-  - 未知地区-2
+  - 中国-1
+  - 未知地区-1
+  - 阿塞拜疆-1
   - 英国-1
-  - 拉脱维亚-1
-  - 韩国-1
+  - 美国-1
+  - 印度-1
   - 日本-1
-  - 未知地区-3
-  - 美国-3
-  - 美国-4
-  - 爱尔兰-1
-  - 爱尔兰-2
-  - 日本-2
-  - 瑞典-1
-  - 未知地区-4
-  - 日本-3
-  - 未知地区-5
-  - 俄罗斯-2
+  - 德国-2
+  - 保加利亚-1
   - 英国-2
+  - 德国-3
+  - 美国-2
+  - 卢森堡-1
+  - 美国-3
+  - 乌克兰-1
+  - 美国-4
+  - 俄罗斯-2
+  - 土耳其-1
+  - 白俄罗斯-1
+  - 中国-2
+  - 西班牙-1
+  - 斯洛文尼亚-1
   type: url-test
-  url: https://twitter.com/favicon.ico
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 故障转移
   proxies: *id001
   type: fallback
-  url: https://twitter.com/favicon.ico
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 负载均衡
   proxies: *id001
   type: load-balance
-  url: https://twitter.com/favicon.ico
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - name: 手动选择
   proxies: *id001
   type: select
+- interval: 300
+  name: 俄罗斯
+  proxies:
+  - 俄罗斯-1
+  - 俄罗斯-2
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 亚美尼亚
+  proxies:
+  - 亚美尼亚-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 德国
+  proxies:
+  - 德国-1
+  - 德国-2
+  - 德国-3
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 中国
+  proxies:
+  - 中国-1
+  - 中国-2
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 未知地区
+  proxies:
+  - 未知地区-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 阿塞拜疆
+  proxies:
+  - 阿塞拜疆-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
+  - 英国-2
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 美国
   proxies:
@@ -303,83 +385,61 @@ proxy-groups:
   - 美国-3
   - 美国-4
   type: url-test
-  url: https://twitter.com/favicon.ico
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 印度
+  proxies:
+  - 印度-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 保加利亚
+  proxies:
+  - 保加利亚-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 卢森堡
+  proxies:
+  - 卢森堡-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 乌克兰
+  proxies:
+  - 乌克兰-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 土耳其
   proxies:
   - 土耳其-1
   type: url-test
-  url: https://twitter.com/favicon.ico
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 未知地区
+  name: 白俄罗斯
   proxies:
-  - 未知地区-1
-  - 未知地区-2
-  - 未知地区-3
-  - 未知地区-4
-  - 未知地区-5
+  - 白俄罗斯-1
   type: url-test
-  url: https://twitter.com/favicon.ico
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 俄罗斯
+  name: 西班牙
   proxies:
-  - 俄罗斯-1
-  - 俄罗斯-2
+  - 西班牙-1
   type: url-test
-  url: https://twitter.com/favicon.ico
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 中国
+  name: 斯洛文尼亚
   proxies:
-  - 中国-1
+  - 斯洛文尼亚-1
   type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 德国
-  proxies:
-  - 德国-1
-  - 德国-2
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 英国
-  proxies:
-  - 英国-1
-  - 英国-2
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 拉脱维亚
-  proxies:
-  - 拉脱维亚-1
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  - 日本-3
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 爱尔兰
-  proxies:
-  - 爱尔兰-1
-  - 爱尔兰-2
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 瑞典
-  proxies:
-  - 瑞典-1
-  type: url-test
-  url: https://twitter.com/favicon.ico
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
   apple:
     behavior: domain
