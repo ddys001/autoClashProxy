@@ -3,41 +3,118 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- name: 未知地区-1
-  port: 4000
-  server: hk9.ftq.ink
-  tls: true
-  type: http
-- name: 美国-1
+- alterId: 0
+  cipher: auto
+  name: 美国-1
   network: ws
-  password: UipJV58NIw
-  port: 443
-  server: 104.26.9.227
+  port: 8443
+  server: 172.67.133.78
+  servername: lax2.ibgfw.top
   skip-cert-verify: true
-  sni: t2.rtx.al
-  type: trojan
+  tls: true
+  type: vmess
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
   ws-opts:
     headers:
-      Host: t2.rtx.al
-    path: /cfiiib
-- name: 未知地区-2
-  port: 4000
-  server: ftq.ink
-  tls: true
-  type: http
-- cipher: chacha20-ietf-poly1305
-  name: 瑞士-1
-  password: fMcrsQuZhCNiHBmXT80AhQ3mPK5alh/iLuDz4pILlYU=
-  port: 44915
-  server: 138.124.60.136
+      Host: lax2.ibgfw.top
+    path: /dyajvws
+- cipher: aes-256-cfb
+  name: 土耳其-1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.123.101.241
   type: ss
-- name: 巴西-1
+- name: 未知地区-1
   password: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
   port: 443
-  server: 168.138.142.53
-  skip-cert-verify: true
+  server: bz02.ssr.ee
+  skip-cert-verify: false
   sni: bz02.ssr.ee
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 美国-2
+  network: ws
+  port: 8443
+  server: 104.21.13.222
+  servername: lax2.ibgfw.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
+  ws-opts:
+    headers:
+      Host: lax2.ibgfw.top
+    path: /dyajvws
+- cipher: chacha20-ietf-poly1305
+  name: 俄罗斯-1
+  password: ebrYpJsRfFtlKuO2HygBoD
+  port: 20255
+  server: 62.133.63.154
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 中国-1
+  network: tcp
+  port: '51704'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 德国-1
+  port: 4035
+  server: 138.201.44.49
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 9398b3da-690f-4648-abb7-9c4118449159
+- alpn:
+  - http/1.1
+  name: 德国-2
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.64.159.223
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 未知地区-2
+  network: tcp
+  password: 47a91992-6b70-4bb8-8c5f-f9600e0ba2da
+  port: 40801
+  server: r1.xinyo.me
+  skip-cert-verify: false
+  sni: node.xinyo.vip
+  type: trojan
+- name: 英国-1
+  password: UO2beikcWh
+  port: 33261
+  server: 38.59.245.38
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 拉脱维亚-1
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 46.183.217.232
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 3.35.206.24
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 13.230.239.136
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 未知地区-3
@@ -52,104 +129,105 @@ proxies:
     headers:
       Host: argo9.zjccc.nyc.mn
     path: /74133cf5-3e95-4f79-8379-7977f94c493a-vm?ed=2048
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 18.141.187.153
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-2
-  password: amazonskr05
-  port: 443
-  server: 54.70.176.73
-  type: ss
-- name: 美国-3
-  password: telegram-id-directvpn
-  port: 22222
-  server: 15.157.247.25
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- cipher: rc4-md5
+  name: 美国-3
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 51.158.244.38
+  type: ssr
 - cipher: aes-256-cfb
   name: 美国-4
   password: amazonskr05
   port: 443
-  server: 54.244.200.142
+  server: 54.201.174.149
   type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 美国-5
-  password: shadowsocks
+  udp: true
+- name: 爱尔兰-1
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.214.243.84
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 爱尔兰-2
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.49.151.83
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
   port: 443
-  server: 149.22.87.204
+  server: 18.181.152.92
+  type: ss
+- name: 瑞典-1
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.48.90.200
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 未知地区-4
+  network: ws
+  port: 443
+  server: us16.998998.best
+  servername: server9.998877.best
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 11338fbe-71f7-47da-bc29-e74780eda3d3
+  ws-opts:
+    headers:
+      Host: server9.998877.best
+    path: /drtyhiknu/kf/sgi
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 日本-3
+  password: amazonskr05
+  port: 443
+  server: 18.179.197.216
   tfo: false
   type: ss
 - alterId: 0
-  name: 美国-6
-  network: tcp
-  password: telegram-id-directvpn
+  cipher: auto
+  name: 未知地区-5
+  network: ws
+  port: 443
+  server: us19.998998.best
+  servername: server2-1.998877.best
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 11338fbe-71f7-47da-bc29-e74780eda3d3
+  ws-opts:
+    headers:
+      Host: server2.998877.best
+    path: /setfdg/sdfg/sgi?ed=2560
+- cipher: aes-256-gcm
+  name: 俄罗斯-2
+  password: dongtaiwang.com
+  port: 23456
+  server: 185.22.155.228
+  type: ss
+- name: 英国-2
+  password: telegram-id-privatevpns
   port: 22222
-  server: 3.220.236.149
+  server: 51.24.5.11
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  name: 保加利亚-1
-  password: shadowsocks
-  port: 443
-  server: 149.34.244.68
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 13.114.67.166
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-7
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 54.218.229.170
-  type: ssr
-- name: 中国-1
-  network: tcp
-  password: QwwHvrnN
-  port: 36442
-  server: 223.113.54.145
-  skip-cert-verify: true
-  type: trojan
-- cipher: aes-256-cfb
-  name: 美国-8
-  password: amazonskr05
-  port: 443
-  server: 35.88.126.102
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 43.202.1.19
   tfo: false
-  type: ss
-- name: 中国-2
-  password: QwwHvrnN
-  port: 34185
-  server: 36.151.192.201
-  skip-cert-verify: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 未知地区-4
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: series-a1.samanehha.co
-  type: ss
+  udp: true
 proxy-groups:
 - name: proxinode
   proxies:
@@ -161,39 +239,47 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 未知地区
   - 美国
-  - 瑞士
-  - 巴西
-  - 新加坡
-  - 保加利亚
-  - 日本
+  - 土耳其
+  - 未知地区
+  - 俄罗斯
   - 中国
+  - 德国
+  - 英国
+  - 拉脱维亚
   - 韩国
+  - 日本
+  - 爱尔兰
+  - 瑞典
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 未知地区-1
   - 美国-1
-  - 未知地区-2
-  - 瑞士-1
-  - 巴西-1
-  - 未知地区-3
-  - 新加坡-1
+  - 土耳其-1
+  - 未知地区-1
   - 美国-2
+  - 俄罗斯-1
+  - 中国-1
+  - 德国-1
+  - 德国-2
+  - 未知地区-2
+  - 英国-1
+  - 拉脱维亚-1
+  - 韩国-1
+  - 日本-1
+  - 未知地区-3
   - 美国-3
   - 美国-4
-  - 美国-5
-  - 美国-6
-  - 保加利亚-1
-  - 日本-1
-  - 美国-7
-  - 中国-1
-  - 美国-8
-  - 韩国-1
-  - 中国-2
+  - 爱尔兰-1
+  - 爱尔兰-2
+  - 日本-2
+  - 瑞典-1
   - 未知地区-4
+  - 日本-3
+  - 未知地区-5
+  - 俄罗斯-2
+  - 英国-2
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
@@ -210,68 +296,88 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 未知地区
-  proxies:
-  - 未知地区-1
-  - 未知地区-2
-  - 未知地区-3
-  - 未知地区-4
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
   name: 美国
   proxies:
   - 美国-1
   - 美国-2
   - 美国-3
   - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
-  - 美国-8
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 瑞士
+  name: 土耳其
   proxies:
-  - 瑞士-1
+  - 土耳其-1
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 巴西
+  name: 未知地区
   proxies:
-  - 巴西-1
+  - 未知地区-1
+  - 未知地区-2
+  - 未知地区-3
+  - 未知地区-4
+  - 未知地区-5
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
-  name: 新加坡
+  name: 俄罗斯
   proxies:
-  - 新加坡-1
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 保加利亚
-  proxies:
-  - 保加利亚-1
-  type: url-test
-  url: https://twitter.com/favicon.ico
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
+  - 俄罗斯-1
+  - 俄罗斯-2
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
   name: 中国
   proxies:
   - 中国-1
-  - 中国-2
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 德国
+  proxies:
+  - 德国-1
+  - 德国-2
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
+  - 英国-2
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 拉脱维亚
+  proxies:
+  - 拉脱维亚-1
   type: url-test
   url: https://twitter.com/favicon.ico
 - interval: 300
   name: 韩国
   proxies:
   - 韩国-1
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
+  - 日本-3
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 爱尔兰
+  proxies:
+  - 爱尔兰-1
+  - 爱尔兰-2
+  type: url-test
+  url: https://twitter.com/favicon.ico
+- interval: 300
+  name: 瑞典
+  proxies:
+  - 瑞典-1
   type: url-test
   url: https://twitter.com/favicon.ico
 rule-providers:
