@@ -3,6 +3,7 @@ import yaml
 import argparse
 
 import os
+from potime import RunTime
 
 import sys
 sys.path.append('.')
@@ -51,6 +52,7 @@ def parserSourceUrl(sourceFile):
     print("解析完成，共获得{}个有效url".format(len(allUrl)))
     return allUrl
 
+@RunTime
 def getProxyFromSource(sourcePath, httpProxy, httpsProxy):
     proxyPool = []
     sources = parserSourceUrl(sourcePath)

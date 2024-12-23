@@ -3,6 +3,8 @@ import requests
 import socket
 import yaml
 
+from potime import RunTime
+
 from processProxy import *
 
 def getPorxyCountry(index, proxy, httpProxy, httpsProxy):
@@ -58,6 +60,7 @@ def createLocationProxyGroup(proxies, httpProxy="http://127.0.0.1:7890", httpsPr
 
     return location
 
+@RunTime
 def creatConfig(proxies, min, defaultFile, configFile, httpProxy, httpsProxy):
     print("开始生成配置文件")
     print(f"生成配置文件所需的最小节点数量为：{min}")

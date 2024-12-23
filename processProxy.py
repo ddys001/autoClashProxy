@@ -4,6 +4,8 @@ import random
 import os
 import time
 
+from potime import RunTime
+
 def removeDuplicateNode(proxyPool): #删除重复节点
     checkLists = ["name", "server"]
 
@@ -101,6 +103,7 @@ def getProxyDelay(index, proxyName, port, Authorization, timeout, testurl):
 
     return bPassTest
 
+@RunTime
 def removeTimeoutProxy(proxies, maxProxy, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6", timeout=3000, testurl="https://www.youtube.com/generate_204"):
     passProxy=[]
     print(f"延迟测试超时时间为：{timeout}")
