@@ -116,7 +116,9 @@ else:
 
 if (args.update): #对配置文件中的节点进行延迟测试，删除延迟不符合要求的节点。
     if (bSuccess and loadConfigInCFW(configPath, args.retry)):
+        bSuccess = False
         print(f"开始对节点进行延迟测试。延迟测试通过的最大节点数量：{args.max}")
+        proxies = yaml.load(open(args.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
         proxies = removeTimeoutProxy(proxies, args.max, args.port, args.auth, args.timeout, args.testurl)
         bSuccess = creatConfig(proxies, args.min, args.config, args.file, args.http, args.https)
         if (bSuccess):
@@ -127,5 +129,5 @@ if (args.update): #对配置文件中的节点进行延迟测试，删除延迟�
     if (not bSuccess):
         print("配置文件更新失败")
 
-if (args.push):
+if (bSuccess and args.push):
     pushFile(args.file, args.retry)
