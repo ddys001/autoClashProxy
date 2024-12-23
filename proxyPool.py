@@ -93,7 +93,6 @@ createClash.add_argument("--download", action='store_true', help="下载公开�
 createClash.add_argument("--update", action='store_true', help="更新配置文件，并将其推送至github")
 
 args = parser.parse_args()
-bPushConfig = args.push
 bNoDownload = args.noDownload
 proxies = None
 configPath = f"{os.getcwd()}/{args.file}"
@@ -121,14 +120,12 @@ if (args.update): #对配置文件中的节点进行延迟测试，删除延迟�
         proxies = removeTimeoutProxy(proxies, args.max, args.port, args.auth, args.timeout, args.testurl)
         bSuccess = creatConfig(proxies, args.min, args.config, args.file, args.http, args.https)
         if (bSuccess):
-            bPushConfig = True
             loadConfigInCFW(configPath, args.retry) #延迟测试结束，加载最终生成的配置文件
     else:
         bSuccess = False
 
     if (not bSuccess):
         print("配置文件更新失败")
-        bPushConfig = False
 
-if (bPushConfig):
+if (args.push):
     pushFile(args.file, args.retry)
