@@ -66,8 +66,8 @@ def creatConfig(proxies, min, defaultFile, configFile, httpProxy, httpsProxy):
     print(f"生成配置文件所需的最小节点数量为：{min}")
 
     print("原始获取节点数量:", len(proxies))
-    proxies = removeNodes(proxies)
-    print("删除不符合节点后，节点数量:", len(proxies))
+    proxies = processNodes(proxies)
+    print("对节点进行处理后，节点数量:", len(proxies))
 
     if(len(proxies) < min):
         print("节点数量不足，不生成clash配置文件")

@@ -99,9 +99,9 @@ proxies = None
 configPath = f"{os.getcwd()}/{args.file}"
 
 if (args.local): #处理指定的clash配置文件，删除里面不符合要求的节点，生成新的配置文件
-    print(f"开始处理配置文件：{args.file}。删除其中不符合要求的节点。")
+    print(f"开始处理配置文件：{args.file}。")
     proxies = yaml.load(open(args.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
-    proxies = removeNodes(proxies)
+    proxies = processNodes(proxies)
     bNoDownload = False
 
 if ((args.download or args.update) and (not bNoDownload)): #根据urlfile文件中的订阅链接下载配置文件，删除里面不符合要求的节点，生成新的配置文件

@@ -34,7 +34,7 @@ def removeNotSupportNode(proxyPool): #删除clash不支持的节点
     for item in notSupportItems.keys():
         proxies = []
         for proxy in proxyPool:
-            if(item in proxy and proxy[item] in notSupportItems[item]):
+            if (item in proxy and proxy[item] in notSupportItems[item]):
                 continue
             proxies.append(proxy)
         proxyPool = proxies
@@ -42,9 +42,21 @@ def removeNotSupportNode(proxyPool): #删除clash不支持的节点
 
     return proxies
 
-def removeNodes(proxyPool):
+#TLS must be true with h2/grpc network in vmess
+def setTLSForVmess(proxyPool):
+    proxies = []
+    for proxy in proxyPool:
+        if (proxy['type'] == "vmess" and "network" in proxy):
+            if (proxy['network'] in ["grpc"]):
+                proxy['tls'] = True
+        proxies.append(proxy)
+
+    return proxies
+
+def processNodes(proxyPool):
     proxies = removeDuplicateNode(proxyPool)
     proxies = removeNotSupportNode(proxies)
+    proxies = setTLSForVmess(proxies)
 
     return proxies
 
