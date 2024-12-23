@@ -1,6 +1,7 @@
 import requests
-import yaml
 import random
+
+import os
 
 def removeDuplicateNode(proxyPool): #删除重复节点
     checkLists = ["name", "server"]
@@ -44,7 +45,8 @@ def removeNodes(proxyPool):
 
     return proxies
 
-def enableNewConfig(configPath, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6"):
+def loadConfigInCFW(configPath, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6"):
+    print(f"开始加载配置文件{configPath}。")
     url = f"http://127.0.0.1:{port}/configs"
 
     header = {
@@ -59,13 +61,15 @@ def enableNewConfig(configPath, port=34885, Authorization="d53df256-8f1b-4f9b-b7
                 "path": configPath
             }
 
-    code = requests.put(url, headers=header, params=param, json=body).status_code
+    message = requests.put(url, headers=header, params=param, json=body)
+    code = message.status_code
 
     if code == 204:
-        print("config文件加载成功")
+        print("配置文件加载成功")
         return True
     else:
-        print("config文件加载失败")
+        print(message.text)
+        print("配置文件加载失败")
         return False
 
 def getProxyDelay(index, proxyName, port, Authorization, timeout, testurl):
@@ -95,38 +99,32 @@ def getProxyDelay(index, proxyName, port, Authorization, timeout, testurl):
 
     return bPassTest
 
-def teseAllProxy(configFile, maxProxy, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6", timeout=3000, testurl="https://www.youtube.com/generate_204"):
+def removeTimeoutProxy(proxies, maxProxy, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6", timeout=3000, testurl="https://www.youtube.com/generate_204"):
     passProxy=[]
-    with open(configFile, encoding='utf8') as fp:
-        listFile = yaml.load(fp.read(), Loader=yaml.FullLoader)
-        allProxy = listFile['proxies']
-        print(f"延迟测试超时时间为：{timeout}")
-        print(f"延迟测试url为：{testurl}")
-        print(f"测试节点总数为：{len(allProxy)}")
-        random.shuffle(allProxy)
-        try:
-            for index, proxy in enumerate(allProxy):
-                if(getProxyDelay(index+1, proxy['name'], port, Authorization, timeout, testurl)):
-                    passProxy.append(proxy)
+    print(f"延迟测试超时时间为：{timeout}")
+    print(f"延迟测试url为：{testurl}")
+    print(f"测试节点总数为：{len(proxies)}")
+    random.shuffle(proxies)
+    try:
+        for index, proxy in enumerate(proxies):
+            if(getProxyDelay(index+1, proxy['name'], port, Authorization, timeout, testurl)):
+                passProxy.append(proxy)
 
-                if(((index + 1) % 30) == 0):
-                    print(f"测试正常节点: {len(passProxy)}/{index + 1}")
+            if(((index + 1) % 30) == 0):
+                print(f"测试正常节点: {len(passProxy)}/{index + 1}")
 
-                if(len(passProxy) == maxProxy): #获得有效的的节点数已经足够多 退出测试
-                    print("获得预期最大节点数量，退出延迟测试。")
-                    break
-        except KeyboardInterrupt:
-            print("取消测试，延迟测试结束。")
-        except Exception as e:
-            print(f"发生错误：{e}。延迟测试结束。")
+            if(len(passProxy) == maxProxy): #获得有效的的节点数已经足够多 退出测试
+                print("获得预期最大节点数量，退出延迟测试。")
+                break
+    except KeyboardInterrupt:
+        print("取消测试，延迟测试结束。")
+    except Exception as e:
+        print(f"发生错误：{e}。延迟测试结束。")
 
-        print(f"测试正常节点: {len(passProxy)}/{len(allProxy)}")
+    print(f"测试正常节点: {len(passProxy)}/{len(proxies)}")
 
     return passProxy
 
 if __name__ == "__main__":
-    #maxProxy = 50
-    #teseAllProxy("list.yaml", maxProxy)
-
-    configPath = "/home/bob/autoClashProxy/list.yaml"
-    enableNewConfig(configPath)
+    configPath = f"{os.getcwd()}/list.yaml"
+    loadConfigInCFW(configPath)

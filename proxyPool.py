@@ -36,9 +36,10 @@ def downloadFile(index, url, httpProxy, httpsProxy):
     return file
 
 def parserSourceUrl(sourceFile):
-    print("解析到以下有效的url:")
+    print(f"从{sourceFile}解析出以下有效的url:")
+    allUrls = open(sourceFile, encoding='utf8').read().strip().splitlines()
     allUrl = []
-    for url in sourceFile:
+    for url in allUrls:
         if (url.strip().startswith("#") or url.strip().startswith("//")): #删除注释
             continue
         if (url.isspace() or len(url) == 0): #删除空行
@@ -52,7 +53,7 @@ def parserSourceUrl(sourceFile):
 
 def getProxyFromSource(sourcePath, httpProxy, httpsProxy):
     proxyPool = []
-    sources = parserSourceUrl(open(sourcePath, encoding='utf8').read().strip().splitlines())
+    sources = parserSourceUrl(sourcePath)
     for index, url in enumerate(sources):
         download = downloadFile(index+1, url, httpProxy, httpsProxy)
         if(download != None):
@@ -63,11 +64,10 @@ def getProxyFromSource(sourcePath, httpProxy, httpsProxy):
             except Exception as e:
                 print(f"解析节点失败。 Error：{e}")
 
-    print("原始获取节点数量:", len(proxyPool))
-    proxies = removeNodes(proxyPool)
-    print("删除不符合节点后，节点数量:", len(proxies))
+    print("下载完成")
+    print("获取节点数量:", len(proxyPool))
 
-    return proxies
+    return proxyPool
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--urlfile", type=str, default="source.url", help="指定下载clash订阅链接的文件")
@@ -83,64 +83,50 @@ parser.add_argument("--timeout", type=int, default=3000, help="延迟测试运�
 parser.add_argument("--testurl", type=str, default="https://www.youtube.com/generate_204", help="指定延迟测试使用的url")
 parser.add_argument("--push", action='store_true', help="将生成的clash配置文件上传至github")
 parser.add_argument("--retry", type=int, default=5, help="推送至github失败后重试的次数。默认数值为5次")
+parser.add_argument("--noDownload", action='store_true', help="不下载公开节点，使用本地配置文件")
 
 createClash = parser.add_mutually_exclusive_group(required=True)
 createClash.add_argument("--local", action='store_true', help="对--file指定文件进行处理后，生成延迟测试所需要的clash配置文件")
 createClash.add_argument("--download", action='store_true', help="下载公开的订阅文件，在本地生成--file指定的延迟测试所需要的clash配置文件。")
-createClash.add_argument("--delay", action='store_true', help="对指定的配置文件进行延迟测试，生成--file指定的配置文件。默认成功后会推送至github")
-createClash.add_argument("--location", action='store_true', help="对--file指定文件节点按照地区分类后生成配置文件。默认成功后会推送至github")
-createClash.add_argument("--onlypush", action='store_true', help="只推送提交至github")
 createClash.add_argument("--update", action='store_true', help="更新配置文件，并将其推送至github")
 
 args = parser.parse_args()
+bPushConfig = args.push
+bNoDownload = args.noDownload
+proxies = None
+configPath = f"{os.getcwd()}/{args.file}"
 
-def DownloadProxy():
-    proxies = getProxyFromSource(args.urlfile, args.http, args.https)
-    if(len(proxies) > args.min):
-        creatTestConfig(proxies, args.config, args.file)
-    else:
-        print("有效节点数量不足，不生成clash配置文件")
-
-def getProxyDelay():
-    proxies = teseAllProxy(args.file, args.max, args.port, args.auth, args.timeout, args.testurl)
-    if(len(proxies) > args.min):
-        creatConfig(proxies, args.config, args.file, args.http, args.https)
-    else:
-        print("有效节点数量不足，不生成clash配置文件")
-
-pushConfig = args.push
-
-print(f"自动生成配置文件所需的最小节点数量为：{args.min}")
-if(args.local): #处理指定的clash配置文件，删除里面不符合要求的节点，生成新的配置文件
-    print(f"开始处理文件{args.file}，删除其中不符合要求的节点。")
+if (args.local): #处理指定的clash配置文件，删除里面不符合要求的节点，生成新的配置文件
+    print(f"开始处理配置文件：{args.file}。删除其中不符合要求的节点。")
     proxies = yaml.load(open(args.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
     proxies = removeNodes(proxies)
-    if(len(proxies) > args.min):
-        creatTestConfig(proxies, args.config, args.file)
-    else:
-        print("有效节点数量不足，不生成clash配置文件")
-elif(args.download): #根据urlfile文件中的订阅链接下载配置文件，删除里面不符合要求的节点，生成新的配置文件
-    DownloadProxy()
-elif(args.delay): #对配置文件中的节点进行延迟测试，删除延迟不符合要求的节点。
-    print(f"延迟测试通过的最大节点数量：{args.max}")
-    getProxyDelay()
-elif(args.location):
-    print("开始按照地区对节点进行分类。")
-    proxies = yaml.load(open(args.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
-    creatConfig(proxies, args.config, args.file, args.http, args.https)
-elif(args.update):
-    DownloadProxy()
-    if(enableNewConfig(f"{os.getcwd()}/{args.file}")):
-        getProxyDelay()
-        pushConfig = True
-        enableNewConfig(f"{os.getcwd()}/{args.file}")
-    else:
-        print("更新失败")
-        pushConfig = True
-elif(args.onlypush):
-    pushRepo(args.retry)
-else:
-    print("invalid parma")
+    bNoDownload = False
 
-if(pushConfig):
+if ((args.download or args.update) and (not bNoDownload)): #根据urlfile文件中的订阅链接下载配置文件，删除里面不符合要求的节点，生成新的配置文件
+    print("开始下载公开节点。")
+    proxies = getProxyFromSource(args.urlfile, args.http, args.https)
+
+if (bNoDownload):
+    print("不下载公开节点，使用本地配置文件。")
+    proxies = yaml.load(open(args.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
+    bSuccess = True
+else:
+    bSuccess = creatConfig(proxies, args.min, args.config, args.file, args.http, args.https)
+
+if (args.update): #对配置文件中的节点进行延迟测试，删除延迟不符合要求的节点。
+    if (bSuccess and loadConfigInCFW(configPath)):
+        print(f"开始对节点进行延迟测试。延迟测试通过的最大节点数量：{args.max}")
+        proxies = removeTimeoutProxy(proxies, args.max, args.port, args.auth, args.timeout, args.testurl)
+        bSuccess = creatConfig(proxies, args.min, args.config, args.file, args.http, args.https)
+        if (bSuccess):
+            bPushConfig = True
+            loadConfigInCFW(configPath) #延迟测试结束，加载最终生成的配置文件
+    else:
+        bSuccess = False
+
+    if (not bSuccess):
+        print("配置文件更新失败")
+        bPushConfig = False
+
+if (bPushConfig):
     pushFile(args.file, args.retry)

@@ -3,6 +3,8 @@ import requests
 import socket
 import yaml
 
+from processProxy import *
+
 def getPorxyCountry(index, proxy, httpProxy, httpsProxy):
     country = "未知地区"
     try:
@@ -56,7 +58,18 @@ def createLocationProxyGroup(proxies, httpProxy="http://127.0.0.1:7890", httpsPr
 
     return location
 
-def creatConfig(proxies, defaultFile, configFile, httpProxy, httpsProxy):
+def creatConfig(proxies, min, defaultFile, configFile, httpProxy, httpsProxy):
+    print("开始生成配置文件")
+    print(f"生成配置文件所需的最小节点数量为：{min}")
+
+    print("原始获取节点数量:", len(proxies))
+    proxies = removeNodes(proxies)
+    print("删除不符合节点后，节点数量:", len(proxies))
+
+    if(len(proxies) < min):
+        print("节点数量不足，不生成clash配置文件")
+        return False
+
     defaultConfig = open(defaultFile, encoding='utf8').read()
     config = yaml.load(defaultConfig, Loader=yaml.FullLoader)
 
@@ -70,7 +83,6 @@ def creatConfig(proxies, defaultFile, configFile, httpProxy, httpsProxy):
     config['proxy-groups'].append(createGroup("proxinode", "select", ["选择地区", "延迟最低", "故障转移", "负载均衡", "手动选择"]))
 
     selectCountry = createGroup("选择地区", "select", [])
-
     allCountry = []
     for country in countryGroup:
         selectCountry['proxies'].append(country)
@@ -89,20 +101,7 @@ def creatConfig(proxies, defaultFile, configFile, httpProxy, httpsProxy):
 
     print("生成clash配置文件：{}".format(configFile))
 
-def creatTestConfig(proxies, defaultFile, testFile):
-    defaultConfig = open(defaultFile, encoding='utf8').read()
-    config = yaml.load(defaultConfig, Loader=yaml.FullLoader)
-
-    proxiesNames = [proxy['name'] for proxy in proxies]
-
-    config['proxies'] = proxies if config['proxies'] == None else config['proxies'] + proxies
-
-    config['proxy-groups'] = [createGroup("proxinode", "url-test", proxiesNames)]
-
-    with open(testFile, 'w', encoding='utf-8') as file:
-        yaml.dump(config, file, allow_unicode=True)
-
-    print("生成clash配置文件：{}".format(testFile))
+    return True
 
 if __name__ == "__main__":
     profileFile = "list.yaml"
