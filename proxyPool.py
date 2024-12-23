@@ -114,13 +114,13 @@ else:
     bSuccess = creatConfig(proxies, args.min, args.config, args.file, args.http, args.https)
 
 if (args.update): #对配置文件中的节点进行延迟测试，删除延迟不符合要求的节点。
-    if (bSuccess and loadConfigInCFW(configPath)):
+    if (bSuccess and loadConfigInCFW(configPath, args.retry)):
         print(f"开始对节点进行延迟测试。延迟测试通过的最大节点数量：{args.max}")
         proxies = removeTimeoutProxy(proxies, args.max, args.port, args.auth, args.timeout, args.testurl)
         bSuccess = creatConfig(proxies, args.min, args.config, args.file, args.http, args.https)
         if (bSuccess):
             bPushConfig = True
-            loadConfigInCFW(configPath) #延迟测试结束，加载最终生成的配置文件
+            loadConfigInCFW(configPath, args.retry) #延迟测试结束，加载最终生成的配置文件
     else:
         bSuccess = False
 

@@ -1,4 +1,5 @@
 import git
+import time
 
 def pushRepo(retry): #将提交推送至github
     repo = git.Repo(".")
@@ -11,6 +12,7 @@ def pushRepo(retry): #将提交推送至github
                 break
         except Exception as e:
             print(e)
+            time.sleep(2)
 
         if (i == (retry - 1)):
             print("达到最大重试次数，退出推送。")

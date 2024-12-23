@@ -2,6 +2,7 @@ import requests
 import random
 
 import os
+import time
 
 def removeDuplicateNode(proxyPool): #删除重复节点
     checkLists = ["name", "server"]
@@ -45,32 +46,33 @@ def removeNodes(proxyPool):
 
     return proxies
 
-def loadConfigInCFW(configPath, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6"):
+def loadConfigInCFW(configPath, retry, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6"):
     print(f"开始加载配置文件{configPath}。")
     url = f"http://127.0.0.1:{port}/configs"
 
-    header = {
-                "Authorization": f"Bearer {Authorization}",
-             }
+    header = { "Authorization": f"Bearer {Authorization}"}
+    param = {"force": "true"}
+    body = {"path": configPath}
 
-    param = {
-                "force": "true"
-            }
+    bLoadSuccessful = False
+    for i in range(retry):
+        print(f"开始第{i + 1}次加载配置文件：", end="", flush=True)
+        message = requests.put(url, headers=header, params=param, json=body)
+        code = message.status_code
 
-    body = {
-                "path": configPath
-            }
+        if code == 204:
+            print("配置文件加载成功")
+            bLoadSuccessful = True
+            break
+        else:
+            print(message.text)
+            print("配置文件加载失败")
+            time.sleep(2)
 
-    message = requests.put(url, headers=header, params=param, json=body)
-    code = message.status_code
+        if (i == (retry - 1)):
+            print("达到最大重试次数，退出加载配置。")
 
-    if code == 204:
-        print("配置文件加载成功")
-        return True
-    else:
-        print(message.text)
-        print("配置文件加载失败")
-        return False
+    return bLoadSuccessful
 
 def getProxyDelay(index, proxyName, port, Authorization, timeout, testurl):
     bPassTest = False
@@ -127,4 +129,4 @@ def removeTimeoutProxy(proxies, maxProxy, port=34885, Authorization="d53df256-8f
 
 if __name__ == "__main__":
     configPath = f"{os.getcwd()}/list.yaml"
-    loadConfigInCFW(configPath)
+    loadConfigInCFW(configPath, 5)
