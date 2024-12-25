@@ -1,6 +1,5 @@
 import yaml
 import requests
-import socket
 import yaml
 
 from potime import RunTime
@@ -15,15 +14,16 @@ def getPorxyCountry(index, proxy, httpProxy, httpsProxy):
                         'https': httpsProxy,
                 }
 
-        ip = socket.gethostbyname(proxy['server'])
+        ip = proxy['server']
+        if (not ip.replace(".", "").isdigit()):
+            ip = queryNDSInCFW(ip)
+
         data = requests.get(f"http://ip.plyz.net/ip.ashx?ip={ip}", proxies=proxies).text
         if (len(data) != 0):
             country = data.split("|")[1].split()[0]
     except Exception as e:
         print(e)
 
-    #当clash在tun模式下开启fake-ip时，socket.gethostbyname获得的是一个假的内网地址
-    #目前统一将内网地址的结果改为未知地区
     if (country == "内网IP"):
         country = "未知地区"
 

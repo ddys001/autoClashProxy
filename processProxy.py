@@ -1,7 +1,7 @@
 import requests
 import random
 
-import os
+import json
 import time
 
 from potime import RunTime
@@ -59,6 +59,21 @@ def processNodes(proxyPool):
     proxies = setTLSForVmess(proxies)
 
     return proxies
+
+def queryNDSInCFW(host, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6"):
+    ip = "127.0.0.1"
+
+    url = f"http://127.0.0.1:{port}/dns/query?name={host}"
+    header = { "Authorization": f"Bearer {Authorization}"}
+    message = requests.get(url, headers=header)
+    if ("Answer" in message.text):
+        answer = json.loads(message.text)["Answer"]
+        for data in answer:
+            if (data['type'] == 1):
+                ip = data['data']
+                break
+
+    return ip
 
 def loadConfigInCFW(configPath, retry, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6"):
     print(f"开始加载配置文件{configPath}。")
@@ -143,5 +158,6 @@ def removeTimeoutProxy(proxies, maxProxy, port=34885, Authorization="d53df256-8f
     return passProxy
 
 if __name__ == "__main__":
-    configPath = f"{os.getcwd()}/list.yaml"
-    loadConfigInCFW(configPath, 5)
+    # configPath = f"{os.getcwd()}/list.yaml"
+    # loadConfigInCFW(configPath, 5)
+    print(queryNDSInCFW("www.baidu.com"))
