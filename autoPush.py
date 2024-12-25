@@ -10,6 +10,8 @@ def pushRepo(retry): #将提交推送至github
             if (not message.error):
                 print("推送成功。")
                 break
+            else:
+                print(message.error)
         except Exception as e:
             print(e)
             time.sleep(2)
@@ -28,3 +30,6 @@ def pushFile(file, retry): #检查文件是否有修改，如果有修改，则�
         pushRepo(retry)
     else:
         print(f"{file}未更新，无需推送至github。")
+
+if __name__ == "__main__":
+    pushRepo(1)
