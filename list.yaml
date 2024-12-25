@@ -25,71 +25,81 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 52.194.212.235
-  tfo: false
-  type: ss
-- name: 未知地区-1
-  network: tcp
-  password: 9ad5228f-3e01-4353-b717-935272e5f2d6
-  port: 13005
-  server: naiu-hk.05vr9nyqg5.download
+  name: 未知地区-1
+  network: ws
+  port: '80'
+  server: www.aetv.com
+  servername: ''
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: beb7d098-48ba-4be8-a47a-758bf3c470b8
+  ws-opts:
+    headers:
+      Host: amd.al
+    path: /?ed=2048
 - alterId: 64
   cipher: auto
   name: 中国-1
-  port: 42055
-  server: 120.198.71.219
-  skip-cert-verify: false
+  network: tcp
+  port: '34493'
+  server: 120.198.71.214
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 未知地区-2
   port: 4000
-  server: hk9.ftq.ink
+  server: ftq.ink
   tls: true
   type: http
-- name: 未知地区-3
-  password: 94d219c9-1afc-4d42-b090-8b3794764380
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-1
+  password: amazonskr05
   port: 443
-  server: std1.loadingip.com
-  skip-cert-verify: true
-  type: trojan
+  server: 52.79.248.193
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 印度-1
+  network: ws
+  port: 47930
+  server: 103.106.229.29
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ec7dd23d-d03b-4262-9793-def9c849a01d
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- cipher: aes-128-cfb
+  name: 未知地区-3
+  obfs: http_post
+  password: $$Turb0VPN$$
+  port: 443
+  protocol: auth_aes128_md5
+  server: ssca.irundns.net
+  type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: 爱尔兰-1
-  password: 49JPbl6SMH1hDoskOR6irG
-  port: 55939
-  server: 13.79.98.64
+  name: 德国-1
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.166
   type: ss
 - name: 未知地区-4
-  password: 4732adfa16c6450bbef87264e41332db
+  password: 25a0ffa0-725c-4d6f-b0d5-c74579753075
   port: 443
-  server: bangladeshipatri.com
-  type: trojan
-- name: 未知地区-5
-  password: 71409d3e488548e8bb076d229778f008
-  port: 443
-  server: jobsfortheworldtoday.com
+  server: Cmc3.5gsieuvip.vn
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 俄罗斯-1
-  network: ws
-  port: 16712
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  uuid: 1ded1ec9-7557-4c15-aaac-758bedea64fd
-  ws-opts:
-    path: /
 - name: 美国-1
   password: ypDt8RkT7J
   port: 43118
@@ -97,13 +107,55 @@ proxies:
   skip-cert-verify: true
   sni: egcmi.phooeyunfold.com
   type: trojan
+- name: 瑞典-1
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.50.65.143
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
+  udp: true
+- name: 德国-2
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.66.82.205
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 未知地区-5
+  port: 4000
+  server: hk9.ftq.ink
+  tls: true
+  type: http
+- alpn:
+  - http/1.1
+  name: 德国-3
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.74.113.199
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: '0'
+  cipher: auto
+  name: 英国-1
+  network: ws
+  port: '443'
+  server: 158.180.228.226
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      host: beyonddsz.cfd
+    path: /linkws
 - alterId: 64
   cipher: auto
   name: 中国-2
-  network: tcp
-  port: '34493'
-  server: 120.198.71.214
-  servername: ''
+  port: 42055
+  server: 120.198.71.219
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -114,63 +166,39 @@ proxies:
   server: 35.88.126.102
   type: ss
   udp: true
-- name: 未知地区-6
-  port: 4000
-  server: ftq.ink
-  tls: true
-  type: http
-- name: 美国-3
-  password: 71409d3e488548e8bb076d229778f008
-  port: 443
-  server: 38.99.82.225
-  skip-cert-verify: true
-  sni: jobsfortheworldtoday.com
-  type: trojan
 - cipher: aes-256-gcm
-  name: 俄罗斯-2
-  password: dongtaiwang.com
-  port: 23456
-  server: 185.22.155.228
+  name: 美国-3
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.75.137.71
+  tfo: false
   type: ss
-- name: 德国-1
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.66.82.205
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 美国-4
+  password: V6R0GVzCLaek7n7940mhqgacD9q6sIqzdRwvihztGHQ=
+  port: 32620
+  server: 167.172.43.252
   skip-cert-verify: true
+  tls: true
+  type: ss
+- alpn:
+  - http/1.1
+  name: 美国-5
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.30.147.74
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 中国-3
-  network: tcp
-  password: QwwHvrnN
-  port: 36442
-  server: 223.113.54.145
+- name: 越南-1
+  password: 25a0ffa0-725c-4d6f-b0d5-c74579753075
+  port: 443
+  server: 103.173.66.155
   skip-cert-verify: true
   type: trojan
-- name: 美国-4
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: 172.99.190.180
-  skip-cert-verify: true
-  sni: bangladeshipatri.com
-  type: trojan
-- alterId: 64
-  cipher: auto
-  name: 中国-4
-  network: tcp
-  port: '51704'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-128-cfb
-  name: 未知地区-7
-  obfs: http_post
-  password: $$Turb0VPN$$
-  port: 443
-  protocol: auth_aes128_md5
-  server: ssca.irundns.net
-  type: ssr
+  udp: true
 proxy-groups:
 - name: proxinode
   proxies:
@@ -182,37 +210,39 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 日本
   - 未知地区
   - 中国
-  - 爱尔兰
-  - 俄罗斯
-  - 美国
+  - 韩国
+  - 印度
   - 德国
+  - 美国
+  - 瑞典
+  - 英国
+  - 越南
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-1
   - 未知地区-1
   - 中国-1
   - 未知地区-2
+  - 韩国-1
+  - 印度-1
   - 未知地区-3
-  - 爱尔兰-1
+  - 德国-1
   - 未知地区-4
-  - 未知地区-5
-  - 俄罗斯-1
   - 美国-1
+  - 瑞典-1
+  - 德国-2
+  - 未知地区-5
+  - 德国-3
+  - 英国-1
   - 中国-2
   - 美国-2
-  - 未知地区-6
   - 美国-3
-  - 俄罗斯-2
-  - 德国-1
-  - 中国-3
   - 美国-4
-  - 中国-4
-  - 未知地区-7
+  - 美国-5
+  - 越南-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -229,12 +259,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
   name: 未知地区
   proxies:
   - 未知地区-1
@@ -242,8 +266,6 @@ proxy-groups:
   - 未知地区-3
   - 未知地区-4
   - 未知地区-5
-  - 未知地区-6
-  - 未知地区-7
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -251,21 +273,26 @@ proxy-groups:
   proxies:
   - 中国-1
   - 中国-2
-  - 中国-3
-  - 中国-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 爱尔兰
+  name: 韩国
   proxies:
-  - 爱尔兰-1
+  - 韩国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 俄罗斯
+  name: 印度
   proxies:
-  - 俄罗斯-1
-  - 俄罗斯-2
+  - 印度-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 德国
+  proxies:
+  - 德国-1
+  - 德国-2
+  - 德国-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -275,12 +302,25 @@ proxy-groups:
   - 美国-2
   - 美国-3
   - 美国-4
+  - 美国-5
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 德国
+  name: 瑞典
   proxies:
-  - 德国-1
+  - 瑞典-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 越南
+  proxies:
+  - 越南-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
