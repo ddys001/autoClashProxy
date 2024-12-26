@@ -25,98 +25,64 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 英国-1
-  network: tcp
-  port: 32718
-  server: 185.29.223.164
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c398fa1f-fac5-4d76-9452-f0aee44cbc66
-  ws-headers:
-    Host: 185.29.223.164
-  ws-path: /
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 美国-4
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 爱尔兰-1
-  password: 49JPbl6SMH1hDoskOR6irG
-  port: 55939
-  server: 13.79.98.64
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-2
-  password: amazonskr05
+  name: 英国-2
+  password: mps3FwmDjLrWaOVg
   port: 443
-  server: 43.203.243.93
+  server: series-a2.varzesh360.co
   type: ss
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 43.203.122.162
-  type: ss
-- name: 印度-1
-  password: 3648425794742788096
-  port: 443
-  server: 13.235.160.41
-  skip-cert-verify: true
-  sni: mint-pangolin.treefrog761.one
-  type: trojan
-- name: 美国-2
+- alterId: 0
+  name: 美国-2
   network: ws
   password: yaml777
   port: 443
   server: 104.21.61.73
   skip-cert-verify: true
   sni: yaml7.ggff.net
-  tfo: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: yaml7.ggff.net
-    path: /
-- client-fingerprint: chrome
-  name: 中国-1
-  password: lidnBTGb
-  port: 2524
-  server: 223.113.54.149
-  skip-cert-verify: true
-  type: trojan
-- name: 美国-1
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: sherasheba.com
-  skip-cert-verify: false
-  type: trojan
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 13.115.231.64
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 新加坡-1
-  network: ws
-  port: 443
-  server: 8.222.222.223
-  skip-cert-verify: true
-  tfo: false
   tls: true
-  type: vmess
+  type: trojan
   udp: true
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: beyonddsz.cfd
-    path: /linkws
+- name: 中国-1
+  port: 4000
+  server: ftq.ink
+  tls: true
+  type: http
+- name: 美国-1
+  port: 4000
+  server: hk9.ftq.ink
+  tls: true
+  type: http
 - alterId: 0
   cipher: auto
   name: 俄罗斯-1
+  network: ws
+  port: 29025
+  server: 194.87.69.50
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: da15eb44-cbea-4ea2-82a0-5d0886e78f60
+  ws-headers:
+    Host: 194.87.69.50
+  ws-path: /
+- name: 英国-1
+  password: telegram-id-directvpn
+  port: 22222
+  server: 51.44.128.211
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 俄罗斯-2
   network: ws
   port: 29025
   server: 195.58.49.86
@@ -126,9 +92,16 @@ proxies:
   uuid: ce329057-27f0-407b-818a-cda5d1f84601
   ws-opts:
     path: /
+- name: 美国-3
+  password: telegram-id-directvpn
+  port: 22222
+  server: 44.220.229.104
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 俄罗斯-2
+  name: 俄罗斯-3
   network: ws
   port: 29025
   server: 195.58.49.50
@@ -138,109 +111,6 @@ proxies:
   type: vmess
   udp: true
   uuid: b0c478e9-972f-4af6-aadb-f4f6e457e35f
-  ws-opts:
-    path: /
-- cipher: aes-256-gcm
-  name: 美国-4
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 38.114.114.69
-  type: ss
-- cipher: aes-128-cfb
-  name: 美国-3
-  obfs: plain
-  password: shadowsocks
-  port: 443
-  protocol: origin
-  server: 184.170.241.194
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: 拉脱维亚-1
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 46.183.217.232
-  type: ss
-- name: 中国-3
-  port: 4000
-  server: ftq.ink
-  tls: true
-  type: http
-- alterId: 64
-  cipher: auto
-  name: 中国-2
-  network: tcp
-  port: 40434
-  server: 183.236.51.23
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 中国-4
-  network: tcp
-  port: 40565
-  server: 120.232.153.63
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.63
-  ws-path: /
-- name: 印度-2
-  password: 3648425794742788096
-  port: 443
-  server: mint-pangolin.treefrog761.one
-  skip-cert-verify: true
-  sni: mint-pangolin.treefrog761.one
-  type: trojan
-- cipher: aes-256-gcm
-  name: 俄罗斯-3
-  password: dongtaiwang.com
-  port: 23456
-  server: 185.22.155.228
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 18.179.197.216
-  type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 中国-5
-  port: 52908
-  server: 120.234.102.229
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 中国-6
-  port: 45402
-  server: 183.236.48.158
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 越南-1
-  password: 25a0ffa0-725c-4d6f-b0d5-c74579753075
-  port: 443
-  server: 103.173.66.155
-  skip-cert-verify: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 俄罗斯-4
-  network: ws
-  port: 29025
-  server: 194.87.69.50
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: eaee29bf-f18c-455a-ac9b-43a500f7d2aa
   ws-opts:
     path: /
 proxy-groups:
@@ -256,44 +126,22 @@ proxy-groups:
   proxies:
   - 英国
   - 美国
-  - 韩国
-  - 中国
-  - 印度
-  - 新加坡
   - 俄罗斯
-  - 日本
-  - 拉脱维亚
-  - 爱尔兰
-  - 越南
+  - 中国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 英国-1
-  - 爱尔兰-1
-  - 韩国-2
-  - 韩国-1
-  - 印度-1
+  - 美国-4
+  - 英国-2
   - 美国-2
   - 中国-1
   - 美国-1
-  - 日本-1
-  - 新加坡-1
   - 俄罗斯-1
+  - 英国-1
   - 俄罗斯-2
-  - 美国-4
   - 美国-3
-  - 拉脱维亚-1
-  - 中国-3
-  - 中国-2
-  - 中国-4
-  - 印度-2
   - 俄罗斯-3
-  - 日本-2
-  - 中国-5
-  - 中国-6
-  - 越南-1
-  - 俄罗斯-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -313,6 +161,7 @@ proxy-groups:
   name: 英国
   proxies:
   - 英国-1
+  - 英国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -325,68 +174,17 @@ proxy-groups:
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 韩国
+  name: 俄罗斯
   proxies:
-  - 韩国-1
-  - 韩国-2
+  - 俄罗斯-1
+  - 俄罗斯-2
+  - 俄罗斯-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 中国
   proxies:
   - 中国-1
-  - 中国-2
-  - 中国-3
-  - 中国-4
-  - 中国-5
-  - 中国-6
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 印度
-  proxies:
-  - 印度-1
-  - 印度-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 俄罗斯
-  proxies:
-  - 俄罗斯-1
-  - 俄罗斯-2
-  - 俄罗斯-3
-  - 俄罗斯-4
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 拉脱维亚
-  proxies:
-  - 拉脱维亚-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 爱尔兰
-  proxies:
-  - 爱尔兰-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 越南
-  proxies:
-  - 越南-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
