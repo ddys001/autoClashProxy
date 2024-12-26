@@ -3,8 +3,11 @@ import random
 
 import json
 import time
+import yaml
 
 from potime import RunTime
+
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 def removeDuplicateNode(proxyPool): #删除重复节点
     checkLists = ["name", "server"]
@@ -103,55 +106,45 @@ def loadConfigInCFW(configPath, retry, port=34885, Authorization="d53df256-8f1b-
 
     return bLoadSuccessful
 
-def getProxyDelay(index, proxyName, port, Authorization, timeout, testurl):
-    bPassTest = False
+def getProxyDelay(proxy, port, Authorization, timeout, testurl):
+    proxyName = proxy['name']
 
     url = f"http://127.0.0.1:{port}/proxies/{proxyName}/delay"
-    header = {
-                "Authorization": f"Bearer {Authorization}",
-             }
-
-    param = {
-                "timeout": timeout,
-                "url": testurl
-            }
+    header = {"Authorization": f"Bearer {Authorization}"}
+    param  = {"timeout": timeout, "url": testurl}
 
     delay = eval(requests.get(url, headers=header, params=param).text)
 
     if("delay" in delay):
         delay = delay["delay"]
-        bPassTest = True
     elif("message" in delay):
         delay = delay["message"]
+        proxy = None
     else:
         assert(0)
 
-    print(f"节点{index}: {proxyName}: {delay}")
+    message = f"{proxyName}: {delay}"
 
-    return bPassTest
+    return (proxy, message)
 
 @RunTime
-def removeTimeoutProxy(proxies, maxProxy, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6", timeout=3000, testurl="https://www.youtube.com/generate_204"):
+def removeTimeoutProxy(proxies, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6", timeout=3000, testurl="https://www.youtube.com/generate_204"):
     passProxy=[]
-    print(f"延迟测试超时时间为：{timeout}")
+    print(f"延迟测试超时时间为：{timeout}ms")
     print(f"延迟测试url为：{testurl}")
     print(f"测试节点总数为：{len(proxies)}")
     random.shuffle(proxies)
     try:
-        for index, proxy in enumerate(proxies):
-            if(getProxyDelay(index+1, proxy['name'], port, Authorization, timeout, testurl)):
-                passProxy.append(proxy)
+        with ThreadPoolExecutor(max_workers=15) as threadPool:
+            allTask = [threadPool.submit(getProxyDelay, proxy, port, Authorization, timeout, testurl) for proxy in proxies]
 
-            if(((index + 1) % 30) == 0):
-                print(f"测试正常节点: {len(passProxy)}/{index + 1}")
-
-            if(len(passProxy) == maxProxy): #获得有效的的节点数已经足够多 退出测试
-                print("获得预期最大节点数量，退出延迟测试。")
-                break
-    except KeyboardInterrupt:
-        print("取消测试，延迟测试结束。")
+            for index, future in enumerate(as_completed(allTask)):
+                proxy, message = future.result()
+                if (proxy != None):
+                    passProxy.append(proxy)
+                print(f"节点{index + 1}: {message}")
     except Exception as e:
-        print(f"发生错误：{e}。延迟测试结束。")
+        print(f"测试发生错误：{e}")
 
     print(f"测试正常节点: {len(passProxy)}/{len(proxies)}")
 
@@ -160,4 +153,7 @@ def removeTimeoutProxy(proxies, maxProxy, port=34885, Authorization="d53df256-8f
 if __name__ == "__main__":
     # configPath = f"{os.getcwd()}/list.yaml"
     # loadConfigInCFW(configPath, 5)
-    print(queryNDSInCFW("www.baidu.com"))
+    # print(queryNDSInCFW("www.baidu.com"))
+
+    proxies = yaml.load(open("list.yaml", encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
+    removeTimeoutProxy(proxies)

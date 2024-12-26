@@ -3,10 +3,11 @@ import requests
 import yaml
 
 from potime import RunTime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from processProxy import *
 
-def getPorxyCountry(index, proxy, httpProxy, httpsProxy):
+def getPorxyCountry(proxy, httpProxy, httpsProxy):
     country = "未知地区"
     try:
         proxies = {
@@ -27,8 +28,8 @@ def getPorxyCountry(index, proxy, httpProxy, httpsProxy):
     if (country == "内网IP"):
         country = "未知地区"
 
-    print(f"节点{index}: {proxy['server']} {country}")
-    return country
+    message = f"{proxy['server']} {country}"
+    return (proxy, country, message)
 
 def createGroup(name, groupType, proxies):
     allType = ['select', 'load-balance', 'url-test', 'fallback']
@@ -50,13 +51,16 @@ def createLocationProxyGroup(proxies, httpProxy="http://127.0.0.1:7890", httpsPr
     print("按照ip地址查询节点所属地区")
 
     location = dict()
-    for index, proxy in enumerate(proxies):
-        country = getPorxyCountry(index+1, proxy, httpProxy, httpsProxy)
-        countryGroup = location[country] if (country in location) else createGroup(country, "url-test", [])
-        proxy['name'] = f"{country}-{len(countryGroup['proxies']) + 1}"
-        countryGroup['proxies'].append(proxy['name'])
+    with ThreadPoolExecutor(max_workers=15) as threadPool:
+        allTask = [threadPool.submit(getPorxyCountry, proxy, httpProxy, httpsProxy) for proxy in proxies]
 
-        location[country] = countryGroup
+        for index, future in enumerate(as_completed(allTask)):
+            proxy, country, message = future.result()
+            print(f"节点{index + 1}: {message}")
+            countryGroup = location[country] if (country in location) else createGroup(country, "url-test", [])
+            proxy['name'] = f"{country}-{len(countryGroup['proxies']) + 1}"
+            countryGroup['proxies'].append(proxy['name'])
+            location[country] = countryGroup
 
     return location
 
@@ -66,6 +70,10 @@ def creatConfig(proxies, min, defaultFile, configFile, httpProxy, httpsProxy):
     print(f"生成配置文件所需的最小节点数量为：{min}")
 
     print("原始获取节点数量:", len(proxies))
+    if(len(proxies) < min):
+        print("节点数量不足，不生成clash配置文件")
+        return False
+
     proxies = processNodes(proxies)
     print("对节点进行处理后，节点数量:", len(proxies))
 

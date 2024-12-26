@@ -4,6 +4,7 @@ import argparse
 
 import os
 from potime import RunTime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import sys
 sys.path.append('.')
@@ -12,29 +13,35 @@ from processProxy import *
 from autoPush import *
 from createConfigYaml import *
 
-def downloadFile(index, url, httpProxy, httpsProxy):
-    print("开始下载{}：{}".format(index, url), end=" ", flush=True)
-    file = None
+def downloadProxy(url, httpProxy, httpsProxy):
+    print(f"开始下载：{url}")
+    download = None
     try:
-        downloadProxy = {
-                            'http':  httpProxy,
-                            'https': httpsProxy,
-                        }
+        downloadProxy = {'http':  httpProxy, 'https': httpsProxy}
 
         req = requests.get(url, proxies=downloadProxy)
         if (req.status_code == 200):
-            print("下载成功", end=" ", flush=True)
-            file =  req.text.replace("!<str> ", "")
+            print(f"{url}下载成功")
+            download =  req.text.replace("!<str> ", "")
         else:
-            print("下载失败")
+            print(f"{url}下载失败")
     except requests.exceptions.SSLError:
-        print("SSLError 下载失败")
+        print(f"{url}：SSLError 下载失败")
     except requests.exceptions.MissingSchema:
-        print("Invalid URL: url")
+        print(f"{url}：Invalid URL")
     except requests.exceptions.ConnectionError:
-        print("Connection aborted")
+        print(f"{url}：Connection aborted")
 
-    return file
+    proxies = []
+    if (download != None):
+        try:
+            file = yaml.load(download, Loader=yaml.FullLoader)
+            proxies = file["proxies"] if file["proxies"] != None else []
+            print(f"{url}：成功获得节点")
+        except Exception as e:
+            print(f"{url}：解析节点失败。 Error：{e}")
+
+    return proxies
 
 def parserSourceUrl(sourceFile):
     print(f"从{sourceFile}解析出以下有效的url:")
@@ -56,15 +63,11 @@ def parserSourceUrl(sourceFile):
 def getProxyFromSource(sourcePath, httpProxy, httpsProxy):
     proxyPool = []
     sources = parserSourceUrl(sourcePath)
-    for index, url in enumerate(sources):
-        download = downloadFile(index+1, url, httpProxy, httpsProxy)
-        if(download != None):
-            try:
-                file = yaml.load(download, Loader=yaml.FullLoader)
-                proxyPool += file["proxies"] if file["proxies"] != None else []
-                print("成功获得节点")
-            except Exception as e:
-                print(f"解析节点失败。 Error：{e}")
+    with ThreadPoolExecutor(max_workers=15) as threadPool:
+        allTask = [threadPool.submit(downloadProxy, url, httpProxy, httpsProxy) for url in sources]
+
+        for future in as_completed(allTask):
+            proxyPool += future.result()
 
     print("下载完成")
     print("获取节点数量:", len(proxyPool))
@@ -79,9 +82,8 @@ parser.add_argument("--http", type=str, default="http://127.0.0.1:7890", help="�
 parser.add_argument("--https", type=str, default="http://127.0.0.1:7890", help="指定https proxy")
 parser.add_argument("--port", type=int, default=34885, help="指定clash web ui的prot")
 parser.add_argument("--auth", type=str, default="d53df256-8f1b-4f9b-b730-6a4e947104b6", help="指定clash web ui的Authorization")
-parser.add_argument("--min", type=int, default=10, help="生成clash配置文件所需要的最少节点数量.默认数值为10")
-parser.add_argument("--max", type=int, default=25, help="延迟测试中通过测试的最大节点数量。超过这个数字后，将停止延迟测试。默认数值为25")
-parser.add_argument("--timeout", type=int, default=2500, help="延迟测试运行的时间")
+parser.add_argument("--min", type=int, default=10, help="生成clash配置文件所需要的最少节点数量。默认数值为10")
+parser.add_argument("--timeout", type=int, default=2000, help="延迟测试运行的时间，默认超时时间为2000ms")
 parser.add_argument("--testurl", type=str, default="https://www.youtube.com/generate_204", help="指定延迟测试使用的url")
 parser.add_argument("--push", action='store_true', help="将生成的clash配置文件上传至github")
 parser.add_argument("--retry", type=int, default=5, help="推送至github失败后重试的次数。默认数值为5次")
@@ -117,9 +119,8 @@ else:
 if (args.update): #对配置文件中的节点进行延迟测试，删除延迟不符合要求的节点。
     if (bSuccess and loadConfigInCFW(configPath, args.retry)):
         bSuccess = False
-        print(f"开始对节点进行延迟测试。延迟测试通过的最大节点数量：{args.max}")
         proxies = yaml.load(open(args.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
-        proxies = removeTimeoutProxy(proxies, args.max, args.port, args.auth, args.timeout, args.testurl)
+        proxies = removeTimeoutProxy(proxies, args.port, args.auth, args.timeout, args.testurl)
         bSuccess = creatConfig(proxies, args.min, args.config, args.file, args.http, args.https)
         if (bSuccess):
             loadConfigInCFW(configPath, args.retry) #延迟测试结束，加载最终生成的配置文件
