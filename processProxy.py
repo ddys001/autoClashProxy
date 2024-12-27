@@ -1,11 +1,5 @@
 import requests
-import random
-
-import json
-import time
 import yaml
-
-from potime import RunTime
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -63,80 +57,14 @@ def processNodes(proxyPool):
 
     return proxies
 
-def queryNDSInCFW(host, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6"):
-    ip = "127.0.0.1"
-
-    url = f"http://127.0.0.1:{port}/dns/query?name={host}"
-    header = { "Authorization": f"Bearer {Authorization}"}
-    message = requests.get(url, headers=header)
-    if ("Answer" in message.text):
-        answer = json.loads(message.text)["Answer"]
-        for data in answer:
-            if (data['type'] == 1):
-                ip = data['data']
-                break
-
-    return ip
-
-def loadConfigInCFW(configPath, retry, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6"):
-    print(f"开始加载配置文件{configPath}。")
-    url = f"http://127.0.0.1:{port}/configs"
-
-    header = { "Authorization": f"Bearer {Authorization}"}
-    param = {"force": "true"}
-    body = {"path": configPath}
-
-    bLoadSuccessful = False
-    for i in range(retry):
-        print(f"开始第{i + 1}次加载配置文件：", end="", flush=True)
-        message = requests.put(url, headers=header, params=param, json=body)
-        code = message.status_code
-
-        if code == 204:
-            print("配置文件加载成功")
-            bLoadSuccessful = True
-            break
-        else:
-            print(message.text)
-            print("配置文件加载失败")
-            time.sleep(2)
-
-        if (i == (retry - 1)):
-            print("达到最大重试次数，退出加载配置。")
-
-    return bLoadSuccessful
-
-def getProxyDelay(proxy, port, Authorization, timeout, testurl):
-    proxyName = proxy['name']
-
-    url = f"http://127.0.0.1:{port}/proxies/{proxyName}/delay"
-    header = {"Authorization": f"Bearer {Authorization}"}
-    param  = {"timeout": timeout, "url": testurl}
-
-    delay = eval(requests.get(url, headers=header, params=param).text)
-
-    if("delay" in delay):
-        delay = delay["delay"]
-    elif("message" in delay):
-        delay = delay["message"]
-        proxy = None
-    else:
-        assert(0)
-
-    message = f"{proxyName}: {delay}"
-
-    return (proxy, message)
-
-@RunTime
-def removeTimeoutProxy(proxies, port=34885, Authorization="d53df256-8f1b-4f9b-b730-6a4e947104b6", timeout=3000, testurl="https://www.youtube.com/generate_204"):
+def removeTimeoutProxy(proxies, profile):
     passProxy=[]
-    print(f"延迟测试超时时间为：{timeout}ms")
-    print(f"延迟测试url为：{testurl}")
+    print(f"延迟测试超时时间为：{profile.clash.timeout}ms")
+    print(f"延迟测试url为：{profile.clash.delayUrl}")
     print(f"测试节点总数为：{len(proxies)}")
-    random.shuffle(proxies)
     try:
         with ThreadPoolExecutor(max_workers=15) as threadPool:
-            allTask = [threadPool.submit(getProxyDelay, proxy, port, Authorization, timeout, testurl) for proxy in proxies]
+            allTask = [threadPool.submit(profile.clash.queryProxyDelay, proxy) for proxy in proxies]
 
             for index, future in enumerate(as_completed(allTask)):
                 proxy, message = future.result()
@@ -150,10 +78,45 @@ def removeTimeoutProxy(proxies, port=34885, Authorization="d53df256-8f1b-4f9b-b7
 
     return passProxy
 
-if __name__ == "__main__":
-    # configPath = f"{os.getcwd()}/list.yaml"
-    # loadConfigInCFW(configPath, 5)
-    # print(queryNDSInCFW("www.baidu.com"))
+def downloadProxy(url, requestsProxy):
+    print(f"开始下载：{url}")
+    download = None
+    try:
+        req = requests.get(url, proxies=requestsProxy)
+        if (req.status_code == 200):
+            print(f"{url} 下载完成")
+            download =  req.text
+        else:
+            print(f"{url} 下载失败")
+    except Exception as e:
+        print(f"{url}：{e}")
 
-    proxies = yaml.load(open("list.yaml", encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
-    removeTimeoutProxy(proxies)
+    proxies = []
+    if (download != None):
+        download = download.replace("!<str> ", "")
+        try:
+            file = yaml.load(download, Loader=yaml.FullLoader)
+            proxies = file["proxies"] if file["proxies"] != None else []
+            print(f"{url}：成功获得节点")
+        except Exception as e:
+            print(f"{url}：解析节点失败。 Error：{e}")
+
+    return (proxies, url)
+
+def getProxyFromSource(sources, requestsProxy):
+    proxyPool = []
+    with ThreadPoolExecutor(max_workers=15) as threadPool:
+        allTask = [threadPool.submit(downloadProxy, url, requestsProxy) for url in sources]
+
+        for index, future in enumerate(as_completed(allTask)):
+            proxies, url = future.result()
+            proxyPool += proxies
+            print(f"{index + 1}、{url} 处理完成")
+
+    print("全部链接下载完成")
+    print("获取节点数量:", len(proxyPool))
+
+    return proxyPool
+
+if __name__ == "__main__":
+    pass
