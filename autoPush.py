@@ -8,6 +8,7 @@ def pushRepo(retry): #将提交推送至github
         try:
             repo.remotes.origin.push().raise_if_error()
             print("推送成功。")
+            break
         except Exception as e:
             print(e)
             time.sleep(2)
