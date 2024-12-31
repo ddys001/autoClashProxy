@@ -25,24 +25,6 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-cfb
-  name: 美国-1
-  password: amazonskr05
-  port: 443
-  server: 34.213.242.165
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-4
-  password: amazonskr05
-  port: 443
-  server: 34.219.80.203
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-3
-  password: amazonskr05
-  port: 443
-  server: 52.89.164.115
-  type: ss
 - cipher: aes-128-gcm
   name: 保加利亚-2
   password: shadowsocks
@@ -55,69 +37,82 @@ proxies:
   port: 443
   server: 149.34.244.82
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 中国-2
-  port: 54882
-  server: 183.236.48.163
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 美国-5
+- cipher: aes-256-cfb
+  name: 美国-6
+  password: amazonskr05
+  port: 443
+  server: 52.89.164.115
+  type: ss
+- name: 美国-4
   port: 4000
   server: hk9.ftq.ink
   tls: true
   type: http
+- cipher: aes-256-cfb
+  name: 美国-2
+  password: amazonskr05
+  port: 443
+  server: 34.219.80.203
+  type: ss
+- cipher: aes-256-cfb
+  name: 美国-5
+  password: amazonskr05
+  port: 443
+  server: 34.222.132.123
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 美国-1
+  port: 41400
+  server: 198.2.218.100
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 中国-1
-  port: 4000
-  server: ftq.ink
-  tls: true
-  type: http
-- name: 中国-3
   password: 1a668915-d98f-4440-8bac-2c51d508f811
   port: 30337
   server: 1.170.227.135
   skip-cert-verify: true
   sni: ddns.200566.xyz
   type: trojan
-- name: 美国-2
-  password: telegram-id-directvpn
-  port: 22222
-  server: 63.177.131.100
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 德国-1
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.121.157.191
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 54.179.186.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 德国-1
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.157
+  type: ss
+- cipher: aes-256-cfb
+  name: 美国-3
+  password: amazonskr05
+  port: 443
+  server: 13.215.51.127
+  type: ss
 - cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 18.181.152.92
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 13.115.231.64
+  server: 18.179.197.216
   type: ss
 - cipher: aes-256-cfb
   name: 韩国-2
   password: amazonskr05
   port: 443
-  server: 52.79.248.193
+  server: 43.203.127.152
   type: ss
 - cipher: aes-256-cfb
   name: 韩国-1
   password: amazonskr05
   port: 443
-  server: 43.203.122.162
+  server: 3.35.206.24
   type: ss
 proxy-groups:
 - name: proxinode
@@ -131,28 +126,28 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 保加利亚
   - 德国
-  - 中国
-  - 日本
   - 韩国
+  - 保加利亚
+  - 日本
+  - 新加坡
+  - 中国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-1
-  - 美国-4
-  - 美国-3
   - 保加利亚-2
   - 保加利亚-1
-  - 中国-2
-  - 美国-5
-  - 中国-1
-  - 中国-3
+  - 美国-6
+  - 美国-4
   - 美国-2
+  - 美国-5
+  - 美国-1
+  - 中国-1
+  - 新加坡-1
   - 德国-1
+  - 美国-3
   - 日本-1
-  - 日本-2
   - 韩国-2
   - 韩国-1
   type: url-test
@@ -178,6 +173,20 @@ proxy-groups:
   - 美国-3
   - 美国-4
   - 美国-5
+  - 美国-6
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 德国
+  proxies:
+  - 德国-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -188,31 +197,21 @@ proxy-groups:
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 德国
+  name: 日本
   proxies:
-  - 德国-1
+  - 日本-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 中国
   proxies:
   - 中国-1
-  - 中国-2
-  - 中国-3
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
