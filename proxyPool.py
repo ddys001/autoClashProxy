@@ -32,9 +32,9 @@ parser.add_argument("--retry", type=int, default=5, help="失败后重试的次�
 parser.add_argument("--noDownload", action='store_true', help="不下载公开节点，使用本地配置文件")
 
 createClash = parser.add_mutually_exclusive_group(required=True)
-createClash.add_argument("--local", action='store_true', help="处理本地配置文件，生成新的clash配置文件。所有节点未经过延迟测试。")
-createClash.add_argument("--download", action='store_true', help="下载公开的订阅文件，生成新的clash配置文件。所有节点未经过延迟测试。")
-createClash.add_argument("--update", action='store_true', help="更新配置文件，并将其推送至github。所有节点均通过延迟测试。")
+createClash.add_argument("--local", action='store_true', help="处理本地配置文件，生成clash配置文件。")
+createClash.add_argument("--download", action='store_true', help="下载公开的订阅文件，生成clash配置文件。")
+createClash.add_argument("--update", action='store_true', help="对所有节点进行延迟测试后，生成配置文件。")
 
 args = parser.parse_args()
 profile = clashConfig()
