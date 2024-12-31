@@ -6,6 +6,7 @@ def pushRepo(retry): #将提交推送至github
     for i in range(retry):
         print(f"开始第{i + 1}次推送：", end="", flush=True)
         try:
+            repo.remotes.origin.pull(rebase=True) #推送前先拉取最新代码
             repo.remotes.origin.push().raise_if_error()
             print("推送成功。")
             break
