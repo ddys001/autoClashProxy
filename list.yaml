@@ -25,256 +25,16 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 54.179.186.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 德国-1
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 德国-2
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.157
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 德国-3
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.164
-  type: ss
-- cipher: aes-128-gcm
-  name: 英国-2
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-5
-  password: amazonskr05
-  port: 443
-  server: 54.244.200.142
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-4
-  password: amazonskr05
-  port: 443
-  server: 34.219.80.203
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-1
-  password: amazonskr05
-  port: 443
-  server: 35.88.126.102
-  type: ss
-- cipher: aes-128-gcm
-  name: 保加利亚-1
-  password: shadowsocks
-  port: 443
-  server: 149.34.244.82
-  type: ss
-- cipher: rc4-md5
-  name: 英国-1
-  obfs: plain
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  protocol: origin
-  server: 146.70.61.18
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-7
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 54.69.180.74
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-6
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 34.222.132.123
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-2
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 35.85.33.177
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-3
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 54.245.207.144
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-8
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 54.200.223.152
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-9
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 34.211.229.86
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-10
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 35.161.59.194
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-11
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 34.213.242.165
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-12
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 52.32.68.164
-  type: ssr
-- name: 中国-1
-  password: vzhXXZVw
-  port: 18681
-  server: 36.150.215.196
-  skip-cert-verify: true
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 中国-2
-  password: d9ad3deb-7638-4c95-b44a-1f786b0a31fd
-  port: 30002
-  server: 171.111.216.155
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 中国-4
-  password: f5136746-de79-46d0-b3be-d15d9992fa07
-  port: 26543
-  server: zx1.1010520.xyz
-  type: ss
-- name: 中国-5
-  port: 4000
-  server: ftq.ink
-  tls: true
-  type: http
-- cipher: chacha20-ietf-poly1305
-  name: 中国-6
-  password: f5136746-de79-46d0-b3be-d15d9992fa07
-  port: 26543
-  server: zx3.1010520.xyz
-  type: ss
-- name: 美国-13
-  port: 4000
-  server: hk9.ftq.ink
-  tls: true
-  type: http
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 3.35.206.24
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-2
-  password: amazonskr05
-  port: 443
-  server: 52.79.248.193
-  type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 52.221.190.255
-  type: ss
-- name: 中国-3
-  password: vzhXXZVw
-  port: 48544
-  server: 36.150.215.222
-  skip-cert-verify: true
-  type: trojan
-- cipher: aes-256-cfb
-  name: 韩国-3
-  password: amazonskr05
-  port: 443
-  server: 52.79.73.137
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 德国-5
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 德国-4
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.154
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 3.113.31.223
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 中国-8
-  password: 7243745919d6de49a5db
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45578
-  server: console.02.aliyun.aq.kunlunaqs.com
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
-  name: 中国-7
+  name: 中国-1
   password: 3555
   port: 443
   server: link.5557.run
   skip-cert-verify: false
   sni: link.5557.run
   type: trojan
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 中国-9
-  password: b74518fb49bd645e6ce7
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45915
-  server: console.03.aliyun.aq.kunlunaqs.com
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
-  name: 美国-15
+  name: 美国-2
   password: 3723507166611775488
   port: 443
   server: whole-foxhound.boa152.lol
@@ -283,142 +43,125 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 美国-14
+  name: 美国-1
   password: amazonskr05
   port: 443
   server: 13.215.51.127
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 新加坡-3
-  password: amazonskr05
-  port: 443
-  server: 13.250.115.217
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
-  name: 韩国-4
+  name: 韩国-2
   password: 3723507166611775488
   port: 443
   server: super-goblin.treefrog761.one
   skip-cert-verify: false
   sni: super-goblin.treefrog761.one
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 中国-12
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)b5a99e1:21612
-    mode: tls
-  port: 2377
-  server: 60.249.35.39
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 中国-10
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)b5a99e1:21612
-    mode: tls
-  port: 2377
-  server: 60.249.35.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 中国-15
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)b5a99e1:21612
-    mode: tls
-  port: 2377
-  server: 60.249.35.37
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 中国-14
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)b5a99e1:21612
-    mode: tls
-  port: 2377
-  server: 60.249.35.2
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 中国-11
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)b5a99e1:21612
-    mode: tls
-  port: 2377
-  server: 60.249.35.3
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 中国-13
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)b5a99e1:21612
-    mode: tls
-  port: 2377
-  server: 60.249.35.59
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 德国-4
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.154
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-cfb
-  name: 日本-2
+  name: 新加坡-1
   password: amazonskr05
   port: 443
-  server: 18.179.197.216
+  server: 52.221.190.255
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 英国-1
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 德国-5
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.157
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 德国-1
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.164
   type: ss
 - cipher: aes-256-cfb
-  name: 日本-3
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 3.38.212.48
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 德国-3
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 德国-2
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 德国-6
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: beesyar.org
+  type: ss
+- cipher: rc4-md5
+  name: 英国-2
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 日本-1
   password: amazonskr05
   port: 443
   server: 13.115.231.64
   type: ss
 - cipher: aes-256-cfb
-  name: 日本-4
+  name: 美国-4
   password: amazonskr05
   port: 443
-  server: 54.178.84.59
+  server: 52.32.68.164
   type: ss
 - cipher: aes-256-cfb
-  name: 美国-16
+  name: 美国-3
   password: amazonskr05
   port: 443
-  server: 13.215.250.79
+  server: 34.213.242.165
   type: ss
-- alterId: 0
-  name: 英国-3
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.179.218.63
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 英国-4
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.118.98
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: 中国-16
-  port: 40972
-  server: 120.232.153.63
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+- cipher: aes-256-cfb
+  name: 美国-5
+  password: amazonskr05
+  port: 443
+  server: 35.92.45.179
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-3
+  password: amazonskr05
+  port: 443
+  server: 52.79.248.193
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 美国-6
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 169.150.210.233
+  tfo: false
+  type: ss
 proxy-groups:
 - name: proxinode
   proxies:
@@ -430,71 +173,37 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 英国
   - 德国
+  - 中国
   - 美国
   - 新加坡
-  - 保加利亚
-  - 中国
-  - 韩国
   - 日本
+  - 韩国
+  - 英国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-1
-  - 德国-1
-  - 德国-2
-  - 德国-3
-  - 英国-2
-  - 美国-5
-  - 美国-4
-  - 美国-1
-  - 保加利亚-1
-  - 英国-1
-  - 美国-7
-  - 美国-6
-  - 美国-2
-  - 美国-3
-  - 美国-8
-  - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
   - 中国-1
-  - 中国-2
-  - 中国-4
-  - 中国-5
-  - 中国-6
-  - 美国-13
-  - 韩国-1
+  - 美国-2
+  - 美国-1
   - 韩国-2
-  - 新加坡-2
-  - 中国-3
-  - 韩国-3
-  - 德国-5
   - 德国-4
+  - 新加坡-1
+  - 英国-1
+  - 德国-5
+  - 德国-1
+  - 韩国-1
+  - 德国-3
+  - 德国-2
+  - 德国-6
+  - 英国-2
   - 日本-1
-  - 中国-8
-  - 中国-7
-  - 中国-9
-  - 美国-15
-  - 美国-14
-  - 新加坡-3
-  - 韩国-4
-  - 中国-12
-  - 中国-10
-  - 中国-15
-  - 中国-14
-  - 中国-11
-  - 中国-13
-  - 日本-2
-  - 日本-3
-  - 日本-4
-  - 美国-16
-  - 英国-3
-  - 英国-4
-  - 中国-16
+  - 美国-4
+  - 美国-3
+  - 美国-5
+  - 韩国-3
+  - 美国-6
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -511,15 +220,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 英国
-  proxies:
-  - 英国-1
-  - 英国-2
-  - 英国-3
-  - 英国-4
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
   name: 德国
   proxies:
   - 德国-1
@@ -527,6 +227,13 @@ proxy-groups:
   - 德国-3
   - 德国-4
   - 德国-5
+  - 德国-6
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 中国
+  proxies:
+  - 中国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -538,51 +245,18 @@ proxy-groups:
   - 美国-4
   - 美国-5
   - 美国-6
-  - 美国-7
-  - 美国-8
-  - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
-  - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 保加利亚
+  name: 日本
   proxies:
-  - 保加利亚-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 中国
-  proxies:
-  - 中国-1
-  - 中国-2
-  - 中国-3
-  - 中国-4
-  - 中国-5
-  - 中国-6
-  - 中国-7
-  - 中国-8
-  - 中国-9
-  - 中国-10
-  - 中国-11
-  - 中国-12
-  - 中国-13
-  - 中国-14
-  - 中国-15
-  - 中国-16
+  - 日本-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -591,16 +265,13 @@ proxy-groups:
   - 韩国-1
   - 韩国-2
   - 韩国-3
-  - 韩国-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 日本
+  name: 英国
   proxies:
-  - 日本-1
-  - 日本-2
-  - 日本-3
-  - 日本-4
+  - 英国-1
+  - 英国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
