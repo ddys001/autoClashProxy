@@ -32,20 +32,17 @@ proxies:
   server: 212.102.53.193
   type: ss
 - cipher: aes-256-cfb
-  name: 美国-2
+  name: 美国-1
   password: amazonskr05
   port: 443
-  server: 35.92.45.179
+  server: 34.222.136.128
   type: ss
-- name: 美国-1
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+- cipher: aes-256-cfb
+  name: 美国-6
+  password: amazonskr05
   port: 443
-  server: us02.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: us02.trojanyyds.xyz
-  tfo: false
-  type: trojan
-  udp: true
+  server: 34.219.80.203
+  type: ss
 - name: 美国-5
   port: 4000
   server: hk9.ftq.ink
@@ -53,7 +50,7 @@ proxies:
   type: http
 - alterId: 0
   cipher: auto
-  name: 美国-4
+  name: 美国-3
   network: ws
   port: 40474
   server: 131.186.16.245
@@ -65,65 +62,62 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: 美国-6
-  network: ws
-  port: 8000
-  server: 38.150.7.183
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fb05a8fb-d3ad-4e3f-8676-d5a59d66b5e0
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
-- cipher: aes-256-cfb
-  name: 美国-7
-  password: amazonskr05
-  port: 443
-  server: 13.215.250.79
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 中国-1
+  password: 7243745919d6de49a5db
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45578
+  server: console.02.aliyun.aq.kunlunaqs.com
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 中国-2
+  password: b74518fb49bd645e6ce7
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45915
+  server: console.03.aliyun.aq.kunlunaqs.com
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 韩国-2
+  client-fingerprint: chrome
+  name: 美国-4
   password: amazonskr05
   port: 443
-  server: 3.38.212.48
+  server: 13.215.51.127
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 日本-1
+  name: 美国-2
   password: amazonskr05
   port: 443
-  server: 54.178.84.59
+  server: 54.200.223.152
   type: ss
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 52.79.73.137
-  type: ss
-- name: 韩国-3
+- name: 韩国-1
   password: 3723507166611775488
   port: 443
-  server: super-goblin.treefrog761.one
+  server: 3.36.20.142
   skip-cert-verify: true
   sni: super-goblin.treefrog761.one
+  tfo: false
   type: trojan
-- name: 美国-3
-  password: 3723507166611775488
-  port: 443
-  server: whole-foxhound.boa152.lol
-  skip-cert-verify: true
-  sni: whole-foxhound.boa152.lol
-  type: trojan
-- name: 法国-1
+  udp: true
+- name: 德国-1
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.36.81.143
-  skip-cert-verify: false
+  server: 3.72.192.229
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tfo: false
   type: trojan
+  udp: true
 - name: 新加坡-1
   network: tcp
   password: '3723507166611775488'
@@ -133,24 +127,7 @@ proxies:
   sni: ace-mayfly.boa152.lol
   type: trojan
   udp: true
-- alterId: '64'
-  cipher: auto
-  name: 中国-1
-  network: tcp
-  port: '54882'
-  server: 183.236.48.163
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 匈牙利-1
-  network: tcp
-  password: '3723507166611775488'
-  port: 443
-  server: profound-elk.boa152.lol
-  skip-cert-verify: true
-  sni: profound-elk.boa152.lol
-  type: trojan
-  udp: true
-- name: 匈牙利-2
   network: tcp
   password: '3723507166611775488'
   port: 443
@@ -159,40 +136,13 @@ proxies:
   sni: proper-titmouse.boa152.lol
   type: trojan
   udp: true
-- name: 法国-2
-  network: tcp
-  password: '3723507166611775488'
-  port: 443
-  server: lucky-grouper.boa152.lol
-  skip-cert-verify: true
-  sni: lucky-grouper.boa152.lol
-  type: trojan
-  udp: true
-- name: 法国-3
-  network: tcp
-  password: '3723507166611775488'
-  port: 443
-  server: devoted-starfish.boa152.lol
-  skip-cert-verify: true
-  sni: devoted-starfish.boa152.lol
-  type: trojan
-  udp: true
-- name: 法国-4
+- name: 法国-1
   network: tcp
   password: '3723507166611775488'
   port: 443
   server: sacred-guppy.boa152.lol
   skip-cert-verify: true
   sni: sacred-guppy.boa152.lol
-  type: trojan
-  udp: true
-- name: 俄罗斯-1
-  network: tcp
-  password: '3723507166611775488'
-  port: 443
-  server: ample-cockatoo.boa152.lol
-  skip-cert-verify: true
-  sni: ample-cockatoo.boa152.lol
   type: trojan
   udp: true
 - name: 土耳其-1
@@ -204,13 +154,31 @@ proxies:
   sni: star-monarch.boa152.lol
   type: trojan
   udp: true
-- name: 美国-8
+- name: 美国-7
   network: tcp
   password: '3723507166611775488'
   port: 443
   server: profound-anemone.boa152.lol
   skip-cert-verify: true
   sni: profound-anemone.boa152.lol
+  type: trojan
+  udp: true
+- name: 保加利亚-1
+  network: tcp
+  password: '3723507166611775488'
+  port: 443
+  server: concrete-buzzard.boa152.lol
+  skip-cert-verify: true
+  sni: concrete-buzzard.boa152.lol
+  type: trojan
+  udp: true
+- name: 意大利-1
+  network: tcp
+  password: '3723507166611775488'
+  port: 443
+  server: rich-sturgeon.treefrog761.one
+  skip-cert-verify: true
+  sni: rich-sturgeon.treefrog761.one
   type: trojan
   udp: true
 - name: 新加坡-2
@@ -222,15 +190,7 @@ proxies:
   sni: profound-shiner.boa152.lol
   type: trojan
   udp: true
-- alterId: '64'
-  cipher: auto
-  name: 中国-2
-  network: tcp
-  port: '40565'
-  server: 120.232.153.63
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 俄罗斯-2
+- name: 俄罗斯-1
   network: tcp
   password: '3723507166611775488'
   port: 443
@@ -239,7 +199,7 @@ proxies:
   sni: oriented-terrier.boa152.lol
   type: trojan
   udp: true
-- name: 德国-1
+- name: 德国-2
   network: tcp
   password: '3723507166611775488'
   port: 443
@@ -248,15 +208,12 @@ proxies:
   sni: golden-krill.treefrog761.one
   type: trojan
   udp: true
-- name: 爱尔兰-1
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 54.228.243.155
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
+- cipher: aes-256-cfb
+  name: 韩国-2
+  password: amazonskr05
+  port: 443
+  server: 43.203.127.152
+  type: ss
 proxy-groups:
 - name: proxinode
   proxies:
@@ -268,50 +225,44 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 英国
   - 美国
-  - 韩国
-  - 法国
-  - 日本
   - 中国
-  - 新加坡
+  - 英国
+  - 韩国
   - 匈牙利
-  - 俄罗斯
-  - 土耳其
-  - 爱尔兰
+  - 新加坡
   - 德国
+  - 法国
+  - 土耳其
+  - 保加利亚
+  - 意大利
+  - 俄罗斯
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
   - 英国-1
-  - 美国-2
   - 美国-1
-  - 美国-5
-  - 美国-4
   - 美国-6
-  - 美国-7
-  - 韩国-2
-  - 日本-1
-  - 韩国-1
-  - 韩国-3
+  - 美国-5
   - 美国-3
-  - 法国-1
-  - 新加坡-1
   - 中国-1
-  - 匈牙利-1
-  - 匈牙利-2
-  - 法国-2
-  - 法国-3
-  - 法国-4
-  - 俄罗斯-1
-  - 土耳其-1
-  - 美国-8
-  - 新加坡-2
   - 中国-2
-  - 俄罗斯-2
+  - 美国-4
+  - 美国-2
+  - 韩国-1
   - 德国-1
-  - 爱尔兰-1
+  - 新加坡-1
+  - 匈牙利-1
+  - 法国-1
+  - 土耳其-1
+  - 美国-7
+  - 保加利亚-1
+  - 意大利-1
+  - 新加坡-2
+  - 俄罗斯-1
+  - 德国-2
+  - 韩国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -328,12 +279,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 英国
-  proxies:
-  - 英国-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -343,30 +288,6 @@ proxy-groups:
   - 美国-5
   - 美国-6
   - 美国-7
-  - 美国-8
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
-  - 韩国-3
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 法国
-  proxies:
-  - 法国-1
-  - 法国-2
-  - 法国-3
-  - 法国-4
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -377,6 +298,25 @@ proxy-groups:
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 匈牙利
+  proxies:
+  - 匈牙利-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
@@ -384,17 +324,16 @@ proxy-groups:
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 匈牙利
+  name: 德国
   proxies:
-  - 匈牙利-1
-  - 匈牙利-2
+  - 德国-1
+  - 德国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 俄罗斯
+  name: 法国
   proxies:
-  - 俄罗斯-1
-  - 俄罗斯-2
+  - 法国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -404,15 +343,21 @@ proxy-groups:
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 爱尔兰
+  name: 保加利亚
   proxies:
-  - 爱尔兰-1
+  - 保加利亚-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 德国
+  name: 意大利
   proxies:
-  - 德国-1
+  - 意大利-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 俄罗斯
+  proxies:
+  - 俄罗斯-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
