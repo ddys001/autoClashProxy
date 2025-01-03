@@ -37,11 +37,24 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 新加坡-1
+  name: 新加坡-3
   password: amazonskr05
   port: 443
   server: 54.151.194.129
   tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 13.250.27.88
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 18.181.152.92
   type: ss
 - cipher: aes-256-cfb
   name: 日本-1
@@ -53,18 +66,8 @@ proxies:
   name: 新加坡-2
   password: amazonskr05
   port: 443
-  server: 52.221.190.255
+  server: 54.179.186.199
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 中国-2
-  port: 50052
-  server: 183.236.48.158
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 proxy-groups:
 - name: proxinode
   proxies:
@@ -76,18 +79,19 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 中国
-  - 新加坡
   - 日本
+  - 新加坡
+  - 中国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
   - 中国-1
+  - 新加坡-3
   - 新加坡-1
+  - 日本-2
   - 日本-1
   - 新加坡-2
-  - 中国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -104,10 +108,10 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 中国
+  name: 日本
   proxies:
-  - 中国-1
-  - 中国-2
+  - 日本-1
+  - 日本-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -115,12 +119,13 @@ proxy-groups:
   proxies:
   - 新加坡-1
   - 新加坡-2
+  - 新加坡-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 日本
+  name: 中国
   proxies:
-  - 日本-1
+  - 中国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
