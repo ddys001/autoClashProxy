@@ -29,5 +29,16 @@ def pushFile(file, retry): #检查文件是否有修改，如果有修改，则�
     else:
         print(f"{file}未更新，无需推送至github。")
 
+def checkoutFile(file):
+    repo = git.Repo(".")
+
+    listStatus = repo.git.status(file)
+    if ("modified" in listStatus):
+        print(f"{file}已修改，回退文件")
+        repo.git.checkout(file)
+    else:
+        print(f"{file}未修改，无需回退")
+
 if __name__ == "__main__":
-    pushRepo(1)
+    #pushRepo(1)
+    checkoutFile("list.yaml")

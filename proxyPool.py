@@ -6,7 +6,7 @@ import sys
 sys.path.append('.')
 
 from processProxy import *
-from autoPush import *
+from autoGit import *
 from clash import *
 
 def parserSourceUrl(sourceFile):
@@ -72,8 +72,9 @@ if (args.update):
         proxies = yaml.load(open(profile.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
         proxies = removeTimeoutProxy(proxies, profile) #对配置文件中的节点进行延迟测试，删除延迟不符合要求的节点。
         bSuccess = profile.creatConfig(proxies)
-        if (bSuccess):
-            profile.clash.loadConfig(configPath, args.retry) #延迟测试结束，加载最终生成的配置文件
+        if (not bSuccess):
+            checkoutFile(profile.file)
+        profile.clash.loadConfig(configPath, args.retry) #延迟测试结束，加载最终生成的配置文件
     else:
         bSuccess = False
 
