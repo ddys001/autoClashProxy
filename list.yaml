@@ -26,7 +26,7 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: 中国-3
+  name: 中国-1
   password: vzhXXZVw
   port: 18681
   server: 36.150.215.196
@@ -46,7 +46,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 中国-1
+  name: 中国-3
   password: cfc6f3f75f5ef7b2665c
   plugin: obfs
   plugin-opts:
@@ -57,7 +57,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 日本-4
+  name: 日本-3
   password: amazonskr05
   port: 443
   server: 54.248.142.136
@@ -69,24 +69,10 @@ proxies:
   server: 43.207.232.228
   type: ss
 - cipher: aes-256-cfb
-  name: 日本-3
-  password: amazonskr05
-  port: 443
-  server: 54.178.191.236
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-5
-  password: amazonskr05
-  port: 443
-  server: 54.178.84.59
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
   name: 日本-1
   password: amazonskr05
   port: 443
   server: 52.68.44.53
-  tfo: false
   type: ss
 proxy-groups:
 - name: proxinode
@@ -105,13 +91,11 @@ proxy-groups:
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 中国-3
-  - 中国-2
   - 中国-1
-  - 日本-4
-  - 日本-2
+  - 中国-2
+  - 中国-3
   - 日本-3
-  - 日本-5
+  - 日本-2
   - 日本-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
@@ -134,8 +118,6 @@ proxy-groups:
   - 日本-1
   - 日本-2
   - 日本-3
-  - 日本-4
-  - 日本-5
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
