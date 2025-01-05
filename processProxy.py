@@ -50,9 +50,19 @@ def setTLSForVmess(proxyPool):
 
     return proxies
 
+#有些节点的配置可能不正确，会导致配置文件加载失败
+def removeErrorProxy(proxyPool):
+    proxies = []
+    for proxy in proxyPool:
+        if (str(proxy['port']).isdigit()): #节点的port不为数字，就不添加至最终的节点中
+            proxies.append(proxy)
+
+    return proxies
+
 def processNodes(proxyPool):
     proxies = removeDuplicateNode(proxyPool)
     proxies = removeNotSupportNode(proxies)
+    proxies = removeErrorProxy(proxies)
     proxies = setTLSForVmess(proxies)
 
     return proxies
