@@ -25,70 +25,55 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- cipher: rc4-md5
-  name: 中国-2
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: 78fe8292462.microsoft.com
-    mode: http
-  port: 3601
-  server: pr1.jymzffbquawl.com
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 中国-1
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: 78fe8292462.microsoft.com
-    mode: http
-  port: 6606
-  server: pr3.jymzffbquawl.com
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 中国-3
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: 78fe8292462.microsoft.com
-    mode: http
-  port: 6603
-  server: bs3.jymzffbquawl.com
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 日本-3
+  name: 日本-1
   password: amazonskr05
   port: 443
   server: 43.206.231.196
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 54.179.186.199
-  type: ss
-- cipher: aes-256-cfb
+  client-fingerprint: chrome
   name: 日本-2
   password: amazonskr05
   port: 443
   server: 52.69.160.222
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 日本-1
+  client-fingerprint: chrome
+  name: 日本-3
   password: amazonskr05
   port: 443
   server: 54.238.219.226
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 13.250.115.217
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: 41748
+  server: 221.150.109.90
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 中国-2
+  port: 50052
+  server: 183.236.48.158
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 中国-1
+  port: 40972
+  server: 120.232.153.63
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
 proxy-groups:
 - name: proxinode
   proxies:
@@ -101,20 +86,18 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 日本
-  - 新加坡
+  - 韩国
   - 中国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
+  - 日本-1
+  - 日本-2
+  - 日本-3
+  - 韩国-1
   - 中国-2
   - 中国-1
-  - 中国-3
-  - 日本-3
-  - 新加坡-1
-  - 日本-2
-  - 日本-1
-  - 新加坡-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -139,10 +122,9 @@ proxy-groups:
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 新加坡
+  name: 韩国
   proxies:
-  - 新加坡-1
-  - 新加坡-2
+  - 韩国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -150,7 +132,6 @@ proxy-groups:
   proxies:
   - 中国-1
   - 中国-2
-  - 中国-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
