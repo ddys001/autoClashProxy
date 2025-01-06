@@ -12,7 +12,7 @@ class clashAPI:
         self.controllerPort = 34885 #登录clash web ui的端口
         self.mixedPort = 7890 #http代理端口
 
-        self.timeout = 500 #延迟测试超时时间
+        self.timeout = 1000 #延迟测试超时时间
         self.delayUrl = "https://www.youtube.com/generate_204" #延迟测试需要的url
 
         self.secret = "d53df256-8f1b-4f9b-b730-6a4e947104b6" #登录clash web ui所需要的秘钥
@@ -28,19 +28,21 @@ class clashAPI:
 
         url = f"{self.baseUrl}:{self.controllerPort}/proxies/{proxyName}/delay"
         params = {"timeout": self.timeout, "url": self.delayUrl}
-        delay = eval(requests.get(url, headers=self.authorization, params=params).text)
+        queryResult = eval(requests.get(url, headers=self.authorization, params=params).text)
 
-        if("delay" in delay):
-            delay = delay["delay"]
-        elif("message" in delay):
-            delay = delay["message"]
+        delay = self.timeout + 10 #默认节点延迟时间
+        message = ""
+
+        if("delay" in queryResult):
+            delay = queryResult["delay"]
+            message = f"{proxyName}: {delay}"
+        elif("message" in queryResult):
+            message = f"{proxyName}: " + queryResult["message"]
             proxy = None
         else:
             assert(0)
 
-        message = f"{proxyName}: {delay}"
-
-        return (proxy, message)
+        return (proxy, message, delay)
 
     def queryDNS(self, host):
         ip = "127.0.0.1"
@@ -90,7 +92,8 @@ class clashConfig:
         self.file = "list.yaml" #最终生成的配置文件
         self.requestsProxy = {'http':  self.clash.httpProxy, 'https': self.clash.httpsProxy} #进行网络请求时设置的代理
         self.min = 5 #生成配置文件需要的最少的节点数量
-        self.max = 2000 #生成配置文件中所允许的最大节点数量。如果数量过多，后续将需要较多时间来查询节点归属地和延迟测试
+        self.maxInConfig = 2000 #生成配置文件中所允许的最大节点数量。如果数量过多，后续将需要较多时间来查询节点归属地和延迟测试
+        self.maxAfterDelay = 8 #经过延迟测试后，允许输出的最大节点数量
 
     def getPorxyCountry(self, proxy):
         country = "未知地区"
@@ -147,15 +150,15 @@ class clashConfig:
     def creatConfig(self, proxies):
         print("开始生成配置文件")
         print(f"生成配置文件所需的最小节点数量为：{self.min}")
-        print(f"生成配置文件所允许的最大节点数量为：{self.max}")
+        print(f"生成配置文件所允许的最大节点数量为：{self.maxInConfig}")
 
         if(len(proxies) < self.min):
             print("节点数量不足，不生成clash配置文件")
             return False
-        if(len(proxies) > self.max):
+        if(len(proxies) > self.maxInConfig):
             print("节点数量过多，只保留所允许的最大节点数量生成配置文件")
             random.shuffle(proxies)
-            proxies = proxies[:self.max]
+            proxies = proxies[:self.maxInConfig]
 
         defaultConfig = open(self.defaultFile, encoding='utf8').read()
         config = yaml.load(defaultConfig, Loader=yaml.FullLoader)

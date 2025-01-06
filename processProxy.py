@@ -1,6 +1,8 @@
 import requests
 import yaml
 
+from operator import itemgetter
+
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 def removeDuplicateNode(proxyPool): #删除重复节点
@@ -67,8 +69,10 @@ def processNodes(proxyPool):
 
     return proxies
 
-def removeTimeoutProxy(proxies, profile):
+def removeTimeoutProxy(proxies, profile, maxProxy):
     passProxy=[]
+    results = []
+
     print(f"延迟测试超时时间为：{profile.clash.timeout}ms")
     print(f"延迟测试url为：{profile.clash.delayUrl}")
     print(f"测试节点总数为：{len(proxies)}")
@@ -77,14 +81,21 @@ def removeTimeoutProxy(proxies, profile):
             allTask = [threadPool.submit(profile.clash.queryProxyDelay, proxy) for proxy in proxies]
 
             for index, future in enumerate(as_completed(allTask)):
-                proxy, message = future.result()
-                if (proxy != None):
-                    passProxy.append(proxy)
+                proxy, message, delay = future.result()
                 print(f"节点{index + 1}: {message}")
+                if (proxy != None):
+                    results.append((proxy, delay))
+
+            print(f"测试正常节点: {len(results)}/{len(proxies)}")
+            if (len(results) > maxProxy):
+                print(f"延迟测试节点数量超过最大数量：{maxProxy}。现按照延迟时间排序选取指定最大数量节点")
+                results = sorted(results, key=itemgetter(1)) #对节点按照延迟时间进行排序
+                for result in results[:maxProxy]: #按照排序结果取相应数量的节点
+                    passProxy.append(result[0])
     except Exception as e:
         print(f"测试发生错误：{e}")
 
-    print(f"测试正常节点: {len(passProxy)}/{len(proxies)}")
+    print("removeTimeoutProxy完成，已删除不符合条件的节点")
 
     return passProxy
 
