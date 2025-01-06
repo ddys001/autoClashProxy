@@ -36,17 +36,12 @@ proxies:
   server: pr1.jymzffbquawl.com
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: 中国-3
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: 78fe8292462.microsoft.com
-    mode: http
-  port: 3605
-  server: bs1.jymzffbquawl.com
+- cipher: chacha20-ietf-poly1305
+  name: 中国-1
+  password: ba9d2c35-523c-459e-b288-b7103d106d29
+  port: 30003
+  server: gdgs.tarioblink.me
   type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 日本-2
   password: amazonskr05
@@ -55,48 +50,26 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 52.69.160.222
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-3
-  password: amazonskr05
-  port: 443
-  server: 54.238.219.226
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 中国-1
-  network: ws
-  port: 80
-  server: 619d3460-e201-be79-d7f9-b8c85f7ba8e4.castlepeakhospital.moe
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: ef29bee2-2169-450b-804b-598b1e963109
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 122.248.193.242
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 美国-1
   password: amazonskr05
   port: 443
   server: 13.212.194.118
   tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 54.169.231.25
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 52.69.160.222
   type: ss
 proxy-groups:
 - name: proxinode
@@ -111,20 +84,18 @@ proxy-groups:
   proxies:
   - 日本
   - 中国
-  - 新加坡
   - 美国
+  - 新加坡
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
   - 中国-2
-  - 中国-3
-  - 日本-2
-  - 日本-1
-  - 日本-3
   - 中国-1
-  - 新加坡-1
+  - 日本-2
   - 美国-1
+  - 新加坡-1
+  - 日本-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -145,7 +116,6 @@ proxy-groups:
   proxies:
   - 日本-1
   - 日本-2
-  - 日本-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -153,19 +123,18 @@ proxy-groups:
   proxies:
   - 中国-1
   - 中国-2
-  - 中国-3
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 美国
   proxies:
   - 美国-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
