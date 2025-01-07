@@ -1,3 +1,4 @@
+import sys
 import requests
 import time
 import json
@@ -40,7 +41,8 @@ class clashAPI:
             message = f"{proxyName}: " + queryResult["message"]
             proxy = None
         else:
-            assert(0)
+            print("未知message内容:", queryResult)
+            sys.exit(1)
 
         return (proxy, message, delay)
 
@@ -91,9 +93,17 @@ class clashConfig:
         self.defaultFile = "default.config" #生成配置文件所需要的模板文件，里面会设置好ruler、dns和tun等clash配置
         self.file = "list.yaml" #最终生成的配置文件
         self.requestsProxy = {'http':  self.clash.httpProxy, 'https': self.clash.httpsProxy} #进行网络请求时设置的代理
-        self.min = 5 #生成配置文件需要的最少的节点数量
+        self.minInConfig = 5 #生成配置文件需要的最少的节点数量
         self.maxInConfig = 2000 #生成配置文件中所允许的最大节点数量。如果数量过多，后续将需要较多时间来查询节点归属地和延迟测试
         self.maxAfterDelay = 8 #经过延迟测试后，允许输出的最大节点数量
+
+        if (self.minInConfig > self.maxAfterDelay):
+            print(f"延迟测试输出的节点数量:{self.maxAfterDelay} 小于 配置文件所需要的最小节点数量:{self.minInConfig}。请检查相关设置")
+            sys.exit(1)
+
+        if (self.minInConfig > self.maxInConfig):
+            print(f"配置文件中最大节点数量:{self.maxInConfig} 小于 配置文件所需要的最小节点数量:{self.minInConfig}。请检查相关设置")
+            sys.exit(1)
 
     def getPorxyCountry(self, proxy):
         country = "未知地区"
@@ -149,10 +159,10 @@ class clashConfig:
 
     def creatConfig(self, proxies):
         print("开始生成配置文件")
-        print(f"生成配置文件所需的最小节点数量为：{self.min}")
+        print(f"生成配置文件所需的最小节点数量为：{self.minInConfig}")
         print(f"生成配置文件所允许的最大节点数量为：{self.maxInConfig}")
 
-        if(len(proxies) < self.min):
+        if(len(proxies) < self.minInConfig):
             print("节点数量不足，不生成clash配置文件")
             return False
         if(len(proxies) > self.maxInConfig):
