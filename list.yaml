@@ -25,56 +25,41 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- cipher: rc4-md5
-  name: 中国-1
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: 78fe8292462.microsoft.com
-    mode: http
-  port: 3609
-  server: bs1.jymzffbquawl.com
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 美国-1
+  name: 新加坡-3
   password: amazonskr05
   port: 443
-  server: 13.212.194.118
+  server: 54.179.186.199
   type: ss
-- cipher: rc4-md5
-  name: 中国-3
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: 78fe8292462.microsoft.com
-    mode: http
-  port: 6604
-  server: bs3.jymzffbquawl.com
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 中国-2
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: 78fe8292462.microsoft.com
-    mode: http
-  port: 6606
-  server: pr3.jymzffbquawl.com
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 13.250.115.217
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-2
   password: amazonskr05
   port: 443
   server: 122.248.193.242
   type: ss
 - cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 54.238.219.226
+  type: ss
+- name: 中国-1
+  password: vzhXXZVw
+  port: 18681
+  server: 36.150.215.196
+  skip-cert-verify: true
+  type: trojan
+- cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 3.112.236.3
+  server: 54.178.84.59
   type: ss
 proxy-groups:
 - name: proxinode
@@ -88,18 +73,17 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 日本
-  - 美国
   - 新加坡
   - 中国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 中国-1
-  - 美国-1
-  - 中国-3
-  - 中国-2
+  - 新加坡-3
   - 新加坡-1
+  - 新加坡-2
+  - 日本-2
+  - 中国-1
   - 日本-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
@@ -120,26 +104,21 @@ proxy-groups:
   name: 日本
   proxies:
   - 日本-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 美国
-  proxies:
-  - 美国-1
+  - 日本-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 中国
   proxies:
   - 中国-1
-  - 中国-2
-  - 中国-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
