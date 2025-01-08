@@ -89,9 +89,9 @@ def removeTimeoutProxy(proxies, profile, maxProxy):
             print(f"测试正常节点: {len(results)}/{len(proxies)}")
             if (len(results) > maxProxy):
                 print(f"延迟测试节点数量超过最大数量：{maxProxy}。现按照延迟时间排序选取指定最大数量节点")
-                results = sorted(results, key=itemgetter(1)) #对节点按照延迟时间进行排序
-                for result in results[:maxProxy]: #按照排序结果取相应数量的节点
-                    passProxy.append(result[0])
+                results = sorted(results, key=itemgetter(1))[:maxProxy] #对节点按照延迟时间进行排序
+            for result in results: #按照排序结果取相应数量的节点
+                passProxy.append(result[0])
     except Exception as e:
         print(f"测试发生错误：{e}")
 

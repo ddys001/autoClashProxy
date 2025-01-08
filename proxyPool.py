@@ -63,6 +63,11 @@ if ((args.download or args.update) and (not bNoDownload)):
     sources = parserSourceUrl(args.urlfile)
     proxies = getProxyFromSource(sources, profile.requestsProxy)
 
+if (len(proxies) < profile.minInConfig):
+    print(f"获取的节点数量为：{len(proxies)}。少于生成配置文件所需要的最低数量：{profile.minInConfig}")
+    print("节点数量不足。程序退出。")
+    sys.exit(1)
+
 proxies = processNodes(proxies)
 bSuccess = profile.creatConfig(proxies)
 
