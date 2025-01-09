@@ -1,6 +1,8 @@
 import requests
 import yaml
 
+import re
+
 from operator import itemgetter
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -59,6 +61,8 @@ def removeErrorProxy(proxyPool):
         if (str(proxy['port']).isdigit()): #节点的port不为数字，就不添加至最终的节点中
             proxies.append(proxy)
 
+    print(f"after removeErrorProxy, 剩余节点数量{len(proxies)}")
+
     return proxies
 
 def processNodes(proxyPool):
@@ -86,16 +90,19 @@ def removeTimeoutProxy(proxies, profile, maxProxy):
                 if (proxy != None):
                     results.append((proxy, delay))
 
+            print("所有节点延迟测试结束")
             print(f"测试正常节点: {len(results)}/{len(proxies)}")
-            if (len(results) > maxProxy):
-                print(f"延迟测试节点数量超过最大数量：{maxProxy}。现按照延迟时间排序选取指定最大数量节点")
-                results = sorted(results, key=itemgetter(1))[:maxProxy] #对节点按照延迟时间进行排序
-            for result in results: #按照排序结果取相应数量的节点
-                passProxy.append(result[0])
+            if (len(proxies) > 0):
+                if (len(results) > maxProxy):
+                    print(f"延迟测试节点数量超过最大数量：{maxProxy}。现按照延迟时间排序选取指定最大数量节点")
+                    results = sorted(results, key=itemgetter(1))[:maxProxy] #对节点按照延迟时间进行排序
+                for result in results: #按照排序结果取相应数量的节点
+                    print(f"{result[0]['name']}: {result[1]}ms")
+                    passProxy.append(result[0])
     except Exception as e:
         print(f"测试发生错误：{e}")
 
-    print("removeTimeoutProxy完成，已删除不符合条件的节点")
+    print(f"after removeTimeoutProxy, 剩余节点数量{len(passProxy)}")
 
     return passProxy
 
@@ -114,7 +121,10 @@ def downloadProxy(url, requestsProxy):
 
     proxies = []
     if (download != None):
+        #下载的内容中可能会包含一些html标签等无关内容，需要删除这些多余的内容。
         download = download.replace("!<str> ", "")
+        html = re.compile('<.*?>')
+        download = re.sub(html, "", download)
         try:
             file = yaml.load(download, Loader=yaml.FullLoader)
             proxies = file["proxies"] if file["proxies"] != None else []

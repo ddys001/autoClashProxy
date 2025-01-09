@@ -13,7 +13,7 @@ class clashAPI:
         self.controllerPort = 34885 #登录clash web ui的端口
         self.mixedPort = 7890 #http代理端口
 
-        self.timeout = 600 #延迟测试超时时间
+        self.timeout = 800 #延迟测试超时时间
         self.delayUrl = "https://www.youtube.com/generate_204" #延迟测试需要的url
 
         self.secret = "d53df256-8f1b-4f9b-b730-6a4e947104b6" #登录clash web ui所需要的秘钥
@@ -95,7 +95,7 @@ class clashConfig:
         self.requestsProxy = {'http':  self.clash.httpProxy, 'https': self.clash.httpsProxy} #进行网络请求时设置的代理
         self.minInConfig = 3 #生成配置文件需要的最少的节点数量
         self.maxInConfig = 1000 #生成配置文件中所允许的最大节点数量。如果数量过多，后续将需要较多时间来查询节点归属地和延迟测试
-        self.maxAfterDelay = 6 #经过延迟测试后，允许输出的最大节点数量
+        self.maxAfterDelay = 8 #经过延迟测试后，允许输出的最大节点数量
 
         if (self.minInConfig > self.maxAfterDelay):
             print(f"延迟测试输出的节点数量:{self.maxAfterDelay} 小于 配置文件所需要的最小节点数量:{self.minInConfig}。请检查相关设置")
@@ -142,6 +142,7 @@ class clashConfig:
 
     def createLocationProxyGroup(self, proxies):
         print("按照ip地址查询节点所属地区")
+        print("利用查询获得的地址给节点重新命名")
 
         location = dict()
         with ThreadPoolExecutor(max_workers=15) as threadPool:
