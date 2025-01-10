@@ -27,7 +27,7 @@ port: 7890
 proxies:
 - alterId: 64
   cipher: auto
-  name: 中国-1
+  name: 中国-3
   port: 50052
   server: 183.236.48.158
   skip-cert-verify: true
@@ -36,42 +36,46 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
-  name: 新加坡-2
+  name: 新加坡-1
   password: amazonskr05
   port: 443
-  server: 54.169.58.78
+  server: 13.229.216.218
   type: ss
 - cipher: aes-256-cfb
-  name: 美国-2
+  name: 美国-1
   password: amazonskr05
   port: 443
   server: 47.129.162.86
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 比利时-1
+  client-fingerprint: chrome
+  name: 日本-2
   password: amazonskr05
   port: 443
-  server: 57.180.61.213
+  server: 3.113.29.56
+  tfo: false
   type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 13.229.216.218
-  type: ss
-- name: 中国-3
+- client-fingerprint: chrome
+  name: 中国-1
   password: vzhXXZVw
   port: 18681
   server: 36.150.215.196
   skip-cert-verify: true
   type: trojan
-- cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
+- name: 新加坡-2
+  network: ws
+  password: SSorg
   port: 443
-  server: 3.113.29.56
-  type: ss
+  server: 13.250.38.94
+  skip-cert-verify: true
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-gcm
   name: 中国-2
   password: b6b2c224-9845-4ad6-b33f-d46a46a72768
@@ -79,30 +83,44 @@ proxies:
   server: hdhdaswjp.cfprefer1.xyz
   type: ss
   udp: true
+- name: 日本-1
+  network: ws
+  password: SSorg
+  port: 443
+  server: 18.182.63.216
+  skip-cert-verify: true
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-cfb
-  name: 日本-1
+  name: 韩国-2
   password: amazonskr05
   port: 443
-  server: 43.207.192.4
+  server: 43.203.122.162
   type: ss
-- cipher: aes-256-gcm
-  name: 美国-1
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 38.114.114.69
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: 7544
+  server: 125.141.26.12
   type: ss
+- cipher: aes-256-cfb
+  name: 英国-1
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 62.100.205.48
+  type: ssr
 - cipher: aes-256-gcm
-  name: 俄罗斯-2
+  name: 俄罗斯-1
   password: df14ff552867fbf9
   port: 16112
   server: 195.133.53.79
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 俄罗斯-1
-  password: 2a117bd4077d9a53
-  port: 16112
-  server: 45.8.158.238
   type: ss
   udp: true
 proxy-groups:
@@ -118,25 +136,26 @@ proxy-groups:
   proxies:
   - 新加坡
   - 中国
-  - 美国
+  - 韩国
   - 日本
   - 俄罗斯
-  - 比利时
+  - 美国
+  - 英国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
+  - 中国-3
+  - 新加坡-1
+  - 美国-1
+  - 日本-2
   - 中国-1
   - 新加坡-2
-  - 美国-2
-  - 比利时-1
-  - 新加坡-1
-  - 中国-3
-  - 日本-2
   - 中国-2
   - 日本-1
-  - 美国-1
-  - 俄罗斯-2
+  - 韩国-2
+  - 韩国-1
+  - 英国-1
   - 俄罗斯-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
@@ -169,10 +188,10 @@ proxy-groups:
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 美国
+  name: 韩国
   proxies:
-  - 美国-1
-  - 美国-2
+  - 韩国-1
+  - 韩国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -186,13 +205,18 @@ proxy-groups:
   name: 俄罗斯
   proxies:
   - 俄罗斯-1
-  - 俄罗斯-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 比利时
+  name: 美国
   proxies:
-  - 比利时-1
+  - 美国-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
