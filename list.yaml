@@ -25,19 +25,14 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- name: 美国-2
-  network: ws
-  password: SSorg
-  port: 443
-  server: 47.238.136.235
+- name: 中国-2
+  password: vzhXXZVw
+  port: 18681
+  server: 36.150.215.196
   skip-cert-verify: true
-  sni: sstjj.esslh.filegear-sg.me
+  tfo: false
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: sstjj.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 新加坡-1
   network: ws
   password: SSorg
@@ -51,7 +46,30 @@ proxies:
     headers:
       Host: sstjj.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 日本-2
+- alterId: 64
+  cipher: auto
+  name: 中国-1
+  port: 41490
+  server: 183.236.48.172
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 43.207.192.4
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 43.203.122.162
+  type: ss
+- name: 日本-1
   network: ws
   password: SSorg
   port: 443
@@ -64,7 +82,39 @@ proxies:
     headers:
       Host: sstjj.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 美国-1
+- cipher: aes-256-cfb
+  name: 英国-1
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 62.100.205.48
+  type: ssr
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 美国-1
+  password: amazonskr05
+  port: 443
+  server: 35.85.36.208
+  tfo: false
+  type: ss
+- name: 中国-3
+  password: lovemm.23
+  port: 22888
+  server: 42.192.52.227
+  type: socks5
+  username: zeaslity
+- alterId: 64
+  cipher: auto
+  name: 中国-4
+  port: 50052
+  server: 183.236.48.158
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 美国-2
   network: ws
   password: SSorg
   port: 443
@@ -77,57 +127,11 @@ proxies:
     headers:
       Host: sstjj.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 中国-1
-  password: lovemm.23
-  port: 22888
-  server: 42.192.52.227
-  type: socks5
-  username: zeaslity
-- name: 英国-1
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.178.93.150
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- cipher: chacha20-ietf
-  name: 中国-2
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 54.178.84.59
-  type: ss
-- name: 英国-3
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.10.62.249
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   name: 英国-2
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 62.100.205.48
-  type: ssr
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: 28304
-  server: 125.141.31.74
-  type: ss
-- cipher: aes-256-cfb
-  name: 意大利-1
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.143.129.230
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: series-a2.samanehha.co
   type: ss
 proxy-groups:
 - name: proxinode
@@ -141,28 +145,27 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 英国
-  - 中国
+  - 新加坡
   - 美国
+  - 中国
   - 韩国
   - 日本
-  - 新加坡
-  - 意大利
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-2
-  - 新加坡-1
-  - 日本-2
-  - 美国-1
-  - 中国-1
-  - 英国-1
   - 中国-2
-  - 日本-1
-  - 英国-3
-  - 英国-2
+  - 新加坡-1
+  - 中国-1
+  - 日本-2
   - 韩国-1
-  - 意大利-1
+  - 日本-1
+  - 英国-1
+  - 美国-1
+  - 中国-3
+  - 中国-4
+  - 美国-2
+  - 英国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -183,14 +186,12 @@ proxy-groups:
   proxies:
   - 英国-1
   - 英国-2
-  - 英国-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 中国
+  name: 新加坡
   proxies:
-  - 中国-1
-  - 中国-2
+  - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -198,6 +199,15 @@ proxy-groups:
   proxies:
   - 美国-1
   - 美国-2
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 中国
+  proxies:
+  - 中国-1
+  - 中国-2
+  - 中国-3
+  - 中国-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -211,18 +221,6 @@ proxy-groups:
   proxies:
   - 日本-1
   - 日本-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 意大利
-  proxies:
-  - 意大利-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
