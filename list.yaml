@@ -25,29 +25,53 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- cipher: chacha20-ietf
-  name: 中国-1
-  password: asd123456
-  port: 8388
-  server: 154.197.26.237
+- cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 54.179.76.173
   type: ss
 - cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 18.183.217.250
+  server: 43.206.222.22
   type: ss
 - cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 43.206.222.22
+  name: 韩国-9
+  password: qwerREWQ@@
+  port: 10113
+  server: p240.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-5
+  password: qwerREWQ@@
+  port: 15041
+  server: p239.panda004.net
   type: ss
 - cipher: aes-256-cfb
   name: 韩国-3
   password: qwerREWQ@@
+  port: 10113
+  server: 210.217.18.68
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-4
+  password: qwerREWQ@@
   port: 30956
   server: 210.217.18.69
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-2
+  password: qwerREWQ@@
+  port: 59686
+  server: 221.150.109.88
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-7
+  password: qwerREWQ@@
+  port: 51633
+  server: 211.178.105.134
   type: ss
 - cipher: aes-256-cfb
   name: 韩国-6
@@ -56,46 +80,22 @@ proxies:
   server: 210.217.18.70
   type: ss
 - cipher: aes-256-cfb
-  name: 韩国-7
+  name: 韩国-8
   password: qwerREWQ@@
   port: 8704
   server: 125.141.26.14
   type: ss
 - cipher: aes-256-cfb
-  name: 韩国-9
+  name: 韩国-10
   password: qwerREWQ@@
-  port: 38370
-  server: 221.150.109.19
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-8
-  password: qwerREWQ@@
-  port: 10113
-  server: p240.panda004.net
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-5
-  password: qwerREWQ@@
-  port: 25776
-  server: 221.150.109.20
+  port: 6072
+  server: p226.panda004.net
   type: ss
 - cipher: aes-256-cfb
   name: 韩国-1
   password: qwerREWQ@@
-  port: 15041
-  server: p239.panda004.net
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-4
-  password: qwerREWQ@@
-  port: 21238
-  server: p230.panda004.net
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-2
-  password: qwerREWQ@@
-  port: 51633
-  server: 211.178.105.134
+  port: 25776
+  server: 221.150.109.20
   type: ss
 proxy-groups:
 - name: proxinode
@@ -110,23 +110,23 @@ proxy-groups:
   proxies:
   - 韩国
   - 日本
-  - 中国
+  - 新加坡
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 中国-1
+  - 新加坡-1
   - 日本-1
-  - 日本-2
-  - 韩国-3
-  - 韩国-6
-  - 韩国-7
   - 韩国-9
-  - 韩国-8
   - 韩国-5
-  - 韩国-1
+  - 韩国-3
   - 韩国-4
   - 韩国-2
+  - 韩国-7
+  - 韩国-6
+  - 韩国-8
+  - 韩国-10
+  - 韩国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -154,19 +154,19 @@ proxy-groups:
   - 韩国-7
   - 韩国-8
   - 韩国-9
+  - 韩国-10
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 日本
   proxies:
   - 日本-1
-  - 日本-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 中国
+  name: 新加坡
   proxies:
-  - 中国-1
+  - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
