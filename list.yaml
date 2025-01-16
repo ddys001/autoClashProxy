@@ -25,41 +25,12 @@ external-controller: 127.0.0.1:9090
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 54.179.76.173
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 18.183.217.250
-  tfo: false
-  type: ss
-- name: 中国-2
+- name: 中国-1
   password: phXKwfrd
   port: 36442
   server: 223.113.54.145
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  name: 中国-1
-  password: phXKwfrd
-  port: 42395
-  server: 36.150.215.219
-  skip-cert-verify: true
-  type: trojan
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 日本-3
-  password: amazonskr05
-  port: 443
-  server: 43.207.226.192
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
@@ -67,43 +38,67 @@ proxies:
   server: 43.206.222.22
   type: ss
 - cipher: aes-256-cfb
-  name: 韩国-5
+  name: 韩国-3
   password: qwerREWQ@@
-  port: 6072
-  server: p226.panda004.net
+  port: 28290
+  server: p220.panda001.net
   type: ss
 - cipher: aes-256-cfb
-  name: 韩国-6
+  name: 韩国-1
   password: qwerREWQ@@
-  port: 21238
-  server: p230.panda004.net
+  port: 61238
+  server: p231.panda004.net
+  type: ss
+- cipher: aes-256-gcm
+  name: 中国-2
+  password: 2N0M0MMOXEJMXKPN
+  port: 15011
+  server: qh62onjn.slashdevslashnetslashtun.net
   type: ss
 - cipher: aes-256-cfb
   name: 韩国-4
   password: qwerREWQ@@
-  port: 38370
-  server: 221.150.109.19
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-3
-  password: qwerREWQ@@
-  port: 15041
-  server: 210.217.18.70
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 3.34.189.113
-  tfo: false
+  port: 61891
+  server: 27.255.82.135
   type: ss
 - cipher: aes-256-cfb
   name: 韩国-2
   password: qwerREWQ@@
-  port: 10113
-  server: p240.panda004.net
+  port: 27973
+  server: 221.168.44.72
   type: ss
+- cipher: aes-128-gcm
+  name: 保加利亚-1
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.82
+  type: ss
+- cipher: aes-256-cfb
+  name: 美国-2
+  password: amazonskr05
+  port: 443
+  server: 35.161.80.111
+  type: ss
+- name: 美国-1
+  port: 4000
+  server: hk9.ftq.ink
+  tls: true
+  type: http
+- cipher: aes-256-cfb
+  name: 法国-1
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 195.154.169.198
+  type: ssr
+- cipher: aes-256-cfb
+  name: 美国-3
+  password: amazonskr05
+  port: 443
+  server: 54.191.43.163
+  type: ss
+  udp: true
 proxy-groups:
 - name: proxinode
   proxies:
@@ -115,26 +110,28 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 日本
-  - 新加坡
-  - 韩国
   - 中国
+  - 韩国
+  - 美国
+  - 保加利亚
+  - 日本
+  - 法国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-1
-  - 日本-2
-  - 中国-2
   - 中国-1
-  - 日本-3
   - 日本-1
-  - 韩国-5
-  - 韩国-6
-  - 韩国-4
   - 韩国-3
   - 韩国-1
+  - 中国-2
+  - 韩国-4
   - 韩国-2
+  - 保加利亚-1
+  - 美国-2
+  - 美国-1
+  - 法国-1
+  - 美国-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -151,17 +148,10 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 日本
+  name: 中国
   proxies:
-  - 日本-1
-  - 日本-2
-  - 日本-3
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
+  - 中国-1
+  - 中国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -171,15 +161,32 @@ proxy-groups:
   - 韩国-2
   - 韩国-3
   - 韩国-4
-  - 韩国-5
-  - 韩国-6
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 中国
+  name: 美国
   proxies:
-  - 中国-1
-  - 中国-2
+  - 美国-1
+  - 美国-2
+  - 美国-3
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 保加利亚
+  proxies:
+  - 保加利亚-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 法国
+  proxies:
+  - 法国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
