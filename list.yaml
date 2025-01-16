@@ -35,19 +35,7 @@ proxies:
   port: 45578
   server: console.02.aliyun.aq.kunlunaqs.com
   type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 54.179.76.173
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-2
-  password: qwerREWQ@@
-  port: 59686
-  server: 221.150.109.88
-  type: ss
-- name: 美国-6
+- name: 美国-4
   network: ws
   port: 80
   server: 167.82.0.0
@@ -60,20 +48,7 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /Telegram@V2ray_Alpha/?ed=2560
-- name: 美国-5
-  network: ws
-  port: 80
-  server: 167.82.1.102
-  servername: teleirani.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /?ed=2048
-- name: 美国-7
+- name: 美国-6
   network: ws
   port: 80
   server: 167.82.0.47
@@ -86,6 +61,19 @@ proxies:
     headers:
       Host: teleirani.ir
     path: /vless-ws/@V2ray_Alpha/?ed=2560
+- name: 美国-7
+  network: ws
+  port: 80
+  server: 167.82.1.102
+  servername: teleirani.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /?ed=2048
 - name: 美国-3
   network: ws
   port: 80
@@ -99,7 +87,7 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-- name: 美国-4
+- name: 美国-8
   network: ws
   port: 80
   server: 167.82.99.180
@@ -112,20 +100,19 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
+- cipher: aes-256-cfb
+  name: 韩国-2
+  password: amazonskr05
+  port: 443
+  server: 13.125.6.123
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 德国-1
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.157
+  type: ss
 - name: 美国-2
-  network: ws
-  port: 80
-  server: 167.82.101.10
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 美国-1
   network: ws
   port: 80
   server: 167.82.101.100
@@ -144,12 +131,32 @@ proxies:
   port: 443
   server: 3.35.222.83
   type: ss
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 18.183.217.250
-  type: ss
+- client-fingerprint: chrome
+  name: 美国-1
+  network: ws
+  port: 80
+  server: 167.82.1.121
+  servername: teleirani.ir
+  skip-cert-verify: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- name: 美国-5
+  network: ws
+  port: 80
+  server: 167.82.1.103
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /
 proxy-groups:
 - name: proxinode
   proxies:
@@ -161,27 +168,26 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
   - 韩国
-  - 日本
-  - 新加坡
+  - 美国
+  - 德国
   - 中国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
   - 中国-1
-  - 新加坡-1
-  - 韩国-2
+  - 美国-4
   - 美国-6
-  - 美国-5
   - 美国-7
   - 美国-3
-  - 美国-4
+  - 美国-8
+  - 韩国-2
+  - 德国-1
   - 美国-2
-  - 美国-1
   - 韩国-1
-  - 日本-1
+  - 美国-1
+  - 美国-5
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -198,6 +204,13 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -207,25 +220,13 @@ proxy-groups:
   - 美国-5
   - 美国-6
   - 美国-7
+  - 美国-8
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 韩国
+  name: 德国
   proxies:
-  - 韩国-1
-  - 韩国-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
+  - 德国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
