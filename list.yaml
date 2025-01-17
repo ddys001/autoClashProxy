@@ -26,18 +26,33 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-cfb
-  name: 新加坡-1
+  name: 日本-2
   password: amazonskr05
   port: 443
-  server: 54.179.76.173
+  server: 54.199.222.156
   type: ss
 - cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: 30778
-  server: 125.141.26.12
+  client-fingerprint: chrome
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 54.199.148.105
+  tfo: false
   type: ss
-- name: 美国-8
+- name: 美国-5
+  network: ws
+  port: 80
+  server: 167.82.1.103
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /?ed=2560
+- name: 美国-1
   network: ws
   port: 80
   server: 167.82.0.47
@@ -50,7 +65,7 @@ proxies:
     headers:
       Host: teleirani.ir
     path: /vless-ws/@V2ray_Alpha/?ed=2560
-- name: 美国-7
+- name: 美国-2
   network: ws
   port: 80
   server: 167.82.1.102
@@ -63,82 +78,49 @@ proxies:
     headers:
       Host: teleirani.ir
     path: /?ed=2048
-- name: 美国-1
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: 6072
+  server: p226.panda004.net
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-3
+  password: qwerREWQ@@
+  port: 15041
+  server: p239.panda004.net
+  type: ss
+- client-fingerprint: chrome
+  name: 美国-3
   network: ws
   port: 80
-  server: 167.82.0.0
-  servername: edge.validbv3528.ir
+  server: 167.82.1.121
+  servername: teleirani.ir
   skip-cert-verify: false
-  tls: false
   type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
   ws-opts:
     headers:
-      Host: edge.validbv3528.ir
-    path: /Telegram@V2ray_Alpha/?ed=2560
+      Host: teleirani.ir
+    path: /vless-ws/
+- cipher: aes-256-cfb
+  name: 韩国-4
+  password: qwerREWQ@@
+  port: 51633
+  server: 211.178.105.134
+  type: ss
 - cipher: aes-256-cfb
   name: 韩国-2
   password: qwerREWQ@@
-  port: 31066
-  server: 218.237.185.230
+  port: 61238
+  server: p231.panda004.net
   type: ss
-- name: 美国-5
-  network: ws
-  port: 80
-  server: 167.82.101.10
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- http-opts:
-    headers:
-      Host:
-      - telewebion.com
-    path:
-    - /
-  name: 德国-1
-  network: http
-  port: 8081
-  server: 95.179.254.82
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: ebff98ac-7657-4c91-b563-418bb6548113
 - name: 美国-4
   network: ws
   port: 80
-  server: 141.101.121.87
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-- name: 美国-2
-  network: ws
-  port: 80
-  server: 198.41.209.27
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-- name: 美国-6
-  network: ws
-  port: 80
-  server: 167.82.102.107
+  server: 167.82.0.46
   servername: edge.validbv3528.ir
   skip-cert-verify: false
   tls: false
@@ -147,20 +129,20 @@ proxies:
   ws-opts:
     headers:
       Host: edge.validbv3528.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-- name: 美国-3
+    path: /vless-ws/
+- name: 美国-6
   network: ws
   port: 80
-  server: 198.41.199.226
-  servername: a.mifeng.us.kg
+  server: 167.82.0.37
+  servername: edge.validbv3528.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
   ws-opts:
     headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
 proxy-groups:
 - name: proxinode
   proxies:
@@ -172,26 +154,25 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 韩国
   - 美国
-  - 德国
-  - 新加坡
+  - 韩国
+  - 日本
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-1
-  - 韩国-1
-  - 美国-8
-  - 美国-7
-  - 美国-1
-  - 韩国-2
+  - 日本-2
+  - 日本-1
   - 美国-5
-  - 德国-1
-  - 美国-4
+  - 美国-1
   - 美国-2
-  - 美国-6
+  - 韩国-1
+  - 韩国-3
   - 美国-3
+  - 韩国-4
+  - 韩国-2
+  - 美国-4
+  - 美国-6
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -208,13 +189,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -223,20 +197,22 @@ proxy-groups:
   - 美国-4
   - 美国-5
   - 美国-6
-  - 美国-7
-  - 美国-8
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 德国
+  name: 韩国
   proxies:
-  - 德国-1
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 新加坡
+  name: 日本
   proxies:
-  - 新加坡-1
+  - 日本-1
+  - 日本-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
