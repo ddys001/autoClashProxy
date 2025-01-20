@@ -29,24 +29,27 @@ proxies:
   name: 新加坡-2
   password: amazonskr05
   port: 443
-  server: 13.250.116.31
+  server: 13.229.206.58
   type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 新加坡-1
+  name: 新加坡-4
+  password: amazonskr05
+  port: 443
+  server: 13.250.47.75
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-3
   password: amazonskr05
   port: 443
   server: 54.179.54.70
   type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: 34847
-  server: 218.50.149.114
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 13.230.174.203
   type: ss
-  udp: true
-- name: 美国-6
+- name: 美国-2
   network: ws
   port: 80
   server: 167.82.1.103
@@ -60,79 +63,28 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 德国-1
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 乌克兰-1
-  password: ZWRiM2Ix
-  port: 8388
-  server: 185.234.64.35
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-2
-  password: qwerREWQ@@
-  port: 28902
-  server: 218.38.103.150
-  type: ss
-  udp: true
-- name: 美国-1
+- name: 新加坡-1
   network: ws
-  port: 80
-  server: 173.245.49.53
-  servername: a.mifeng.us.kg
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-- client-fingerprint: chrome
-  name: 美国-5
-  network: ws
-  port: 80
-  server: 167.82.0.1
-  servername: edge.validbv3528.ir
+  port: 443
+  server: 8.222.77.152
+  servername: mmdserver.us.kg
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vless
   udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
   ws-opts:
     headers:
-      Host: edge.validbv3528.ir
-    path: /
-- name: 美国-3
-  network: ws
-  port: 80
-  server: 167.82.0.46
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/
-- client-fingerprint: chrome
-  name: 美国-4
-  network: ws
-  port: 80
-  server: 167.82.1.121
-  servername: teleirani.ir
-  skip-cert-verify: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /vless-ws/
-- name: 美国-2
+      host: mmdserver.us.kg
+    path: /?ed=2048
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: 34847
+  server: 218.50.149.114
+  type: ss
+  udp: true
+- name: 美国-4
   network: ws
   port: 80
   server: 167.82.0.47
@@ -144,6 +96,45 @@ proxies:
   ws-opts:
     headers:
       Host: teleirani.ir
+    path: /vless-ws/
+- name: 美国-3
+  network: ws
+  port: 80
+  server: 167.82.0.9
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws
+- cipher: aes-256-cfb
+  name: 韩国-2
+  password: qwerREWQ@@
+  port: 31066
+  server: 218.237.185.230
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-3
+  password: qwerREWQ@@
+  port: 28902
+  server: 218.38.103.150
+  type: ss
+- name: 美国-1
+  network: ws
+  port: 80
+  server: 167.82.0.46
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
     path: /vless-ws/
 proxy-groups:
 - name: proxinode
@@ -158,25 +149,24 @@ proxy-groups:
   proxies:
   - 韩国
   - 美国
-  - 德国
-  - 乌克兰
   - 新加坡
+  - 日本
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
   - 新加坡-2
+  - 新加坡-4
+  - 新加坡-3
+  - 日本-1
+  - 美国-2
   - 新加坡-1
   - 韩国-1
-  - 美国-6
-  - 德国-1
-  - 乌克兰-1
-  - 韩国-2
-  - 美国-1
-  - 美国-5
-  - 美国-3
   - 美国-4
-  - 美国-2
+  - 美国-3
+  - 韩国-2
+  - 韩国-3
+  - 美国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -197,6 +187,7 @@ proxy-groups:
   proxies:
   - 韩国-1
   - 韩国-2
+  - 韩国-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -206,20 +197,6 @@ proxy-groups:
   - 美国-2
   - 美国-3
   - 美国-4
-  - 美国-5
-  - 美国-6
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 德国
-  proxies:
-  - 德国-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 乌克兰
-  proxies:
-  - 乌克兰-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -227,6 +204,14 @@ proxy-groups:
   proxies:
   - 新加坡-1
   - 新加坡-2
+  - 新加坡-3
+  - 新加坡-4
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
