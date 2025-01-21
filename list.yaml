@@ -25,19 +25,20 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 美国-1
-  network: ws
-  port: 80
-  server: 167.82.0.9
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/
+- cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 18.182.13.204
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 13.230.174.203
+  type: ss
+  udp: true
 - name: 美国-5
   network: ws
   port: 80
@@ -51,10 +52,10 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws/
-- name: 美国-7
+- name: 美国-3
   network: ws
   port: 80
-  server: 167.82.0.46
+  server: 167.82.0.9
   servername: edge.validbv3528.ir
   skip-cert-verify: false
   tls: false
@@ -63,45 +64,6 @@ proxies:
   ws-opts:
     headers:
       Host: edge.validbv3528.ir
-    path: /vless-ws/
-- name: 美国-6
-  network: ws
-  port: 80
-  server: 167.82.0.47
-  servername: teleirani.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /vless-ws/
-- name: 美国-3
-  network: ws
-  port: 80
-  server: 198.41.216.118
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-- client-fingerprint: chrome
-  name: 美国-4
-  network: ws
-  port: 80
-  server: 167.82.1.121
-  servername: teleirani.ir
-  skip-cert-verify: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
     path: /vless-ws/
 - name: 美国-2
   network: ws
@@ -116,11 +78,72 @@ proxies:
       Host: teleirani.ir
     path: /
 - cipher: aes-256-cfb
+  name: 韩国-2
+  password: qwerREWQ@@
+  port: 34847
+  server: 218.50.149.114
+  type: ss
+- name: 美国-1
+  network: ws
+  port: 80
+  server: 167.82.0.46
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国-4
+  network: ws
+  port: 80
+  server: 167.82.0.47
+  servername: teleirani.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- client-fingerprint: chrome
+  name: 美国-6
+  network: ws
+  port: 80
+  server: 167.82.1.121
+  servername: teleirani.ir
+  skip-cert-verify: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
   name: 新加坡-1
   password: amazonskr05
   port: 443
   server: 18.142.225.149
+  tfo: false
   type: ss
+- cipher: aes-256-cfb
+  name: 韩国-3
+  password: amazonskr05
+  port: 443
+  server: 3.34.189.113
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: 27973
+  server: p196.panda001.net
+  type: ss
+  udp: true
 proxy-groups:
 - name: proxinode
   proxies:
@@ -132,20 +155,26 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 新加坡
+  - 韩国
+  - 日本
   - 美国
+  - 新加坡
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-1
+  - 日本-2
+  - 日本-1
   - 美国-5
-  - 美国-7
-  - 美国-6
   - 美国-3
-  - 美国-4
   - 美国-2
+  - 韩国-2
+  - 美国-1
+  - 美国-4
+  - 美国-6
   - 新加坡-1
+  - 韩国-3
+  - 韩国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -162,9 +191,18 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 新加坡
+  name: 韩国
   proxies:
-  - 新加坡-1
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -176,7 +214,12 @@ proxy-groups:
   - 美国-4
   - 美国-5
   - 美国-6
-  - 美国-7
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
