@@ -1,19 +1,9 @@
 allow-lan: false
-auto-redir:
-  auto-route: false
-  enable: false
 dns:
   enable: true
   enhanced-mode: fake-ip
-  fake-ip-filter:
-  - +.stun.*.*
-  - +.stun.*.*.*
-  - +.stun.*.*.*.*
-  - +.stun.*.*.*.*.*
-  - '*.n.n.srv.nintendo.net'
-  - +.stun.playstation.net
-  - xbox.*.*.microsoft.com
-  - '*.*.xboxlive.com'
+  fake-ip-filter: []
+  fake-ip-range: 172.29.0.1/16
   fallback: []
   ipv6: false
   nameserver:
@@ -21,98 +11,73 @@ dns:
   - 223.5.5.5
   - 8.8.8.8
   nameserver-policy: {}
-external-controller: 127.0.0.1:9090
+  use-system-hosts: false
+external-controller: 127.0.0.1:34885
+external-controller-cors:
+  allow-origins:
+  - '*'
+  allow-private-network: true
+ipv6: false
+log-level: info
+mixed-port: 7897
 mode: rule
 port: 7890
+profile:
+  store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 18.182.13.204
-  type: ss
-- name: 美国-11
+- name: 美国-1
   network: ws
   port: 80
-  server: 167.82.1.102
-  servername: teleirani.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /?ed=2048
-- name: 美国-8
-  network: ws
-  port: 80
-  server: 167.82.1.103
+  server: 167.82.0.9
   servername: edge.validbv3528.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
   uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
   ws-opts:
     headers:
       Host: edge.validbv3528.ir
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-10
+    path: /vless-ws/
+- name: 美国-5
   network: ws
   port: 80
-  server: 151.101.194.133
+  server: 167.82.0.37
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国-7
+  network: ws
+  port: 80
+  server: 167.82.0.46
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国-6
+  network: ws
+  port: 80
+  server: 167.82.0.47
   servername: teleirani.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
   uuid: 253ef561-9e57-4336-befd-878ddd30df01
   ws-opts:
     headers:
       Host: teleirani.ir
-    path: /?ed=2048
-- name: 美国-9
-  network: ws
-  port: 80
-  server: 104.21.30.52
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-- client-fingerprint: chrome
-  name: 美国-5
-  network: ws
-  port: 80
-  server: 104.16.99.78
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 01cb18d1-2062-47e7-999b-ec08e8b2ec85
-  ws-opts:
-    headers:
-      Host: muddy-rain-0a28-ppal03.mitey24737.workers.dev
-    path: /?ed=2560
-- name: 美国-6
-  network: ws
-  port: 80
-  server: 104.21.30.5
-  servername: a.mifeng.us.kg
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2048
-- name: 美国-4
+    path: /vless-ws/
+- name: 美国-3
   network: ws
   port: 80
   server: 198.41.216.118
@@ -126,7 +91,7 @@ proxies:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
 - client-fingerprint: chrome
-  name: 美国-2
+  name: 美国-4
   network: ws
   port: 80
   server: 167.82.1.121
@@ -138,43 +103,24 @@ proxies:
     headers:
       Host: teleirani.ir
     path: /vless-ws/
-- name: 美国-7
+- name: 美国-2
   network: ws
   port: 80
-  server: 104.21.30.21
-  skip-cert-verify: false
+  server: 167.82.0.226
+  servername: teleirani.ir
   tls: false
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
   ws-opts:
     headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-- name: 美国-3
-  network: ws
-  port: 80
-  server: 104.16.132.187
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 80d32ddd-c0ac-4eb6-8a2a-3b27b23f32b4
-  ws-opts:
-    headers:
-      Host: icy-cherry-b8af-ppal03.givay59005.workers.dev
-    path: /?ed=2560
-- name: 美国-1
-  network: ws
-  port: 80
-  server: 167.82.0.37
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/
+      Host: teleirani.ir
+    path: /
+- cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 18.142.225.149
+  type: ss
 proxy-groups:
 - name: proxinode
   proxies:
@@ -186,24 +132,20 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
+  - 新加坡
   - 美国
-  - 日本
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-1
-  - 美国-11
-  - 美国-8
-  - 美国-10
-  - 美国-9
+  - 美国-1
   - 美国-5
+  - 美国-7
   - 美国-6
+  - 美国-3
   - 美国-4
   - 美国-2
-  - 美国-7
-  - 美国-3
-  - 美国-1
+  - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -220,6 +162,12 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -229,16 +177,6 @@ proxy-groups:
   - 美国-5
   - 美国-6
   - 美国-7
-  - 美国-8
-  - 美国-9
-  - 美国-10
-  - 美国-11
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
@@ -282,10 +220,15 @@ rules:
 - RULE-SET,apple,DIRECT
 - RULE-SET,direct,DIRECT
 - MATCH,proxinode
+secret: d53df256-8f1b-4f9b-b730-6a4e947104b6
 tun:
   auto-detect-interface: true
   auto-route: true
+  device: Mihomo
   dns-hijack:
   - any:53
   enable: true
-  stack: gvisor
+  mtu: 1500
+  stack: mixed
+  strict-route: false
+unified-delay: true
