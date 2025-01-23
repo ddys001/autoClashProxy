@@ -26,68 +26,63 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 美国-2
+  name: 美国-1
   password: amazonskr05
   port: 443
   server: 13.212.185.199
   type: ss
   udp: true
-- name: 新加坡-3
-  network: ws
-  port: 443
-  server: 8.219.78.53
-  servername: uxs.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: uxs.vs2024.us.kg
-    path: /?ed=2560
-- name: 新加坡-2
-  network: ws
-  port: 6666
-  server: 8.222.178.214
-  servername: uxs.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: uxs.vs2024.us.kg
-    path: /?ed=2560&proxyip=8.222.178.214:6666
-- name: 新加坡-1
-  network: ws
-  port: 6666
-  server: 150.109.24.233
-  servername: uxs.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: uxs.vs2024.us.kg
-    path: /uxs.vs2024.us.kg
-- cipher: aes-256-cfb
-  name: 韩国-2
-  password: qwerREWQ@@
-  port: 28902
-  server: 218.38.103.150
-  type: ss
 - cipher: aes-256-cfb
   name: 韩国-1
   password: qwerREWQ@@
-  port: 37041
-  server: 121.170.203.147
+  port: 34847
+  server: 218.50.149.114
+  type: ss
+- cipher: aes-256-cfb
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 13.115.53.158
   type: ss
 - client-fingerprint: chrome
-  name: 美国-1
+  name: 美国-5
+  network: ws
+  port: 8880
+  server: 104.20.18.168
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 96494ca5-6dcf-4d33-b94f-5c3485586095
+  ws-opts:
+    headers:
+      Host: hamedan.hiven33959.workers.dev
+    path: /?ed=2048
+- name: 美国-3
+  network: ws
+  port: 80
+  server: 167.82.0.47
+  servername: teleirani.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- name: 美国-2
+  network: ws
+  port: 80
+  server: 167.82.1.105
+  skip-cert-verify: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 美国-6
   network: ws
   port: 80
   server: 167.82.0.1
@@ -101,66 +96,62 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /
-- name: 美国-4
-  network: ws
-  port: 80
-  server: 167.82.0.0
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /
-- name: 美国-5
-  network: ws
-  port: 80
-  server: 167.82.0.37
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws
 - name: 美国-7
   network: ws
   port: 80
-  server: 167.82.0.46
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
+  server: 167.82.0.226
+  servername: teleirani.ir
   tls: false
   type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
   ws-opts:
     headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws
-- name: 美国-6
-  network: ws
-  port: 80
-  server: 167.82.72.38
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
+      Host: teleirani.ir
     path: /
-- name: 美国-3
+- client-fingerprint: chrome
+  name: 美国-9
   network: ws
   port: 80
-  server: 167.82.101.76
+  server: 167.82.1.121
+  servername: teleirani.ir
+  skip-cert-verify: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- name: 美国-4
+  network: ws
+  port: 80
+  server: 167.82.1.141
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /?ed=2048
+- name: 英国-1
+  network: ws
+  port: 2053
+  server: 176.97.73.82
+  servername: ngx.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48eccebc-1e36-4c60-b088-55fb793f6688
+  ws-opts:
+    headers:
+      host: ngx.ambercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 美国-8
+  network: ws
+  port: 80
+  server: 167.82.101.100
   servername: edge.validbv3528.ir
   skip-cert-verify: false
   tls: false
@@ -182,25 +173,26 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 新加坡
   - 美国
+  - 英国
+  - 日本
   - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-2
-  - 新加坡-3
-  - 新加坡-2
-  - 新加坡-1
-  - 韩国-2
-  - 韩国-1
   - 美国-1
-  - 美国-4
+  - 韩国-1
+  - 日本-1
   - 美国-5
-  - 美国-7
-  - 美国-6
   - 美国-3
+  - 美国-2
+  - 美国-6
+  - 美国-7
+  - 美国-9
+  - 美国-4
+  - 英国-1
+  - 美国-8
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -217,14 +209,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -234,13 +218,26 @@ proxy-groups:
   - 美国-5
   - 美国-6
   - 美国-7
+  - 美国-8
+  - 美国-9
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 韩国
   proxies:
   - 韩国-1
-  - 韩国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
