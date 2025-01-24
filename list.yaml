@@ -25,38 +25,11 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 德国-1
-  password: mSIusSz2Ku3YUWxB85cQa
-  port: 18882
-  server: c.2513142.xyz
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- name: 美国-5
-  port: 4000
-  server: hk9.ftq.ink
-  tls: true
-  type: http
-  udp: true
-- name: 韩国-2
-  password: 5fb2bc8c-e2d2-41bf-8478-aa16723c23f4
-  port: 30000
-  server: kr1.helloco.xyz
-  skip-cert-verify: false
-  sni: kr1.helloco.xyz
-  type: hysteria2
-  udp: true
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: 22081
-  server: p110.panda001.net
-  type: ss
-  udp: true
-- name: 美国-1
+- client-fingerprint: chrome
+  name: 美国-9
   network: ws
   port: 80
-  server: 167.82.1.103
+  server: 167.82.0.1
   servername: edge.validbv3528.ir
   skip-cert-verify: false
   tls: false
@@ -66,8 +39,8 @@ proxies:
   ws-opts:
     headers:
       Host: edge.validbv3528.ir
-    path: /?ed=2560
-- name: 美国-4
+    path: /
+- name: 美国-1
   network: ws
   port: 80
   server: 167.82.0.37
@@ -81,7 +54,86 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws
-- name: 美国-7
+- name: 美国-3
+  network: ws
+  port: 80
+  server: 167.82.0.226
+  servername: teleirani.ir
+  tls: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /
+- client-fingerprint: chrome
+  name: 美国-4
+  network: ws
+  port: 80
+  server: 167.82.1.121
+  servername: teleirani.ir
+  skip-cert-verify: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- name: 美国-12
+  network: ws
+  port: 80
+  server: 167.82.1.103
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /?ed=2560
+- name: 美国-6
+  network: ws
+  port: 80
+  server: 167.82.0.46
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws
+- name: 美国-10
+  network: ws
+  port: 80
+  server: 167.82.0.9
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国-11
+  network: ws
+  port: 80
+  server: 167.82.0.47
+  servername: teleirani.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- name: 美国-5
   network: ws
   port: 80
   server: 167.82.0.0
@@ -95,42 +147,43 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /
-- name: 美国-6
+- name: 美国-8
   network: ws
   port: 80
-  server: 104.16.251.142
+  server: 167.82.1.105
+  skip-cert-verify: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /?ed=2048
+- name: 美国-7
+  network: ws
+  port: 80
+  server: 167.82.1.141
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: b0c6d7bd-a10c-44ce-b651-8a245cac2f4e
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
   ws-opts:
     headers:
-      Host: cool-sun-e406-ppal03.lafota3425.workers.dev
-    path: /?ed=2560
+      Host: teleirani.ir
+    path: /?ed=2048
 - name: 美国-2
   network: ws
   port: 80
-  server: 104.16.132.187
+  server: 167.82.0.141
+  servername: edge.validbv3528.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 80d32ddd-c0ac-4eb6-8a2a-3b27b23f32b4
+  udp: true
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
   ws-opts:
     headers:
-      Host: icy-cherry-b8af-ppal03.givay59005.workers.dev
-    path: /?ed=2560
-- name: 美国-3
-  network: ws
-  port: 80
-  server: 104.16.197.224
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 442ac940-bbdd-4044-9b2c-e4e53cbe0055
-  ws-opts:
-    headers:
-      Host: little-grass-d3f7az.cijof58321.workers.dev
-    path: /?ed=2560
+      Host: edge.validbv3528.ir
+    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
 proxy-groups:
 - name: proxinode
   proxies:
@@ -143,22 +196,22 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 德国
-  - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 德国-1
-  - 美国-5
-  - 韩国-2
-  - 韩国-1
+  - 美国-9
   - 美国-1
-  - 美国-4
-  - 美国-7
-  - 美国-6
-  - 美国-2
   - 美国-3
+  - 美国-4
+  - 美国-12
+  - 美国-6
+  - 美国-10
+  - 美国-11
+  - 美国-5
+  - 美国-8
+  - 美国-7
+  - 美国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -184,19 +237,11 @@ proxy-groups:
   - 美国-5
   - 美国-6
   - 美国-7
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 德国
-  proxies:
-  - 德国-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
+  - 美国-8
+  - 美国-9
+  - 美国-10
+  - 美国-11
+  - 美国-12
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
