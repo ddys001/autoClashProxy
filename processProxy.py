@@ -27,7 +27,7 @@ def removeDuplicateNode(proxyPool): #删除重复节点
 
 def removeNotSupportNode(proxyPool): #删除clash不支持的节点
     notSupportItems = {
-        "cipher" : [],
+        "cipher" : ["ss"],
         "uuid"   : [],
         "type"   : []
     }
