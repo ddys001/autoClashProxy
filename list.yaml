@@ -25,165 +25,133 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- client-fingerprint: chrome
-  name: 美国-9
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 54.65.53.22
+  tfo: false
+  type: ss
+- name: 新加坡-3
   network: ws
-  port: 80
-  server: 167.82.0.1
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 8.219.78.53
+  servername: uxx.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      Host: edge.validbv3528.ir
-    path: /
-- name: 美国-1
+      host: uxx.vs2024.us.kg
+    path: /uxs.vs2024.us.kg
+- name: 新加坡-4
   network: ws
-  port: 80
-  server: 167.82.0.37
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
+  port: 6666
+  server: 8.222.178.214
+  servername: uxx.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws
-- name: 美国-3
-  network: ws
-  port: 80
-  server: 167.82.0.226
-  servername: teleirani.ir
-  tls: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /
-- client-fingerprint: chrome
-  name: 美国-4
-  network: ws
-  port: 80
-  server: 167.82.1.121
-  servername: teleirani.ir
-  skip-cert-verify: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /vless-ws/
-- name: 美国-12
-  network: ws
-  port: 80
-  server: 167.82.1.103
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
+      host: uxx.vs2024.us.kg
     path: /?ed=2560
-- name: 美国-6
+- name: 新加坡-1
   network: ws
-  port: 80
-  server: 167.82.0.46
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 8.219.72.167
+  servername: uxx.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws
-- name: 美国-10
+      host: uxx.vs2024.us.kg
+    path: /uxs.vs2024.us.kg
+- name: 新加坡-2
   network: ws
-  port: 80
-  server: 167.82.0.9
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/
-- name: 美国-11
-  network: ws
-  port: 80
-  server: 167.82.0.47
-  servername: teleirani.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /vless-ws/
-- name: 美国-5
-  network: ws
-  port: 80
-  server: 167.82.0.0
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
+  port: 6666
+  server: 150.109.24.233
+  servername: uxx.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      Host: edge.validbv3528.ir
-    path: /
-- name: 美国-8
+      host: uxx.vs2024.us.kg
+    path: /uxx.vs2024.us.kg
+- cipher: aes-256-cfb
+  name: 美国-1
+  password: amazonskr05
+  port: 443
+  server: 13.215.173.202
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 新加坡-5
+  password: amazonskr05
+  port: 443
+  server: 18.142.225.149
+  type: ss
+  udp: true
+- name: 美国-3
+  port: 4000
+  server: hk9.ftq.ink
+  tls: true
+  type: http
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 43.207.152.137
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 3.36.115.19
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 美国-2
   network: ws
-  port: 80
-  server: 167.82.1.105
+  port: 8880
+  server: 104.20.18.168
   skip-cert-verify: false
+  tls: false
   type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  uuid: 96494ca5-6dcf-4d33-b94f-5c3485586095
   ws-opts:
     headers:
-      Host: teleirani.ir
+      Host: hamedan.hiven33959.workers.dev
     path: /?ed=2048
-- name: 美国-7
+- name: 日本-3
   network: ws
-  port: 80
-  server: 167.82.1.141
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /?ed=2048
-- name: 美国-2
-  network: ws
-  port: 80
-  server: 167.82.0.141
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
+  port: 8890
+  server: 158.101.153.138
+  servername: uxx.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
+      host: uxx.vs2024.us.kg
+    path: /?ed=2560
 proxy-groups:
 - name: proxinode
   proxies:
@@ -195,23 +163,26 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
+  - 新加坡
   - 美国
+  - 韩国
+  - 日本
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-9
+  - 日本-1
+  - 新加坡-3
+  - 新加坡-4
+  - 新加坡-1
+  - 新加坡-2
   - 美国-1
+  - 新加坡-5
   - 美国-3
-  - 美国-4
-  - 美国-12
-  - 美国-6
-  - 美国-10
-  - 美国-11
-  - 美国-5
-  - 美国-8
-  - 美国-7
+  - 日本-2
+  - 韩国-1
   - 美国-2
+  - 日本-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -228,20 +199,35 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
+  - 新加坡-4
+  - 新加坡-5
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
   name: 美国
   proxies:
   - 美国-1
   - 美国-2
   - 美国-3
-  - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
-  - 美国-8
-  - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
+  - 日本-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
