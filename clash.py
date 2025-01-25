@@ -90,6 +90,15 @@ class clashAPI:
 
         return bLoadSuccessful
 
+    def restart(self):
+        url = f"{self.baseUrl}:{self.controllerPort}/restart"
+        message = requests.post(url, headers=self.authorization)
+        if (message.status_code == 200):
+            print("成功发送重启内核命令")
+        else:
+            print(message.text)
+            print("发送重启内核命令失败")
+
 class clashConfig:
     def __init__(self):
         self.clash = clashAPI()
@@ -205,3 +214,7 @@ class clashConfig:
         print("生成clash配置文件：{}".format(self.file))
 
         return True
+
+if __name__ == "__main__":
+    clash = clashAPI()
+    clash.restart()
