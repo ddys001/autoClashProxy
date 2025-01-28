@@ -25,143 +25,90 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 美国-6
-  network: ws
-  port: 587
-  server: 47.76.224.55
-  servername: ngedx.ambercc.filegear-sg.me
+- cipher: aes-256-cfb
+  name: 韩国-2
+  password: amazonskr05
+  port: 443
+  server: 3.38.251.26
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 43.203.201.77
+  type: ss
+- name: 澳大利亚-2
+  network: tcp
+  password: 94d219c9-1afc-4d42-b090-8b3794764380
+  port: 443
+  server: 160.30.21.105
   skip-cert-verify: true
-  tls: true
-  type: vless
+  type: trojan
   udp: true
-  uuid: a8036e83-fd91-4fd6-8c20-ac340966536c
-  ws-opts:
-    headers:
-      host: ngedx.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国-5
-  network: ws
-  port: 587
-  server: 47.238.151.12
-  servername: ngedx.ambercc.filegear-sg.me
+- name: 澳大利亚-1
+  network: tcp
+  password: 94d219c9-1afc-4d42-b090-8b3794764380
+  port: 443
+  server: std1.loadingip.com
   skip-cert-verify: true
-  tls: true
-  type: vless
+  type: trojan
   udp: true
-  uuid: a8036e83-fd91-4fd6-8c20-ac340966536c
-  ws-opts:
-    headers:
-      host: ngedx.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国-2
-  network: ws
-  port: 587
-  server: 47.76.195.73
-  servername: ngedx.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a8036e83-fd91-4fd6-8c20-ac340966536c
-  ws-opts:
-    headers:
-      host: ngedx.ambercc.filegear-sg.me
-    path: /?ed=2560
 - name: 美国-1
-  network: ws
-  port: 4445
-  server: 47.76.57.24
-  servername: ngedx.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a8036e83-fd91-4fd6-8c20-ac340966536c
-  ws-opts:
-    headers:
-      host: ngedx.ambercc.filegear-sg.me
-    path: /?ed=2560
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: tw01.trojanyyds.xyz
+  sni: tw01.trojanyyds.xyz
+  type: trojan
 - cipher: aes-256-cfb
   name: 日本-2
   password: amazonskr05
   port: 443
-  server: 13.114.24.98
+  server: 3.112.203.145
+  tfo: false
   type: ss
-- name: 日本-3
-  network: ws
+- name: 美国-2
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
-  server: 172.104.127.132
-  servername: ngedx.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
+  server: tw02.trojanyyds.xyz
+  sni: tw02.trojanyyds.xyz
+  type: trojan
   udp: true
-  uuid: a8036e83-fd91-4fd6-8c20-ac340966536c
+- name: 美国-3
+  network: ws
+  port: 80
+  server: 104.21.30.5
+  servername: a.mifeng.us.kg
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      host: ngedx.ambercc.filegear-sg.me
-    path: /?ed=2560
+      Host: a.mifeng.us.kg
+    path: /?ed=2048
 - cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 54.178.47.135
+  server: 52.194.219.233
   type: ss
-- name: 瑞士-1
-  network: ws
-  port: 8443
-  server: 64.110.101.31
-  servername: ngedx.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a8036e83-fd91-4fd6-8c20-ac340966536c
-  ws-opts:
-    headers:
-      host: ngedx.ambercc.filegear-sg.me
-    path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 新加坡-2
+  name: 比利时-1
   password: amazonskr05
   port: 443
-  server: 54.255.94.7
+  server: 57.180.24.232
   type: ss
-- name: 新加坡-1
-  password: 3763495894587285504
+- cipher: aes-256-cfb
+  name: 韩国-3
+  password: amazonskr05
   port: 443
-  server: choice-condor.treefrog761.one
-  skip-cert-verify: true
-  sni: choice-condor.treefrog761.one
-  tfo: false
-  type: trojan
-  udp: true
-- name: 美国-4
-  network: ws
+  server: 54.180.228.40
+  type: ss
+- cipher: aes-256-cfb
+  name: 日本-3
+  password: amazonskr05
   port: 443
-  server: 198.62.62.75
-  servername: dsv.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dsv.ylks.us.kg
-    path: /?ed=2560
-- name: 美国-3
-  network: ws
-  port: 80
-  server: 104.16.197.224
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 442ac940-bbdd-4044-9b2c-e4e53cbe0055
-  ws-opts:
-    headers:
-      Host: little-grass-d3f7az.cijof58321.workers.dev
-    path: /?ed=2560
+  server: 54.65.53.22
+  type: ss
 proxy-groups:
 - name: proxinode
   proxies:
@@ -173,26 +120,27 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
+  - 韩国
   - 日本
   - 美国
-  - 瑞士
-  - 新加坡
+  - 比利时
+  - 澳大利亚
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-6
-  - 美国-5
-  - 美国-2
+  - 韩国-2
+  - 韩国-1
+  - 澳大利亚-2
+  - 澳大利亚-1
   - 美国-1
   - 日本-2
-  - 日本-3
-  - 日本-1
-  - 瑞士-1
-  - 新加坡-2
-  - 新加坡-1
-  - 美国-4
+  - 美国-2
   - 美国-3
+  - 日本-1
+  - 比利时-1
+  - 韩国-3
+  - 日本-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -209,6 +157,14 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
   name: 日本
   proxies:
   - 日本-1
@@ -222,22 +178,19 @@ proxy-groups:
   - 美国-1
   - 美国-2
   - 美国-3
-  - 美国-4
-  - 美国-5
-  - 美国-6
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 瑞士
+  name: 比利时
   proxies:
-  - 瑞士-1
+  - 比利时-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 新加坡
+  name: 澳大利亚
   proxies:
-  - 新加坡-1
-  - 新加坡-2
+  - 澳大利亚-1
+  - 澳大利亚-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
