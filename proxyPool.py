@@ -80,7 +80,7 @@ if (args.update):
         if (not bSuccess):
             checkoutFile(profile.file) #经过延迟测试后，可能会出现节点数量少于最低要求的情况，这样就需要回退配置文件。
         profile.clash.loadConfig(configPath, args.retry) #延迟测试结束，加载配置文件。
-        profile.clash.restart()
+        #profile.clash.restart()
     else:
         bSuccess = False
 
