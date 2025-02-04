@@ -25,11 +25,11 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 瑞士-1
+- name: 美国-1
   network: ws
-  port: 443
-  server: 64.110.104.30
-  servername: ngedp.ambercc.filegear-sg.me
+  port: 587
+  server: 47.76.195.73
+  servername: ngedo.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -37,13 +37,13 @@ proxies:
   uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
   ws-opts:
     headers:
-      host: ngedp.ambercc.filegear-sg.me
+      host: ngedo.ambercc.filegear-sg.me
     path: /?ed=2560
 - name: 美国-2
   network: ws
-  port: 443
-  server: 155.248.166.118
-  servername: ngedp.ambercc.filegear-sg.me
+  port: 587
+  server: 47.238.40.174
+  servername: ngedo.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -51,13 +51,13 @@ proxies:
   uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
   ws-opts:
     headers:
-      host: ngedp.ambercc.filegear-sg.me
+      host: ngedo.ambercc.filegear-sg.me
     path: /?ed=2560
 - name: 美国-3
   network: ws
-  port: 2003
-  server: 47.239.114.185
-  servername: ngedp.ambercc.filegear-sg.me
+  port: 587
+  server: 47.76.215.14
+  servername: ngedo.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -65,19 +65,87 @@ proxies:
   uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
   ws-opts:
     headers:
-      host: ngedp.ambercc.filegear-sg.me
+      host: ngedo.ambercc.filegear-sg.me
     path: /?ed=2560
+- name: 美国-4
+  network: ws
+  port: 587
+  server: 47.239.195.179
+  servername: ngedo.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
+  ws-opts:
+    headers:
+      host: ngedo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 日本-3
+  password: amazonskr05
+  port: 443
+  server: 13.231.129.236
+  type: ss
+- cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 52.195.218.219
+  type: ss
+- cipher: aes-256-cfb
+  name: 日本-4
+  password: amazonskr05
+  port: 443
+  server: 52.68.124.236
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 52.195.223.31
+  server: 18.181.167.251
   type: ss
+- cipher: aes-256-cfb
+  name: 美国-5
+  password: amazonskr05
+  port: 443
+  server: 47.129.255.141
+  tfo: false
+  type: ss
+- name: 新加坡-2
+  network: ws
+  port: 443
+  server: 52.74.101.26
+  servername: ngedo.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
+  ws-opts:
+    headers:
+      host: ngedo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国-6
+  network: ws
+  port: 587
+  server: 47.236.141.91
+  servername: ngedo.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
+  ws-opts:
+    headers:
+      host: ngedo.ambercc.filegear-sg.me
+    path: /?ed=2560
 - name: 新加坡-1
   network: ws
   port: 443
-  server: 54.169.229.188
-  servername: ngedp.ambercc.filegear-sg.me
+  server: 8.219.207.102
+  servername: ngedo.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -85,35 +153,7 @@ proxies:
   uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
   ws-opts:
     headers:
-      host: ngedp.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 新加坡-2
-  network: ws
-  port: 587
-  server: 8.219.81.190
-  servername: ngedp.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
-  ws-opts:
-    headers:
-      host: ngedp.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国-1
-  network: ws
-  port: 443
-  server: 15.152.125.135
-  servername: ngedp.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
-  ws-opts:
-    headers:
-      host: ngedp.ambercc.filegear-sg.me
+      host: ngedo.ambercc.filegear-sg.me
     path: /?ed=2560
 proxy-groups:
 - name: proxinode
@@ -126,7 +166,6 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 瑞士
   - 新加坡
   - 日本
   - 美国
@@ -134,13 +173,18 @@ proxy-groups:
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 瑞士-1
+  - 美国-1
   - 美国-2
   - 美国-3
+  - 美国-4
+  - 日本-3
+  - 日本-2
+  - 日本-4
   - 日本-1
-  - 新加坡-1
+  - 美国-5
   - 新加坡-2
-  - 美国-1
+  - 美国-6
+  - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -157,12 +201,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 瑞士
-  proxies:
-  - 瑞士-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
@@ -173,6 +211,9 @@ proxy-groups:
   name: 日本
   proxies:
   - 日本-1
+  - 日本-2
+  - 日本-3
+  - 日本-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -181,6 +222,9 @@ proxy-groups:
   - 美国-1
   - 美国-2
   - 美国-3
+  - 美国-4
+  - 美国-5
+  - 美国-6
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
