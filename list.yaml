@@ -28,21 +28,7 @@ proxies:
 - name: 美国-1
   network: ws
   port: 587
-  server: 47.76.195.73
-  servername: ngedo.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
-  ws-opts:
-    headers:
-      host: ngedo.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国-2
-  network: ws
-  port: 587
-  server: 47.238.40.174
+  server: 47.239.195.179
   servername: ngedo.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -56,6 +42,20 @@ proxies:
 - name: 美国-3
   network: ws
   port: 587
+  server: 47.238.40.174
+  servername: ngedo.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
+  ws-opts:
+    headers:
+      host: ngedo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国-2
+  network: ws
+  port: 587
   server: 47.76.215.14
   servername: ngedo.ambercc.filegear-sg.me
   skip-cert-verify: true
@@ -67,56 +67,30 @@ proxies:
     headers:
       host: ngedo.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 美国-4
-  network: ws
-  port: 587
-  server: 47.239.195.179
-  servername: ngedo.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
-  ws-opts:
-    headers:
-      host: ngedo.ambercc.filegear-sg.me
-    path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 日本-3
+  name: 日本-1
   password: amazonskr05
   port: 443
   server: 13.231.129.236
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 日本-2
   password: amazonskr05
   port: 443
-  server: 52.195.218.219
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-4
-  password: amazonskr05
-  port: 443
-  server: 52.68.124.236
+  server: 54.168.25.210
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 日本-1
+  name: 新加坡-3
   password: amazonskr05
   port: 443
-  server: 18.181.167.251
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-5
-  password: amazonskr05
-  port: 443
-  server: 47.129.255.141
-  tfo: false
+  server: 13.229.90.203
   type: ss
 - name: 新加坡-2
   network: ws
   port: 443
-  server: 52.74.101.26
+  server: 8.219.205.6
   servername: ngedo.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -127,10 +101,44 @@ proxies:
     headers:
       host: ngedo.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 美国-6
+- name: 日本-3
   network: ws
-  port: 587
-  server: 47.236.141.91
+  port: 443
+  server: 52.195.187.159
+  servername: ngedo.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
+  ws-opts:
+    headers:
+      host: ngedo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 新加坡-5
+  network: ws
+  port: 443
+  server: 8.219.203.104
+  servername: ngedo.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
+  ws-opts:
+    headers:
+      host: ngedo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 比利时-1
+  password: amazonskr05
+  port: 443
+  server: 57.180.41.158
+  type: ss
+- name: 新加坡-4
+  network: ws
+  port: 443
+  server: 8.219.165.124
   servername: ngedo.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -166,24 +174,25 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
+  - 美国
   - 新加坡
   - 日本
-  - 美国
+  - 比利时
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
   - 美国-1
-  - 美国-2
   - 美国-3
-  - 美国-4
-  - 日本-3
-  - 日本-2
-  - 日本-4
+  - 美国-2
   - 日本-1
-  - 美国-5
+  - 日本-2
+  - 新加坡-3
   - 新加坡-2
-  - 美国-6
+  - 日本-3
+  - 新加坡-5
+  - 比利时-1
+  - 新加坡-4
   - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
@@ -201,10 +210,21 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 美国
+  proxies:
+  - 美国-1
+  - 美国-2
+  - 美国-3
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
   - 新加坡-2
+  - 新加坡-3
+  - 新加坡-4
+  - 新加坡-5
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -213,18 +233,12 @@ proxy-groups:
   - 日本-1
   - 日本-2
   - 日本-3
-  - 日本-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 美国
+  name: 比利时
   proxies:
-  - 美国-1
-  - 美国-2
-  - 美国-3
-  - 美国-4
-  - 美国-5
-  - 美国-6
+  - 比利时-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
