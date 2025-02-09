@@ -26,25 +26,7 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 52.79.249.199
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 54.250.166.85
-  type: ss
-- cipher: aes-256-cfb
-  name: 印度-1
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 103.106.229.219
-  type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-1
+  name: 新加坡-3
   password: amazonskr05
   port: 443
   server: 13.250.3.5
@@ -53,22 +35,52 @@ proxies:
   name: 新加坡-2
   password: amazonskr05
   port: 443
+  server: 18.138.252.136
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-4
+  password: amazonskr05
+  port: 443
+  server: 3.0.147.242
+  type: ss
+- cipher: aes-256-cfb
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 3.113.0.222
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
   server: 18.141.25.54
   type: ss
-- name: 美国-1
+- cipher: aes-256-cfb
+  name: 印度-1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 103.106.229.219
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 52.79.249.199
+  type: ss
+- name: 美国-2
   network: ws
   port: 443
-  server: 162.159.153.22
-  servername: am.dbbn2024.us.kg
+  server: 104.26.12.31
+  servername: GErmaNy-exK.pAGEs.DEV
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: a6dd00f2-de2a-4c3c-bc0a-0e9818e95dde
   ws-opts:
     headers:
-      host: am.dbbn2024.us.kg
-    path: /?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io
+      host: GErmaNy-exK.pAGEs.DEV
+    path: /n2s3pihtkefm2xga/mtgumtk4lje2oc4z?ed=2560
 - alpn:
   - h3
   auth_str: dongtaiwang.com
@@ -82,6 +94,41 @@ proxies:
   sni: www.bing.com
   type: hysteria
   up: 11 Mbps
+- fast-open: true
+  name: 俄罗斯-2
+  password: dongtaiwang.com
+  port: 50717
+  server: 46.17.41.189
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 美国-1
+  network: ws
+  port: 8880
+  server: 104.18.41.138
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: 25af9eb2-3310-4f2b-bc82-ebea62ba7906
+  ws-opts:
+    headers:
+      Host: config-proxy-vl.telegram-config-proxy.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.101 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- name: 巴西-1
+  network: ws
+  port: 80
+  server: 188.114.98.57
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: proud-queen-55500071.cexonoc962.workers.dev
+    path: /?ed=2560
 proxy-groups:
 - name: proxinode
   proxies:
@@ -93,23 +140,29 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
+  - 美国
   - 新加坡
-  - 日本
   - 韩国
+  - 巴西
   - 印度
   - 俄罗斯
-  - 美国
+  - 日本
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 韩国-1
-  - 日本-1
-  - 印度-1
-  - 新加坡-1
+  - 新加坡-3
   - 新加坡-2
-  - 美国-1
+  - 新加坡-4
+  - 日本-1
+  - 新加坡-1
+  - 印度-1
+  - 韩国-1
+  - 美国-2
   - 俄罗斯-1
+  - 俄罗斯-2
+  - 美国-1
+  - 巴西-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -126,22 +179,31 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 美国
+  proxies:
+  - 美国-1
+  - 美国-2
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
   - 新加坡-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
+  - 新加坡-3
+  - 新加坡-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 韩国
   proxies:
   - 韩国-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 巴西
+  proxies:
+  - 巴西-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -154,12 +216,13 @@ proxy-groups:
   name: 俄罗斯
   proxies:
   - 俄罗斯-1
+  - 俄罗斯-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 美国
+  name: 日本
   proxies:
-  - 美国-1
+  - 日本-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
