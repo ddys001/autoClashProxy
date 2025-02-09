@@ -25,47 +25,61 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  name: 新加坡-3
-  password: amazonskr05
-  port: 443
-  server: 13.250.3.5
-  type: ss
+- name: 尼日利亚-1
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 83.229.123.36
+  skip-cert-verify: true
+  sni: ngepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
 - cipher: aes-256-cfb
   name: 新加坡-2
   password: amazonskr05
   port: 443
-  server: 18.138.252.136
+  server: 3.0.147.242
   type: ss
 - cipher: aes-256-cfb
   name: 新加坡-4
   password: amazonskr05
   port: 443
-  server: 3.0.147.242
+  server: 18.143.174.188
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-5
+  password: amazonskr05
+  port: 443
+  server: 18.143.140.150
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-6
+  password: amazonskr05
+  port: 443
+  server: 3.0.17.42
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-3
+  password: amazonskr05
+  port: 443
+  server: 13.250.12.185
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 13.229.181.179
   type: ss
 - cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
   server: 3.113.0.222
-  type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 18.141.25.54
-  type: ss
-- cipher: aes-256-cfb
-  name: 印度-1
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 103.106.229.219
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 52.79.249.199
   type: ss
 - name: 美国-2
   network: ws
@@ -81,53 +95,31 @@ proxies:
     headers:
       host: GErmaNy-exK.pAGEs.DEV
     path: /n2s3pihtkefm2xga/mtgumtk4lje2oc4z?ed=2560
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 俄罗斯-1
-  obfs: dongtaiwang.com
-  port: 15424
-  ports: 30000-40000
-  server: 185.22.155.71
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
-- fast-open: true
-  name: 俄罗斯-2
-  password: dongtaiwang.com
-  port: 50717
-  server: 46.17.41.189
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 美国-1
-  network: ws
-  port: 8880
-  server: 104.18.41.138
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 25af9eb2-3310-4f2b-bc82-ebea62ba7906
-  ws-opts:
-    headers:
-      Host: config-proxy-vl.telegram-config-proxy.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.101 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 巴西-1
+- cipher: aes-256-cfb
+  name: 韩国-2
+  password: amazonskr05
+  port: 443
+  server: 54.180.143.115
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 3.36.57.236
+  type: ss
+- client-fingerprint: chrome
+  name: 美国-1
   network: ws
   port: 80
-  server: 188.114.98.57
-  skip-cert-verify: false
+  server: tgju.org
+  servername: a.xn--i-sx6a60i.us.kg.
   tls: false
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: proud-queen-55500071.cexonoc962.workers.dev
+      Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
 proxy-groups:
 - name: proxinode
@@ -140,29 +132,27 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
+  - 尼日利亚
   - 新加坡
   - 韩国
-  - 巴西
-  - 印度
-  - 俄罗斯
+  - 美国
   - 日本
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-3
+  - 尼日利亚-1
   - 新加坡-2
   - 新加坡-4
-  - 日本-1
+  - 新加坡-5
+  - 新加坡-6
+  - 新加坡-3
   - 新加坡-1
-  - 印度-1
-  - 韩国-1
+  - 日本-1
   - 美国-2
-  - 俄罗斯-1
-  - 俄罗斯-2
+  - 韩国-2
+  - 韩国-1
   - 美国-1
-  - 巴西-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -179,10 +169,9 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 美国
+  name: 尼日利亚
   proxies:
-  - 美国-1
-  - 美国-2
+  - 尼日利亚-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -192,31 +181,22 @@ proxy-groups:
   - 新加坡-2
   - 新加坡-3
   - 新加坡-4
+  - 新加坡-5
+  - 新加坡-6
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 韩国
   proxies:
   - 韩国-1
+  - 韩国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 巴西
+  name: 美国
   proxies:
-  - 巴西-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 印度
-  proxies:
-  - 印度-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 俄罗斯
-  proxies:
-  - 俄罗斯-1
-  - 俄罗斯-2
+  - 美国-1
+  - 美国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -256,15 +236,22 @@ rule-providers:
     path: ./ruleset/lancidr.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+  reject:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/reject.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
 rules:
+- RULE-SET,reject,REJECT
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
 - DOMAIN,yacd.metacubex.one,DIRECT
+- RULE-SET,direct,DIRECT
 - RULE-SET,lancidr,DIRECT
 - RULE-SET,cncidr,DIRECT
 - RULE-SET,icloud,DIRECT
 - RULE-SET,apple,DIRECT
-- RULE-SET,direct,DIRECT
 - MATCH,proxinode
 secret: d53df256-8f1b-4f9b-b730-6a4e947104b6
 tun:
