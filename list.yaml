@@ -25,11 +25,11 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 立陶宛-1
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.158.171.141
+- cipher: aes-256-cfb
+  name: 美国-5
+  password: amazonskr05
+  port: 443
+  server: 34.213.236.232
   type: ss
 - cipher: aes-256-cfb
   name: 新加坡-1
@@ -37,23 +37,78 @@ proxies:
   port: 443
   server: 13.250.12.185
   type: ss
-- client-fingerprint: chrome
-  name: 美国-1
+- name: 美国-4
   network: ws
   port: 80
-  server: 104.20.129.2
-  servername: pormang.webhost99.workers.dev
+  server: 104.16.132.187
+  skip-cert-verify: false
   tls: false
   type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  uuid: 80d32ddd-c0ac-4eb6-8a2a-3b27b23f32b4
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
+      Host: icy-cherry-b8af-ppal03.givay59005.workers.dev
     path: /?ed=2560
-- name: 韩国-2
+- name: 美国-3
   network: ws
-  port: 30012
-  server: 175.210.217.204
+  port: 80
+  server: 198.41.205.44
+  servername: a.mifeng.us.kg
+  skip-cert-verify: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: JoinBadeChannel@antimeli
+  name: 俄罗斯-1
+  network: grpc
+  port: 8443
+  reality-opts:
+    public-key: Paai0w6bHcKmaZzm8Sljt8uKydSYX5h1t3G_Y3T-Rm0
+    short-id: f74b9234
+  server: 188.227.84.54
+  servername: www.speedtest.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 79e1374d-7f94-4da6-97ad-5ce28a5d393e
+- client-fingerprint: chrome
+  name: 日本-1
+  network: ws
+  password: Aimer
+  port: 20003
+  server: 146.56.155.102
+  skip-cert-verify: true
+  sni: ngepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
+  name: 瑞士-1
+  network: grpc
+  port: 2030
+  reality-opts:
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: 7fe29733
+  server: 195.15.243.208
+  servername: refersion.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: a65af0ef-ff96-412d-a6ff-477dd6809b85
+- name: 韩国-1
+  network: ws
+  port: 50000
+  server: 119.205.51.190
   servername: ss.vs2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -64,10 +119,10 @@ proxies:
     headers:
       host: ss.vs2024.us.kg
     path: /ss.vs2024.us.kg
-- name: 韩国-1
+- name: 美国-1
   network: ws
   port: 443
-  server: 193.123.230.248
+  server: 104.16.248.192
   servername: ss.vs2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -77,11 +132,11 @@ proxies:
   ws-opts:
     headers:
       host: ss.vs2024.us.kg
-    path: /?ed=2560&proxyip=193.123.230.248:443
-- name: 美国-3
+    path: /ss.vs2024.us.kg
+- name: 美国-7
   network: ws
   port: 443
-  server: 162.159.152.249
+  server: 104.16.159.190
   servername: ss.vs2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -92,10 +147,10 @@ proxies:
     headers:
       host: ss.vs2024.us.kg
     path: /?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io
-- name: 美国-2
+- name: 奥地利-2
   network: ws
   port: 443
-  server: 162.159.152.30
+  server: 212.183.88.162
   servername: ss.vs2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -105,7 +160,49 @@ proxies:
   ws-opts:
     headers:
       host: ss.vs2024.us.kg
-    path: /ss.vs2024.us.kg
+    path: /?ed=2560&proxyip=212.183.88.162:443
+- name: 美国-6
+  network: ws
+  port: 443
+  server: 104.17.146.152
+  servername: ss.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ss.vs2024.us.kg
+    path: /?ed=2560
+- name: 奥地利-1
+  network: ws
+  port: 443
+  server: 212.183.88.24
+  servername: ss.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ss.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国-2
+  network: ws
+  port: 443
+  server: 135.84.76.115
+  servername: ss.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ss.vs2024.us.kg
+    path: /?ed=2560
 proxy-groups:
 - name: proxinode
   proxies:
@@ -118,19 +215,29 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 新加坡
-  - 立陶宛
+  - 奥地利
+  - 瑞士
+  - 俄罗斯
   - 韩国
+  - 日本
+  - 新加坡
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 立陶宛-1
+  - 美国-5
   - 新加坡-1
-  - 美国-1
-  - 韩国-2
-  - 韩国-1
+  - 美国-4
   - 美国-3
+  - 俄罗斯-1
+  - 日本-1
+  - 瑞士-1
+  - 韩国-1
+  - 美国-1
+  - 美国-7
+  - 奥地利-2
+  - 美国-6
+  - 奥地利-1
   - 美国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
@@ -153,25 +260,47 @@ proxy-groups:
   - 美国-1
   - 美国-2
   - 美国-3
+  - 美国-4
+  - 美国-5
+  - 美国-6
+  - 美国-7
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 新加坡
+  name: 奥地利
   proxies:
-  - 新加坡-1
+  - 奥地利-1
+  - 奥地利-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 立陶宛
+  name: 瑞士
   proxies:
-  - 立陶宛-1
+  - 瑞士-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 俄罗斯
+  proxies:
+  - 俄罗斯-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 韩国
   proxies:
   - 韩国-1
-  - 韩国-2
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
@@ -212,7 +341,6 @@ rule-providers:
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
 rules:
-- RULE-SET,reject,REJECT
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
 - DOMAIN,yacd.metacubex.one,DIRECT
@@ -221,6 +349,7 @@ rules:
 - RULE-SET,cncidr,DIRECT
 - RULE-SET,icloud,DIRECT
 - RULE-SET,apple,DIRECT
+- RULE-SET,reject,REJECT
 - MATCH,proxinode
 secret: d53df256-8f1b-4f9b-b730-6a4e947104b6
 tun:
