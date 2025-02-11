@@ -26,53 +26,71 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 日本-2
+  name: 日本-1
   password: amazonskr05
   port: 443
   server: 52.195.185.150
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 日本-4
+  name: 日本-3
   password: amazonskr05
   port: 443
-  server: 52.68.247.21
+  server: 3.112.28.118
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 日本-3
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 43.206.240.27
+  type: ss
+- cipher: aes-256-cfb
+  name: 日本-4
   password: amazonskr05
   port: 443
   server: 54.249.60.76
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 美国-7
+  name: 美国-3
   password: amazonskr05
   port: 443
-  server: 47.129.223.160
+  server: 47.128.14.130
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 新加坡-4
+  name: 新加坡-2
   password: amazonskr05
   port: 443
-  server: 54.179.36.235
+  server: 52.77.248.74
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 美国-4
-  password: amazonskr05
-  port: 443
-  server: 13.212.48.245
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-6
-  password: amazonskr05
-  port: 443
-  server: 13.212.177.74
-  type: ss
-  udp: true
+- client-fingerprint: chrome
+  name: 美国-10
+  network: ws
+  port: 80
+  server: 104.26.15.85
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 美国-1
+  network: ws
+  port: 80
+  server: 172.67.73.163
+  skip-cert-verify: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
 - cipher: aes-256-cfb
   name: 美国-2
   password: amazonskr05
@@ -81,60 +99,81 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 美国-3
+  name: 新加坡-1
   password: amazonskr05
   port: 443
-  server: 13.212.175.124
+  server: 54.179.36.235
   type: ss
   udp: true
+- client-fingerprint: chrome
+  name: 美国-9
+  network: ws
+  port: 80
+  server: tgju.org
+  servername: a.xn--i-sx6a60i.us.kg.
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 新加坡-3
+  name: 美国-4
   password: amazonskr05
   port: 443
-  server: 54.255.247.242
+  server: 47.129.223.160
   type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 美国-8
+  network: ws
+  port: 80
+  server: 104.26.14.85
+  skip-cert-verify: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- client-fingerprint: chrome
+  delay: 2905
+  name: 美国-7
+  network: ws
+  port: 2052
+  server: 104.26.12.101
+  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
+  ws-opts:
+    headers:
+      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+    path: /?ed=1080/telegram
 - cipher: aes-256-cfb
   name: 美国-5
-  password: amazonskr05
-  port: 443
-  server: 47.128.14.130
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 美国-1
   password: amazonskr05
   port: 443
   server: 47.129.8.91
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
+- client-fingerprint: chrome
+  name: 美国-6
+  network: ws
   port: 443
-  server: 18.138.252.136
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 52.77.248.74
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 日本-5
-  password: amazonskr05
-  port: 443
-  server: 52.68.141.225
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 13.115.39.161
-  type: ss
-  udp: true
+  server: visa.cn
+  servername: mht.mhtadayon.ir
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: mht.mhtadayon.ir
+    path: /?ed=2740
 proxy-groups:
 - name: proxinode
   proxies:
@@ -153,22 +192,22 @@ proxy-groups:
 - interval: 300
   name: 延迟最低
   proxies: &id001
+  - 日本-1
+  - 日本-3
   - 日本-2
   - 日本-4
-  - 日本-3
-  - 美国-7
-  - 新加坡-4
-  - 美国-4
-  - 美国-6
-  - 美国-2
   - 美国-3
-  - 新加坡-3
-  - 美国-5
-  - 美国-1
   - 新加坡-2
+  - 美国-10
+  - 美国-1
+  - 美国-2
   - 新加坡-1
-  - 日本-5
-  - 日本-1
+  - 美国-9
+  - 美国-4
+  - 美国-8
+  - 美国-7
+  - 美国-5
+  - 美国-6
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -191,7 +230,6 @@ proxy-groups:
   - 日本-2
   - 日本-3
   - 日本-4
-  - 日本-5
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -199,8 +237,6 @@ proxy-groups:
   proxies:
   - 新加坡-1
   - 新加坡-2
-  - 新加坡-3
-  - 新加坡-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -213,6 +249,9 @@ proxy-groups:
   - 美国-5
   - 美国-6
   - 美国-7
+  - 美国-8
+  - 美国-9
+  - 美国-10
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
