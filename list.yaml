@@ -26,48 +26,47 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 美国-1
-  password: amazonskr05
-  port: 443
-  server: 47.129.8.91
-  type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 54.255.247.242
-  type: ss
-- cipher: aes-256-cfb
   name: 新加坡-1
   password: amazonskr05
   port: 443
   server: 18.143.103.137
   type: ss
 - cipher: aes-256-cfb
+  name: 美国-1
+  password: amazonskr05
+  port: 443
+  server: 47.129.201.205
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-3
+  password: amazonskr05
+  port: 443
+  server: 54.255.247.242
+  type: ss
+- cipher: aes-256-cfb
   name: 美国-2
   password: amazonskr05
   port: 443
-  server: 13.212.48.245
+  server: 47.129.8.91
   type: ss
-- name: 新加坡-3
+- name: 新加坡-2
   password: 65086441068973800
   port: 443
   server: summary-sawfish.shiner427.skin
   skip-cert-verify: true
   type: trojan
 - cipher: aes-256-cfb
-  name: 日本-2
+  name: 美国-3
   password: amazonskr05
   port: 443
-  server: 43.206.238.113
+  server: 13.212.48.245
   type: ss
 - cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 54.249.60.76
+  server: 43.206.238.113
   type: ss
-  udp: true
 - client-fingerprint: qq
   name: 美国-6
   port: 33155
@@ -81,8 +80,15 @@ proxies:
   type: vless
   udp: true
   uuid: bc083408-220d-477c-8f43-21289df60def
+- cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 54.249.60.76
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 美国-3
+  name: 美国-4
   network: ws
   port: 80
   server: 104.26.14.85
@@ -93,28 +99,6 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-5
-  network: ws
-  port: 443
-  server: visa.cn
-  servername: mht.mhtadayon.ir
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: mht.mhtadayon.ir
-    path: /?ed=2740
-- name: 美国-8
-  password: '65086441068973800'
-  port: 443
-  server: mature-flamingo.shiner427.skin
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
   name: 印度-1
   password: f8f7aCzcPKbsF8p3
@@ -122,7 +106,7 @@ proxies:
   server: 103.106.229.219
   type: ss
 - client-fingerprint: chrome
-  name: 美国-9
+  name: 美国-5
   network: ws
   port: 80
   server: 104.17.147.22
@@ -135,30 +119,16 @@ proxies:
       Host: redw.pooriam.ir
     path: /?ed=MARAMBASHI_MARAMBASHI/?ed=2560
 - name: 美国-7
-  password: 915476b6-7b20-4b57-be47-d9d0fd6a6ffb
-  port: 46463
-  server: cea291b7d55c322ec47dbd8c56359e7a.us.in.node-is.green
-  skip-cert-verify: true
-  sni: hk12.bilibili.com
+  password: '65086441068973800'
+  port: 443
+  server: mature-flamingo.shiner427.skin
+  skip-cert-verify: false
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  delay: 851
-  name: 美国-4
-  network: ws
-  port: 80
-  server: 104.18.27.94
-  servername: sedalat.tatexe3807.workers.dev
-  type: vless
-  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
-  ws-opts:
-    headers:
-      Host: sedalat.tatexe3807.workers.dev
-    path: /
 - name: 荷兰-1
   network: ws
   port: 443
-  server: 185.133.35.160
+  server: 185.133.35.155
   servername: s1.vs2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -169,6 +139,27 @@ proxies:
     headers:
       host: s1.vs2024.us.kg
     path: /?ed=2560
+- name: 匈牙利-1
+  password: '65086441068973800'
+  port: 443
+  server: grown-mackerel.shiner427.skin
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: 奥地利-1
+  network: ws
+  port: 443
+  server: 212.183.88.162
+  servername: s1.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: s1.vs2024.us.kg
+    path: /?ed=2560&proxyip=212.183.88.162:443
 proxy-groups:
 - name: proxinode
   proxies:
@@ -185,26 +176,28 @@ proxy-groups:
   - 日本
   - 印度
   - 荷兰
+  - 奥地利
+  - 匈牙利
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-1
-  - 新加坡-2
   - 新加坡-1
-  - 美国-2
+  - 美国-1
   - 新加坡-3
-  - 日本-2
+  - 美国-2
+  - 新加坡-2
+  - 美国-3
   - 日本-1
   - 美国-6
-  - 美国-3
-  - 美国-5
-  - 美国-8
-  - 印度-1
-  - 美国-9
-  - 美国-7
+  - 日本-2
   - 美国-4
+  - 印度-1
+  - 美国-5
+  - 美国-7
   - 荷兰-1
+  - 匈牙利-1
+  - 奥地利-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -230,8 +223,6 @@ proxy-groups:
   - 美国-5
   - 美国-6
   - 美国-7
-  - 美国-8
-  - 美国-9
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -259,6 +250,18 @@ proxy-groups:
   name: 荷兰
   proxies:
   - 荷兰-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 奥地利
+  proxies:
+  - 奥地利-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 匈牙利
+  proxies:
+  - 匈牙利-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
