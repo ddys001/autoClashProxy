@@ -25,196 +25,221 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: 28902
-  server: 218.38.103.150
-  type: ss
-- client-fingerprint: chrome
-  name: 美国-11
+- name: 美国-5
   network: ws
-  port: 80
-  server: 172.67.73.163
-  skip-cert-verify: false
+  port: 443
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg.
+      host: zv.bgm2024.us.kg
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-1
+- name: 美国-6
   network: ws
-  port: 80
-  server: 104.26.15.85
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 162.159.152.100
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg.
+      host: zv.bgm2024.us.kg
     path: /?ed=2560
 - client-fingerprint: chrome
   name: 美国-9
   network: ws
   port: 80
-  server: tgju.org
-  servername: a.xn--i-sx6a60i.us.kg.
-  tls: false
+  server: 104.26.14.85
+  skip-cert-verify: false
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- alterId: 0
-  name: 法国-1
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.36.188.94
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf
-  name: 美国-6
-  password: asd123456
-  port: 8388
-  server: 137.175.113.193
-  type: ss
-- name: 美国-5
+- name: 美国-1
   network: ws
-  port: 80
-  server: 104.24.147.64
-  servername: ppal03-ppal03.letiwe3303.workers.dev
-  tls: false
+  port: 443
+  server: 162.159.152.39
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: ppal03-ppal03.letiwe3303.workers.dev
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-3
+  network: ws
+  port: 443
+  server: 162.159.153.251
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-7
+  network: ws
+  port: 443
+  server: 162.159.152.202
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-2
+  network: ws
+  port: 443
+  server: 162.159.153.231
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
+- name: 韩国-1
+  network: ws
+  port: 30012
+  server: 118.47.65.248
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
+- fast-open: true
+  name: 俄罗斯-1
+  password: dongtaiwang.com
+  port: 51224
+  server: 46.17.41.189
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 美国-10
+  network: ws
+  port: 443
+  server: 104.16.159.190
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-12
+  network: ws
+  port: 443
+  server: 63.141.128.96
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zv.bgm2024.us.kg
     path: /?ed=2560
 - name: 美国-4
   network: ws
-  port: 8880
-  server: 172.67.187.219
-  skip-cert-verify: false
+  port: 443
+  server: 104.16.157.246
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: a61fc8cb-0012-4c4b-aa5e-d1c623ae8092
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: worker-late-feather-d436.wedome3486.workers.DEV
-    path: /
-- client-fingerprint: chrome
-  name: 美国-2
-  network: ws
-  port: 80
-  server: 104.20.129.2
-  servername: pormang.webhost99.workers.dev
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
+      host: zv.bgm2024.us.kg
     path: /?ed=2560
-- name: 保加利亚-1
+- name: 美国-14
   network: ws
-  port: 80
-  server: 45.149.12.128
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 104.17.189.210
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 美国-3
-  network: ws
-  port: 80
-  server: 66.235.200.58
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- client-fingerprint: chrome
-  name: 美国-8
-  network: ws
-  port: 80
-  server: 104.24.186.156
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 6ff4726f-3650-4803-95eb-50b240f6ac75
-  ws-opts:
-    headers:
-      Host: red-math-7092-ppal03.mewoco2522.workers.dev
+      host: zv.bgm2024.us.kg
     path: /?ed=2560
-- name: 俄罗斯-1
+- name: 美国-11
   network: ws
-  port: 80
-  server: 185.174.138.194
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 104.16.144.216
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 美国-10
-  network: ws
-  port: 80
-  server: 66.235.200.191
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 美国-7
-  network: ws
-  port: 80
-  server: 104.16.251.142
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: b0c6d7bd-a10c-44ce-b651-8a245cac2f4e
-  ws-opts:
-    headers:
-      Host: cool-sun-e406-ppal03.lafota3425.workers.dev
+      host: zv.bgm2024.us.kg
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 巴西-1
+- name: 美国-8
   network: ws
-  port: 80
-  server: 188.114.96.223
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 192.200.160.99
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: eb201923-0e39-4425-bd0f-6244cd24ef2a
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: zaq11000d.b835a8094d.workers.dev
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-13
+  network: ws
+  port: 443
+  server: 104.17.213.78
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zv.bgm2024.us.kg
     path: /?ed=2560
 proxy-groups:
 - name: proxinode
@@ -228,31 +253,28 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 法国
-  - 保加利亚
   - 韩国
-  - 巴西
   - 俄罗斯
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 韩国-1
-  - 美国-11
-  - 美国-1
-  - 美国-9
-  - 法国-1
-  - 美国-6
   - 美国-5
-  - 美国-4
-  - 美国-2
-  - 保加利亚-1
+  - 美国-6
+  - 美国-9
+  - 美国-1
   - 美国-3
-  - 美国-8
+  - 美国-7
+  - 美国-2
+  - 韩国-1
   - 俄罗斯-1
   - 美国-10
-  - 美国-7
-  - 巴西-1
+  - 美国-12
+  - 美国-4
+  - 美国-14
+  - 美国-11
+  - 美国-8
+  - 美国-13
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -282,30 +304,15 @@ proxy-groups:
   - 美国-9
   - 美国-10
   - 美国-11
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 法国
-  proxies:
-  - 法国-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 保加利亚
-  proxies:
-  - 保加利亚-1
+  - 美国-12
+  - 美国-13
+  - 美国-14
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 韩国
   proxies:
   - 韩国-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 巴西
-  proxies:
-  - 巴西-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
