@@ -25,159 +25,155 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 美国-2
-  network: ws
-  port: 80
-  server: 66.235.200.58
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 保加利亚-1
-  network: ws
-  port: 80
-  server: 45.149.12.128
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 俄罗斯-1
-  network: ws
-  port: 80
-  server: 185.174.138.194
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- cipher: chacha20-ietf-poly1305
-  name: 乌克兰-1
-  password: YTNjNDY5
-  port: 8388
-  server: 185.234.64.35
+- cipher: aes-256-cfb
+  name: 日本-3
+  password: amazonskr05
+  port: 443
+  server: 13.230.111.71
   type: ss
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 俄罗斯-2
-  obfs: dongtaiwang.com
-  port: 15424
-  ports: 30000-40000
-  server: 185.22.155.71
+- cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 54.199.161.79
+  type: ss
+- name: 新加坡-1
+  password: 65086441068973800
+  port: 443
+  server: robust-redfish.shiner427.skin
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
-- name: 美国-5
+  type: trojan
+- name: 新加坡-2
   network: ws
-  port: 80
-  server: 66.235.200.191
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 8.222.165.104
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
 - cipher: aes-256-cfb
   name: 美国-1
-  obfs: plain
   password: amazonskr05
   port: 443
-  protocol: origin
-  server: 35.94.43.251
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-11
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 34.218.233.42
-  type: ssr
-- cipher: aes-256-gcm
-  name: 美国-12
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 38.114.121.248
+  server: 47.129.38.168
   type: ss
-- cipher: aes-256-gcm
-  name: 美国-7
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 38.114.123.245
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 美国-9
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 52.11.187.58
-  type: ssr
 - cipher: aes-256-cfb
   name: 美国-6
-  obfs: plain
   password: amazonskr05
   port: 443
-  protocol: origin
-  server: 54.200.164.45
-  type: ssr
+  server: 47.129.8.91
+  type: ss
 - cipher: aes-256-cfb
+  name: 美国-2
+  password: amazonskr05
+  port: 443
+  server: 13.212.177.74
+  type: ss
+- cipher: aes-256-cfb
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 13.115.39.161
+  type: ss
+- cipher: aes-256-cfb
+  name: 印度-1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 103.106.229.219
+  type: ss
+- client-fingerprint: chrome
   name: 美国-4
-  obfs: plain
+  network: ws
+  port: 80
+  server: 172.67.73.163
+  skip-cert-verify: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 韩国-1
   password: amazonskr05
   port: 443
-  protocol: origin
-  server: 35.91.180.231
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-10
-  obfs: plain
-  password: amazonskr05
+  server: 52.79.166.214
+  type: ss
+- name: 美国-9
+  network: ws
   port: 443
-  protocol: origin
-  server: 34.217.211.139
-  type: ssr
-- cipher: aes-128-cfb
-  name: 美国-8
-  obfs: plain
-  password: shadowsocks
-  port: 443
-  protocol: origin
-  server: 184.170.241.194
-  type: ssr
-- cipher: aes-256-cfb
+  server: 162.159.153.231
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
+- client-fingerprint: chrome
   name: 美国-3
-  obfs: plain
-  password: amazonskr05
+  network: ws
+  port: 80
+  server: 104.26.15.85
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- name: 美国-5
+  network: ws
   port: 443
-  protocol: origin
-  server: 35.91.120.138
-  type: ssr
+  server: 162.159.152.208
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-7
+  network: ws
+  port: 443
+  server: 162.159.152.56
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-8
+  network: ws
+  port: 443
+  server: 162.159.152.28
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
 proxy-groups:
 - name: proxinode
   proxies:
@@ -189,30 +185,31 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 俄罗斯
-  - 乌克兰
   - 美国
-  - 保加利亚
+  - 新加坡
+  - 印度
+  - 日本
+  - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-2
-  - 保加利亚-1
-  - 俄罗斯-1
-  - 乌克兰-1
-  - 俄罗斯-2
-  - 美国-5
+  - 日本-3
+  - 日本-2
+  - 新加坡-1
+  - 新加坡-2
   - 美国-1
-  - 美国-11
-  - 美国-12
-  - 美国-7
-  - 美国-9
   - 美国-6
+  - 美国-2
+  - 日本-1
+  - 印度-1
   - 美国-4
-  - 美国-10
-  - 美国-8
+  - 韩国-1
+  - 美国-9
   - 美国-3
+  - 美国-5
+  - 美国-7
+  - 美国-8
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -229,19 +226,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 俄罗斯
-  proxies:
-  - 俄罗斯-1
-  - 俄罗斯-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 乌克兰
-  proxies:
-  - 乌克兰-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -253,15 +237,33 @@ proxy-groups:
   - 美国-7
   - 美国-8
   - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 保加利亚
+  name: 新加坡
   proxies:
-  - 保加利亚-1
+  - 新加坡-1
+  - 新加坡-2
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 印度
+  proxies:
+  - 印度-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
+  - 日本-3
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
