@@ -26,11 +26,31 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 日本-2
+  name: 日本-1
   password: amazonskr05
   port: 443
-  server: 52.195.185.150
+  server: 54.249.60.76
   type: ss
+- cipher: aes-256-cfb
+  name: 美国-2
+  password: amazonskr05
+  port: 443
+  server: 47.129.101.151
+  type: ss
+- cipher: aes-256-cfb
+  name: 美国-1
+  password: amazonskr05
+  port: 443
+  server: 47.128.14.130
+  type: ss
+- client-fingerprint: chrome
+  name: 新加坡-2
+  password: 65086441068973800
+  port: 443
+  server: robust-redfish.shiner427.skin
+  skip-cert-verify: false
+  sni: robust-redfish.shiner427.skin
+  type: trojan
 - cipher: aes-256-cfb
   name: 新加坡-1
   password: amazonskr05
@@ -38,91 +58,61 @@ proxies:
   server: 18.143.103.137
   type: ss
 - cipher: aes-256-cfb
-  name: 日本-6
+  name: 日本-2
   password: amazonskr05
   port: 443
-  server: 54.199.161.79
+  server: 43.207.97.53
   type: ss
 - cipher: aes-256-cfb
   name: 日本-3
   password: amazonskr05
   port: 443
-  server: 54.249.60.76
+  server: 43.206.238.113
   type: ss
 - cipher: aes-256-cfb
-  name: 美国-4
+  name: 日本-4
   password: amazonskr05
   port: 443
-  server: 47.129.223.160
+  server: 54.199.161.79
   type: ss
 - cipher: aes-256-cfb
-  name: 美国-3
+  name: 日本-5
   password: amazonskr05
   port: 443
-  server: 47.128.14.130
+  server: 52.68.141.225
   type: ss
-- client-fingerprint: chrome
-  name: 美国-6
+- cipher: aes-256-cfb
+  name: 日本-6
+  password: amazonskr05
+  port: 443
+  server: 3.112.28.118
+  type: ss
+- name: 美国-3
   network: ws
-  port: 80
-  server: 104.26.14.85
-  skip-cert-verify: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-1
-  network: ws
-  port: 80
-  server: 172.67.73.163
-  skip-cert-verify: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- client-fingerprint: chrome
-  delay: 2905
-  name: 美国-2
-  network: ws
-  port: 2052
-  server: 104.26.12.101
-  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+  port: 443
+  server: 104.26.12.31
+  servername: GErmaNy-exK.pAGEs.DEV
   skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
-  ws-opts:
-    headers:
-      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-    path: /?ed=1080/telegram
-- cipher: aes-256-cfb
-  name: 美国-7
-  password: amazonskr05
-  port: 443
-  server: 47.129.101.151
-  type: ss
-- alterId: 0
-  name: 日本-1
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 160.16.144.90
-  skip-cert-verify: true
-  sni: kdlsupport.zendesk.com
   tls: true
-  type: trojan
+  type: vless
   udp: true
+  uuid: a6dd00f2-de2a-4c3c-bc0a-0e9818e95dde
+  ws-opts:
+    headers:
+      host: GErmaNy-exK.pAGEs.DEV
+    path: /n2s3pihtkefm2xga/mtgumtk4lje2oc4z?ed=2560
+- cipher: aes-256-cfb
+  name: 印度-1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 103.106.229.219
+  type: ss
 - client-fingerprint: chrome
-  name: 美国-5
+  name: 美国-4
   network: ws
   port: 80
-  server: tgju.org
-  servername: a.xn--i-sx6a60i.us.kg.
+  server: 104.26.15.85
+  skip-cert-verify: false
   tls: false
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -130,34 +120,36 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- alterId: 0
-  name: 日本-5
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-1
+  password: amazonskr05
   port: 443
-  server: 160.16.150.202
+  server: 52.79.166.214
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 美国-5
+  network: ws
+  port: 443
+  server: visa.cn
+  servername: mht.mhtadayon.ir
   skip-cert-verify: true
-  sni: kdlsupport.zendesk.com
+  tfo: false
   tls: true
-  type: trojan
-  udp: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: mht.mhtadayon.ir
+    path: /?ed=2740
 - cipher: aes-256-cfb
-  name: 日本-4
+  client-fingerprint: chrome
+  name: 韩国-2
   password: amazonskr05
   port: 443
-  server: 43.207.97.53
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-8
-  password: amazonskr05
-  port: 443
-  server: 43.206.238.113
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-7
-  password: amazonskr05
-  port: 443
-  server: 52.68.141.225
+  server: 13.124.57.244
+  tfo: false
   type: ss
 proxy-groups:
 - name: proxinode
@@ -170,29 +162,31 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
-  - 日本
   - 新加坡
+  - 日本
+  - 美国
+  - 印度
+  - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-2
-  - 新加坡-1
-  - 日本-6
-  - 日本-3
-  - 美国-4
-  - 美国-3
-  - 美国-6
-  - 美国-1
-  - 美国-2
-  - 美国-7
   - 日本-1
-  - 美国-5
-  - 日本-5
+  - 美国-2
+  - 美国-1
+  - 新加坡-2
+  - 新加坡-1
+  - 日本-2
+  - 日本-3
   - 日本-4
-  - 日本-8
-  - 日本-7
+  - 日本-5
+  - 日本-6
+  - 美国-3
+  - 印度-1
+  - 美国-4
+  - 韩国-1
+  - 美国-5
+  - 韩国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -209,15 +203,10 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 美国
+  name: 新加坡
   proxies:
-  - 美国-1
-  - 美国-2
-  - 美国-3
-  - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
+  - 新加坡-1
+  - 新加坡-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -229,14 +218,29 @@ proxy-groups:
   - 日本-4
   - 日本-5
   - 日本-6
-  - 日本-7
-  - 日本-8
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 新加坡
+  name: 美国
   proxies:
-  - 新加坡-1
+  - 美国-1
+  - 美国-2
+  - 美国-3
+  - 美国-4
+  - 美国-5
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 印度
+  proxies:
+  - 印度-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
