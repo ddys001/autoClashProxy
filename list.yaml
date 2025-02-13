@@ -26,69 +26,13 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 日本-3
-  password: amazonskr05
-  port: 443
-  server: 13.230.111.71
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 54.199.161.79
-  type: ss
-- name: 新加坡-1
-  password: 65086441068973800
-  port: 443
-  server: robust-redfish.shiner427.skin
-  skip-cert-verify: true
-  type: trojan
-- name: 新加坡-2
-  network: ws
-  port: 443
-  server: 8.222.165.104
-  servername: zv.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zv.bgm2024.us.kg
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 美国-1
-  password: amazonskr05
-  port: 443
-  server: 47.129.38.168
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-6
-  password: amazonskr05
-  port: 443
-  server: 47.129.8.91
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-2
-  password: amazonskr05
-  port: 443
-  server: 13.212.177.74
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 13.115.39.161
-  type: ss
-- cipher: aes-256-cfb
-  name: 印度-1
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 103.106.229.219
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: 28902
+  server: 218.38.103.150
   type: ss
 - client-fingerprint: chrome
-  name: 美国-4
+  name: 美国-11
   network: ws
   port: 80
   server: 172.67.73.163
@@ -99,28 +43,8 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 52.79.166.214
-  type: ss
-- name: 美国-9
-  network: ws
-  port: 443
-  server: 162.159.153.231
-  servername: zv.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zv.bgm2024.us.kg
-    path: /?ed=2560
 - client-fingerprint: chrome
-  name: 美国-3
+  name: 美国-1
   network: ws
   port: 80
   server: 104.26.15.85
@@ -132,47 +56,165 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
+- client-fingerprint: chrome
+  name: 美国-9
+  network: ws
+  port: 80
+  server: tgju.org
+  servername: a.xn--i-sx6a60i.us.kg.
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- alterId: 0
+  name: 法国-1
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.36.188.94
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf
+  name: 美国-6
+  password: asd123456
+  port: 8388
+  server: 137.175.113.193
+  type: ss
 - name: 美国-5
   network: ws
-  port: 443
-  server: 162.159.152.208
-  servername: zv.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 104.24.147.64
+  servername: ppal03-ppal03.letiwe3303.workers.dev
+  tls: false
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
   ws-opts:
     headers:
-      host: zv.bgm2024.us.kg
+      Host: ppal03-ppal03.letiwe3303.workers.dev
     path: /?ed=2560
+- name: 美国-4
+  network: ws
+  port: 8880
+  server: 172.67.187.219
+  skip-cert-verify: false
+  type: vless
+  uuid: a61fc8cb-0012-4c4b-aa5e-d1c623ae8092
+  ws-opts:
+    headers:
+      Host: worker-late-feather-d436.wedome3486.workers.DEV
+    path: /
+- client-fingerprint: chrome
+  name: 美国-2
+  network: ws
+  port: 80
+  server: 104.20.129.2
+  servername: pormang.webhost99.workers.dev
+  tls: false
+  type: vless
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /?ed=2560
+- name: 保加利亚-1
+  network: ws
+  port: 80
+  server: 45.149.12.128
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 美国-3
+  network: ws
+  port: 80
+  server: 66.235.200.58
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- client-fingerprint: chrome
+  name: 美国-8
+  network: ws
+  port: 80
+  server: 104.24.186.156
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 6ff4726f-3650-4803-95eb-50b240f6ac75
+  ws-opts:
+    headers:
+      Host: red-math-7092-ppal03.mewoco2522.workers.dev
+    path: /?ed=2560
+- name: 俄罗斯-1
+  network: ws
+  port: 80
+  server: 185.174.138.194
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 美国-10
+  network: ws
+  port: 80
+  server: 66.235.200.191
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
 - name: 美国-7
   network: ws
-  port: 443
-  server: 162.159.152.56
-  servername: zv.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 104.16.251.142
+  skip-cert-verify: false
+  tls: false
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: b0c6d7bd-a10c-44ce-b651-8a245cac2f4e
   ws-opts:
     headers:
-      host: zv.bgm2024.us.kg
+      Host: cool-sun-e406-ppal03.lafota3425.workers.dev
     path: /?ed=2560
-- name: 美国-8
+- client-fingerprint: chrome
+  name: 巴西-1
   network: ws
-  port: 443
-  server: 162.159.152.28
-  servername: zv.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 188.114.96.223
+  skip-cert-verify: false
+  tls: false
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: eb201923-0e39-4425-bd0f-6244cd24ef2a
   ws-opts:
     headers:
-      host: zv.bgm2024.us.kg
+      Host: zaq11000d.b835a8094d.workers.dev
     path: /?ed=2560
 proxy-groups:
 - name: proxinode
@@ -186,30 +228,31 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 新加坡
-  - 印度
-  - 日本
+  - 法国
+  - 保加利亚
   - 韩国
+  - 巴西
+  - 俄罗斯
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-3
-  - 日本-2
-  - 新加坡-1
-  - 新加坡-2
-  - 美国-1
-  - 美国-6
-  - 美国-2
-  - 日本-1
-  - 印度-1
-  - 美国-4
   - 韩国-1
+  - 美国-11
+  - 美国-1
   - 美国-9
-  - 美国-3
+  - 法国-1
+  - 美国-6
   - 美国-5
-  - 美国-7
+  - 美国-4
+  - 美国-2
+  - 保加利亚-1
+  - 美国-3
   - 美国-8
+  - 俄罗斯-1
+  - 美国-10
+  - 美国-7
+  - 巴西-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -237,33 +280,38 @@ proxy-groups:
   - 美国-7
   - 美国-8
   - 美国-9
+  - 美国-10
+  - 美国-11
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 新加坡
+  name: 法国
   proxies:
-  - 新加坡-1
-  - 新加坡-2
+  - 法国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 印度
+  name: 保加利亚
   proxies:
-  - 印度-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  - 日本-3
+  - 保加利亚-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 韩国
   proxies:
   - 韩国-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 巴西
+  proxies:
+  - 巴西-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 俄罗斯
+  proxies:
+  - 俄罗斯-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
