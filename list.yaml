@@ -25,10 +25,32 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 英国-1
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 52.195.220.7
+  tfo: false
+  type: ss
+- name: 澳大利亚-1
   network: ws
-  port: 587
-  server: 138.3.217.167
+  port: 12999
+  server: 103.20.199.118
+  servername: vc.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vc.dbbn2024.us.kg
+    path: /?ed=2560
+- name: 澳大利亚-2
+  network: ws
+  port: 8882
+  server: 103.20.199.196
   servername: agedr.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -39,34 +61,45 @@ proxies:
     headers:
       host: agedr.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 新加坡-1
-  network: ws
-  port: 40029
-  server: 43.128.95.110
-  servername: agedr.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
-  ws-opts:
-    headers:
-      host: agedr.ambercc.filegear-sg.me
-    path: /?ed=2560
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 美国-1
+  password: amazonskr05
+  port: 443
+  server: 35.77.91.116
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 43.207.2.243
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-6
+  password: qwerREWQ@@
+  port: 28902
+  server: 218.38.103.150
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 印度-1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 103.106.229.219
+  tfo: false
+  type: ss
 - name: 韩国-1
-  network: ws
-  port: 11300
-  server: 221.163.103.29
-  servername: agedr.ambercc.filegear-sg.me
+  password: 3747000103274291200
+  port: 443
+  server: 43.202.142.243
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
-  ws-opts:
-    headers:
-      host: agedr.ambercc.filegear-sg.me
-    path: /?ed=2560
+  sni: humble-rodent.treefrog761.one
+  type: trojan
 - name: 法国-1
   network: ws
   port: 8080
@@ -81,24 +114,10 @@ proxies:
     headers:
       host: agedr.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 韩国-2
-  network: ws
-  port: 16065
-  server: 220.122.69.165
-  servername: agedr.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
-  ws-opts:
-    headers:
-      host: agedr.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 法国-2
+- name: 巴西-1
   network: ws
   port: 8080
-  server: 141.11.218.249
+  server: 191.101.132.54
   servername: agedr.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -110,11 +129,11 @@ proxies:
       host: agedr.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 韩国-3
+  name: 韩国-2
   network: ws
   password: Aimer
-  port: 50000
-  server: 118.45.241.209
+  port: 10037
+  server: 125.128.229.252
   skip-cert-verify: true
   sni: agepq.ambercc.filegear-sg.me
   type: trojan
@@ -138,11 +157,11 @@ proxies:
       host: vc.dbbn2024.us.kg
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 韩国-5
+  name: 韩国-3
   network: ws
   password: Aimer
-  port: 10037
-  server: 125.128.229.252
+  port: 11288
+  server: 222.114.11.234
   skip-cert-verify: true
   sni: agepq.ambercc.filegear-sg.me
   type: trojan
@@ -151,20 +170,26 @@ proxies:
     headers:
       Host: agepq.ambercc.filegear-sg.me
     path: /?ed=2560
-- fast-open: true
-  name: 俄罗斯-2
-  password: dongtaiwang.com
-  port: 51224
-  server: 46.17.41.189
+- client-fingerprint: chrome
+  name: 韩国-5
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 121.179.37.140
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+  sni: agepq.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agepq.ambercc.filegear-sg.me
+    path: /?ed=2560
 - name: 德国-1
-  password: 3747000103274291200
+  password: 3778399737045327872
   port: 443
-  server: welcome-gorilla.adder289.quest
+  server: popular-pheasant.adder289.quest
   skip-cert-verify: true
-  sni: welcome-gorilla.adder289.quest
+  sni: popular-pheasant.adder289.quest
   type: trojan
 - alpn:
   - h3
@@ -179,57 +204,6 @@ proxies:
   sni: www.bing.com
   type: hysteria
   up: 11 Mbps
-- name: 美国-1
-  network: ws
-  port: 443
-  server: 172.82.16.99
-  servername: vc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vc.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 土耳其-1
-  password: 3747000103274291200
-  port: 443
-  server: ultimate-civet.adder289.quest
-  skip-cert-verify: true
-  sni: ultimate-civet.adder289.quest
-  tfo: false
-  type: trojan
-  udp: true
-- name: 保加利亚-1
-  network: ws
-  port: 80
-  server: 45.149.12.128
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 俄罗斯-3
-  network: ws
-  port: 80
-  server: 185.174.138.194
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
 proxy-groups:
 - name: proxinode
   proxies:
@@ -241,35 +215,35 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 俄罗斯
-  - 韩国
-  - 新加坡
-  - 法国
-  - 英国
-  - 保加利亚
-  - 德国
   - 美国
-  - 土耳其
+  - 巴西
+  - 韩国
+  - 日本
+  - 印度
+  - 俄罗斯
+  - 德国
+  - 法国
+  - 澳大利亚
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 英国-1
-  - 新加坡-1
+  - 日本-1
+  - 澳大利亚-1
+  - 澳大利亚-2
+  - 美国-1
+  - 日本-2
+  - 韩国-6
+  - 印度-1
   - 韩国-1
   - 法国-1
+  - 巴西-1
   - 韩国-2
-  - 法国-2
-  - 韩国-3
   - 韩国-4
+  - 韩国-3
   - 韩国-5
-  - 俄罗斯-2
   - 德国-1
   - 俄罗斯-1
-  - 美国-1
-  - 土耳其-1
-  - 保加利亚-1
-  - 俄罗斯-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -286,11 +260,15 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 俄罗斯
+  name: 美国
   proxies:
-  - 俄罗斯-1
-  - 俄罗斯-2
-  - 俄罗斯-3
+  - 美国-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 巴西
+  proxies:
+  - 巴西-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -301,31 +279,26 @@ proxy-groups:
   - 韩国-3
   - 韩国-4
   - 韩国-5
+  - 韩国-6
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 新加坡
+  name: 日本
   proxies:
-  - 新加坡-1
+  - 日本-1
+  - 日本-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 法国
+  name: 印度
   proxies:
-  - 法国-1
-  - 法国-2
+  - 印度-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 英国
+  name: 俄罗斯
   proxies:
-  - 英国-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 保加利亚
-  proxies:
-  - 保加利亚-1
+  - 俄罗斯-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -335,15 +308,16 @@ proxy-groups:
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 美国
+  name: 法国
   proxies:
-  - 美国-1
+  - 法国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 土耳其
+  name: 澳大利亚
   proxies:
-  - 土耳其-1
+  - 澳大利亚-1
+  - 澳大利亚-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
