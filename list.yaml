@@ -37,37 +37,6 @@ proxies:
     headers:
       Host: agedr.ambercc.filegear-sg.me
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 韩国-9
-  password: amazonskr05
-  port: 443
-  server: 3.36.73.26
-  type: ss
-- name: 美国-3
-  network: ws
-  password: Aimer
-  port: 443
-  server: 141.98.196.223
-  skip-cert-verify: true
-  sni: agepw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepw.ambercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-2
-  network: ws
-  port: 80
-  server: 104.26.14.85
-  skip-cert-verify: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: 美国-1
   network: ws
@@ -80,23 +49,52 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- name: 韩国-4
+- name: 美国-2
   network: ws
-  password: Aimer
-  port: 12344
-  server: 222.108.40.235
+  port: 443
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  servername: c1.vs2024.us.kg
   skip-cert-verify: true
-  sni: agepw.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      Host: agepw.ambercc.filegear-sg.me
+      host: c1.vs2024.us.kg
     path: /?ed=2560
-- name: 韩国-11
+- name: 美国-9
   network: ws
-  port: 50000
-  server: 222.108.94.228
+  port: 443
+  server: 162.159.152.195
+  servername: c1.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: c1.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国-6
+  network: ws
+  port: 443
+  server: 162.159.153.253
+  servername: c1.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: c1.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国-7
+  network: ws
+  port: 443
+  server: 162.159.153.170
   servername: c1.vs2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -108,34 +106,45 @@ proxies:
       host: c1.vs2024.us.kg
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 韩国-7
+  name: 美国-3
   network: ws
-  password: Aimer
-  port: 50000
-  server: 121.179.37.140
-  skip-cert-verify: true
-  sni: agepq.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
+  port: 80
+  server: tgju.org
+  servername: a.xn--i-sx6a60i.us.kg.
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: agepq.ambercc.filegear-sg.me
+      Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 韩国-1
+- name: 美国-5
   network: ws
-  password: Aimer
-  port: 11288
-  server: 222.114.11.234
+  port: 443
+  server: 162.159.152.193
+  servername: c1.vs2024.us.kg
   skip-cert-verify: true
-  sni: agepq.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      Host: agepq.ambercc.filegear-sg.me
+      host: c1.vs2024.us.kg
     path: /?ed=2560
-- name: 韩国-8
+- name: 韩国-1
+  network: ws
+  port: 12487
+  server: 221.148.237.239
+  servername: agedr.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
+  ws-opts:
+    headers:
+      Host: agedr.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国-2
   network: ws
   port: 30012
   server: 175.210.217.204
@@ -149,48 +158,22 @@ proxies:
     headers:
       host: c1.vs2024.us.kg
     path: /c1.vs2024.us.kg
-- name: 韩国-2
+- client-fingerprint: chrome
+  name: 韩国-3
   network: ws
   password: Aimer
-  port: 50000
-  server: 211.38.177.17
+  port: 11288
+  server: 222.114.11.234
   skip-cert-verify: true
-  sni: agepw.ambercc.filegear-sg.me
+  sni: agepq.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: agepw.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-3
-  network: ws
-  port: 50035
-  server: 175.203.204.222
-  servername: c1.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: c1.vs2024.us.kg
-    path: /ss.vs2024.us.kg
-- name: 韩国-5
-  network: ws
-  password: Aimer
-  port: 50000
-  server: 14.37.56.164
-  skip-cert-verify: true
-  sni: agepw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepw.ambercc.filegear-sg.me
+      Host: agepq.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 韩国-10
+  name: 韩国-5
   network: ws
   password: Aimer
   port: 50000
@@ -203,25 +186,46 @@ proxies:
     headers:
       Host: agepq.ambercc.filegear-sg.me
     path: /?ed=2560
+- name: 美国-4
+  network: ws
+  port: 443
+  server: 162.159.152.177
+  servername: c1.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: c1.vs2024.us.kg
+    path: /?ed=2560
+- cipher: aes-128-gcm
+  name: 保加利亚-1
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.82
+  type: ss
 - cipher: aes-256-cfb
-  name: 韩国-6
+  name: 韩国-4
   password: amazonskr05
   port: 443
-  server: 13.125.187.128
+  server: 3.36.73.26
   type: ss
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 俄罗斯-1
-  obfs: dongtaiwang.com
-  port: 63717
-  ports: 40000-50000
-  server: 185.22.155.71
+- name: 美国-8
+  network: ws
+  port: 443
+  server: 104.17.124.174
+  servername: c1.vs2024.us.kg
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: c1.vs2024.us.kg
+    path: /?ed=2560
 proxy-groups:
 - name: proxinode
   proxies:
@@ -236,27 +240,27 @@ proxy-groups:
   - 韩国
   - 美国
   - 新加坡
-  - 俄罗斯
+  - 保加利亚
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
   - 新加坡-1
-  - 韩国-9
-  - 美国-3
-  - 美国-2
   - 美国-1
-  - 韩国-4
-  - 韩国-11
-  - 韩国-7
+  - 美国-2
+  - 美国-9
+  - 美国-6
+  - 美国-7
+  - 美国-3
+  - 美国-5
   - 韩国-1
-  - 韩国-8
   - 韩国-2
   - 韩国-3
   - 韩国-5
-  - 韩国-10
-  - 韩国-6
-  - 俄罗斯-1
+  - 美国-4
+  - 保加利亚-1
+  - 韩国-4
+  - 美国-8
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -280,12 +284,6 @@ proxy-groups:
   - 韩国-3
   - 韩国-4
   - 韩国-5
-  - 韩国-6
-  - 韩国-7
-  - 韩国-8
-  - 韩国-9
-  - 韩国-10
-  - 韩国-11
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -294,6 +292,12 @@ proxy-groups:
   - 美国-1
   - 美国-2
   - 美国-3
+  - 美国-4
+  - 美国-5
+  - 美国-6
+  - 美国-7
+  - 美国-8
+  - 美国-9
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -303,9 +307,9 @@ proxy-groups:
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 俄罗斯
+  name: 保加利亚
   proxies:
-  - 俄罗斯-1
+  - 保加利亚-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
