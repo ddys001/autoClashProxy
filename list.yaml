@@ -26,19 +26,25 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 比利时-1
-  password: amazonskr05
-  port: 443
-  server: 57.180.31.56
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-8
+  name: 美国-4
   password: amazonskr05
   port: 443
   server: 13.212.175.124
   type: ss
+- name: 美国-2
+  network: ws
+  port: 80
+  server: 104.26.13.31
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
 - client-fingerprint: chrome
-  name: 美国-2
+  name: 美国-3
   network: ws
   port: 80
   server: 104.26.14.85
@@ -49,74 +55,8 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 52.221.234.117
-  type: ss
-- client-fingerprint: chrome
-  delay: 2905
-  name: 美国-5
-  network: ws
-  port: 2052
-  server: 104.26.12.101
-  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
-  ws-opts:
-    headers:
-      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-    path: /?ed=1080/telegram
-- client-fingerprint: chrome
-  name: 美国-9
-  network: ws
-  port: 80
-  server: tgju.org
-  servername: a.xn--i-sx6a60i.us.kg.
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- name: 美国-4
-  network: ws
-  port: 80
-  server: 104.26.12.31
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /
 - client-fingerprint: chrome
   name: 美国-1
-  network: ws
-  port: 80
-  server: 172.67.73.163
-  skip-cert-verify: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 54.95.50.167
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: 美国-3
   network: ws
   port: 80
   server: 104.26.15.85
@@ -128,23 +68,78 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- name: 新加坡-1
+- client-fingerprint: chrome
+  name: 美国-7
   network: ws
-  port: 40029
-  server: 43.128.95.110
-  servername: agedr.ambercc.filegear-sg.me
-  tls: true
+  port: 80
+  server: 172.67.73.163
+  skip-cert-verify: false
   type: vless
-  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: agedr.ambercc.filegear-sg.me
+      Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
+- client-fingerprint: chrome
+  name: 美国-8
+  network: ws
+  port: 80
+  server: tgju.org
+  servername: a.xn--i-sx6a60i.us.kg.
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- name: 美国-6
+  network: ws
+  port: 80
+  server: 172.67.75.172
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
+- name: 美国-5
+  network: ws
+  port: 80
+  server: 104.26.12.31
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
+- cipher: aes-256-cfb
+  name: 韩国-4
+  password: qwerREWQ@@
+  port: 28902
+  server: 218.38.103.150
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 52.221.234.117
+  type: ss
+- cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 43.207.2.243
+  type: ss
 - cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 43.207.2.243
+  server: 13.231.248.146
   type: ss
 - cipher: aes-256-cfb
   name: 印度-1
@@ -152,17 +147,11 @@ proxies:
   port: 989
   server: 103.106.229.219
   type: ss
-- cipher: aes-256-cfb
-  name: 美国-6
-  password: amazonskr05
-  port: 443
-  server: 13.209.11.204
-  type: ss
-- name: 韩国-1
+- name: 韩国-2
   network: ws
   password: Aimer
-  port: 50000
-  server: 211.38.177.17
+  port: 11300
+  server: 221.163.103.29
   skip-cert-verify: true
   sni: agepw.ambercc.filegear-sg.me
   type: trojan
@@ -172,18 +161,32 @@ proxies:
       Host: agepw.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 美国-7
+  name: 韩国-3
   network: ws
-  port: 80
-  server: 104.17.148.22
-  servername: redw.pooriam.ir
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  password: Aimer
+  port: 11288
+  server: 222.114.11.234
+  skip-cert-verify: true
+  sni: agepq.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /LwW5jwrnymnOdqki?ed=2560
+      Host: agepq.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国-1
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 14.37.56.164
+  skip-cert-verify: true
+  sni: agepw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agepw.ambercc.filegear-sg.me
+    path: /?ed=2560
 proxy-groups:
 - name: proxinode
   proxies:
@@ -195,9 +198,8 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
   - 日本
-  - 比利时
+  - 美国
   - 新加坡
   - 韩国
   - 印度
@@ -205,22 +207,22 @@ proxy-groups:
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 比利时-1
-  - 美国-8
-  - 美国-2
-  - 新加坡-2
-  - 美国-5
-  - 美国-9
   - 美国-4
-  - 美国-1
-  - 日本-2
+  - 美国-2
   - 美国-3
+  - 美国-1
+  - 美国-7
+  - 美国-8
+  - 美国-6
+  - 美国-5
+  - 韩国-4
   - 新加坡-1
+  - 日本-2
   - 日本-1
   - 印度-1
-  - 美国-6
+  - 韩国-2
+  - 韩国-3
   - 韩国-1
-  - 美国-7
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -237,6 +239,13 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -247,33 +256,21 @@ proxy-groups:
   - 美国-6
   - 美国-7
   - 美国-8
-  - 美国-9
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 比利时
-  proxies:
-  - 比利时-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
-  - 新加坡-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 韩国
   proxies:
   - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
