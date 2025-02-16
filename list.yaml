@@ -25,20 +25,6 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 澳大利亚-1
-  network: ws
-  port: 6666
-  server: 103.20.199.166
-  servername: agedr.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
-  ws-opts:
-    headers:
-      host: agedr.ambercc.filegear-sg.me
-    path: /?ed=2560
 - name: 日本-1
   network: ws
   port: 10443
@@ -53,35 +39,7 @@ proxies:
     headers:
       host: agede.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 美国-2
-  network: ws
-  port: 443
-  server: 47.236.60.3
-  servername: agedr.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
-  ws-opts:
-    headers:
-      host: agedr.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 新加坡-1
-  network: ws
-  port: 6666
-  server: 150.109.24.233
-  servername: agedr.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
-  ws-opts:
-    headers:
-      host: agedr.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国-4
+- name: 美国-5
   network: ws
   port: 449
   server: 206.237.22.91
@@ -95,10 +53,22 @@ proxies:
     headers:
       host: agedr.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 尼日利亚-1
+- name: 新加坡-1
   network: ws
-  port: 8443
-  server: 83.229.123.36
+  port: 40029
+  server: 43.128.95.110
+  servername: agedr.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
+  ws-opts:
+    headers:
+      Host: agedr.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 日本-2
+  network: ws
+  port: 41166
+  server: 149.62.44.233
   servername: agedr.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -123,71 +93,7 @@ proxies:
     headers:
       host: zvc.bgm2024.us.kg
     path: /?ed=2560
-- alterId: 0
-  name: 韩国-5
-  network: ws
-  password: Aimer
-  port: 17100
-  server: 210.222.30.180
-  skip-cert-verify: true
-  sni: agepq.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: 韩国-3
-  network: ws
-  port: 12487
-  server: 221.148.237.239
-  servername: agedr.ambercc.filegear-sg.me
-  tls: true
-  type: vless
-  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
-  ws-opts:
-    headers:
-      Host: agedr.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国-3
-  network: ws
-  port: 443
-  server: 38.180.29.115
-  servername: agede.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      host: agede.ambercc.filegear-sg.me
-    path: /?ed=2560
 - name: 韩国-1
-  network: ws
-  password: Aimer
-  port: 50000
-  server: 211.38.177.17
-  skip-cert-verify: true
-  sni: agepw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepw.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国-1
-  network: ws
-  port: 46102
-  server: 154.12.188.39
-  servername: agede.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      host: agede.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-4
   network: ws
   port: 33022
   server: 222.103.130.244
@@ -201,19 +107,7 @@ proxies:
     headers:
       Host: agedr.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 韩国-8
-  network: ws
-  port: 50000
-  server: 112.185.223.152
-  servername: agedr.ambercc.filegear-sg.me
-  tls: true
-  type: vless
-  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
-  ws-opts:
-    headers:
-      Host: agedr.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-6
+- name: 韩国-4
   network: ws
   port: 12105
   server: 221.165.66.12
@@ -227,11 +121,65 @@ proxies:
     headers:
       host: agedr.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 韩国-7
+- name: 韩国-6
+  network: ws
+  port: 12487
+  server: 221.148.237.239
+  servername: agedr.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
+  ws-opts:
+    headers:
+      Host: agedr.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国-3
+  network: ws
+  port: 53777
+  server: 193.122.126.64
+  servername: agede.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agede.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国-2
+  network: ws
+  port: 2087
+  server: 206.238.237.81
+  servername: agede.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agede.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 土耳其-1
+  network: ws
+  port: 443
+  server: 185.188.147.79
+  servername: agede.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agede.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国-5
   network: ws
   password: Aimer
   port: 50000
-  server: 14.37.56.164
+  server: 112.169.242.150
   skip-cert-verify: true
   sni: agepw.ambercc.filegear-sg.me
   type: trojan
@@ -239,6 +187,61 @@ proxies:
   ws-opts:
     headers:
       Host: agepw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国-3
+  network: ws
+  port: 443
+  server: 63.141.128.100
+  servername: zvc.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zvc.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-4
+  network: ws
+  port: 443
+  server: 152.70.57.182
+  servername: zvc.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zvc.bgm2024.us.kg
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 保加利亚-1
+  network: ws
+  port: 80
+  server: 45.149.12.206
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: 美国-1
+  network: ws
+  port: 2053
+  server: 206.238.237.62
+  servername: agede.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agede.ambercc.filegear-sg.me
     path: /?ed=2560
 proxy-groups:
 - name: proxinode
@@ -251,32 +254,32 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 尼日利亚
-  - 澳大利亚
-  - 韩国
-  - 美国
-  - 新加坡
   - 日本
+  - 韩国
+  - 新加坡
+  - 土耳其
+  - 美国
+  - 保加利亚
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 澳大利亚-1
   - 日本-1
-  - 美国-2
+  - 美国-5
   - 新加坡-1
-  - 美国-4
-  - 尼日利亚-1
+  - 日本-2
   - 韩国-2
-  - 韩国-5
-  - 韩国-3
-  - 美国-3
   - 韩国-1
-  - 美国-1
   - 韩国-4
-  - 韩国-8
   - 韩国-6
-  - 韩国-7
+  - 韩国-3
+  - 美国-2
+  - 土耳其-1
+  - 韩国-5
+  - 美国-3
+  - 美国-4
+  - 保加利亚-1
+  - 美国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -293,15 +296,10 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 尼日利亚
+  name: 日本
   proxies:
-  - 尼日利亚-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 澳大利亚
-  proxies:
-  - 澳大利亚-1
+  - 日本-1
+  - 日本-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -313,17 +311,6 @@ proxy-groups:
   - 韩国-4
   - 韩国-5
   - 韩国-6
-  - 韩国-7
-  - 韩国-8
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 美国
-  proxies:
-  - 美国-1
-  - 美国-2
-  - 美国-3
-  - 美国-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -333,9 +320,25 @@ proxy-groups:
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 日本
+  name: 土耳其
   proxies:
-  - 日本-1
+  - 土耳其-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 美国
+  proxies:
+  - 美国-1
+  - 美国-2
+  - 美国-3
+  - 美国-4
+  - 美国-5
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 保加利亚
+  proxies:
+  - 保加利亚-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
