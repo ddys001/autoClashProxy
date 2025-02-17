@@ -26,50 +26,90 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 美国-4
+  client-fingerprint: chrome
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 3.112.1.164
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 美国-1
   password: amazonskr05
   port: 443
   server: 13.212.175.124
   type: ss
-- name: 美国-2
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 新加坡-2
+  password: amazonskr05
+  port: 443
+  server: 18.143.130.71
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 新加坡-3
+  password: 68711066374000300
+  port: 443
+  server: patient-emu.shiner427.skin
+  skip-cert-verify: false
+  sni: patient-emu.shiner427.skin
+  type: trojan
+- cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 52.221.234.117
+  type: ss
+- cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 43.207.2.243
+  type: ss
+- cipher: aes-256-cfb
+  name: 印度-1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 103.106.229.219
+  type: ss
+- cipher: aes-256-cfb
+  name: 美国-2
+  password: amazonskr05
+  port: 443
+  server: 13.209.11.204
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 3.36.73.26
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 美国-4
   network: ws
   port: 80
-  server: 104.26.13.31
-  skip-cert-verify: false
+  server: tgju.org
+  servername: a.xn--i-sx6a60i.us.kg.
   tls: false
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 韩国-3
+  password: 68711066374000300
+  port: 443
+  server: star-anchovy.shiner427.skin
+  skip-cert-verify: false
+  sni: star-anchovy.shiner427.skin
+  type: trojan
 - client-fingerprint: chrome
   name: 美国-3
-  network: ws
-  port: 80
-  server: 104.26.14.85
-  skip-cert-verify: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-1
-  network: ws
-  port: 80
-  server: 104.26.15.85
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-7
   network: ws
   port: 80
   server: 172.67.73.163
@@ -81,11 +121,11 @@ proxies:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 美国-8
+  name: 美国-5
   network: ws
   port: 80
-  server: tgju.org
-  servername: a.xn--i-sx6a60i.us.kg.
+  server: 104.26.15.85
+  skip-cert-verify: false
   tls: false
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -105,63 +145,16 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- name: 美国-5
-  network: ws
-  port: 80
-  server: 104.26.12.31
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /
-- cipher: aes-256-cfb
-  name: 韩国-4
-  password: qwerREWQ@@
-  port: 28902
-  server: 218.38.103.150
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 乌克兰-1
+  password: XQMAXUIZL4W1Q9W0
+  port: 15002
+  server: 92.113.116.11
+  tfo: false
   type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 52.221.234.117
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 43.207.2.243
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 13.231.248.146
-  type: ss
-- cipher: aes-256-cfb
-  name: 印度-1
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 103.106.229.219
-  type: ss
-- name: 韩国-2
-  network: ws
-  password: Aimer
-  port: 11300
-  server: 221.163.103.29
-  skip-cert-verify: true
-  sni: agepw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepw.ambercc.filegear-sg.me
-    path: /?ed=2560
 - client-fingerprint: chrome
-  name: 韩国-3
+  name: 韩国-2
   network: ws
   password: Aimer
   port: 11288
@@ -174,19 +167,6 @@ proxies:
     headers:
       Host: agepq.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 韩国-1
-  network: ws
-  password: Aimer
-  port: 50000
-  server: 14.37.56.164
-  skip-cert-verify: true
-  sni: agepw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepw.ambercc.filegear-sg.me
-    path: /?ed=2560
 proxy-groups:
 - name: proxinode
   proxies:
@@ -198,31 +178,32 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 日本
   - 美国
-  - 新加坡
   - 韩国
+  - 日本
   - 印度
+  - 新加坡
+  - 乌克兰
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-4
-  - 美国-2
-  - 美国-3
+  - 日本-1
   - 美国-1
-  - 美国-7
-  - 美国-8
-  - 美国-6
-  - 美国-5
-  - 韩国-4
+  - 新加坡-2
+  - 新加坡-3
   - 新加坡-1
   - 日本-2
-  - 日本-1
   - 印度-1
-  - 韩国-2
-  - 韩国-3
+  - 美国-2
   - 韩国-1
+  - 美国-4
+  - 韩国-3
+  - 美国-3
+  - 美国-5
+  - 美国-6
+  - 乌克兰-1
+  - 韩国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -239,13 +220,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -254,14 +228,6 @@ proxy-groups:
   - 美国-4
   - 美国-5
   - 美国-6
-  - 美国-7
-  - 美国-8
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -270,13 +236,33 @@ proxy-groups:
   - 韩国-1
   - 韩国-2
   - 韩国-3
-  - 韩国-4
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 印度
   proxies:
   - 印度-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 乌克兰
+  proxies:
+  - 乌克兰-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
