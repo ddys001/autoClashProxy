@@ -25,7 +25,7 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 美国-4
+- name: 美国-1
   network: ws
   port: 80
   server: 66.235.200.58
@@ -53,58 +53,8 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 美国-5
-  network: ws
-  port: 80
-  server: 66.235.200.191
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 保加利亚-2
-  network: ws
-  port: 80
-  server: 45.149.12.232
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 美国-2
-  network: ws
-  port: 80
-  server: 66.235.200.30
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 美国-1
-  network: ws
-  port: 80
-  server: 66.235.200.149
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
 - client-fingerprint: chrome
-  name: 保加利亚-3
+  name: 保加利亚-2
   network: ws
   port: 80
   server: 45.149.12.206
@@ -116,10 +66,10 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 美国-8
+- name: 美国-4
   network: ws
   port: 443
-  server: 192.0.54.137
+  server: 192.200.160.99
   servername: c1.dbbn2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -130,24 +80,10 @@ proxies:
     headers:
       host: c1.dbbn2024.us.kg
     path: /?ed=2560
-- name: 美国-3
+- name: 美国-2
   network: ws
   port: 443
   server: 135.84.76.115
-  servername: c1.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: c1.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 美国-6
-  network: ws
-  port: 443
-  server: 216.24.57.98
   servername: c1.dbbn2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -172,6 +108,20 @@ proxies:
     headers:
       host: c1.dbbn2024.us.kg
     path: /?ed=2560
+- name: 美国-5
+  network: ws
+  port: 443
+  server: 216.24.57.98
+  servername: c1.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c1.dbbn2024.us.kg
+    path: /?ed=2560
 - name: 奥地利-1
   network: ws
   port: 443
@@ -186,7 +136,7 @@ proxies:
     headers:
       host: c1.dbbn2024.us.kg
     path: /?ed=2560
-- name: 美国-7
+- name: 美国-3
   network: ws
   port: 443
   server: 63.141.128.218
@@ -212,26 +162,22 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 保加利亚
-  - 德国
   - 美国
   - 奥地利
+  - 德国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-4
-  - 保加利亚-1
-  - 美国-5
-  - 保加利亚-2
-  - 美国-2
   - 美国-1
-  - 保加利亚-3
-  - 美国-8
-  - 美国-3
-  - 美国-6
+  - 保加利亚-1
+  - 保加利亚-2
+  - 美国-4
+  - 美国-2
   - 德国-1
+  - 美国-5
   - 奥地利-1
-  - 美国-7
+  - 美国-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -252,13 +198,6 @@ proxy-groups:
   proxies:
   - 保加利亚-1
   - 保加利亚-2
-  - 保加利亚-3
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 德国
-  proxies:
-  - 德国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -269,15 +208,18 @@ proxy-groups:
   - 美国-3
   - 美国-4
   - 美国-5
-  - 美国-6
-  - 美国-7
-  - 美国-8
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 奥地利
   proxies:
   - 奥地利-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 德国
+  proxies:
+  - 德国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
