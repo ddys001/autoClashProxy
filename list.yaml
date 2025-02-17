@@ -25,92 +25,89 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- client-fingerprint: chrome
-  name: 美国-10
+- name: 美国-4
   network: ws
   port: 80
-  server: 104.26.14.85
-  skip-cert-verify: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-4
-  network: ws
-  port: 80
-  server: tgju.org
-  servername: a.xn--i-sx6a60i.us.kg.
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-6
-  network: ws
-  port: 80
-  server: 104.26.15.85
+  server: 66.235.200.58
+  servername: pormang.webhost99.workers.dev
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-1
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 保加利亚-1
   network: ws
   port: 80
-  server: 172.67.73.163
-  skip-cert-verify: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 3.36.73.26
-  type: ss
-- client-fingerprint: chrome
-  name: 美国-2
-  network: ws
-  port: 80
-  server: 104.17.148.22
-  servername: redw.pooriam.ir
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /LwW5jwrnymnOdqki?ed=2560
-- client-fingerprint: chrome
-  name: 美国-7
-  network: ws
-  port: 80
-  server: 104.24.148.184
+  server: 45.149.12.128
+  servername: pormang.webhost99.workers.dev
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 01cb18d1-2062-47e7-999b-ec08e8b2ec85
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
   ws-opts:
     headers:
-      Host: muddy-rain-0a28-ppal03.mitey24737.workers.dev
-    path: /?ed=2560
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
 - name: 美国-5
   network: ws
   port: 80
-  server: 104.27.88.150
+  server: 66.235.200.191
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 保加利亚-2
+  network: ws
+  port: 80
+  server: 45.149.12.232
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: 美国-2
+  network: ws
+  port: 80
+  server: 66.235.200.30
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: 美国-1
+  network: ws
+  port: 80
+  server: 66.235.200.149
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 保加利亚-3
+  network: ws
+  port: 80
+  server: 45.149.12.206
   skip-cert-verify: false
   tls: false
   type: vless
@@ -122,7 +119,7 @@ proxies:
 - name: 美国-8
   network: ws
   port: 443
-  server: 63.141.128.218
+  server: 192.0.54.137
   servername: c1.dbbn2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -133,7 +130,7 @@ proxies:
     headers:
       host: c1.dbbn2024.us.kg
     path: /?ed=2560
-- name: 美国-12
+- name: 美国-3
   network: ws
   port: 443
   server: 135.84.76.115
@@ -147,36 +144,10 @@ proxies:
     headers:
       host: c1.dbbn2024.us.kg
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-9
-  network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 保加利亚-1
-  network: ws
-  port: 80
-  server: 45.149.12.206
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 美国-3
+- name: 美国-6
   network: ws
   port: 443
-  server: 63.141.128.241
+  server: 216.24.57.98
   servername: c1.dbbn2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -187,22 +158,10 @@ proxies:
     headers:
       host: c1.dbbn2024.us.kg
     path: /?ed=2560
-- name: 美国-11
-  network: ws
-  port: 80
-  server: 66.235.200.30
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 美国-13
+- name: 德国-1
   network: ws
   port: 443
-  server: 152.70.57.182
+  server: 185.16.110.111
   servername: c1.dbbn2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -213,10 +172,24 @@ proxies:
     headers:
       host: c1.dbbn2024.us.kg
     path: /?ed=2560
-- name: 美国-14
+- name: 奥地利-1
   network: ws
   port: 443
-  server: 63.141.128.140
+  server: 212.183.88.24
+  servername: c1.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c1.dbbn2024.us.kg
+    path: /?ed=2560
+- name: 美国-7
+  network: ws
+  port: 443
+  server: 63.141.128.218
   servername: c1.dbbn2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -238,29 +211,27 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
-  - 韩国
   - 保加利亚
+  - 德国
+  - 美国
+  - 奥地利
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-10
   - 美国-4
-  - 美国-6
-  - 美国-1
-  - 韩国-1
-  - 美国-2
-  - 美国-7
-  - 美国-5
-  - 美国-8
-  - 美国-12
-  - 美国-9
   - 保加利亚-1
+  - 美国-5
+  - 保加利亚-2
+  - 美国-2
+  - 美国-1
+  - 保加利亚-3
+  - 美国-8
   - 美国-3
-  - 美国-11
-  - 美国-13
-  - 美国-14
+  - 美国-6
+  - 德国-1
+  - 奥地利-1
+  - 美国-7
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -277,6 +248,20 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 保加利亚
+  proxies:
+  - 保加利亚-1
+  - 保加利亚-2
+  - 保加利亚-3
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 德国
+  proxies:
+  - 德国-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -287,24 +272,12 @@ proxy-groups:
   - 美国-6
   - 美国-7
   - 美国-8
-  - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
-  - 美国-13
-  - 美国-14
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 韩国
+  name: 奥地利
   proxies:
-  - 韩国-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 保加利亚
-  proxies:
-  - 保加利亚-1
+  - 奥地利-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
