@@ -28,20 +28,6 @@ proxies:
 - name: 美国-2
   network: ws
   port: 587
-  server: 47.76.62.98
-  servername: agedt.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      host: agedt.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国-4
-  network: ws
-  port: 587
   server: 47.238.161.148
   servername: agedt.ambercc.filegear-sg.me
   skip-cert-verify: true
@@ -53,20 +39,35 @@ proxies:
     headers:
       host: agedt.ambercc.filegear-sg.me
     path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 澳大利亚-1
-  port: 10297
-  reality-opts:
-    public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
-  server: 185.248.187.69
-  servername: www.sega.com
-  skip-cert-verify: false
+- name: 美国-5
+  network: ws
+  port: 587
+  server: 47.76.62.98
+  servername: agedt.ambercc.filegear-sg.me
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 9db6acf4-d3d3-4176-f704-0da5f6da6165
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agedt.ambercc.filegear-sg.me
+    path: /?ed=2560
 - name: 新加坡-1
+  network: ws
+  port: 443
+  server: 54.251.227.43
+  servername: agedt.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agedt.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 新加坡-2
   network: ws
   port: 8443
   server: 52.74.106.147
@@ -80,45 +81,13 @@ proxies:
     headers:
       host: agedt.ambercc.filegear-sg.me
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-7
-  network: ws
-  port: 80
-  server: 172.67.73.163
-  skip-cert-verify: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- name: 美国-6
-  network: ws
-  port: 80
-  server: 104.26.13.31
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /
-- name: 日本-2
-  network: ws
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
   port: 443
-  server: 158.101.86.170
-  servername: agedt.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      host: agedt.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 日本-1
+  server: 43.203.253.211
+  type: ss
+- name: 日本-3
   network: ws
   port: 12888
   server: 158.101.150.106
@@ -132,58 +101,60 @@ proxies:
     headers:
       host: agedt.ambercc.filegear-sg.me
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 韩国-2
-  password: amazonskr05
+- name: 日本-2
+  network: ws
+  port: 8832
+  server: 150.230.108.124
+  servername: agedt.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agedt.ambercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 美国-8
+  network: ws
+  port: 80
+  server: 104.26.14.85
+  skip-cert-verify: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- name: 美国-4
+  network: ws
+  port: 80
+  server: 104.26.13.31
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
+- name: 美国-3
+  network: ws
+  port: 80
+  server: 104.26.12.31
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
+- name: 日本-1
+  network: ws
   port: 443
-  server: 43.203.253.211
-  type: ss
-- name: 韩国-3
-  network: ws
-  port: 30012
-  server: 175.210.217.204
-  servername: zmc.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zmc.bgm2024.us.kg
-    path: /?ed=2560
-- name: 韩国-1
-  network: ws
-  port: 23084
-  server: 183.107.78.213
-  servername: agedt.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      host: agedt.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-4
-  network: ws
-  port: 50000
-  server: 112.160.102.173
-  servername: agedt.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      host: agedt.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-5
-  network: ws
-  port: 10003
-  server: 222.120.196.136
+  server: 158.101.86.170
   servername: agedt.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -198,33 +169,61 @@ proxies:
   name: 美国-1
   network: ws
   port: 80
-  server: 104.17.148.22
-  servername: redw.pooriam.ir
-  tls: false
+  server: 172.67.73.163
+  skip-cert-verify: false
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /LwW5jwrnymnOdqki?ed=2560
-- name: 美国-5
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 韩国-2
+  password: amazonskr05
+  port: 443
+  server: 52.79.101.162
+  type: ss
+- name: 美国-6
+  network: ws
+  port: 58474
+  server: 152.70.232.251
+  servername: agedt.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agedt.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国-3
+  network: ws
+  port: 443
+  server: 129.154.207.203
+  servername: agedt.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agedt.ambercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 美国-7
   network: ws
   port: 80
-  server: 104.27.88.150
+  server: 104.16.40.145
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  uuid: 818a98bf-e7d0-45d5-800b-24d4058234c6
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 美国-3
-  password: telegram-id-directvpn
-  port: 22222
-  server: 63.177.6.64
-  skip-cert-verify: true
-  type: trojan
+      Host: still-smoke-881e-ppal03.cabit21569.workers.dev
+    path: /?ed=2560
 proxy-groups:
 - name: proxinode
   proxies:
@@ -237,30 +236,29 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 韩国
-  - 澳大利亚
-  - 日本
   - 新加坡
+  - 日本
+  - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
   - 美国-2
-  - 美国-4
-  - 澳大利亚-1
-  - 新加坡-1
-  - 美国-7
-  - 美国-6
-  - 日本-2
-  - 日本-1
-  - 韩国-2
-  - 韩国-3
-  - 韩国-1
-  - 韩国-4
-  - 韩国-5
-  - 美国-1
   - 美国-5
+  - 新加坡-1
+  - 新加坡-2
+  - 韩国-1
+  - 日本-3
+  - 日本-2
+  - 美国-8
+  - 美国-4
   - 美国-3
+  - 日本-1
+  - 美国-1
+  - 韩国-2
+  - 美国-6
+  - 韩国-3
+  - 美国-7
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -286,6 +284,22 @@ proxy-groups:
   - 美国-5
   - 美国-6
   - 美国-7
+  - 美国-8
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  - 新加坡-2
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
+  - 日本-3
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -294,27 +308,6 @@ proxy-groups:
   - 韩国-1
   - 韩国-2
   - 韩国-3
-  - 韩国-4
-  - 韩国-5
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 澳大利亚
-  proxies:
-  - 澳大利亚-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
