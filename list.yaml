@@ -25,13 +25,14 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
+- client-fingerprint: chrome
+  name: 日本-1
+  password: 1e63e585ab2fef3adcc9ea75a62abc23
   port: 443
-  server: 52.221.234.117
-  type: ss
-  udp: true
+  server: 49.212.170.40
+  skip-cert-verify: true
+  sni: hezijiasuqi.com
+  type: trojan
 - name: 韩国-1
   network: ws
   port: 30012
@@ -46,7 +47,71 @@ proxies:
     headers:
       host: x1.vs2024.us.kg
     path: /x1.vs2024.us.kg
-- name: 美国-3
+- name: 韩国-2
+  network: ws
+  port: 443
+  server: 129.154.207.203
+  servername: agedt.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agedt.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国-3
+  network: ws
+  port: 50035
+  server: 175.203.204.222
+  servername: x1.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: x1.vs2024.us.kg
+    path: /ss.vs2024.us.kg
+- name: 韩国-4
+  network: ws
+  port: 32400
+  server: 121.172.164.106
+  servername: agedt.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agedt.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 德国-2
+  password: '3782591447421952000'
+  port: 443
+  server: patient-ghost.treefrog761.one
+  skip-cert-verify: true
+  sni: patient-ghost.treefrog761.one
+  type: trojan
+  udp: true
+- name: 美国-1
+  network: ws
+  port: 443
+  server: 63.141.128.100
+  servername: x1.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: x1.vs2024.us.kg
+    path: /?ed=2560&proxyip=63.141.128.100:443
+- name: 美国-2
   network: ws
   port: 80
   server: 66.235.200.5
@@ -74,134 +139,28 @@ proxies:
     headers:
       host: x1.vs2024.us.kg
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 保加利亚-1
+- name: 美国-4
   network: ws
-  port: 80
-  server: 45.149.12.206
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 135.84.76.105
+  servername: x1.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 匈牙利-1
-  password: 3747000103274291200
-  port: 443
-  server: 62.112.221.57
-  skip-cert-verify: true
-  sni: integral-malamute.adder289.quest
-  type: trojan
-  udp: true
+      host: x1.vs2024.us.kg
+    path: /?ed=2560&proxyip=135.84.76.105:443
 - name: 德国-1
   password: '3782591447421952000'
   port: 443
-  server: patient-ghost.treefrog761.one
+  server: 52.57.173.145
   skip-cert-verify: true
   sni: patient-ghost.treefrog761.one
   type: trojan
-  udp: true
-- name: 英国-2
-  network: ws
-  port: 443
-  server: 217.163.76.97
-  servername: x1.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: x1.vs2024.us.kg
-    path: /?ed=2560
-- name: 美国-2
-  network: ws
-  port: 80
-  server: 66.235.200.149
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 美国-1
-  network: ws
-  port: 80
-  server: 66.235.200.58
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 美国-6
-  network: ws
-  port: 443
-  server: 63.141.128.100
-  servername: x1.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: x1.vs2024.us.kg
-    path: /?ed=2560&proxyip=63.141.128.100:443
-- name: 荷兰-2
-  network: ws
-  port: 443
-  server: 185.133.35.147
-  servername: x1.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: x1.vs2024.us.kg
-    path: /?ed=2560
-- name: 美国-5
-  network: ws
-  port: 80
-  server: 66.235.200.191
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 英国-1
-  network: ws
-  port: 443
-  server: 217.163.76.102
-  servername: x1.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: x1.vs2024.us.kg
-    path: /?ed=2560
-- name: 美国-7
+- name: 美国-3
   network: ws
   port: 443
   server: 206.238.236.221
@@ -215,10 +174,52 @@ proxies:
     headers:
       host: x1.vs2024.us.kg
     path: /?ed=2560
-- name: 美国-4
+- name: 奥地利-1
   network: ws
   port: 443
-  server: 63.141.128.193
+  server: 212.183.88.162
+  servername: x1.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: x1.vs2024.us.kg
+    path: /?ed=2560
+- name: 英国-2
+  network: ws
+  port: 443
+  server: 217.163.76.102
+  servername: x1.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: x1.vs2024.us.kg
+    path: /?ed=2560
+- name: 奥地利-2
+  network: ws
+  port: 443
+  server: 212.183.88.176
+  servername: x1.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: x1.vs2024.us.kg
+    path: /?ed=2560
+- name: 英国-1
+  network: ws
+  port: 443
+  server: 217.163.76.97
   servername: x1.vs2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -240,34 +241,33 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 新加坡
-  - 匈牙利
-  - 英国
-  - 美国
-  - 荷兰
-  - 韩国
-  - 保加利亚
   - 德国
+  - 美国
+  - 奥地利
+  - 韩国
+  - 荷兰
+  - 日本
+  - 英国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-1
+  - 日本-1
   - 韩国-1
-  - 美国-3
-  - 荷兰-1
-  - 保加利亚-1
-  - 匈牙利-1
-  - 德国-1
-  - 英国-2
-  - 美国-2
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
+  - 德国-2
   - 美国-1
-  - 美国-6
-  - 荷兰-2
-  - 美国-5
-  - 英国-1
-  - 美国-7
+  - 美国-2
+  - 荷兰-1
   - 美国-4
+  - 德国-1
+  - 美国-3
+  - 奥地利-1
+  - 英国-2
+  - 奥地利-2
+  - 英国-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -284,22 +284,10 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 新加坡
+  name: 德国
   proxies:
-  - 新加坡-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 匈牙利
-  proxies:
-  - 匈牙利-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 英国
-  proxies:
-  - 英国-1
-  - 英国-2
+  - 德国-1
+  - 德国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -309,34 +297,41 @@ proxy-groups:
   - 美国-2
   - 美国-3
   - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 荷兰
+  name: 奥地利
   proxies:
-  - 荷兰-1
-  - 荷兰-2
+  - 奥地利-1
+  - 奥地利-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 韩国
   proxies:
   - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 保加利亚
+  name: 荷兰
   proxies:
-  - 保加利亚-1
+  - 荷兰-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 德国
+  name: 日本
   proxies:
-  - 德国-1
+  - 日本-1
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
+  - 英国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
