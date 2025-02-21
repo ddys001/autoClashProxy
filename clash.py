@@ -109,7 +109,7 @@ class clashConfig:
         self.requestsProxy = {'http':  self.clash.httpProxy, 'https': self.clash.httpsProxy} #进行网络请求时设置的代理
         self.minInConfig = 3 #生成配置文件需要的最少的节点数量
         self.maxInConfig = 2000 #生成配置文件中所允许的最大节点数量。如果数量过多，后续将需要较多时间来查询节点归属地和延迟测试
-        self.maxAfterDelay = 16 #经过延迟测试后，允许输出的最大节点数量
+        self.maxAfterDelay = 25 #经过延迟测试后，允许输出的最大节点数量
 
         if (self.minInConfig > self.maxAfterDelay):
             print(f"延迟测试输出的节点数量:{self.maxAfterDelay} 小于 配置文件所需要的最小节点数量:{self.minInConfig}。请检查相关设置")
@@ -195,7 +195,8 @@ class clashConfig:
         config['proxies'] = proxies if config['proxies'] == None else config['proxies'] + proxies
 
         config['proxy-groups'] = []
-        config['proxy-groups'].append(self.createGroup("proxinode", "select", ["选择地区", "延迟最低", "故障转移", "负载均衡", "手动选择"]))
+        config['proxy-groups'].append(self.createGroup("漏网之鱼", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
+        config['proxy-groups'].append(self.createGroup("国外媒体", "select", ["选择地区", "延迟最低", "故障转移", "负载均衡", "手动选择"]))
 
         selectCountry = self.createGroup("选择地区", "select", [])
         allCountry = []
