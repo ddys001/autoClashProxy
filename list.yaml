@@ -25,61 +25,7 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 3.112.216.127
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-4
-  password: amazonskr05
-  port: 443
-  server: 43.206.216.94
-  type: ss
 - name: 美国-5
-  network: ws
-  port: 80
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- name: 美国-4
-  network: ws
-  port: 80
-  server: join.VPNCUSTOMIZE.fastly80-3.hosting-ip.com
-  servername: Join-VPNCUSTOMIZE-VPNCUSTOMIZE.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: a9784d56-8975-4b13-9e62-84da185fd889
-  ws-opts:
-    headers:
-      Host: Join-VPNCUSTOMIZE-VPNCUSTOMIZE.ir
-    path: /telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE?ed=2048
-- name: 美国-6
-  network: ws
-  port: 80
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- name: 美国-1
   network: ws
   port: 80
   server: join.eliv2.ray.fastly80-3.hosting-ip.com
@@ -93,25 +39,105 @@ proxies:
     headers:
       Host: JoinChannel--ELiV2--ELiV2.iR
     path: /telegram-ELiV2RAY---telegram-ELiV2RAY---telegram-ELiV2RAY---telegram-ELiV2RAY---telegram-ELiV2RAY---telegram-ELiV2RAY?ed=2560
-- cipher: aes-256-cfb
-  name: 日本-3
-  password: amazonskr05
-  port: 443
-  server: 13.114.96.104
-  type: ss
-- client-fingerprint: chrome
-  name: 美国-2
+- name: 美国-4
   network: ws
   port: 80
-  server: 104.26.15.85
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
   skip-cert-verify: false
   tls: false
   type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
+- name: 美国-2
+  network: ws
+  port: 80
+  server: join.VPNCUSTOMIZE.fastly80-3.hosting-ip.com
+  servername: Join-VPNCUSTOMIZE-VPNCUSTOMIZE.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: a9784d56-8975-4b13-9e62-84da185fd889
+  ws-opts:
+    headers:
+      Host: Join-VPNCUSTOMIZE-VPNCUSTOMIZE.ir
+    path: /telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE?ed=2048
+- cipher: aes-256-cfb
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 3.112.216.127
+  type: ss
+- delay: 1802
+  name: 荷兰-1
+  network: ws
+  port: 1846
+  server: 212.52.0.61
+  servername: agedu.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      Host: agedu.aimercc.filegear-sg.me
+    path: /?ed=2560
+- delay: 2253
+  name: 新加坡-1
+  network: ws
+  port: 443
+  server: 150.109.11.223
+  servername: agedu.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      Host: agedu.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国-1
+  network: ws
+  port: 80
+  server: 104.26.14.85
+  servername: a.xn--i-sx6a60i.us.kg.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
+    path: /@V2ray_Alpha/?ed=2560
+- delay: 717
+  name: 斯洛文尼亚-1
+  network: ws
+  port: 443
+  server: 188.64.108.9
+  servername: agedu.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      Host: agedu.aimercc.filegear-sg.me
     path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 3.39.248.156
+  type: ss
 - client-fingerprint: chrome
   name: 美国-3
   network: ws
@@ -125,26 +151,24 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 43.203.240.54
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 52.194.186.197
-  type: ss
 - client-fingerprint: chrome
-  name: 韩国-3
+  name: 美国-6
+  network: ws
+  port: 80
+  server: 104.26.15.85
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- name: 韩国-2
   network: ws
   password: Aimer
-  port: 12220
-  server: 220.80.154.29
+  port: 50000
+  server: 175.214.237.120
   skip-cert-verify: true
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
@@ -153,8 +177,75 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
+- name: 韩国-3
+  network: ws
+  password: Aimer
+  port: 14443
+  server: 220.127.49.73
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agept.ambercc.filegear-sg.me
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 18.183.242.147
+  tfo: false
+  type: ss
+- name: 韩国-4
+  network: ws
+  password: Aimer
+  port: 50003
+  server: 175.199.169.221
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agept.ambercc.filegear-sg.me
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 日本-3
+  password: amazonskr05
+  port: 443
+  server: 13.114.153.253
+  type: ss
+- name: 韩国-7
+  network: ws
+  port: 37322
+  server: 118.42.188.118
+  servername: agedy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      Host: agedy.ambercc.filegear-sg.me
+    path: /?ed=2560
 - client-fingerprint: chrome
-  name: 韩国-4
+  name: 韩国-8
+  network: ws
+  password: Aimer
+  port: 12465
+  server: 14.41.85.118
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agept.ambercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 韩国-5
   network: ws
   password: Aimer
   port: 12499
@@ -167,14 +258,62 @@ proxies:
     headers:
       Host: agept.ambercc.filegear-sg.me
     path: /?ed=2560
-- cipher: rc4-md5
-  name: 新加坡-1
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.45
-  type: ss
+- name: 韩国-6
+  network: ws
+  port: 18004
+  server: 121.153.45.186
+  servername: agedy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      Host: agedy.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国-9
+  network: ws
+  password: Aimer
+  port: 12373
+  server: 175.208.25.75
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agept.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国-10
+  network: ws
+  password: Aimer
+  port: 12523
+  server: 115.23.163.214
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agept.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国-12
+  network: ws
+  port: 12115
+  server: 14.47.175.40
+  servername: agedy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      Host: agedy.ambercc.filegear-sg.me
+    path: /?ed=2560
 - client-fingerprint: chrome
-  name: 韩国-2
+  name: 韩国-11
   network: ws
   password: Aimer
   port: 37722
@@ -187,122 +326,20 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- alterId: 0
-  name: 法国-1
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.39.253.98
+- client-fingerprint: chrome
+  name: 韩国-13
+  network: ws
+  password: Aimer
+  port: 12220
+  server: 220.80.154.29
   skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
+  sni: agepy.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- alpn:
-  - http/1.1
-  name: 德国-1
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.77.69.252
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 美国-7
-  network: ws
-  port: 80
-  server: 104.27.88.150
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- client-fingerprint: chrome
-  name: 美国-8
-  network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+      Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-9
-  network: ws
-  port: 80
-  server: 104.24.186.156
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 6ff4726f-3650-4803-95eb-50b240f6ac75
-  ws-opts:
-    headers:
-      Host: red-math-7092-ppal03.mewoco2522.workers.dev
-    path: /?ed=2560
-- name: 巴西-1
-  network: ws
-  port: 80
-  server: 188.114.96.3
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 260c4900-69a9-465c-8c3a-272eb1b4ec00
-  ws-opts:
-    headers:
-      Host: sHAhRamConfIGWorKERCJsa9898.coNFiGSHahrAMCOnFiG.wOrkErS.DeV
-    path: /pgLUAo7mya6xC60a?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 乌克兰-1
-  password: YTNjNDY5
-  port: 8388
-  server: 185.234.64.35
-  type: ss
-- name: 美国-10
-  network: ws
-  port: 8880
-  server: 104.18.41.138
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 25af9eb2-3310-4f2b-bc82-ebea62ba7906
-  ws-opts:
-    headers:
-      Host: config-proxy-vl.telegram-config-proxy.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.101 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- client-fingerprint: chrome
-  name: 荷兰-1
-  port: 47221
-  reality-opts:
-    public-key: iwsj4xiBztuBQ3I1YsrBBUhnlu7mhhPFozP7bkgaal0
-    short-id: 47ff9b6c
-  server: 95.179.153.250
-  servername: yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3373fe14-47b8-42e5-8a18-7ab3e0dd02b3
-- name: 巴西-2
-  network: ws
-  port: 8880
-  server: 188.114.97.1
-  servername: falcunargo-channel.be3374a836.workers.Dev
-  tls: false
-  type: vless
-  uuid: 91d9b8d8-2aab-4e1a-9573-0d59e9cd7f8e
-  ws-opts:
-    headers:
-      Host: falcunargo-channel.be3374a836.workers.Dev
-    path: /?ed=2048
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -322,44 +359,41 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
   - 日本
   - 新加坡
+  - 美国
   - 韩国
-  - 法国
-  - 德国
-  - 巴西
-  - 乌克兰
+  - 斯洛文尼亚
   - 荷兰
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-1
-  - 日本-4
   - 美国-5
   - 美国-4
-  - 美国-6
-  - 美国-1
-  - 日本-3
   - 美国-2
-  - 美国-3
-  - 韩国-1
-  - 日本-2
-  - 韩国-3
-  - 韩国-4
-  - 新加坡-1
-  - 韩国-2
-  - 法国-1
-  - 德国-1
-  - 美国-7
-  - 美国-8
-  - 美国-9
-  - 巴西-1
-  - 乌克兰-1
-  - 美国-10
+  - 日本-1
   - 荷兰-1
-  - 巴西-2
+  - 新加坡-1
+  - 美国-1
+  - 斯洛文尼亚-1
+  - 韩国-1
+  - 美国-3
+  - 美国-6
+  - 韩国-2
+  - 韩国-3
+  - 日本-2
+  - 韩国-4
+  - 日本-3
+  - 韩国-7
+  - 韩国-8
+  - 韩国-5
+  - 韩国-6
+  - 韩国-9
+  - 韩国-10
+  - 韩国-12
+  - 韩国-11
+  - 韩国-13
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -376,27 +410,11 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 美国
-  proxies:
-  - 美国-1
-  - 美国-2
-  - 美国-3
-  - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
-  - 美国-8
-  - 美国-9
-  - 美国-10
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
   name: 日本
   proxies:
   - 日本-1
   - 日本-2
   - 日本-3
-  - 日本-4
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -406,37 +424,38 @@ proxy-groups:
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
+  name: 美国
+  proxies:
+  - 美国-1
+  - 美国-2
+  - 美国-3
+  - 美国-4
+  - 美国-5
+  - 美国-6
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
   name: 韩国
   proxies:
   - 韩国-1
   - 韩国-2
   - 韩国-3
   - 韩国-4
+  - 韩国-5
+  - 韩国-6
+  - 韩国-7
+  - 韩国-8
+  - 韩国-9
+  - 韩国-10
+  - 韩国-11
+  - 韩国-12
+  - 韩国-13
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 法国
+  name: 斯洛文尼亚
   proxies:
-  - 法国-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 德国
-  proxies:
-  - 德国-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 巴西
-  proxies:
-  - 巴西-1
-  - 巴西-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 乌克兰
-  proxies:
-  - 乌克兰-1
+  - 斯洛文尼亚-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -452,6 +471,12 @@ rule-providers:
     path: ./ruleset/apple.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+  binance:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/Binance.yaml
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Binance/Binance.yaml
   china:
     behavior: classical
     interval: 86400
@@ -501,18 +526,19 @@ rule-providers:
     type: http
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitter/Twitter.yaml
 rules:
+- RULE-SET,china,DIRECT
+- RULE-SET,cncidr,DIRECT
+- RULE-SET,globalMedia,国外媒体
+- RULE-SET,twitter,国外媒体
+- RULE-SET,icloud,DIRECT
+- RULE-SET,apple,DIRECT
+- RULE-SET,binance,DIRECT
+- RULE-SET,direct,DIRECT
+- RULE-SET,lancidr,DIRECT
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
 - DOMAIN,yacd.metacubex.one,DIRECT
-- RULE-SET,direct,DIRECT
-- RULE-SET,lancidr,DIRECT
-- RULE-SET,china,DIRECT
-- RULE-SET,cncidr,DIRECT
-- RULE-SET,icloud,DIRECT
-- RULE-SET,apple,DIRECT
 - RULE-SET,reject,REJECT
-- RULE-SET,globalMedia,国外媒体
-- RULE-SET,twitter,国外媒体
 - MATCH,漏网之鱼
 secret: d53df256-8f1b-4f9b-b730-6a4e947104b6
 tun:
