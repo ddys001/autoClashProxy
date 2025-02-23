@@ -26,60 +26,12 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 美国-4
+  name: 日本-2
   password: amazonskr05
   port: 443
-  server: 47.129.7.198
+  server: 18.179.112.66
   type: ss
 - name: 日本-3
-  network: ws
-  port: 443
-  server: 47.74.33.96
-  servername: jpc.kddhs.asia
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 29fffc40-85fa-46fc-ac13-4d846fd9f696
-  ws-opts:
-    headers:
-      Host: jpc.kddhs.asia
-    path: /bing
-- name: 新加坡-2
-  network: ws
-  port: 30021
-  server: 8.222.192.60
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 52.195.215.236
-  type: ss
-- name: 新加坡-1
-  network: ws
-  port: 443
-  server: 8.219.202.145
-  servername: dob.fenmila.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 038562dc-6958-4ce7-eae2-887d8a1bee2a
-  ws-opts:
-    headers:
-      Host: dob.fenmila.me
-    path: /bing
-- name: 日本-2
   network: ws
   port: 443
   server: 47.245.37.123
@@ -93,17 +45,37 @@ proxies:
     headers:
       Host: jpd.kddhs.asia
     path: /bing
-- name: 韩国-6
-  password: '3787016351714123776'
-  port: 443
-  server: amusing-jaybird.treefrog761.one
-  skip-cert-verify: true
-  sni: amusing-jaybird.treefrog761.one
-  type: trojan
-- name: 美国-1
+- name: 日本-1
   network: ws
   port: 443
-  server: 162.159.152.53
+  server: 47.74.33.96
+  servername: jpc.kddhs.asia
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 29fffc40-85fa-46fc-ac13-4d846fd9f696
+  ws-opts:
+    headers:
+      Host: jpc.kddhs.asia
+    path: /bing
+- client-fingerprint: chrome
+  name: 美国-5
+  network: ws
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- name: 美国-8
+  network: ws
+  port: 443
+  server: 138.2.107.107
   servername: ds.dbbn2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -114,7 +86,55 @@ proxies:
     headers:
       host: ds.dbbn2024.us.kg
     path: /?ed=2560
-- name: 美国-5
+- cipher: aes-256-cfb
+  name: 美国-7
+  password: amazonskr05
+  port: 443
+  server: 47.129.37.234
+  type: ss
+- name: 美国-3
+  network: ws
+  port: 443
+  server: 47.236.251.178
+  servername: agedu.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      Host: agedu.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国-6
+  network: ws
+  port: 443
+  server: 162.159.152.192
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- name: 美国-1
+  network: ws
+  port: 443
+  server: 162.159.152.158
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- name: 美国-4
   network: ws
   port: 80
   server: 172.67.73.163
@@ -131,7 +151,7 @@ proxies:
 - name: 美国-2
   network: ws
   port: 443
-  server: 162.159.152.124
+  server: 162.159.152.16
   servername: ds.dbbn2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -143,20 +163,6 @@ proxies:
       host: ds.dbbn2024.us.kg
     path: /?ed=2560
 - name: 韩国-1
-  network: ws
-  port: 12130
-  server: 211.248.156.161
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-3
   network: ws
   port: 10027
   server: 112.160.95.132
@@ -170,66 +176,10 @@ proxies:
     headers:
       host: agedu.aimercc.filegear-sg.me
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 韩国-2
+- name: 韩国-2
   network: ws
-  password: Aimer
-  port: 22206
-  server: 59.26.208.19
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-8
-  network: ws
-  port: 50000
-  server: 14.39.254.65
-  servername: ds.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ds.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 韩国-5
-  network: ws
-  port: 50001
-  server: 175.195.182.29
-  servername: ds.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ds.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 韩国-7
-  network: ws
-  port: 11210
-  server: 121.180.100.129
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-4
-  network: ws
-  port: 12462
-  server: 220.117.126.46
+  port: 21082
+  server: 222.120.196.136
   servername: agedu.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -240,44 +190,7 @@ proxies:
     headers:
       Host: agedu.aimercc.filegear-sg.me
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 韩国-10
-  network: ws
-  password: Aimer
-  port: 12220
-  server: 220.80.154.29
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-9
-  network: ws
-  port: 35559
-  server: 121.191.9.243
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国-3
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.153.144.26
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tfo: false
-  type: trojan
-  udp: true
-- name: 韩国-13
+- name: 韩国-6
   network: ws
   port: 50000
   server: 221.167.108.29
@@ -291,46 +204,148 @@ proxies:
     headers:
       Host: agedu.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: 美国-6
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.159.154.29
-  skip-cert-verify: true
-  tfo: false
-  type: trojan
-  udp: true
-- name: 韩国-11
+- name: 美国-9
   network: ws
-  port: 12115
-  server: 14.47.175.40
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
+  port: 80
+  server: 104.26.12.31
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
+- name: 新加坡-1
+  network: ws
+  port: 443
+  server: 8.219.202.145
+  servername: dob.fenmila.me
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  uuid: 038562dc-6958-4ce7-eae2-887d8a1bee2a
   ws-opts:
     headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-12
-  network: ws
-  port: 15831
-  server: 175.198.236.155
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-14
+      Host: dob.fenmila.me
+    path: /bing
+- name: 韩国-5
   network: ws
   port: 50002
   server: 14.44.24.206
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- name: 韩国-4
+  network: ws
+  port: 10071
+  server: 220.122.114.61
+  servername: agedu.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      Host: agedu.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国-3
+  network: ws
+  port: 12130
+  server: 211.248.156.161
+  servername: agedu.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agedu.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: 日本-4
+  network: ws
+  port: 2083
+  server: 103.116.7.103
+  servername: agedu.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agedu.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国-10
+  network: ws
+  port: 443
+  server: 104.16.144.216
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- name: 美国-11
+  network: ws
+  port: 443
+  server: 63.141.128.100
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- name: 美国-12
+  network: ws
+  port: 443
+  server: 104.17.122.253
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- name: 美国-13
+  network: ws
+  port: 443
+  server: 63.141.128.218
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- name: 美国-14
+  network: ws
+  port: 443
+  server: 104.16.159.190
   servername: ds.dbbn2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -360,39 +375,39 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 韩国
-  - 新加坡
   - 美国
   - 日本
+  - 韩国
+  - 新加坡
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-4
-  - 日本-3
-  - 新加坡-2
-  - 日本-1
-  - 新加坡-1
   - 日本-2
-  - 韩国-6
-  - 美国-1
+  - 日本-3
+  - 日本-1
   - 美国-5
+  - 美国-8
+  - 美国-7
+  - 美国-3
+  - 美国-6
+  - 美国-1
+  - 美国-4
   - 美国-2
   - 韩国-1
-  - 韩国-3
   - 韩国-2
-  - 韩国-8
+  - 韩国-6
+  - 美国-9
+  - 新加坡-1
   - 韩国-5
-  - 韩国-7
   - 韩国-4
-  - 韩国-10
-  - 韩国-9
-  - 美国-3
-  - 韩国-13
-  - 美国-6
-  - 韩国-11
-  - 韩国-12
-  - 韩国-14
+  - 韩国-3
+  - 日本-4
+  - 美国-10
+  - 美国-11
+  - 美国-12
+  - 美国-13
+  - 美国-14
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -409,32 +424,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
-  - 韩国-3
-  - 韩国-4
-  - 韩国-5
-  - 韩国-6
-  - 韩国-7
-  - 韩国-8
-  - 韩国-9
-  - 韩国-10
-  - 韩国-11
-  - 韩国-12
-  - 韩国-13
-  - 韩国-14
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  - 新加坡-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -443,6 +432,14 @@ proxy-groups:
   - 美国-4
   - 美国-5
   - 美国-6
+  - 美国-7
+  - 美国-8
+  - 美国-9
+  - 美国-10
+  - 美国-11
+  - 美国-12
+  - 美国-13
+  - 美国-14
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -451,6 +448,24 @@ proxy-groups:
   - 日本-1
   - 日本-2
   - 日本-3
+  - 日本-4
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
+  - 韩国-5
+  - 韩国-6
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
