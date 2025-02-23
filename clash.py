@@ -30,11 +30,6 @@ class clashAPI:
         delay = self.timeout + 10 #默认节点延迟时间
         message = f"{proxyName}: timeout"
 
-        invliadCountry = ["中国", "俄罗斯"]
-        for country in invliadCountry:
-            if (country in proxyName):
-                return (None, message, delay)
-
         url = f"{self.baseUrl}:{self.controllerPort}/proxies/{proxyName}/delay"
         params = {"timeout": self.timeout, "url": self.delayUrl}
         queryResult = eval(requests.get(url, headers=self.authorization, params=params).text)

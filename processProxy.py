@@ -92,12 +92,20 @@ def removeTimeoutProxy(proxies, profile, maxProxy):
 
             print("所有节点延迟测试结束")
             print(f"测试正常节点: {len(results)}/{len(proxies)}")
-            if (len(results) > maxProxy):
-                print(f"延迟测试节点数量超过最大数量：{maxProxy}。现按照延迟时间排序选取指定最大数量节点")
-                results = sorted(results, key=itemgetter(1))[:maxProxy] #对节点按照延迟时间进行排序
+
+            country = ["美国", "韩国", "日本", "新加坡", "加拿大"]
+            results = sorted(results, key=itemgetter(1)) #对节点按照延迟时间进行排序
             for result in results: #按照排序结果取相应数量的节点
+                if (result[0]['name'].split('-')[0] not in country):
+                    print(result[0]['name'], "国家不符合要求，不添加至最终的配置文件中")
+                    continue
+
                 print(f"{result[0]['name']}: {result[1]}ms")
                 passProxy.append(result[0])
+
+                if (len(passProxy) == maxProxy):
+                    print("获取节点数量已达到设置的最大数量。")
+                    break
     except Exception as e:
         print(f"测试发生错误：{e}")
 
