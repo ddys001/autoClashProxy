@@ -26,40 +26,25 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 美国-3
+  name: 新加坡-1
   password: amazonskr05
   port: 443
-  server: 47.129.7.198
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 新加坡-4
-  password: amazonskr05
-  port: 443
-  server: 54.254.236.133
+  server: 18.143.165.183
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  delay: 534
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 54.169.215.32
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-5
-  password: amazonskr05
-  port: 443
-  server: 47.129.37.234
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
   delay: 492
-  name: 新加坡-5
+  name: 新加坡-3
   password: amazonskr05
   port: 443
   server: 54.254.169.121
+  type: ss
+- cipher: aes-256-cfb
+  name: 美国-1
+  password: amazonskr05
+  port: 443
+  server: 47.129.37.234
   type: ss
 - name: 日本-1
   network: ws
@@ -75,7 +60,33 @@ proxies:
     headers:
       Host: jpc.kddhs.asia
     path: /bing
-- name: 美国-4
+- cipher: aes-256-cfb
+  name: 新加坡-2
+  password: amazonskr05
+  port: 443
+  server: 54.169.215.32
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-4
+  password: amazonskr05
+  port: 443
+  server: 13.229.82.37
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 美国-13
+  network: ws
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- name: 美国-2
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -89,21 +100,14 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- name: 日本-2
-  network: ws
+- cipher: aes-256-cfb
+  name: 美国-4
+  password: amazonskr05
   port: 443
-  server: 47.245.37.123
-  servername: jpd.kddhs.asia
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fd902d74-2266-4997-99ec-83d3937cbfcc
-  ws-opts:
-    headers:
-      Host: jpd.kddhs.asia
-    path: /bing
-- name: 新加坡-2
+  server: 13.212.32.201
+  tfo: false
+  type: ss
+- name: 新加坡-5
   network: ws
   port: 443
   server: 8.219.202.145
@@ -117,23 +121,21 @@ proxies:
     headers:
       Host: dob.fenmila.me
     path: /bing
-- cipher: aes-256-cfb
-  delay: 267
-  name: 新加坡-3
-  password: amazonskr05
-  port: 443
-  server: 52.77.249.55
-  type: ss
+- name: 美国-6
+  network: ws
+  port: 80
+  server: 172.67.73.163
+  servername: a.xn--i-sx6a60i.us.kg.
+  skip-cert-verify: false
+  tls: false
+  type: vless
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 美国-6
-  password: amazonskr05
-  port: 443
-  server: 13.212.32.201
-  tfo: false
-  type: ss
-- name: 美国-1
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- name: 美国-10
   network: ws
   port: 8080
   server: 104.26.14.185
@@ -145,20 +147,7 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /
-- client-fingerprint: chrome
-  name: 美国-2
-  network: ws
-  port: 80
-  server: 104.26.15.85
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- name: 美国-10
+- name: 美国-5
   network: ws
   port: 80
   server: 104.26.14.85
@@ -173,7 +162,7 @@ proxies:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 美国-7
+  name: 美国-14
   network: ws
   port: 80
   server: tgju.org
@@ -185,20 +174,28 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 43.202.60.105
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-2
-  password: amazonskr05
-  port: 443
-  server: 54.180.133.38
-  type: ss
-- client-fingerprint: chrome
+- cipher: chacha20-ietf-poly1305
+  country: 🏁ZZ
+  delay: 1134
   name: 美国-11
+  password: 1b998e5e-9f5f-47dd-872d-044ca389ace3
+  port: 8388
+  server: shadow-de01.gproxy.gratis
+  type: ss
+- name: 美国-3
+  network: ws
+  port: 80
+  server: 104.16.188.41
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: proud-queen-55500071.cexonoc962.workers.dev
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 美国-9
   network: ws
   port: 80
   server: 104.16.40.145
@@ -213,6 +210,18 @@ proxies:
 - name: 美国-8
   network: ws
   port: 80
+  server: 104.16.172.173
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 850563d4-d5e2-4672-b2e1-ceaa69ff62f2
+  ws-opts:
+    headers:
+      Host: aged-leaf-04aa-ppal03.midosib237.workers.dev
+    path: /?ed=2560
+- name: 美国-12
+  network: ws
+  port: 80
   server: 66.235.200.5
   servername: pormang.webhost99.workers.dev
   skip-cert-verify: false
@@ -224,34 +233,8 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 美国-9
-  network: ws
-  port: 443
-  server: 104.16.157.246
-  servername: ds.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ds.dbbn2024.us.kg
-    path: /?ed=2560
-- delay: 1477
-  name: 美国-12
-  network: ws
-  port: 80
-  server: 104.18.26.94
-  servername: sedalat.tatexe3807.workers.dev
-  type: vless
-  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
-  ws-opts:
-    headers:
-      Host: sedalat.tatexe3807.workers.dev
-    path: /
 - client-fingerprint: chrome
-  name: 美国-13
+  name: 美国-7
   network: ws
   port: 80
   server: 104.16.182.65
@@ -263,47 +246,72 @@ proxies:
     headers:
       Host: dark-bonus-0f2f-ppal03.yapeyef825.workers.dev
     path: /Telegram
+- delay: 1477
+  name: 美国-15
+  network: ws
+  port: 80
+  server: 104.18.26.94
+  servername: sedalat.tatexe3807.workers.dev
+  type: vless
+  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
+  ws-opts:
+    headers:
+      Host: sedalat.tatexe3807.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 美国-17
+  network: ws
+  port: 80
+  server: 190.93.244.226
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /---
+- name: 美国-19
+  network: ws
+  port: 80
+  server: 66.235.200.222
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- client-fingerprint: chrome
+  name: 美国-18
+  network: ws
+  port: 80
+  server: 104.24.87.230
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 590dfbde-f8c8-429b-b947-39bb767ddd9c
+  ws-opts:
+    headers:
+      Host: square-moon-bc81-ppal03.tivere6418.workers.dev
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: 美国-16
   network: ws
   port: 80
-  server: 104.16.86.2
+  server: 104.21.69.44
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-14
-  network: ws
-  port: 8080
-  server: 104.25.35.114
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-  ws-opts:
-    headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /
-- name: 美国-15
-  network: ws
-  port: 2052
-  server: 172.67.135.195
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
-  ws-opts:
-    headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-  xudp: true
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /tmevpnAndroid2/?ed=2560
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -323,39 +331,38 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 新加坡
   - 美国
+  - 新加坡
   - 日本
-  - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-3
-  - 新加坡-4
   - 新加坡-1
-  - 美国-5
-  - 新加坡-5
-  - 日本-1
-  - 美国-4
-  - 日本-2
-  - 新加坡-2
   - 新加坡-3
-  - 美国-6
   - 美国-1
-  - 美国-2
-  - 美国-10
-  - 美国-7
-  - 韩国-1
-  - 韩国-2
-  - 美国-11
-  - 美国-8
-  - 美国-9
-  - 美国-12
+  - 日本-1
+  - 新加坡-2
+  - 新加坡-4
   - 美国-13
-  - 美国-16
+  - 美国-2
+  - 美国-4
+  - 新加坡-5
+  - 美国-6
+  - 美国-10
+  - 美国-5
   - 美国-14
+  - 美国-11
+  - 美国-3
+  - 美国-9
+  - 美国-8
+  - 美国-12
+  - 美国-7
   - 美国-15
+  - 美国-17
+  - 美国-19
+  - 美国-18
+  - 美国-16
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -371,16 +378,6 @@ proxy-groups:
 - name: 手动选择
   proxies: *id001
   type: select
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
-  - 新加坡-4
-  - 新加坡-5
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 美国
   proxies:
@@ -400,20 +397,25 @@ proxy-groups:
   - 美国-14
   - 美国-15
   - 美国-16
+  - 美国-17
+  - 美国-18
+  - 美国-19
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
+  - 新加坡-4
+  - 新加坡-5
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 日本
   proxies:
   - 日本-1
-  - 日本-2
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
