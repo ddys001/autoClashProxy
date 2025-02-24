@@ -39,7 +39,13 @@ proxies:
     headers:
       Host: jpc.kddhs.asia
     path: /bing
-- name: 美国-13
+- cipher: aes-256-cfb
+  name: 新加坡-3
+  password: amazonskr05
+  port: 443
+  server: 13.229.82.37
+  type: ss
+- name: 美国-14
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -53,13 +59,20 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 54.169.215.32
-  tfo: false
-  type: ss
+- name: 美国-2
+  network: ws
+  port: 80
+  server: 172.67.73.163
+  servername: a.xn--i-sx6a60i.us.kg.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
 - name: 新加坡-1
   network: ws
   port: 443
@@ -74,66 +87,7 @@ proxies:
     headers:
       Host: dob.fenmila.me
     path: /bing
-- client-fingerprint: chrome
-  name: 美国-5
-  network: ws
-  port: 80
-  server: join.eliv2.ray.fastly80-3.hosting-ip.com
-  servername: JoinChannel--ELiV2--ELiV2.iR
-  skip-cert-verify: false
-  type: vless
-  uuid: a9784d56-8975-4b13-9e62-84da185fd889
-  ws-opts:
-    headers:
-      Host: JoinChannel--ELiV2--ELiV2.iR
-    path: /telegram-ELiV2RAY---telegram-ELiV2RAY---telegram-ELiV2RAY---telegram-ELiV2RAY---telegram-ELiV2RAY---telegram-ELiV2RAY?ed
-- cipher: aes-256-cfb
-  name: 新加坡-3
-  password: amazonskr05
-  port: 443
-  server: 13.229.82.37
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: 美国-3
-  network: ws
-  port: 80
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- name: 美国-4
-  network: ws
-  port: 80
-  server: 172.67.73.163
-  servername: a.xn--i-sx6a60i.us.kg.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
 - name: 美国-1
-  network: ws
-  port: 8080
-  server: 104.26.14.185
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /
-- name: 美国-2
   network: ws
   port: 80
   server: 104.26.14.85
@@ -147,21 +101,13 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- name: 美国-10
-  network: ws
-  port: 80
-  server: 66.235.200.30
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 美国-6
+- cipher: aes-256-cfb
+  name: 新加坡-2
+  password: amazonskr05
+  port: 443
+  server: 54.169.215.32
+  type: ss
+- name: 美国-3
   network: ws
   port: 80
   server: 66.235.200.5
@@ -175,21 +121,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 美国-7
-  network: ws
-  port: 80
-  server: 66.235.200.222
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 美国-14
+- name: 美国-8
   network: ws
   port: 8880
   server: 154.83.2.228
@@ -203,27 +135,7 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-9
-  network: ws
-  port: 80
-  server: 66.235.200.58
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- cipher: aes-128-gcm
-  name: 英国-1
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  type: ss
-- name: 美国-8
+- name: 美国-12
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -239,19 +151,47 @@ proxies:
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - name: 美国-15
   network: ws
-  port: 8880
-  server: 154.83.2.230
-  servername: redw.pooriam.ir
+  port: 80
+  server: 66.235.200.58
+  servername: pormang.webhost99.workers.dev
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-11
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 美国-7
+  network: ws
+  port: 80
+  server: 66.235.200.191
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 美国-9
+  network: ws
+  port: 80
+  server: 66.235.200.222
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 美国-4
   network: ws
   port: 80
   server: 66.235.200.149
@@ -265,32 +205,91 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- client-fingerprint: chrome
-  name: 美国-12
+- name: 美国-11
   network: ws
-  port: 80
-  server: 104.24.207.192
+  port: 8880
+  server: 154.83.2.230
+  servername: redw.pooriam.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 5b75d93d-1e40-43a4-af3d-d6cb11fbafe8
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: gozargah2.validbv7996.ir
-    path: /3Bc2FravWgXBrnlN?ed=2560
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - cipher: aes-256-cfb
-  name: 美国-16
+  name: 美国-13
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 34.220.211.62
+  type: ssr
+- cipher: aes-256-cfb
+  name: 美国-5
   obfs: plain
   password: amazonskr05
   port: 443
   protocol: origin
   server: 54.213.120.25
   type: ssr
+- cipher: aes-256-cfb
+  name: 美国-6
+  password: amazonskr05
+  port: 443
+  server: 54.244.78.72
+  type: ss
+- cipher: aes-256-cfb
+  name: 美国-10
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 35.87.206.35
+  type: ssr
+- cipher: aes-128-gcm
+  name: 英国-1
+  password: shadowsocks
+  port: 443
+  server: uk-dc1.yangon.club
+  type: ss
+- cipher: aes-256-cfb
+  name: 美国-16
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 35.160.134.223
+  type: ssr
+- name: 美国-19
+  network: ws
+  port: 80
+  server: 66.235.200.30
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- cipher: aes-256-cfb
+  name: 美国-18
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 34.220.174.155
+  type: ssr
 - cipher: aes-128-gcm
   name: 英国-2
   password: shadowsocks
   port: 443
-  server: uk-dc1.yangon.club
+  server: 212.102.53.197
   type: ss
 - cipher: aes-256-cfb
   name: 美国-17
@@ -300,28 +299,6 @@ proxies:
   protocol: origin
   server: 35.91.166.43
   type: ssr
-- cipher: aes-256-cfb
-  name: 美国-19
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 34.220.99.193
-  type: ssr
-- client-fingerprint: chrome
-  name: 美国-18
-  network: ws
-  port: 80
-  server: 190.93.244.226
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /---
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -341,39 +318,39 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
   - 新加坡
-  - 日本
+  - 美国
   - 英国
+  - 日本
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
   - 日本-1
-  - 美国-13
-  - 新加坡-2
-  - 新加坡-1
-  - 美国-5
   - 新加坡-3
-  - 美国-3
-  - 美国-4
-  - 美国-1
-  - 美国-2
-  - 美国-10
-  - 美国-6
-  - 美国-7
   - 美国-14
-  - 美国-9
-  - 英国-1
+  - 美国-2
+  - 新加坡-1
+  - 美国-1
+  - 新加坡-2
+  - 美国-3
   - 美国-8
-  - 美国-15
-  - 美国-11
   - 美国-12
+  - 美国-15
+  - 美国-7
+  - 美国-9
+  - 美国-4
+  - 美国-11
+  - 美国-13
+  - 美国-5
+  - 美国-6
+  - 美国-10
+  - 英国-1
   - 美国-16
-  - 英国-2
-  - 美国-17
   - 美国-19
   - 美国-18
+  - 英国-2
+  - 美国-17
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
@@ -389,6 +366,14 @@ proxy-groups:
 - name: 手动选择
   proxies: *id001
   type: select
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
+  type: url-test
+  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 美国
   proxies:
@@ -414,24 +399,16 @@ proxy-groups:
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
-  name: 新加坡
+  name: 英国
   proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
+  - 英国-1
+  - 英国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 - interval: 300
   name: 日本
   proxies:
   - 日本-1
-  type: url-test
-  url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
-- interval: 300
-  name: 英国
-  proxies:
-  - 英国-1
-  - 英国-2
   type: url-test
   url: https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico
 rule-providers:
