@@ -25,22 +25,8 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 日本-1
-  network: ws
-  port: 443
-  server: 47.74.33.96
-  servername: jpc.kddhs.asia
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 29fffc40-85fa-46fc-ac13-4d846fd9f696
-  ws-opts:
-    headers:
-      Host: jpc.kddhs.asia
-    path: /bing
 - client-fingerprint: chrome
-  name: 美国-4
+  name: 美国-12
   network: ws
   port: 80
   server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
@@ -52,7 +38,7 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- name: 美国-2
+- name: 美国-16
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -66,37 +52,44 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 52.198.15.182
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-3
-  password: amazonskr05
-  port: 443
-  server: 13.231.194.161
-  type: ss
-- name: 日本-4
+- name: 日本-2
   network: ws
   port: 443
-  server: 8.216.128.174
-  servername: clawsg.costs.asia
-  skip-cert-verify: true
+  server: 47.74.33.96
+  servername: jpc.kddhs.asia
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: ca96f93e-ca9a-4130-f0c0-5e3826ea8412
+  uuid: 29fffc40-85fa-46fc-ac13-4d846fd9f696
   ws-opts:
     headers:
-      host: clawsg.costs.asia
+      Host: jpc.kddhs.asia
     path: /bing
-- client-fingerprint: chrome
-  name: 美国-6
+- cipher: aes-256-cfb
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 3.112.216.127
+  type: ss
+- name: 美国-11
   network: ws
   port: 80
-  server: 104.26.15.85
+  server: 172.67.73.163
+  servername: a.xn--i-sx6a60i.us.kg.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- name: 美国-10
+  network: ws
+  port: 8080
+  server: 104.26.14.185
   skip-cert-verify: false
   tls: false
   type: vless
@@ -104,92 +97,35 @@ proxies:
   ws-opts:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- name: 韩国-1
-  network: ws
-  port: 30012
-  server: 118.47.65.248
-  servername: vw.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vw.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国-1
-  network: ws
-  port: 80
-  server: 66.235.200.30
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
     path: /
 - client-fingerprint: chrome
-  name: 美国-3
+  name: 美国-8
   network: ws
   port: 80
-  server: 190.93.244.226
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: false
+  server: tgju.org
+  servername: a.xn--i-sx6a60i.us.kg.
   tls: false
   type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: gozargah.validbv7996.ir
-    path: /---
-- name: 美国-7
-  network: ws
-  port: 443
-  server: 172.82.16.99
-  servername: vw.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vw.bgm2024.us.kg
+      Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
 - name: 美国-5
   network: ws
   port: 80
-  server: 66.235.200.5
-  servername: pormang.webhost99.workers.dev
+  server: 104.26.14.85
+  servername: a.xn--i-sx6a60i.us.kg.
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 荷兰-1
-  network: ws
-  port: 443
-  server: 185.133.35.30
-  servername: vw.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vw.bgm2024.us.kg
+      Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- name: 美国-9
+- name: 美国-2
   network: ws
   port: 443
   server: 63.141.128.163
@@ -203,10 +139,36 @@ proxies:
     headers:
       host: vw.bgm2024.us.kg
     path: /?ed=2560
-- name: 美国-8
+- name: 美国-1
+  network: ws
+  port: 443
+  server: 172.82.16.99
+  servername: vw.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vw.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-14
   network: ws
   port: 80
-  server: 66.235.200.149
+  server: 104.20.43.197
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: 美国-7
+  network: ws
+  port: 80
+  server: 66.235.200.30
   servername: pormang.webhost99.workers.dev
   skip-cert-verify: false
   tls: false
@@ -217,28 +179,33 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 英国-2
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.178.216.126
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 美国-10
+- name: 荷兰-1
   network: ws
-  port: 80
-  server: 66.235.200.222
-  servername: pormang.webhost99.workers.dev
+  port: 8080
+  server: 194.152.44.156
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
   uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
   ws-opts:
     headers:
       Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 美国-11
+    path: /gh+repo+clone+2dust+
+- name: 荷兰-2
+  network: ws
+  port: 443
+  server: 185.133.35.30
+  servername: vw.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vw.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-4
   network: ws
   port: 80
   server: 66.235.200.191
@@ -252,35 +219,21 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 美国-12
+- name: 美国-9
   network: ws
-  port: 443
-  server: 170.39.66.154
-  servername: vw.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 66.235.200.5
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
   ws-opts:
     headers:
-      host: vw.bgm2024.us.kg
-    path: /?ed=2560
-- name: 英国-1
-  network: ws
-  port: 443
-  server: 217.163.76.97
-  servername: vw.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vw.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国-15
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 美国-6
   network: ws
   port: 8880
   server: 154.83.2.228
@@ -294,47 +247,7 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-13
-  network: ws
-  port: 80
-  server: 66.235.200.58
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 美国-14
-  network: ws
-  port: 443
-  server: 135.84.76.105
-  servername: vw.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vw.bgm2024.us.kg
-    path: /?ed=2560
-- name: 荷兰-2
-  network: ws
-  port: 8080
-  server: 194.152.44.156
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /gh+repo+clone+2dust+
-- name: 美国-16
+- name: 美国-15
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -348,6 +261,103 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-3
+  network: ws
+  port: 443
+  server: 135.84.76.105
+  servername: vw.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vw.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-13
+  network: ws
+  port: 8880
+  server: 154.83.2.230
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-18
+  network: ws
+  port: 80
+  server: 66.235.200.149
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: 美国-21
+  network: ws
+  port: 443
+  server: 135.84.76.115
+  servername: vw.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vw.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-17
+  network: ws
+  port: 443
+  server: 170.39.66.154
+  servername: vw.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vw.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-20
+  network: ws
+  port: 443
+  server: 63.141.128.209
+  servername: vw.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vw.bgm2024.us.kg
+    path: /?ed=2560&proxyip=63.141.128.209:443
+- client-fingerprint: chrome
+  name: 美国-19
+  network: ws
+  port: 80
+  server: 172.67.204.84
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /t.mevpnAndroid2/?ed=2560
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -367,40 +377,38 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
   - 日本
-  - 韩国
+  - 美国
   - 荷兰
-  - 英国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-1
-  - 美国-4
-  - 美国-2
-  - 日本-2
-  - 日本-3
-  - 日本-4
-  - 美国-6
-  - 韩国-1
-  - 美国-1
-  - 美国-3
-  - 美国-7
-  - 美国-5
-  - 荷兰-1
-  - 美国-9
-  - 美国-8
-  - 英国-2
-  - 美国-10
-  - 美国-11
   - 美国-12
-  - 英国-1
-  - 美国-15
-  - 美国-13
-  - 美国-14
-  - 荷兰-2
   - 美国-16
+  - 日本-2
+  - 日本-1
+  - 美国-11
+  - 美国-10
+  - 美国-8
+  - 美国-5
+  - 美国-2
+  - 美国-1
+  - 美国-14
+  - 美国-7
+  - 荷兰-1
+  - 荷兰-2
+  - 美国-4
+  - 美国-9
+  - 美国-6
+  - 美国-15
+  - 美国-3
+  - 美国-13
+  - 美国-18
+  - 美国-21
+  - 美国-17
+  - 美国-20
+  - 美国-19
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -416,6 +424,13 @@ proxy-groups:
 - name: 手动选择
   proxies: *id001
   type: select
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
+  type: url-test
+  url: https://i.ytimg.com/generate_204
 - interval: 300
   name: 美国
   proxies:
@@ -435,21 +450,11 @@ proxy-groups:
   - 美国-14
   - 美国-15
   - 美国-16
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  - 日本-3
-  - 日本-4
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
+  - 美国-17
+  - 美国-18
+  - 美国-19
+  - 美国-20
+  - 美国-21
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -457,13 +462,6 @@ proxy-groups:
   proxies:
   - 荷兰-1
   - 荷兰-2
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 英国
-  proxies:
-  - 英国-1
-  - 英国-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
@@ -530,12 +528,12 @@ rule-providers:
 rules:
 - RULE-SET,china,DIRECT
 - RULE-SET,cncidr,DIRECT
-- RULE-SET,globalMedia,国外媒体
-- RULE-SET,twitter,国外媒体
 - RULE-SET,icloud,DIRECT
 - RULE-SET,apple,DIRECT
 - RULE-SET,binance,DIRECT
 - RULE-SET,direct,DIRECT
+- RULE-SET,globalMedia,国外媒体
+- RULE-SET,twitter,国外媒体
 - RULE-SET,lancidr,DIRECT
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
