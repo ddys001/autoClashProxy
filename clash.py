@@ -19,7 +19,7 @@ class clashAPI:
         self.secret = "d53df256-8f1b-4f9b-b730-6a4e947104b6" #登录clash web ui所需要的秘钥
         self.authorization = {"Authorization": f"Bearer {self.secret}"}
 
-        self.testUrl = "https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico" #生成proxy group设置里所需要的url
+        #self.testUrl = "https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico" #生成proxy group设置里所需要的url
 
         self.httpProxy = f"{self.baseUrl}:{self.mixedPort}"
         self.httpsProxy = f"{self.baseUrl}:{self.mixedPort}"
@@ -144,7 +144,7 @@ class clashConfig:
         }
 
         if(groupType != "select"):
-            group['url'] = "https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico"
+            group['url'] = self.clash.delayUrl
             group["interval"] = 300
 
         return group
