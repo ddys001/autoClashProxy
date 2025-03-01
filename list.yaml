@@ -25,7 +25,7 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 美国-3
+- name: 美国-4
   network: ws
   port: 587
   server: 47.76.76.61
@@ -39,7 +39,7 @@ proxies:
     headers:
       host: agedi.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 美国-6
+- name: 美国-3
   network: ws
   port: 587
   server: 47.76.104.12
@@ -53,6 +53,12 @@ proxies:
     headers:
       host: agedi.ambercc.filegear-sg.me
     path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 日本-3
+  password: amazonskr05
+  port: 443
+  server: 54.64.124.92
+  type: ss
 - name: 美国-2
   network: ws
   port: 443
@@ -67,10 +73,10 @@ proxies:
     headers:
       host: agedi.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 美国-5
+- name: 日本-1
   network: ws
-  port: 60001
-  server: 47.76.130.197
+  port: 443
+  server: 18.183.158.211
   servername: agedi.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -79,70 +85,9 @@ proxies:
   uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
   ws-opts:
     headers:
-      host: agedi.ambercc.filegear-sg.me
+      Host: agedi.ambercc.filegear-sg.me
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 3.112.216.127
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 54.64.124.92
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇯🇵JP
-  delay: 2011
-  name: 美国-1
-  password: amazonskr05
-  port: 443
-  server: 35.72.9.98
-  type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-5
-  password: amazonskr05
-  port: 443
-  server: 13.229.127.74
-  type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-3
-  password: amazonskr05
-  port: 443
-  server: 18.141.140.152
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-4
-  password: amazonskr05
-  port: 443
-  server: 47.129.8.153
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 13.250.31.115
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 新加坡-6
-  password: amazonskr05
-  port: 443
-  server: 18.143.187.178
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-8
-  password: amazonskr05
-  port: 443
-  server: 47.128.243.171
-  type: ss
-- name: 日本-4
+- name: 日本-2
   network: ws
   port: 443
   server: 13.230.34.30
@@ -156,54 +101,41 @@ proxies:
     headers:
       Host: agedi.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 新加坡-1
-  network: ws
+- cipher: aes-256-cfb
+  name: 美国-1
+  password: amazonskr05
   port: 443
-  server: 8.222.202.54
-  servername: agedi.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
-  ws-opts:
-    headers:
-      host: agedi.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 日本-3
-  network: ws
-  port: 31593
-  server: 20.78.8.44
-  servername: agedi.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
-  ws-opts:
-    headers:
-      host: agedi.ambercc.filegear-sg.me
-    path: /?ed=2560
+  server: 47.128.243.171
+  type: ss
 - cipher: aes-256-cfb
   name: 新加坡-4
   password: amazonskr05
   port: 443
-  server: 54.254.62.242
+  server: 18.141.140.152
   type: ss
-- client-fingerprint: chrome
-  name: 美国-7
-  network: ws
-  port: 80
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- name: 新加坡-8
+- cipher: aes-256-cfb
+  name: 新加坡-3
+  password: amazonskr05
+  port: 443
+  server: 13.229.127.74
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 新加坡-1
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 84858fa.vpnhat.t.me:73643
+    mode: tls
+  port: 2377
+  server: 84858fa.m5.gladns.com
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-5
+  password: amazonskr05
+  port: 443
+  server: 18.139.162.25
+  type: ss
+- name: 新加坡-2
   network: ws
   port: 443
   server: 54.254.52.56
@@ -217,12 +149,81 @@ proxies:
     headers:
       Host: agedi.ambercc.filegear-sg.me
     path: /?ed=2560
+- name: 美国-6
+  network: ws
+  port: 443
+  server: 154.64.251.19
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  ws-opts:
+    headers:
+      host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 新加坡-7
+  name: 新加坡-8
   password: amazonskr05
   port: 443
-  server: 13.250.96.5
+  server: 13.250.31.115
   type: ss
+- client-fingerprint: chrome
+  name: 美国-5
+  network: ws
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- name: 新加坡-6
+  network: ws
+  port: 443
+  server: 8.222.165.104
+  servername: s5.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: s5.ylkszy.eu.org
+    path: /?ed=2560
+- name: 新加坡-7
+  network: ws
+  port: 443
+  server: 8.222.202.54
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  ws-opts:
+    headers:
+      host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国-7
+  network: ws
+  port: 80
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
 - name: 新加坡-9
   network: ws
   port: 443
@@ -238,27 +239,63 @@ proxies:
       Host: agedi.ambercc.filegear-sg.me
     path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 日本-5
+  name: 日本-4
   password: amazonskr05
   port: 443
-  server: 54.238.247.32
+  server: 3.112.216.127
   type: ss
 - cipher: aes-256-cfb
-  name: 美国-9
+  name: 新加坡-11
   password: amazonskr05
   port: 443
-  server: 47.129.151.205
+  server: 54.254.62.242
   type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-10
-  password: amazonskr05
-  port: 443
-  server: 13.229.55.109
-  type: ss
-- name: 英国-1
+- name: 新加坡-10
   network: ws
-  port: 19125
-  server: 85.113.70.29
+  port: 443
+  server: 124.156.202.172
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  ws-opts:
+    headers:
+      host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 新加坡-12
+  network: ws
+  port: 8900
+  server: 150.109.94.144
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  ws-opts:
+    headers:
+      host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 日本-6
+  network: ws
+  port: 443
+  server: 3.113.64.82
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  ws-opts:
+    headers:
+      Host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 日本-5
+  network: ws
+  port: 31593
+  server: 20.78.8.44
   servername: agedi.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -288,39 +325,38 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
-  - 日本
   - 新加坡
-  - 英国
+  - 日本
+  - 美国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-3
-  - 美国-6
-  - 美国-2
-  - 美国-5
-  - 日本-2
-  - 日本-1
-  - 美国-1
-  - 新加坡-5
-  - 新加坡-3
   - 美国-4
-  - 新加坡-2
-  - 新加坡-6
-  - 美国-8
-  - 日本-4
-  - 新加坡-1
+  - 美国-3
   - 日本-3
+  - 美国-2
+  - 日本-1
+  - 日本-2
+  - 美国-1
   - 新加坡-4
-  - 美国-7
+  - 新加坡-3
+  - 新加坡-1
+  - 新加坡-5
+  - 新加坡-2
+  - 美国-6
   - 新加坡-8
+  - 美国-5
+  - 新加坡-6
   - 新加坡-7
+  - 美国-7
   - 新加坡-9
-  - 日本-5
-  - 美国-9
+  - 日本-4
+  - 新加坡-11
   - 新加坡-10
-  - 英国-1
+  - 新加坡-12
+  - 日本-6
+  - 日本-5
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -337,30 +373,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 美国
-  proxies:
-  - 美国-1
-  - 美国-2
-  - 美国-3
-  - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
-  - 美国-8
-  - 美国-9
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  - 日本-3
-  - 日本-4
-  - 日本-5
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
@@ -373,12 +385,31 @@ proxy-groups:
   - 新加坡-8
   - 新加坡-9
   - 新加坡-10
+  - 新加坡-11
+  - 新加坡-12
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 英国
+  name: 日本
   proxies:
-  - 英国-1
+  - 日本-1
+  - 日本-2
+  - 日本-3
+  - 日本-4
+  - 日本-5
+  - 日本-6
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 美国
+  proxies:
+  - 美国-1
+  - 美国-2
+  - 美国-3
+  - 美国-4
+  - 美国-5
+  - 美国-6
+  - 美国-7
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
