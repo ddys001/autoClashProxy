@@ -46,6 +46,7 @@ parser.add_argument("--urlfile", type=str, default="source.url", help="指定下
 parser.add_argument("--push", action='store_true', help="将生成的clash配置文件上传至github")
 parser.add_argument("--retry", type=int, default=5, help="失败后重试的次数。默认数值为5次")
 parser.add_argument("--noDownload", action='store_true', help="不下载公开节点，使用本地配置文件")
+parser.add_argument("--noCheck", action='store_true', help="不检查当前配置文件中节点数量是否满足要求")
 
 createClash = parser.add_mutually_exclusive_group(required=True)
 createClash.add_argument("--local", action='store_true', help="处理本地配置文件，生成clash配置文件。")
@@ -67,7 +68,7 @@ bNoDownload = args.noDownload
 proxies = None
 configPath = f"{os.getcwd()}/{profile.file}"
 
-if (args.update and (not checkNeedUpdate(profile))):
+if (args.update and (not args.noCheck) and (not checkNeedUpdate(profile))):
     print("当前配置文件中存在足够多的有效节点，无需更新")
     sys.exit(0)
 
