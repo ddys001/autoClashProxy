@@ -96,6 +96,17 @@ class clashAPI:
             print(message.text)
             print("发送重启内核命令失败")
 
+    def groupDelay(self, groupName):
+        url = f"{self.baseUrl}:{self.controllerPort}/group/{groupName}/delay"
+        params = {"timeout": self.timeout, "url": self.delayUrl}
+        message = requests.get(url, headers=self.authorization, params=params)
+        print(message.text)
+
+    def groupProxy(self, groupName):
+        url = f"{self.baseUrl}:{self.controllerPort}/group/{groupName}"
+        message = requests.get(url, headers=self.authorization)
+        print(message.text)
+
 class clashConfig:
     def __init__(self):
         self.clash = clashAPI()
@@ -215,4 +226,5 @@ class clashConfig:
 
 if __name__ == "__main__":
     clash = clashAPI()
-    clash.restart()
+    clash.groupProxy("手动选择")
+    clash.groupDelay("手动选择")
