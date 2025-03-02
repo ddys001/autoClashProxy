@@ -25,44 +25,6 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 13.229.63.223
-  type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-3
-  password: amazonskr05
-  port: 443
-  server: 54.151.184.124
-  type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 13.229.55.109
-  type: ss
-- name: 美国-3
-  network: ws
-  port: 80
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 54.64.6.209
-  type: ss
 - client-fingerprint: chrome
   http-opts:
     headers:
@@ -70,7 +32,7 @@ proxies:
       - 2002:0000:0000::1
     path:
     - /Hello!
-  name: 日本-2
+  name: 日本-1
   network: http
   port: 80
   server: 45.76.87.24
@@ -78,10 +40,10 @@ proxies:
   tls: false
   type: vless
   uuid: 446bfcde-1d2d-4f6f-a828-117487411e01
-- name: 美国-5
+- name: 美国-7
   network: ws
   port: 443
-  server: 63.141.128.94
+  server: 63.141.128.100
   servername: s3.vs2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -91,8 +53,22 @@ proxies:
   ws-opts:
     headers:
       host: s3.vs2024.us.kg
-    path: /?ed=2560
-- name: 荷兰-2
+    path: /?ed=2560&proxyip=63.141.128.100:443
+- name: 美国-8
+  network: ws
+  port: 443
+  server: 192.0.54.168
+  servername: s3.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: s3.vs2024.us.kg
+    path: /?ed=2560&proxyip=192.0.54.168:443
+- name: 荷兰-1
   network: ws
   port: 443
   server: 185.133.35.120
@@ -106,60 +82,38 @@ proxies:
     headers:
       host: s3.vs2024.us.kg
     path: /?ed=2560
-- name: 荷兰-1
-  network: ws
-  port: 80
-  server: 45.131.208.223
-  servername: 1224.j9q1xuv8.workers.dev
-  tls: false
-  type: vless
-  uuid: daf24a6d-2f78-4cab-867a-4da0f4c91cff
-  ws-opts:
-    headers:
-      Host: 1224.j9q1xuv8.workers.dev
-    path: /Telegram
-- name: 美国-2
-  network: ws
-  port: 8880
-  server: 154.83.2.228
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-1
-  network: ws
-  port: 8880
-  server: 66.235.200.94
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
-  ws-opts:
-    headers:
-      Host: channel-falcunargo.efa180b5d7.workers.Dev
-    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
-- name: 美国-6
-  network: ws
-  port: 2095
-  server: 104.18.21.69
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingxijinping.xijinpingbigsb.workers.dev
-    path: /?ed=2560
-- name: 荷兰-3
+- name: 荷兰-2
   network: ws
   port: 443
   server: 185.133.35.245
+  servername: s3.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: s3.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国-2
+  network: ws
+  port: 443
+  server: 135.84.76.105
+  servername: s3.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: s3.vs2024.us.kg
+    path: /?ed=2560&proxyip=135.84.76.105:443
+- name: 英国-1
+  network: ws
+  port: 443
+  server: 217.163.76.97
   servername: s3.vs2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -184,75 +138,24 @@ proxies:
     headers:
       host: s3.vs2024.us.kg
     path: /?ed=2560
-- name: 美国-10
+- name: 美国-3
   network: ws
-  port: 443
-  server: 63.141.128.100
-  servername: s3.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: s3.vs2024.us.kg
-    path: /?ed=2560&proxyip=63.141.128.100:443
-- name: 美国-7
-  network: ws
-  port: 443
-  server: 130.250.137.19
-  servername: s3.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: s3.vs2024.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国-9
-  network: ws
-  port: 80
-  server: 104.21.58.212
+  port: 8880
+  server: 154.83.2.230
+  servername: redw.pooriam.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 5a4e040a-8de6-4222-bd6f-9f535b8772fd
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: calm-violet-0e47.pomofoc222.workers.dev
-    path: /lrJO6NEVRGHecfbo?ed=2560
-- name: 美国-11
-  network: ws
-  port: 2052
-  server: 104.18.15.19
-  servername: 0107.cxypogon.workers.dev
-  tls: false
-  type: vless
-  uuid: 13ed4a8b-6049-4f26-8cb3-9870df4fda4c
-  ws-opts:
-    headers:
-      Host: 0107.cxypogon.workers.dev
-    path: /?ed=2560
-- name: 美国-8
-  network: ws
-  port: 2095
-  server: 172.64.146.66
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: xijinpingnmsl.s4ar.workers.dev
-    path: /?ed=2560
-- name: 美国-12
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-5
   network: ws
   port: 443
-  server: 192.0.54.168
+  server: 63.141.128.94
   servername: s3.vs2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -262,8 +165,50 @@ proxies:
   ws-opts:
     headers:
       host: s3.vs2024.us.kg
-    path: /?ed=2560&proxyip=192.0.54.168:443
-- name: 美国-13
+    path: /?ed=2560
+- name: 荷兰-3
+  network: ws
+  port: 443
+  server: 185.133.35.160
+  servername: s3.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: s3.vs2024.us.kg
+    path: /?ed=2560
+- name: 英国-2
+  network: ws
+  port: 443
+  server: 217.163.76.102
+  servername: s3.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: s3.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国-1
+  network: ws
+  port: 8880
+  server: 154.83.2.228
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-6
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -277,54 +222,19 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 荷兰-5
+- name: 美国-9
   network: ws
-  port: 2086
-  server: 45.131.5.244
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 130.250.137.19
+  servername: s3.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: f366e744-abcd-4b5b-bd5e-2bd97b6443bf
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      Host: fva64rbmjfkfznnptk6imz6sihrno35m4csom83admge5tfxniwduyuyt954fdh.ks3om.workers.Dev
-    path: /
-- name: 荷兰-4
-  network: ws
-  port: 2086
-  server: 45.131.5.91
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: f366e744-abcd-4b5b-bd5e-2bd97b6443bf
-  ws-opts:
-    headers:
-      Host: fva64rbmjfkfznnptk6imz6sihrno35m4csom83admge5tfxniwduyuyt954fdh.ks3om.workers.Dev
-    path: /
-- name: 荷兰-6
-  network: ws
-  port: 80
-  server: 45.131.5.111
-  servername: feng4.l1ut8bi9.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
-  ws-opts:
-    headers:
-      Host: feng4.l1ut8bi9.workers.dev
-    path: /Telegram
-- name: 美国-14
-  network: ws
-  port: 80
-  server: 104.24.247.189
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a1311ab3-0498-4cfd-b2c9-b5a4ba7d2999
-  ws-opts:
-    headers:
-      Host: rapid-mountain-e6a9-ppal03.rahog30057.workers.dev
+      host: s3.vs2024.us.kg
     path: /?ed=2560
 proxy-groups:
 - name: 漏网之鱼
@@ -345,39 +255,29 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 日本
   - 美国
-  - 新加坡
   - 荷兰
+  - 日本
+  - 英国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-1
-  - 新加坡-3
-  - 新加坡-2
-  - 美国-3
   - 日本-1
-  - 日本-2
-  - 美国-5
-  - 荷兰-2
+  - 美国-7
+  - 美国-8
   - 荷兰-1
+  - 荷兰-2
   - 美国-2
+  - 英国-1
+  - 美国-4
+  - 美国-3
+  - 美国-5
+  - 荷兰-3
+  - 英国-2
   - 美国-1
   - 美国-6
-  - 荷兰-3
-  - 美国-4
-  - 美国-10
-  - 美国-7
   - 美国-9
-  - 美国-11
-  - 美国-8
-  - 美国-12
-  - 美国-13
-  - 荷兰-5
-  - 荷兰-4
-  - 荷兰-6
-  - 美国-14
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -394,13 +294,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -412,19 +305,6 @@ proxy-groups:
   - 美国-7
   - 美国-8
   - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
-  - 美国-13
-  - 美国-14
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -433,9 +313,19 @@ proxy-groups:
   - 荷兰-1
   - 荷兰-2
   - 荷兰-3
-  - 荷兰-4
-  - 荷兰-5
-  - 荷兰-6
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
+  - 英国-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
