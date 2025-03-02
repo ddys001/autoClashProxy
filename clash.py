@@ -102,10 +102,14 @@ class clashAPI:
         message = requests.get(url, headers=self.authorization, params=params)
         print(message.text)
 
+        return json.loads(message.text)
+
     def groupProxy(self, groupName):
         url = f"{self.baseUrl}:{self.controllerPort}/group/{groupName}"
         message = requests.get(url, headers=self.authorization)
         print(message.text)
+
+        return json.loads(message.text)
 
 class clashConfig:
     def __init__(self):

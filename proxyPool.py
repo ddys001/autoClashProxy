@@ -25,6 +25,22 @@ def parserSourceUrl(sourceFile):
     print("解析完成，共获得{}个有效url".format(len(allUrl)))
     return allUrl
 
+def checkNeedUpdate(profile):
+    clash = profile.clash
+    allProxy = clash.groupProxy("手动选择")
+
+    if ("all" in allProxy):
+        valid = clash.groupDelay("手动选择")
+        if (len(valid) / len(allProxy['all']) < 0.5):
+            print("有效节点数量不足配置文件中节点数量一半")
+            return True
+        elif (len(allProxy['all']) / profile.maxAfterDelay < 0.8):
+            return True
+        else:
+            return False
+
+    return True
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--urlfile", type=str, default="source.url", help="指定下载clash订阅链接的文件")
 parser.add_argument("--push", action='store_true', help="将生成的clash配置文件上传至github")
@@ -50,6 +66,10 @@ if(args.noDownload and args.download):
 bNoDownload = args.noDownload
 proxies = None
 configPath = f"{os.getcwd()}/{profile.file}"
+
+if (args.update and (not checkNeedUpdate(profile))):
+    print("当前配置文件中存在足够多的有效节点，无需更新")
+    sys.exit(0)
 
 #处理本地的clash配置文件，删除里面不符合要求的节点，生成配置文件。
 if (args.local or bNoDownload):
