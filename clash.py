@@ -117,7 +117,7 @@ class clashConfig:
         self.defaultFile = "default.config" #生成配置文件所需要的模板文件，里面会设置好ruler、dns和tun等clash配置
         self.file = "list.yaml" #最终生成的配置文件
         self.requestsProxy = {'http':  self.clash.httpProxy, 'https': self.clash.httpsProxy} #进行网络请求时设置的代理
-        self.minInConfig = 3 #生成配置文件需要的最少的节点数量
+        self.minInConfig = 10 #生成配置文件需要的最少的节点数量
         self.maxInConfig = 2000 #生成配置文件中所允许的最大节点数量。如果数量过多，后续将需要较多时间来查询节点归属地和延迟测试
         self.maxAfterDelay = 25 #经过延迟测试后，允许输出的最大节点数量
 

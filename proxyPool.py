@@ -34,7 +34,7 @@ def checkNeedUpdate(profile):
         if (len(valid) / len(allProxy['all']) < 0.5):
             print("有效节点数量不足配置文件中节点数量一半")
             return True
-        elif (len(allProxy['all']) / profile.maxAfterDelay < 0.8):
+        elif (len(allProxy['all']) < profile.maxAfterDelay):
             return True
         else:
             return False
