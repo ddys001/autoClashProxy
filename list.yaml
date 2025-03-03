@@ -25,19 +25,12 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- client-fingerprint: chrome
-  name: 美国-9
-  network: ws
-  port: 80
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- cipher: aes-256-cfb
+  name: 日本-5
+  password: amazonskr05
+  port: 443
+  server: 52.195.185.114
+  type: ss
 - name: 美国-1
   network: ws
   port: 80
@@ -53,15 +46,51 @@ proxies:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
 - cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 13.229.55.109
+  type: ss
+- alterId: 99999
+  cipher: auto
+  name: 日本-4
+  network: tcp
+  port: 446
+  server: 4sq5c-g03.jp04-3771-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
+- client-fingerprint: chrome
+  name: 美国-4
+  network: ws
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- cipher: aes-256-cfb
+  name: 日本-3
+  password: amazonskr05
+  port: 443
+  server: 3.112.30.167
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 52.195.185.114
+  server: 18.183.164.43
   type: ss
-- name: 美国-8
+  udp: true
+- name: 美国-3
   network: ws
   port: 443
-  server: 138.2.107.107
+  server: toy-people.com
   servername: v7.ylks.us.kg
   skip-cert-verify: true
   tls: true
@@ -72,81 +101,60 @@ proxies:
     headers:
       host: v7.ylks.us.kg
     path: /?ed=2560
-- name: 美国-7
-  network: ws
-  port: 80
-  server: 104.26.13.31
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /
 - cipher: aes-128-gcm
   name: 英国-1
   password: shadowsocks
   port: 443
   server: 212.102.53.196
   type: ss
-- alterId: 0
-  name: 美国-3
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.169.169.38
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- name: 美国-11
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.61.164.154
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tfo: false
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 美国-12
-  password: 1b998e5e-9f5f-47dd-872d-044ca389ace3
-  port: 8388
-  server: shadow-de01.gproxy.gratis
-  type: ss
+- client-fingerprint: chrome
+  http-opts:
+    headers:
+      Host:
+      - 2002:0000:0000::1
+    path:
+    - /Hello!
+  name: 日本-2
+  network: http
+  port: 80
+  server: 45.76.87.24
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 446bfcde-1d2d-4f6f-a828-117487411e01
+- client-fingerprint: chrome
+  name: 美国-7
+  network: ws
+  port: 80
+  server: 104.17.148.22
+  servername: redw.pooriam.ir
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /LwW5jwrnymnOdqki?ed=2560
+- client-fingerprint: chrome
+  name: 美国-5
+  network: ws
+  port: 80
+  server: 104.16.1.47
+  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+  tls: false
+  type: vless
+  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
+  ws-opts:
+    headers:
+      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+    path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 美国-2
+  name: 美国-6
   password: amazonskr05
   port: 443
   server: 34.212.0.149
   type: ss
-- name: 美国-4
-  network: ws
-  port: 80
-  server: 104.16.178.238
-  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
-  tls: false
-  type: vless
-  uuid: d4eddaf9-a660-4905-b835-cad98677b380
-  ws-opts:
-    headers:
-      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
-    path: /?ed=2560
-- name: 美国-5
-  network: ws
-  port: 80
-  server: 104.16.171.121
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
-  ws-opts:
-    headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
-    path: /?ed=2560
-- name: 美国-6
+- name: 美国-2
   network: ws
   port: 8880
   server: 154.83.2.230
@@ -160,19 +168,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- client-fingerprint: chrome
-  name: 美国-10
-  network: ws
-  port: 80
-  server: 172.67.204.84
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /t.mevpnAndroid2/?ed=2560
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -192,6 +187,7 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
+  - 新加坡
   - 日本
   - 美国
   - 英国
@@ -199,20 +195,20 @@ proxy-groups:
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-9
+  - 日本-5
   - 美国-1
-  - 日本-1
-  - 美国-8
-  - 美国-7
-  - 英国-1
-  - 美国-3
-  - 美国-11
-  - 美国-12
-  - 美国-2
+  - 新加坡-1
+  - 日本-4
   - 美国-4
+  - 日本-3
+  - 日本-1
+  - 美国-3
+  - 英国-1
+  - 日本-2
+  - 美国-7
   - 美国-5
   - 美国-6
-  - 美国-10
+  - 美国-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -229,9 +225,19 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
   name: 日本
   proxies:
   - 日本-1
+  - 日本-2
+  - 日本-3
+  - 日本-4
+  - 日本-5
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -244,11 +250,6 @@ proxy-groups:
   - 美国-5
   - 美国-6
   - 美国-7
-  - 美国-8
-  - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
