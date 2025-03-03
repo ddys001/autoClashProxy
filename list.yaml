@@ -26,47 +26,53 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 日本-5
+  name: 日本-3
   password: amazonskr05
   port: 443
-  server: 54.249.42.175
+  server: 18.179.10.10
   type: ss
-- cipher: aes-256-cfb
-  name: 日本-4
-  password: amazonskr05
-  port: 443
-  server: 3.112.30.167
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 13.230.20.120
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-3
-  password: amazonskr05
-  port: 443
-  server: 13.231.162.239
+  server: 54.95.114.157
   type: ss
   udp: true
-- alterId: 99999
-  cipher: auto
-  name: 比利时-1
-  network: tcp
-  port: 446
-  server: 4sq5c-g03.jp04-3771-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  type: vmess
-  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
 - cipher: aes-256-cfb
   name: 新加坡-1
   password: amazonskr05
   port: 443
   server: 18.140.3.253
   type: ss
-- name: 美国-3
+- cipher: aes-256-cfb
+  name: 日本-4
+  password: amazonskr05
+  port: 443
+  server: 13.230.110.170
+  type: ss
+- alterId: 99999
+  cipher: auto
+  name: 日本-5
+  network: tcp
+  port: 446
+  server: 4sq5c-g03.jp04-3771-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
+- client-fingerprint: chrome
+  name: 美国-3
+  network: ws
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- name: 美国-1
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -80,32 +86,18 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- client-fingerprint: chrome
-  name: 美国-1
-  network: ws
-  port: 80
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
 - cipher: aes-256-cfb
   name: 日本-2
   password: amazonskr05
   port: 443
-  server: 18.183.221.195
+  server: 3.112.30.167
   type: ss
 - cipher: aes-256-cfb
   name: 日本-6
   password: amazonskr05
   port: 443
-  server: 18.183.164.43
+  server: 54.64.6.209
   type: ss
-  udp: true
 - name: 美国-4
   network: ws
   port: 443
@@ -120,10 +112,10 @@ proxies:
     headers:
       host: v7.ylks.us.kg
     path: /?ed=2560
-- name: 美国-2
+- name: 美国-7
   network: ws
   port: 443
-  server: iplocation.io
+  server: toy-people.com
   servername: v7.ylks.us.kg
   skip-cert-verify: true
   tls: true
@@ -141,24 +133,30 @@ proxies:
   server: 212.102.53.196
   type: ss
 - client-fingerprint: chrome
-  http-opts:
-    headers:
-      Host:
-      - 2002:0000:0000::1
-    path:
-    - /Hello!
-  name: 日本-7
-  network: http
+  name: 美国-2
+  network: ws
   port: 80
-  server: 45.76.87.24
-  skip-cert-verify: false
+  server: 104.17.148.22
+  servername: redw.pooriam.ir
   tls: false
   type: vless
-  uuid: 446bfcde-1d2d-4f6f-a828-117487411e01
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /LwW5jwrnymnOdqki?ed=2560
+- cipher: aes-256-cfb
+  name: 美国-6
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 34.212.0.149
+  type: ssr
 - name: 美国-5
   network: ws
   port: 8880
-  server: 154.83.2.228
+  server: 154.83.2.156
   servername: redw.pooriam.ir
   skip-cert-verify: false
   tls: false
@@ -170,10 +168,10 @@ proxies:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - cipher: aes-256-cfb
-  name: 日本-8
+  name: 日本-7
   password: amazonskr05
   port: 443
-  server: 13.230.141.176
+  server: 18.183.221.195
   type: ss
 proxy-groups:
 - name: 漏网之鱼
@@ -196,29 +194,28 @@ proxy-groups:
   proxies:
   - 日本
   - 新加坡
-  - 比利时
   - 美国
   - 英国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-5
-  - 日本-4
-  - 日本-1
   - 日本-3
-  - 比利时-1
+  - 日本-1
   - 新加坡-1
+  - 日本-4
+  - 日本-5
   - 美国-3
   - 美国-1
   - 日本-2
   - 日本-6
   - 美国-4
-  - 美国-2
+  - 美国-7
   - 英国-1
-  - 日本-7
+  - 美国-2
+  - 美国-6
   - 美国-5
-  - 日本-8
+  - 日本-7
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -244,19 +241,12 @@ proxy-groups:
   - 日本-5
   - 日本-6
   - 日本-7
-  - 日本-8
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 比利时
-  proxies:
-  - 比利时-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -267,6 +257,8 @@ proxy-groups:
   - 美国-3
   - 美国-4
   - 美国-5
+  - 美国-6
+  - 美国-7
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
