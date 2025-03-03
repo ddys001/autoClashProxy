@@ -26,43 +26,30 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 3.112.30.167
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-4
+  name: 日本-6
   password: amazonskr05
   port: 443
   server: 54.249.42.175
   type: ss
 - cipher: aes-256-cfb
-  name: 日本-7
+  name: 日本-3
   password: amazonskr05
   port: 443
-  server: 13.230.20.120
+  server: 3.112.30.167
   type: ss
 - cipher: aes-256-cfb
-  name: 日本-6
+  name: 新加坡-3
   password: amazonskr05
   port: 443
-  server: 54.95.114.157
+  server: 18.140.3.253
   type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 日本-2
   password: amazonskr05
   port: 443
-  server: 18.179.10.10
+  server: 13.230.141.176
   type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 13.229.63.223
-  type: ss
-- name: 美国-1
+- name: 美国-2
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -76,8 +63,14 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
+- cipher: aes-256-cfb
+  name: 新加坡-4
+  password: amazonskr05
+  port: 443
+  server: 13.229.63.223
+  type: ss
 - client-fingerprint: chrome
-  name: 美国-5
+  name: 美国-1
   network: ws
   port: 80
   server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
@@ -90,18 +83,59 @@ proxies:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
 - cipher: aes-256-cfb
-  name: 日本-8
-  password: amazonskr05
-  port: 443
-  server: 13.230.141.176
-  type: ss
-- cipher: aes-256-cfb
   name: 新加坡-2
   password: amazonskr05
   port: 443
-  server: 18.140.3.253
+  server: 18.143.186.182
   type: ss
-- name: 美国-7
+- client-fingerprint: chrome
+  delay: 2905
+  name: 美国-3
+  network: ws
+  port: 2052
+  server: 104.26.12.101
+  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
+  ws-opts:
+    headers:
+      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+    path: /?ed=1080/telegram
+- cipher: aes-256-cfb
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 18.179.10.10
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 54.255.230.67
+  type: ss
+- name: 美国-5
+  network: ws
+  port: 443
+  server: ip.sb
+  servername: v7.ylks.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: v7.ylks.us.kg
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 日本-5
+  password: amazonskr05
+  port: 443
+  server: 54.64.6.209
+  type: ss
+- name: 美国-6
   network: ws
   port: 443
   server: iplocation.io
@@ -115,7 +149,13 @@ proxies:
     headers:
       host: v7.ylks.us.kg
     path: /?ed=2560
-- name: 美国-6
+- cipher: aes-256-cfb
+  name: 日本-4
+  password: amazonskr05
+  port: 443
+  server: 13.230.110.170
+  type: ss
+- name: 美国-8
   network: ws
   port: 443
   server: toy-people.com
@@ -129,7 +169,7 @@ proxies:
     headers:
       host: v7.ylks.us.kg
     path: /?ed=2560
-- name: 日本-3
+- name: 日本-7
   network: ws
   port: 443
   server: 140.238.60.225
@@ -143,27 +183,35 @@ proxies:
     headers:
       host: v7.ylks.us.kg
     path: /?ed=2560
-- cipher: aes-128-gcm
-  name: 英国-1
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
 - name: 美国-4
   network: ws
-  port: 8880
-  server: 154.83.2.228
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 63.141.128.96
+  servername: v7.ylks.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-3
+      host: v7.ylks.us.kg
+    path: /?ed=2560
+- name: 美国-7
+  network: ws
+  port: 443
+  server: www.udemy.com
+  servername: v7.ylks.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: v7.ylks.us.kg
+    path: /?ed=2560
+- name: 美国-9
   network: ws
   port: 443
   server: wilson.ns.cloudflare.com
@@ -177,7 +225,35 @@ proxies:
     headers:
       host: v7.ylks.us.kg
     path: /?ed=2560
-- name: 美国-2
+- name: 荷兰-1
+  network: ws
+  port: 443
+  server: 185.133.35.125
+  servername: v7.ylks.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: v7.ylks.us.kg
+    path: /?ed=2560
+- name: 美国-11
+  network: ws
+  port: 443
+  server: 135.84.76.110
+  servername: v7.ylks.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: v7.ylks.us.kg
+    path: /?ed=2560
+- name: 美国-13
   network: ws
   port: 8880
   server: 154.83.2.230
@@ -191,14 +267,21 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- cipher: aes-256-cfb
-  name: 美国-8
-  password: amazonskr05
-  port: 443
-  server: 54.185.211.74
-  type: ss
+- name: 美国-10
+  network: ws
+  port: 8880
+  server: 154.83.2.228
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
   udp: true
-- name: 美国-9
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-12
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -212,12 +295,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- cipher: aes-256-cfb
-  name: 日本-5
-  password: amazonskr05
-  port: 443
-  server: 54.64.6.209
-  type: ss
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -237,34 +314,39 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
-  - 日本
   - 新加坡
-  - 英国
+  - 日本
+  - 美国
+  - 荷兰
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-1
-  - 日本-4
-  - 日本-7
   - 日本-6
-  - 日本-2
-  - 新加坡-1
-  - 美国-1
-  - 美国-5
-  - 日本-8
-  - 新加坡-2
-  - 美国-7
-  - 美国-6
   - 日本-3
-  - 英国-1
-  - 美国-4
-  - 美国-3
+  - 新加坡-3
+  - 日本-2
   - 美国-2
-  - 美国-8
-  - 美国-9
+  - 新加坡-4
+  - 美国-1
+  - 新加坡-2
+  - 美国-3
+  - 日本-1
+  - 新加坡-1
+  - 美国-5
   - 日本-5
+  - 美国-6
+  - 日本-4
+  - 美国-8
+  - 日本-7
+  - 美国-4
+  - 美国-7
+  - 美国-9
+  - 荷兰-1
+  - 美国-11
+  - 美国-13
+  - 美国-10
+  - 美国-12
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -281,17 +363,12 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 美国
+  name: 新加坡
   proxies:
-  - 美国-1
-  - 美国-2
-  - 美国-3
-  - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
-  - 美国-8
-  - 美国-9
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
+  - 新加坡-4
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -304,20 +381,30 @@ proxy-groups:
   - 日本-5
   - 日本-6
   - 日本-7
-  - 日本-8
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 新加坡
+  name: 美国
   proxies:
-  - 新加坡-1
-  - 新加坡-2
+  - 美国-1
+  - 美国-2
+  - 美国-3
+  - 美国-4
+  - 美国-5
+  - 美国-6
+  - 美国-7
+  - 美国-8
+  - 美国-9
+  - 美国-10
+  - 美国-11
+  - 美国-12
+  - 美国-13
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 英国
+  name: 荷兰
   proxies:
-  - 英国-1
+  - 荷兰-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
