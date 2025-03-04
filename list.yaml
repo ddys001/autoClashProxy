@@ -29,54 +29,28 @@ proxies:
   name: 日本-3
   password: amazonskr05
   port: 443
-  server: 13.230.20.120
+  server: 13.231.193.189
   type: ss
 - cipher: aes-256-cfb
   name: 日本-4
   password: amazonskr05
   port: 443
-  server: 3.112.30.167
+  server: 18.179.10.10
   type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 日本-5
-  password: amazonskr05
-  port: 443
-  server: 13.231.193.189
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 13.230.141.176
-  type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 18.140.3.253
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-6
-  password: amazonskr05
-  port: 443
-  server: 54.95.114.157
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 新加坡-3
-  password: amazonskr05
-  port: 443
-  server: 54.255.230.67
-  type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 13.229.96.253
-  type: ss
-- name: 美国-1
+- client-fingerprint: chrome
+  name: 美国-6
+  network: ws
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- name: 美国-2
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -90,176 +64,283 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- client-fingerprint: chrome
-  name: 美国-4
-  network: ws
-  port: 80
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
 - cipher: aes-256-cfb
-  name: 新加坡-4
+  name: 日本-2
   password: amazonskr05
   port: 443
-  server: 18.143.186.182
+  server: 54.249.42.175
   type: ss
+- name: 美国-1
+  network: ws
+  port: 443
+  server: 138.2.107.107
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
-- cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 18.179.10.10
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 日本-7
-  password: amazonskr05
-  port: 443
-  server: 54.64.6.209
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 日本-9
-  password: amazonskr05
-  port: 443
-  server: 54.248.148.112
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-8
-  password: amazonskr05
-  port: 443
-  server: 18.183.221.195
-  type: ss
-- name: 美国-2
-  network: ws
-  port: 80
-  server: 172.67.75.172
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /
-- client-fingerprint: chrome
-  name: 美国-5
-  network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+      host: c1.bgm2024.us.kg
     path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 54.180.128.213
+  type: ss
 - name: 美国-3
   network: ws
   port: 80
-  server: 104.16.171.121
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
-  ws-opts:
-    headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
-    path: /?ed=2560
-- name: 美国-6
-  network: ws
-  port: 8880
-  server: 154.83.2.228
-  servername: redw.pooriam.ir
+  server: 104.26.14.85
+  servername: a.xn--i-sx6a60i.us.kg.
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 荷兰-1
-  network: ws
-  port: 80
-  server: 45.131.5.111
-  servername: feng4.l1ut8bi9.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
-  ws-opts:
-    headers:
-      Host: feng4.l1ut8bi9.workers.dev
-    path: /Telegram
-- name: 英国-1
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.133.56.198
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tfo: false
-  type: trojan
-  udp: true
-- name: 美国-9
-  network: ws
-  port: 2052
-  server: 172.67.135.195
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
-  ws-opts:
-    headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-  xudp: true
-- name: 美国-7
-  network: ws
-  port: 80
-  server: 104.16.178.238
-  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
-  tls: false
-  type: vless
-  uuid: d4eddaf9-a660-4905-b835-cad98677b380
-  ws-opts:
-    headers:
-      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
-    path: /?ed=2560
-- name: 美国-8
-  network: ws
-  port: 2095
-  server: 104.18.21.69
-  skip-cert-verify: false
-  tls: false
-  type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: fuckingxijinping.xijinpingbigsb.workers.dev
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- name: 日本-1
+  network: ws
+  port: 12509
+  server: 132.145.124.43
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 韩国-2
+  network: ws
+  port: 12020
+  server: 175.213.146.92
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 韩国-3
+  network: ws
+  port: 30001
+  server: 220.86.175.229
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 韩国-4
+  network: ws
+  port: 30012
+  server: 118.47.65.248
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c1.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-5
+  network: ws
+  port: 443
+  server: 130.250.137.94
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 美国-8
+  network: ws
+  port: 443
+  server: www.okcupid.com
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 美国-9
+  network: ws
+  port: 443
+  server: 152.70.57.182
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 荷兰-1
+  network: ws
+  port: 443
+  server: 185.133.35.103
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 美国-4
+  network: ws
+  port: 443
+  server: 104.16.153.254
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 美国-7
+  network: ws
+  port: 443
+  server: 63.141.128.100
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c1.bgm2024.us.kg
     path: /?ed=2560
 - name: 美国-10
   network: ws
-  port: 80
-  server: 104.24.248.85
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 63.141.128.163
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: 7fea28c6-f9b0-45ce-b7c2-ed3a3991d1e8
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: curly-waterfall-509e-ppal03.wimiba9167.workers.dev
+      host: c1.bgm2024.us.kg
+    path: /?ed=2560
+- name: 荷兰-2
+  network: ws
+  port: 443
+  server: 185.133.35.242
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c1.bgm2024.us.kg
+    path: /?ed=2560
+- name: 荷兰-3
+  network: ws
+  port: 443
+  server: 185.133.35.155
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c1.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-11
+  network: ws
+  port: 443
+  server: 192.0.54.168
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c1.bgm2024.us.kg
+    path: /?ed=2560
+- name: 荷兰-4
+  network: ws
+  port: 443
+  server: 185.133.35.99
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c1.bgm2024.us.kg
+    path: /?ed=2560
+- name: 美国-12
+  network: ws
+  port: 443
+  server: 104.17.156.127
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c1.bgm2024.us.kg
+    path: /?ed=2560
+- name: 荷兰-5
+  network: ws
+  port: 443
+  server: 185.133.35.106
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
     path: /?ed=2560
 proxy-groups:
 - name: 漏网之鱼
@@ -280,40 +361,39 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 新加坡
   - 日本
   - 美国
+  - 韩国
   - 荷兰
-  - 英国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
   - 日本-3
   - 日本-4
-  - 日本-5
-  - 日本-2
-  - 新加坡-2
-  - 日本-6
-  - 新加坡-3
-  - 新加坡-1
-  - 美国-1
-  - 美国-4
-  - 新加坡-4
-  - 日本-1
-  - 日本-7
-  - 日本-9
-  - 日本-8
-  - 美国-2
-  - 美国-5
-  - 美国-3
   - 美国-6
-  - 荷兰-1
-  - 英国-1
-  - 美国-9
-  - 美国-7
+  - 美国-2
+  - 日本-2
+  - 美国-1
+  - 韩国-1
+  - 美国-3
+  - 日本-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
+  - 美国-5
   - 美国-8
+  - 美国-9
+  - 荷兰-1
+  - 美国-4
+  - 美国-7
   - 美国-10
+  - 荷兰-2
+  - 荷兰-3
+  - 美国-11
+  - 荷兰-4
+  - 美国-12
+  - 荷兰-5
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -330,26 +410,12 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
-  - 新加坡-4
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
   name: 日本
   proxies:
   - 日本-1
   - 日本-2
   - 日本-3
   - 日本-4
-  - 日本-5
-  - 日本-6
-  - 日本-7
-  - 日本-8
-  - 日本-9
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -365,18 +431,27 @@ proxy-groups:
   - 美国-8
   - 美国-9
   - 美国-10
+  - 美国-11
+  - 美国-12
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
   name: 荷兰
   proxies:
   - 荷兰-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 英国
-  proxies:
-  - 英国-1
+  - 荷兰-2
+  - 荷兰-3
+  - 荷兰-4
+  - 荷兰-5
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
