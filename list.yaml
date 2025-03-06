@@ -25,22 +25,8 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 美国-8
-  network: ws
-  port: 80
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
 - client-fingerprint: chrome
-  name: 美国-3
+  name: 美国-7
   network: ws
   port: 80
   server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
@@ -52,31 +38,32 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 日本-1
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 86e8c33.dl.nintendo.com:61496
-    mode: tls
-  port: 2377
-  server: 18.179.197.162
-  tfo: false
-  type: ss
-- name: 美国-2
+- client-fingerprint: chrome
+  name: 美国-8
   network: ws
   port: 80
-  server: 104.26.12.31
+  server: 104.16.1.47
+  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+  tls: false
+  type: vless
+  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
+  ws-opts:
+    headers:
+      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+    path: /?ed=2560
+- name: 美国-5
+  network: ws
+  port: 80
+  server: 104.16.171.121
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /
-- name: 美国-10
+      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
+    path: /?ed=2560
+- name: 美国-9
   network: ws
   port: 80
   server: 104.16.188.41
@@ -88,46 +75,7 @@ proxies:
     headers:
       Host: proud-queen-55500071.cexonoc962.workers.dev
     path: /?ed=2560
-- name: 荷兰-1
-  network: ws
-  port: 80
-  server: 45.131.5.111
-  servername: feng4.l1ut8bi9.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
-  ws-opts:
-    headers:
-      Host: feng4.l1ut8bi9.workers.dev
-    path: /Telegram
-- name: 美国-11
-  network: ws
-  port: 80
-  server: 104.24.9.204
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: ca68a029-971c-4ea4-8c1d-411cb7adc474
-  ws-opts:
-    headers:
-      Host: patient-sunset-f000-ppal03.cijej53213.workers.dev
-    path: /?ed=2560
-- name: 美国-9
-  network: ws
-  port: 8880
-  server: 154.83.2.230
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-1
+- name: 美国-6
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -141,42 +89,34 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-4
+- name: 美国-1
   network: ws
-  port: 80
-  server: 104.16.171.121
+  port: 8880
+  server: 154.83.2.230
+  servername: redw.pooriam.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
-  ws-opts:
-    headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
-    path: /?ed=2560
-- name: 美国-6
-  network: ws
-  port: 2052
-  server: 172.67.135.195
-  skip-cert-verify: true
-  type: vless
   udp: true
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-  xudp: true
-- cipher: aes-256-cfb
-  name: 美国-5
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 18.236.83.127
-  type: ssr
-- name: 美国-7
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 荷兰-1
+  network: ws
+  port: 80
+  server: 45.131.5.111
+  servername: feng4.l1ut8bi9.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
+  ws-opts:
+    headers:
+      Host: feng4.l1ut8bi9.workers.dev
+    path: /Telegram
+- name: 美国-2
   network: ws
   port: 8880
   server: 154.83.2.228
@@ -190,6 +130,40 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- client-fingerprint: chrome
+  name: 美国-4
+  network: ws
+  port: 80
+  server: 104.16.182.65
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: f86586c2-3a4c-49c9-83ec-5ae43786d4f7
+  ws-opts:
+    headers:
+      Host: dark-bonus-0f2f-ppal03.yapeyef825.workers.dev
+    path: /Telegram
+- name: 美国-3
+  network: ws
+  port: 8880
+  server: 104.21.92.162
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: e9b29a36-f8dc-48ee-b5f9-e0e5be701d03
+  ws-opts:
+    headers:
+      Host: falcunargo-bia-zod.8fcd549b6a.workers.Dev
+    path: /
+- name: 英国-1
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.56.40.15
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -209,26 +183,24 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 荷兰
   - 美国
-  - 日本
+  - 英国
+  - 荷兰
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-8
-  - 美国-3
-  - 日本-1
-  - 美国-2
-  - 美国-10
-  - 荷兰-1
-  - 美国-11
-  - 美国-9
-  - 美国-1
-  - 美国-4
-  - 美国-6
-  - 美国-5
   - 美国-7
+  - 美国-8
+  - 美国-5
+  - 美国-9
+  - 美国-6
+  - 美国-1
+  - 荷兰-1
+  - 美国-2
+  - 美国-4
+  - 美国-3
+  - 英国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -245,12 +217,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 荷兰
-  proxies:
-  - 荷兰-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -262,14 +228,18 @@ proxy-groups:
   - 美国-7
   - 美国-8
   - 美国-9
-  - 美国-10
-  - 美国-11
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 日本
+  name: 英国
   proxies:
-  - 日本-1
+  - 英国-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 荷兰
+  proxies:
+  - 荷兰-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
