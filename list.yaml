@@ -25,7 +25,13 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 美国-10
+- cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 54.250.174.86
+  type: ss
+- name: 美国-9
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -39,15 +45,8 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 54.169.244.122
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  name: 美国-6
+  name: 美国-8
   network: ws
   port: 80
   server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
@@ -61,7 +60,7 @@ proxies:
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
 - client-fingerprint: chrome
   delay: 2905
-  name: 美国-1
+  name: 美国-3
   network: ws
   port: 2052
   server: 104.26.12.101
@@ -75,60 +74,38 @@ proxies:
       Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
     path: /?ed=1080/telegram
 - cipher: aes-256-cfb
-  name: 日本-1
+  name: 新加坡-1
   password: amazonskr05
   port: 443
-  server: 13.231.49.47
-  type: ss
-- cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 54.250.174.86
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 54.180.244.81
-  type: ss
-- cipher: aes-256-cfb
-  name: 美国-5
-  password: amazonskr05
-  port: 443
-  server: 13.209.80.72
+  server: 13.229.110.23
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 日本-3
+  name: 日本-1
   password: amazonskr05
   port: 443
   server: 54.65.101.11
   tfo: false
   type: ss
-- name: 英国-2
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.134.53.75
+- name: 美国-7
+  network: ws
+  password: Aimer
+  port: 443
+  server: 38.38.251.220
   skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tfo: false
+  sni: agepa.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 美国-3
-  network: ws
-  port: 8880
-  server: 154.83.2.230
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+      Host: agepa.ambercc.filegear-sg.me
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 美国-11
+  password: amazonskr05
+  port: 443
+  server: 13.209.80.72
+  type: ss
 - alterId: 0
   name: 英国-1
   network: tcp
@@ -140,7 +117,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 美国-8
+- name: 美国-5
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -154,7 +131,7 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-7
+- name: 美国-4
   network: ws
   port: 8880
   server: 154.83.2.228
@@ -168,23 +145,35 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-6
+  network: ws
+  port: 8880
+  server: 154.83.2.230
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - cipher: aes-256-cfb
-  name: 美国-9
+  name: 美国-1
   password: amazonskr05
   port: 443
   server: 52.13.119.156
   type: ss
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: 美国-4
+  name: 美国-2
   password: amazonskr05
   port: 443
-  server: 35.86.89.247
-  tls: false
+  server: 18.236.83.127
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 美国-2
+  name: 美国-10
   password: amazonskr05
   port: 443
   server: 35.91.235.173
@@ -213,28 +202,25 @@ proxy-groups:
   - 英国
   - 日本
   - 新加坡
-  - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-10
+  - 日本-2
+  - 美国-9
+  - 美国-8
+  - 美国-3
   - 新加坡-1
+  - 日本-1
+  - 美国-7
+  - 美国-11
+  - 英国-1
+  - 美国-5
+  - 美国-4
   - 美国-6
   - 美国-1
-  - 日本-1
-  - 日本-2
-  - 韩国-1
-  - 美国-5
-  - 日本-3
-  - 英国-2
-  - 美国-3
-  - 英国-1
-  - 美国-8
-  - 美国-7
-  - 美国-9
-  - 美国-4
   - 美国-2
+  - 美国-10
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -263,13 +249,13 @@ proxy-groups:
   - 美国-8
   - 美国-9
   - 美国-10
+  - 美国-11
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
   name: 英国
   proxies:
   - 英国-1
-  - 英国-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -277,19 +263,12 @@ proxy-groups:
   proxies:
   - 日本-1
   - 日本-2
-  - 日本-3
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
