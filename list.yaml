@@ -26,12 +26,11 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 新加坡-5
+  name: 日本-1
   password: amazonskr05
   port: 443
-  server: 54.169.244.122
+  server: 13.231.49.47
   type: ss
-  udp: true
 - name: 美国-5
   network: ws
   port: 80
@@ -46,8 +45,14 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
+- cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 13.229.110.23
+  type: ss
 - client-fingerprint: chrome
-  name: 美国-1
+  name: 美国-3
   network: ws
   port: 80
   server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
@@ -60,66 +65,18 @@ proxies:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
 - cipher: aes-256-cfb
-  name: 新加坡-4
-  password: amazonskr05
-  port: 443
-  server: 54.255.179.37
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 新加坡-1
+  name: 新加坡-2
   password: amazonskr05
   port: 443
   server: 54.255.224.231
   type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 13.229.110.23
-  type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-3
-  password: amazonskr05
-  port: 443
-  server: 54.179.221.27
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 韩国-1
   password: amazonskr05
   port: 443
   server: 54.180.244.81
   type: ss
-- name: 美国-3
-  network: ws
-  port: 8880
-  server: 154.83.2.156
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - name: 美国-4
-  network: ws
-  port: 8880
-  server: 154.83.2.230
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-2
   network: ws
   port: 8880
   server: 154.83.2.228
@@ -133,11 +90,45 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-6
+  network: ws
+  port: 8880
+  server: 154.83.2.230
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - cipher: aes-256-cfb
-  name: 美国-6
+  name: 美国-1
   password: amazonskr05
   port: 443
-  server: 35.91.198.93
+  server: 52.13.119.156
+  type: ss
+- name: 美国-2
+  network: ws
+  port: 8880
+  server: 154.83.2.156
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- cipher: aes-256-cfb
+  name: 美国-7
+  password: amazonskr05
+  port: 443
+  server: 35.91.235.173
   type: ss
   udp: true
 proxy-groups:
@@ -159,25 +150,25 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 新加坡
   - 美国
+  - 新加坡
+  - 日本
   - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-5
+  - 日本-1
   - 美国-5
-  - 美国-1
-  - 新加坡-4
   - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
-  - 韩国-1
   - 美国-3
+  - 新加坡-2
+  - 韩国-1
   - 美国-4
-  - 美国-2
   - 美国-6
+  - 美国-1
+  - 美国-2
+  - 美国-7
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -194,16 +185,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
-  - 新加坡-4
-  - 新加坡-5
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -212,6 +193,20 @@ proxy-groups:
   - 美国-4
   - 美国-5
   - 美国-6
+  - 美国-7
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  - 新加坡-2
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
