@@ -25,7 +25,20 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 美国-3
+- client-fingerprint: chrome
+  name: 美国-1
+  network: ws
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- name: 美国-7
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -39,19 +52,6 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- client-fingerprint: chrome
-  name: 美国-9
-  network: ws
-  port: 80
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
 - alterId: 0
   cipher: auto
   name: 新加坡-1
@@ -70,7 +70,7 @@ proxies:
     path: /bby
 - client-fingerprint: chrome
   delay: 2905
-  name: 美国-5
+  name: 美国-3
   network: ws
   port: 2052
   server: 104.26.12.101
@@ -83,40 +83,58 @@ proxies:
     headers:
       Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
     path: /?ed=1080/telegram
+- name: 美国-4
+  network: ws
+  port: 80
+  server: 104.26.14.85
+  servername: a.xn--i-sx6a60i.us.kg.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- name: 美国-8
+  network: ws
+  port: 80
+  server: 172.67.73.163
+  servername: a.xn--i-sx6a60i.us.kg.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 日本-1
+  name: 日本-2
   password: amazonskr05
   port: 443
   server: 18.181.167.38
   tfo: false
   type: ss
 - alterId: 0
-  name: 英国-1
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.43.195.78
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- name: 美国-11
+  cipher: auto
+  name: 日本-1
   network: ws
-  port: 8880
-  server: 154.83.2.230
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
+  port: 22357
+  server: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-8
+      Host: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
+    path: /
+- name: 美国-6
   network: ws
   port: 8880
   server: 154.83.2.228
@@ -130,7 +148,21 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-10
+- name: 美国-5
+  network: ws
+  port: 8880
+  server: 154.83.2.230
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-2
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -158,36 +190,13 @@ proxies:
   type: hysteria
   up: 11 Mbps
 - cipher: aes-256-cfb
-  name: 美国-6
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 35.93.142.194
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-7
+  name: 美国-9
   password: amazonskr05
   port: 443
   server: 35.87.37.159
   type: ss
 - cipher: aes-256-cfb
-  name: 美国-4
-  password: amazonskr05
-  port: 443
-  server: 34.222.44.5
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 美国-2
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 35.95.37.205
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-14
+  name: 美国-10
   obfs: plain
   password: amazonskr05
   port: 443
@@ -195,23 +204,47 @@ proxies:
   server: 35.91.216.191
   type: ssr
 - cipher: aes-256-cfb
-  name: 美国-1
+  name: 美国-13
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 35.93.142.194
+  type: ssr
+- cipher: aes-256-cfb
+  name: 美国-11
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 54.185.216.98
+  type: ssr
+- cipher: aes-256-cfb
+  name: 美国-12
+  password: amazonskr05
+  port: 443
+  server: 34.222.44.5
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 美国-14
   password: amazonskr05
   port: 443
   server: 54.186.195.135
   type: ss
 - cipher: aes-256-cfb
-  name: 美国-12
+  name: 美国-15
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 35.95.37.205
+  type: ssr
+- cipher: aes-256-cfb
+  name: 美国-16
   password: amazonskr05
   port: 443
   server: 34.217.73.31
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 美国-13
-  password: amazonskr05
-  port: 443
-  server: 35.86.89.247
   type: ss
   udp: true
 proxy-groups:
@@ -235,31 +268,32 @@ proxy-groups:
   proxies:
   - 美国
   - 日本
-  - 英国
   - 加拿大
   - 新加坡
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-3
-  - 美国-9
-  - 新加坡-1
-  - 美国-5
-  - 日本-1
-  - 英国-1
-  - 美国-11
-  - 美国-8
-  - 美国-10
-  - 加拿大-1
-  - 美国-6
-  - 美国-7
-  - 美国-4
-  - 美国-2
-  - 美国-14
   - 美国-1
-  - 美国-12
+  - 美国-7
+  - 新加坡-1
+  - 美国-3
+  - 美国-4
+  - 美国-8
+  - 日本-2
+  - 日本-1
+  - 美国-6
+  - 美国-5
+  - 美国-2
+  - 加拿大-1
+  - 美国-9
+  - 美国-10
   - 美国-13
+  - 美国-11
+  - 美国-12
+  - 美国-14
+  - 美国-15
+  - 美国-16
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -292,18 +326,15 @@ proxy-groups:
   - 美国-12
   - 美国-13
   - 美国-14
+  - 美国-15
+  - 美国-16
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
   name: 日本
   proxies:
   - 日本-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 英国
-  proxies:
-  - 英国-1
+  - 日本-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
