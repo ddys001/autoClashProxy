@@ -25,105 +25,8 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 美国-5
-  network: ws
-  port: 443
-  server: 47.239.1.168
-  servername: agedf.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: agedf.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国-8
-  network: ws
-  port: 587
-  server: 47.238.189.115
-  servername: agedf.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: agedf.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 新加坡-3
-  network: ws
-  port: 443
-  server: 54.151.201.171
-  servername: edfgc.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgc.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 新加坡-4
-  network: ws
-  port: 443
-  server: 8.219.254.109
-  servername: edfgc.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgc.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 新加坡-2
-  network: ws
-  port: 443
-  server: 13.228.142.218
-  servername: edfgc.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgc.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 新加坡-1
-  network: ws
-  port: 443
-  server: 8.219.233.152
-  servername: edfgc.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgc.aimercc.filegear-sg.me
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 美国-7
-  network: ws
-  port: 80
-  server: 151.101.66.168
-  sni: ''
-  type: vmess
-  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
-  ws-opts:
-    headers:
-      host: amd.al
-    path: /XESALISTHEBEST?ed=2048
 - client-fingerprint: chrome
-  name: 美国-9
+  name: 美国-3
   network: ws
   port: 80
   server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
@@ -135,7 +38,7 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- name: 美国-2
+- name: 美国-5
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -149,229 +52,92 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- name: 美国-4
-  network: ws
-  port: 1080
-  server: 18.167.74.152
-  servername: agedf.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: agedf.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国-11
-  network: ws
+- cipher: aes-256-cfb
+  name: 日本-1
+  password: amazonskr05
   port: 443
-  server: 162.159.153.165
-  servername: noy.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: noy.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国-3
+  server: 54.238.115.236
+  type: ss
+- name: 美国-8
   network: ws
-  port: 443
-  server: 162.159.153.64
-  servername: noy.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: noy.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国-6
-  network: ws
-  port: 443
-  server: 162.159.153.159
-  servername: noy.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: noy.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国-1
-  network: ws
-  port: 443
-  server: 162.159.152.219
-  servername: noy.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: noy.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国-10
-  network: ws
-  port: 443
-  server: 162.159.152.21
-  servername: noy.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: noy.bgm2024.us.kg
-    path: /?ed=2560
-- name: 韩国-2
-  network: ws
-  port: 16102
-  server: 118.35.73.147
-  servername: edfgc.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgc.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国-12
-  network: ws
-  port: 443
-  server: 162.159.153.68
-  servername: noy.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: noy.bgm2024.us.kg
-    path: /?ed=2560
-- name: 韩国-3
-  network: ws
-  port: 18062
-  server: 221.165.66.12
-  servername: edfgc.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgc.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-1
-  network: ws
-  port: 30012
-  server: 118.47.65.248
-  servername: noy.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: noy.bgm2024.us.kg
-    path: /?ed=2560
-- name: 韩国-4
-  network: ws
-  port: 12112
-  server: 221.150.96.18
-  servername: agedf.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: agedf.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-5
-  network: ws
-  port: 12449
-  server: 211.199.65.186
-  servername: edfgc.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgc.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-6
-  network: ws
-  port: 10443
-  server: 14.47.20.125
-  servername: edfgc.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgc.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-7
-  network: ws
-  port: 34822
-  server: 118.46.215.195
-  servername: agedf.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: agedf.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国-8
-  network: ws
-  port: 50000
-  server: 115.20.158.127
-  servername: agedf.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: agedf.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 荷兰-1
-  network: ws
-  port: 80
-  server: 45.131.5.111
-  servername: feng4.l1ut8bi9.workers.dev
+  port: 8880
+  server: 154.83.2.156
+  servername: redw.pooriam.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: feng4.l1ut8bi9.workers.dev
-    path: /Telegram
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-7
+  network: ws
+  port: 8880
+  server: 154.83.2.228
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- cipher: aes-256-cfb
+  name: 美国-6
+  password: amazonskr05
+  port: 443
+  server: 35.87.37.159
+  type: ss
+  udp: true
+- name: 美国-9
+  network: ws
+  port: 8880
+  server: 154.83.2.230
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- cipher: aes-256-cfb
+  name: 美国-4
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 35.93.142.194
+  type: ssr
+- cipher: aes-256-cfb
+  name: 美国-10
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 54.185.216.98
+  type: ssr
+- cipher: aes-256-cfb
+  name: 美国-2
+  password: amazonskr05
+  port: 443
+  server: 54.201.149.176
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 美国-1
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 35.95.37.205
+  type: ssr
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -392,38 +158,22 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 新加坡
-  - 韩国
-  - 荷兰
+  - 日本
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-5
-  - 美国-8
-  - 新加坡-3
-  - 新加坡-4
-  - 新加坡-2
-  - 新加坡-1
-  - 美国-7
-  - 美国-9
-  - 美国-2
-  - 美国-4
-  - 美国-11
   - 美国-3
+  - 美国-5
+  - 日本-1
+  - 美国-8
+  - 美国-7
   - 美国-6
-  - 美国-1
+  - 美国-9
+  - 美国-4
   - 美国-10
-  - 韩国-2
-  - 美国-12
-  - 韩国-3
-  - 韩国-1
-  - 韩国-4
-  - 韩国-5
-  - 韩国-6
-  - 韩国-7
-  - 韩国-8
-  - 荷兰-1
+  - 美国-2
+  - 美国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -452,36 +202,12 @@ proxy-groups:
   - 美国-8
   - 美国-9
   - 美国-10
-  - 美国-11
-  - 美国-12
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 新加坡
+  name: 日本
   proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
-  - 新加坡-4
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
-  - 韩国-3
-  - 韩国-4
-  - 韩国-5
-  - 韩国-6
-  - 韩国-7
-  - 韩国-8
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 荷兰
-  proxies:
-  - 荷兰-1
+  - 日本-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
