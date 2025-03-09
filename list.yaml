@@ -25,20 +25,7 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- client-fingerprint: chrome
-  name: 美国-3
-  network: ws
-  port: 80
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- name: 美国-5
+- name: 美国-10
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -52,63 +39,40 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- name: 韩国-1
-  network: ws
-  port: 443
-  server: 132.145.94.80
-  servername: ccv.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ccv.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-7
+- client-fingerprint: chrome
+  name: 美国-6
   network: ws
   port: 80
-  server: 204.110.220.192
-  servername: ccv.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: ccv.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-6
-  network: ws
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
   port: 443
-  server: lewis.ns.cloudflare.com
-  servername: ccv.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ccv.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-1
+  server: 3.38.97.249
+  type: ss
+- name: 美国-5
   network: ws
-  port: 443
-  server: 63.141.128.96
-  servername: ccv.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
+  port: 8880
+  server: 154.83.2.230
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: ccv.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-2
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-4
   network: ws
   port: 8880
   server: 154.83.2.228
@@ -135,35 +99,22 @@ proxies:
   sni: apple.com
   type: hysteria
   up: 11 Mbps
-- name: 美国-4
-  network: ws
-  port: 8880
-  server: 154.83.2.230
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 荷兰-1
-  network: ws
+- cipher: aes-256-cfb
+  name: 美国-3
+  obfs: plain
+  password: amazonskr05
   port: 443
-  server: 185.133.35.147
-  servername: ccv.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
+  protocol: origin
+  server: 35.87.37.159
+  type: ssr
+- cipher: aes-256-cfb
+  name: 美国-8
+  password: amazonskr05
+  port: 443
+  server: 35.95.37.205
+  type: ss
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ccv.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-8
+- name: 美国-7
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -177,14 +128,31 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- cipher: aes-256-cfb
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
   name: 美国-9
-  obfs: plain
+  port: 17549
+  server: 208.87.243.151
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 11 Mbps
+- cipher: aes-256-cfb
+  name: 美国-2
   password: amazonskr05
   port: 443
-  protocol: origin
-  server: 35.87.37.159
-  type: ssr
+  server: 34.211.230.161
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 美国-1
+  password: amazonskr05
+  port: 443
+  server: 54.201.149.176
+  type: ss
+  udp: true
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -205,25 +173,24 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 加拿大
   - 韩国
-  - 荷兰
+  - 加拿大
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-3
-  - 美国-5
-  - 韩国-1
-  - 美国-7
+  - 美国-10
   - 美国-6
-  - 美国-1
-  - 美国-2
-  - 加拿大-1
+  - 韩国-1
+  - 美国-5
   - 美国-4
-  - 荷兰-1
+  - 加拿大-1
+  - 美国-3
   - 美国-8
+  - 美国-7
   - 美国-9
+  - 美国-2
+  - 美国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -251,12 +218,7 @@ proxy-groups:
   - 美国-7
   - 美国-8
   - 美国-9
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 加拿大
-  proxies:
-  - 加拿大-1
+  - 美国-10
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -266,9 +228,9 @@ proxy-groups:
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 荷兰
+  name: 加拿大
   proxies:
-  - 荷兰-1
+  - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
