@@ -25,16 +25,8 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 54.250.26.118
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
-  name: 美国-6
+  name: 美国-3
   network: ws
   port: 80
   server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
@@ -46,7 +38,7 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- name: 美国-2
+- name: 美国-6
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -60,38 +52,58 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- name: 韩国-1
+- name: 美国-7
   network: ws
-  port: 12661
-  server: 211.212.43.153
-  servername: ccv.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 172.67.73.163
+  servername: a.xn--i-sx6a60i.us.kg.
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      host: ccv.ylkszy.eu.org
+      Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- name: 韩国-2
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 3.38.97.249
+  type: ss
+- name: 美国-1
   network: ws
-  port: 12020
-  server: 168.126.108.158
-  servername: ccv.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
+  port: 8880
+  server: 154.83.2.230
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: ccv.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-3
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-2
+  network: ws
+  port: 8880
+  server: 154.83.2.228
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-8
   network: ws
   port: 443
-  server: wilson.ns.cloudflare.com
+  server: 216.221.210.185
   servername: ccv.ylkszy.eu.org
   skip-cert-verify: true
   tls: true
@@ -118,34 +130,6 @@ proxies:
 - name: 美国-5
   network: ws
   port: 8880
-  server: 154.83.2.230
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-4
-  network: ws
-  port: 8880
-  server: 154.83.2.228
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-1
-  network: ws
-  port: 8880
   server: 154.83.2.156
   servername: redw.pooriam.ir
   skip-cert-verify: false
@@ -157,6 +141,27 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 荷兰-1
+  network: ws
+  port: 443
+  server: 185.133.35.160
+  servername: ccv.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ccv.ylkszy.eu.org
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 美国-4
+  password: amazonskr05
+  port: 443
+  server: 35.95.37.205
+  type: ss
+  udp: true
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -176,24 +181,25 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
+  - 荷兰
   - 美国
-  - 日本
-  - 韩国
   - 加拿大
+  - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-1
-  - 美国-6
-  - 美国-2
-  - 韩国-1
-  - 韩国-2
   - 美国-3
+  - 美国-6
+  - 美国-7
+  - 韩国-1
+  - 美国-1
+  - 美国-2
+  - 美国-8
   - 加拿大-1
   - 美国-5
+  - 荷兰-1
   - 美国-4
-  - 美国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -210,6 +216,12 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 荷兰
+  proxies:
+  - 荷兰-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -218,25 +230,20 @@ proxy-groups:
   - 美国-4
   - 美国-5
   - 美国-6
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
+  - 美国-7
+  - 美国-8
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
   name: 加拿大
   proxies:
   - 加拿大-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
