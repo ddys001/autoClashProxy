@@ -25,7 +25,20 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 美国-5
+- client-fingerprint: chrome
+  name: 美国-2
+  network: ws
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- name: 美国-1
   network: ws
   port: 80
   server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
@@ -40,8 +53,21 @@ proxies:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
 - client-fingerprint: chrome
+  name: 美国-8
+  network: ws
+  port: 80
+  server: 104.26.15.85
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- client-fingerprint: chrome
   delay: 2905
-  name: 美国-10
+  name: 美国-3
   network: ws
   port: 2052
   server: 104.26.12.101
@@ -54,25 +80,12 @@ proxies:
     headers:
       Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
     path: /?ed=1080/telegram
-- client-fingerprint: chrome
-  name: 美国-8
-  network: ws
-  port: 80
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 美国-9
+  name: 美国-5
   network: ws
   port: 443
   server: mix1.998998.best
@@ -85,7 +98,7 @@ proxies:
     headers:
       HOST: jp1-2.zfork.com
     path: /wpmckfpajfng?ed=2560
-- name: 美国-6
+- name: 美国-9
   network: ws
   port: 8880
   server: 154.83.2.230
@@ -99,34 +112,20 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-11
+- client-fingerprint: chrome
+  name: 美国-6
   network: ws
-  port: 8880
-  server: 154.83.2.156
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
+  port: 80
+  server: 104.21.56.44
+  servername: '@V2ray_6_@V2ray_6_@40V2ray_6@V2ray_6_@V2ray_6_@40V2ray_6@40V2ray_6_@40V2ray_6_@40V2ray_6'
   tls: false
   type: vless
-  udp: true
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
       Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  name: 加拿大-1
-  port: 11512
-  ports: 20000-30000
-  protocol: udp
-  server: 108.181.24.77
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 11 Mbps
-- name: 美国-4
+    path: /
+- name: 美国-10
   network: ws
   port: 8880
   server: 154.83.2.228
@@ -140,8 +139,70 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 美国-4
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.60.102.177
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
+  udp: true
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  name: 加拿大-1
+  port: 11512
+  ports: 20000-30000
+  protocol: udp
+  server: 108.181.24.77
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
+- name: 美国-7
+  network: ws
+  port: 8880
+  server: 154.83.2.156
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - cipher: aes-256-cfb
-  name: 美国-1
+  name: 美国-12
+  password: amazonskr05
+  port: 443
+  server: 35.95.37.205
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 美国-14
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 35.87.37.159
+  type: ssr
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 美国-11
+  port: 17549
+  server: 208.87.243.151
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 11 Mbps
+- cipher: aes-256-cfb
+  name: 美国-15
   obfs: plain
   password: amazonskr05
   port: 443
@@ -149,32 +210,17 @@ proxies:
   server: 35.86.111.233
   type: ssr
 - cipher: aes-256-cfb
-  name: 美国-2
-  password: amazonskr05
-  port: 443
-  server: 34.211.230.161
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 美国-7
+  name: 美国-13
   password: amazonskr05
   port: 443
   server: 54.201.149.176
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 美国-3
-  obfs: plain
+  name: 美国-16
   password: amazonskr05
   port: 443
-  protocol: origin
-  server: 35.87.37.159
-  type: ssr
-- cipher: aes-256-cfb
-  name: 美国-12
-  password: amazonskr05
-  port: 443
-  server: 35.92.145.143
+  server: 34.211.230.161
   type: ss
   udp: true
 proxy-groups:
@@ -202,19 +248,23 @@ proxy-groups:
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-5
-  - 美国-10
+  - 美国-2
+  - 美国-1
   - 美国-8
+  - 美国-3
+  - 美国-5
   - 美国-9
   - 美国-6
-  - 美国-11
-  - 加拿大-1
+  - 美国-10
   - 美国-4
-  - 美国-1
-  - 美国-2
+  - 加拿大-1
   - 美国-7
-  - 美国-3
   - 美国-12
+  - 美国-14
+  - 美国-11
+  - 美国-15
+  - 美国-13
+  - 美国-16
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -245,6 +295,10 @@ proxy-groups:
   - 美国-10
   - 美国-11
   - 美国-12
+  - 美国-13
+  - 美国-14
+  - 美国-15
+  - 美国-16
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
