@@ -25,78 +25,60 @@ port: 7890
 profile:
   store-selected: true
 proxies:
-- name: 美国-2
+- client-fingerprint: chrome
+  delay: 2905
+  name: 美国-5
   network: ws
-  port: 80
-  server: 172.67.73.163
-  servername: a.xn--i-sx6a60i.us.kg.
-  skip-cert-verify: false
-  tls: false
+  port: 2052
+  server: 104.26.12.101
+  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+  skip-cert-verify: true
   type: vless
   udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- name: 美国-6
-  network: ws
-  port: 80
-  server: 104.26.14.85
-  servername: a.xn--i-sx6a60i.us.kg.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- name: 美国-5
-  network: ws
-  port: 8080
-  server: 104.26.14.185
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /
+      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+    path: /?ed=1080/telegram
 - cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 52.198.107.245
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
+  client-fingerprint: chrome
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 13.231.233.44
+  server: 18.183.116.21
+  tfo: false
+  type: ss
+- name: 美国-6
+  password: 94d219c9-1afc-4d42-b090-8b3794764380
+  port: 443
+  server: bs1.loadingip.com
+  skip-cert-verify: true
+  tfo: false
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
   type: ss
   udp: true
-- name: 美国-3
+- name: 荷兰-1
   network: ws
   port: 8880
-  server: 154.83.2.228
-  servername: redw.pooriam.ir
+  server: 45.131.211.182
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-1
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /Telegram
+- name: 美国-3
   network: ws
   port: 8880
-  server: 154.83.2.230
+  server: 154.83.2.156
   servername: redw.pooriam.ir
   skip-cert-verify: false
   tls: false
@@ -119,10 +101,10 @@ proxies:
   sni: apple.com
   type: hysteria
   up: 11 Mbps
-- name: 美国-4
+- name: 美国-2
   network: ws
   port: 8880
-  server: 154.83.2.156
+  server: 154.83.2.230
   servername: redw.pooriam.ir
   skip-cert-verify: false
   tls: false
@@ -133,18 +115,27 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 荷兰-1
+- name: 美国-4
   network: ws
   port: 8880
-  server: 45.131.211.182
+  server: 154.83.2.228
+  servername: redw.pooriam.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /Telegram
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- cipher: aes-256-cfb
+  name: 美国-1
+  password: amazonskr05
+  port: 443
+  server: 34.219.71.252
+  type: ss
+  udp: true
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -165,23 +156,24 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 日本
   - 荷兰
   - 加拿大
+  - 日本
+  - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-2
-  - 美国-6
   - 美国-5
-  - 日本-2
   - 日本-1
-  - 美国-3
-  - 美国-1
-  - 加拿大-1
-  - 美国-4
+  - 美国-6
+  - 韩国-1
   - 荷兰-1
+  - 美国-3
+  - 加拿大-1
+  - 美国-2
+  - 美国-4
+  - 美国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -209,13 +201,6 @@ proxy-groups:
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
   name: 荷兰
   proxies:
   - 荷兰-1
@@ -225,6 +210,18 @@ proxy-groups:
   name: 加拿大
   proxies:
   - 加拿大-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
