@@ -27,7 +27,7 @@ def removeDuplicateNode(proxyPool): #删除重复节点
 
 def removeNotSupportNode(proxyPool): #删除clash不支持的节点
     notSupportItems = {
-        "cipher" : ["ss"],
+        "cipher" : ["ss", None],
         "uuid"   : [],
         "type"   : []
     }
@@ -36,6 +36,7 @@ def removeNotSupportNode(proxyPool): #删除clash不支持的节点
         proxies = []
         for proxy in proxyPool:
             if (item in proxy and proxy[item] in notSupportItems[item]):
+                print(f"{item}: {proxy[item]} not support.", proxy)
                 continue
             proxies.append(proxy)
         proxyPool = proxies
