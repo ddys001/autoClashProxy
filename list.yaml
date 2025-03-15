@@ -26,7 +26,7 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 新加坡-2
+  name: 新加坡-4
   password: amazonskr05
   port: 443
   server: 54.255.141.129
@@ -35,54 +35,58 @@ proxies:
   name: 新加坡-1
   password: amazonskr05
   port: 443
-  server: 54.254.138.40
+  server: 54.169.15.9
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-2
+  password: amazonskr05
+  port: 443
+  server: 13.229.89.243
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-3
+  password: amazonskr05
+  port: 443
+  server: 54.255.183.245
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 52.78.98.141
   type: ss
 - cipher: aes-256-cfb
   name: 韩国-2
   password: amazonskr05
   port: 443
-  server: 43.202.49.76
+  server: 43.201.33.107
   type: ss
-- name: 美国-3
+- client-fingerprint: chrome
+  name: 美国-8
   network: ws
   port: 80
-  server: 172.67.73.163
-  servername: a.xn--i-sx6a60i.us.kg.
-  skip-cert-verify: false
+  server: 104.17.148.22
+  servername: redw.pooriam.ir
   tls: false
   type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 新加坡-3
-  password: amazonskr05
-  port: 443
-  server: 54.169.134.156
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 54.180.137.54
-  tfo: false
-  type: ss
-- name: 荷兰-1
+      Host: redw.pooriam.ir
+    path: /LwW5jwrnymnOdqki?ed=2560
+- client-fingerprint: chrome
+  name: 美国-2
   network: ws
-  port: 8880
-  server: 45.131.211.182
-  skip-cert-verify: false
+  port: 80
+  server: 104.16.1.47
+  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
   tls: false
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /Telegram
+      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+    path: /?ed=2560
 - name: 美国-7
   network: ws
   port: 80
@@ -95,7 +99,19 @@ proxies:
     headers:
       Host: little-bird-a235-ppal03.fosawaw121.workers.dev
     path: /?ed=2560
-- name: 美国-2
+- name: 美国-5
+  network: ws
+  port: 80
+  server: 172.67.75.172
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /
+- name: 美国-1
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -109,19 +125,20 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- client-fingerprint: chrome
-  name: 美国-1
-  network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 美国-3
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 34.210.253.95
+  type: ssr
+- cipher: aes-256-cfb
+  name: 美国-9
+  password: amazonskr05
+  port: 443
+  server: 18.236.137.219
+  type: ss
 - name: 美国-4
   network: ws
   port: 8880
@@ -136,51 +153,13 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  name: 加拿大-1
-  port: 11512
-  protocol: udp
-  server: 108.181.24.77
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 11 Mbps
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 美国-5
-  port: 17549
-  server: 208.87.243.151
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
-- name: 美国-6
-  network: ws
-  port: 8880
-  server: 154.83.2.228
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - cipher: aes-256-cfb
-  name: 美国-8
-  obfs: plain
+  name: 美国-6
   password: amazonskr05
   port: 443
-  protocol: origin
-  server: 34.210.253.95
-  type: ssr
+  server: 54.218.61.43
+  type: ss
+  udp: true
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -200,30 +179,28 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 新加坡
   - 美国
+  - 新加坡
   - 韩国
-  - 加拿大
-  - 荷兰
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-2
+  - 新加坡-4
   - 新加坡-1
-  - 韩国-2
-  - 美国-3
+  - 新加坡-2
   - 新加坡-3
   - 韩国-1
-  - 荷兰-1
-  - 美国-7
-  - 美国-2
-  - 美国-1
-  - 美国-4
-  - 加拿大-1
-  - 美国-5
-  - 美国-6
+  - 韩国-2
   - 美国-8
+  - 美国-2
+  - 美国-7
+  - 美国-5
+  - 美国-1
+  - 美国-3
+  - 美国-9
+  - 美国-4
+  - 美国-6
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -240,14 +217,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -258,6 +227,16 @@ proxy-groups:
   - 美国-6
   - 美国-7
   - 美国-8
+  - 美国-9
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
+  - 新加坡-4
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -265,18 +244,6 @@ proxy-groups:
   proxies:
   - 韩国-1
   - 韩国-2
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 加拿大
-  proxies:
-  - 加拿大-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 荷兰
-  proxies:
-  - 荷兰-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
