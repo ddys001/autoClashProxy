@@ -26,37 +26,62 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 54.255.141.129
-  type: ss
-- cipher: aes-256-cfb
   name: 新加坡-1
   password: amazonskr05
   port: 443
-  server: 54.255.183.245
+  server: 54.169.15.9
   type: ss
 - cipher: aes-256-cfb
   name: 新加坡-3
   password: amazonskr05
   port: 443
-  server: 54.254.138.40
+  server: 54.255.141.129
   type: ss
-- name: 美国-5
-  network: ws
+- cipher: aes-256-cfb
+  name: 新加坡-4
+  password: amazonskr05
   port: 443
-  server: 162.159.153.3
-  servername: one1.ylks.us.kg
+  server: 54.255.183.245
+  type: ss
+- client-fingerprint: chrome
+  delay: 2905
+  name: 美国-3
+  network: ws
+  port: 2052
+  server: 104.26.12.101
+  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
   skip-cert-verify: true
-  tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
   ws-opts:
     headers:
-      host: one1.ylks.us.kg
-    path: /?ed=2560
+      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+    path: /?ed=1080/telegram
+- cipher: aes-256-cfb
+  name: 美国-1
+  password: amazonskr05
+  port: 443
+  server: 47.128.154.164
+  type: ss
+- cipher: aes-256-cfb
+  name: 新加坡-2
+  password: amazonskr05
+  port: 443
+  server: 13.229.89.243
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 52.78.98.141
+  type: ss
+- cipher: aes-256-cfb
+  name: 韩国-2
+  password: amazonskr05
+  port: 443
+  server: 3.34.253.95
+  type: ss
 - name: 荷兰-1
   network: ws
   port: 8880
@@ -69,13 +94,7 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /Telegram
-- cipher: aes-256-cfb
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 43.201.33.107
-  type: ss
-- name: 美国-6
+- name: 美国-7
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -89,7 +108,7 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-2
+- name: 美国-5
   network: ws
   port: 8880
   server: 154.83.2.230
@@ -104,7 +123,7 @@ proxies:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - cipher: aes-128-cfb
-  name: 美国-9
+  name: 美国-2
   obfs: plain
   password: shadowsocks
   port: 443
@@ -123,7 +142,7 @@ proxies:
   sni: apple.com
   type: hysteria
   up: 11 Mbps
-- name: 美国-3
+- name: 美国-8
   network: ws
   port: 8880
   server: 154.83.2.228
@@ -138,7 +157,7 @@ proxies:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - cipher: aes-256-cfb
-  name: 美国-7
+  name: 美国-6
   obfs: plain
   password: amazonskr05
   port: 443
@@ -151,21 +170,47 @@ proxies:
   password: amazonskr05
   port: 443
   protocol: origin
+  server: 35.86.111.233
+  type: ssr
+- cipher: aes-256-cfb
+  name: 美国-9
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
   server: 18.236.137.219
   type: ssr
 - cipher: aes-256-cfb
-  name: 美国-8
+  client-fingerprint: chrome
+  name: 韩国-4
   password: amazonskr05
   port: 443
-  server: 54.184.74.88
+  server: 43.201.85.71
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 美国-1
+  name: 美国-10
   obfs: plain
   password: amazonskr05
   port: 443
   protocol: origin
   server: 54.202.63.169
+  type: ssr
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-3
+  password: amazonskr05
+  port: 443
+  server: 54.180.137.54
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 美国-11
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 35.91.216.191
   type: ssr
 proxy-groups:
 - name: 漏网之鱼
@@ -186,30 +231,36 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
-  - 新加坡
   - 加拿大
+  - 新加坡
   - 韩国
   - 荷兰
+  - 美国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-2
   - 新加坡-1
   - 新加坡-3
-  - 美国-5
-  - 荷兰-1
-  - 韩国-1
-  - 美国-6
-  - 美国-2
-  - 美国-9
-  - 加拿大-1
+  - 新加坡-4
   - 美国-3
-  - 美国-7
-  - 美国-4
-  - 美国-8
   - 美国-1
+  - 新加坡-2
+  - 韩国-1
+  - 韩国-2
+  - 荷兰-1
+  - 美国-7
+  - 美国-5
+  - 美国-2
+  - 加拿大-1
+  - 美国-8
+  - 美国-6
+  - 美国-4
+  - 美国-9
+  - 韩国-4
+  - 美国-10
+  - 韩国-3
+  - 美国-11
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -226,6 +277,36 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 加拿大
+  proxies:
+  - 加拿大-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
+  - 新加坡-4
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 荷兰
+  proxies:
+  - 荷兰-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -237,32 +318,8 @@ proxy-groups:
   - 美国-7
   - 美国-8
   - 美国-9
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 加拿大
-  proxies:
-  - 加拿大-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 荷兰
-  proxies:
-  - 荷兰-1
+  - 美国-10
+  - 美国-11
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
