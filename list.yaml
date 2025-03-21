@@ -26,84 +26,73 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  cipher: auto
-  name: 美国-2
-  port: 46880
-  server: 47.239.197.189
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 09fe1d6b-a273-4fce-c899-76597cfe1e9a
+  cipher: aes-256-cfb
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 54.168.245.98
+  type: ss
 - alterId: 0
-  cipher: auto
-  name: 美国-7
-  port: 25561
-  server: 47.76.155.223
+  cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 43.206.221.137
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 日本-5
+  password: amazonskr05
+  port: 443
+  server: 13.231.248.227
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 日本-3
+  password: amazonskr05
+  port: 443
+  server: 43.207.150.238
+  type: ss
+- alterId: 0
+  name: 日本-7
+  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+  port: 20230
+  server: jp007.421421.xyz
   skip-cert-verify: true
   tfo: false
-  tls: false
-  type: vmess
+  type: trojan
   udp: true
-  uuid: 66a35803-d369-4978-ef16-499d74f915a6
-- name: 新加坡-1
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 日本-4
+  password: amazonskr05
+  port: 443
+  server: 54.199.239.230
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 日本-6
+  password: amazonskr05
+  port: 443
+  server: 52.196.75.153
+  type: ss
+- alterId: 0
+  name: 美国-2
   network: ws
   port: 443
-  server: 13.250.131.37
-  servername: v20.ylkszy.eu.org
+  server: 130.250.137.19
+  servername: yl2.vs2024.us.kg
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: v20.ylkszy.eu.org
+      host: yl2.vs2024.us.kg
     path: /?ed=2560
-- name: 美国-8
-  network: ws
-  port: 443
-  server: dnschecker.org
-  servername: v20.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v20.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-10
-  network: ws
-  port: 443
-  server: julio.ns.cloudflare.com
-  servername: v20.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v20.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-9
-  network: ws
-  port: 443
-  server: 104.17.213.78
-  servername: 20c.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: 20c.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国-5
+- alterId: 0
+  name: 美国-4
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -117,251 +106,113 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-4
+- alterId: 0
+  name: 美国-1
   network: ws
   port: 443
-  server: 172.64.152.251
-  servername: v20.ylkszy.eu.org
+  server: 162.159.152.69
+  servername: yl2.vs2024.us.kg
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: v20.ylkszy.eu.org
+      host: yl2.vs2024.us.kg
     path: /?ed=2560
-- name: 美国-3
+- alterId: 0
+  name: 美国-7
   network: ws
   port: 443
-  server: 104.17.111.56
-  servername: 20c.bgm2024.us.kg
+  server: 162.159.153.225
+  servername: yl2.vs2024.us.kg
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: 20c.bgm2024.us.kg
+      host: yl2.vs2024.us.kg
     path: /?ed=2560
-- name: 美国-1
-  network: ws
-  port: 443
-  server: 104.16.152.64
-  servername: v20.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v20.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-6
-  network: ws
-  port: 443
-  server: cris.ns.cloudflare.com
-  servername: v20.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v20.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-11
-  network: ws
-  port: 443
-  server: 130.250.137.19
-  servername: v20.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v20.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-14
-  network: ws
-  port: 443
-  server: 162.159.152.20
-  servername: v20.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v20.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-12
-  network: ws
-  port: 443
-  server: craig.ns.cloudflare.com
-  servername: v20.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v20.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-15
-  network: ws
-  port: 443
-  server: www.4chan.org
-  servername: v20.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v20.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-13
-  network: ws
-  port: 443
-  server: 104.18.47.177
-  servername: 20c.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: 20c.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国-18
-  network: ws
-  port: 443
-  server: otto.ns.cloudflare.com
-  servername: v20.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v20.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-16
+- alterId: 0
+  name: 美国-3
   network: ws
   port: 443
   server: 63.141.128.58
-  servername: 20c.bgm2024.us.kg
+  servername: yl2.vs2024.us.kg
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: 20c.bgm2024.us.kg
+      host: yl2.vs2024.us.kg
     path: /?ed=2560
-- name: 美国-19
+- alterId: 0
+  name: 美国-6
   network: ws
   port: 443
-  server: 135.84.76.115
-  servername: 20c.bgm2024.us.kg
+  server: 63.141.128.100
+  servername: yl2.vs2024.us.kg
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: 20c.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国-17
+      host: yl2.vs2024.us.kg
+    path: /?ed=2560&proxyip=63.141.128.100:443
+- alterId: 0
+  name: 美国-9
   network: ws
   port: 443
-  server: 63.141.128.96
-  servername: 20c.bgm2024.us.kg
+  server: 162.159.153.197
+  servername: yl2.vs2024.us.kg
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: 20c.bgm2024.us.kg
+      host: yl2.vs2024.us.kg
     path: /?ed=2560
-- name: 荷兰-1
-  network: ws
-  port: 443
-  server: 185.133.35.195
-  servername: 20c.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: 20c.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国-20
-  network: ws
-  port: 443
-  server: 104.18.46.81
-  servername: v20.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v20.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-23
-  network: ws
-  port: 443
-  server: www.glassdoor.com
-  servername: v20.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v20.ylkszy.eu.org
-    path: /?ed=2560
-- name: 美国-22
-  network: ws
-  port: 443
-  server: www.whatismyip.com
-  servername: v20.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v20.ylkszy.eu.org
-    path: /?ed=2560
-- cipher: aes-128-cfb
-  name: 美国-21
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-5
   obfs: plain
-  password: shadowsocks
+  password: amazonskr05
   port: 443
   protocol: origin
-  server: 184.170.241.194
+  server: 34.209.89.4
+  type: ssr
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-10
+  password: amazonskr05
+  port: 443
+  server: 18.236.187.71
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-11
+  password: amazonskr05
+  port: 443
+  server: 54.187.221.114
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-8
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 35.94.124.230
   type: ssr
 proxy-groups:
 - name: 漏网之鱼
@@ -383,37 +234,29 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 新加坡
-  - 荷兰
+  - 日本
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
+  - 日本-1
+  - 日本-2
+  - 日本-5
+  - 日本-3
+  - 日本-7
+  - 日本-4
+  - 日本-6
   - 美国-2
+  - 美国-4
+  - 美国-1
   - 美国-7
-  - 新加坡-1
-  - 美国-8
-  - 美国-10
+  - 美国-3
+  - 美国-6
   - 美国-9
   - 美国-5
-  - 美国-4
-  - 美国-3
-  - 美国-1
-  - 美国-6
+  - 美国-10
   - 美国-11
-  - 美国-14
-  - 美国-12
-  - 美国-15
-  - 美国-13
-  - 美国-18
-  - 美国-16
-  - 美国-19
-  - 美国-17
-  - 荷兰-1
-  - 美国-20
-  - 美国-23
-  - 美国-22
-  - 美国-21
+  - 美国-8
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -443,30 +286,18 @@ proxy-groups:
   - 美国-9
   - 美国-10
   - 美国-11
-  - 美国-12
-  - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 美国-17
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 美国-23
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 新加坡
+  name: 日本
   proxies:
-  - 新加坡-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 荷兰
-  proxies:
-  - 荷兰-1
+  - 日本-1
+  - 日本-2
+  - 日本-3
+  - 日本-4
+  - 日本-5
+  - 日本-6
+  - 日本-7
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
