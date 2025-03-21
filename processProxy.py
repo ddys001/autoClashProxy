@@ -44,6 +44,21 @@ def removeNotSupportNode(proxyPool): #删除clash不支持的节点
 
     return proxies
 
+def addMisskeyNode(proxyPool): #增加缺失的字段
+    needKey = {
+        "alterId": 0
+    }
+
+    proxies = []
+    for proxy in proxyPool:
+        for key in needKey.keys():
+            if (key not in proxy ):
+                print(f"miss key:",key,  proxy)
+                proxy[key] = needKey[key]
+        proxies.append(proxy)
+
+    return proxies
+
 #TLS must be true with h2/grpc network in vmess
 def setTLSForVmess(proxyPool):
     proxies = []
@@ -71,6 +86,7 @@ def processNodes(proxyPool):
     proxies = removeNotSupportNode(proxies)
     proxies = removeErrorProxy(proxies)
     proxies = setTLSForVmess(proxies)
+    proxies = addMisskeyNode(proxies)
 
     return proxies
 
