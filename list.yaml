@@ -27,35 +27,48 @@ profile:
 proxies:
 - alterId: 0
   cipher: aes-256-cfb
-  name: 美国-8
+  name: 日本-1
   password: amazonskr05
   port: 443
-  server: 13.213.69.248
+  server: 18.179.8.12
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-2
+  name: 新加坡-3
   password: amazonskr05
   port: 443
   server: 54.169.134.156
   type: ss
 - alterId: 0
-  name: 美国-3
-  password: c017fb27-a4b4-48f9-80f6-2bdb504adf75
-  port: 42168
-  server: 35ba5dc4c753892feb3270a8e745e72b.lianjianode.xyz
-  skip-cert-verify: true
-  sni: data.bilibili.com
-  type: trojan
+  cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 18.181.194.77
+  type: ss
 - alterId: 0
+  cipher: aes-256-cfb
   name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 54.169.103.201
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-1
+  password: amazonskr05
+  port: 443
+  server: 13.213.69.248
+  type: ss
+- alterId: 0
+  name: 新加坡-2
   password: 86920f59-7e5e-4272-abec-271bb931121c
   port: 443
   server: sg.lyyyds.club
   skip-cert-verify: true
   type: trojan
 - alterId: 0
-  name: 美国-6
+  name: 美国-4
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -70,7 +83,7 @@ proxies:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - alterId: 0
-  name: 美国-1
+  name: 美国-3
   network: ws
   port: 8880
   server: 154.83.2.228
@@ -85,7 +98,7 @@ proxies:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - alterId: 0
-  name: 美国-2
+  name: 美国-5
   network: ws
   port: 8880
   server: 154.83.2.230
@@ -99,6 +112,20 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-2
+  password: amazonskr05
+  port: 443
+  server: 54.187.221.114
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-6
+  password: amazonskr05
+  port: 443
+  server: 54.185.253.219
+  type: ss
 - alpn:
   - h3
   alterId: 0
@@ -114,39 +141,24 @@ proxies:
   up: 11 Mbps
 - alterId: 0
   cipher: aes-256-cfb
-  name: 美国-4
-  password: amazonskr05
-  port: 443
-  server: 54.187.221.114
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-5
-  password: amazonskr05
-  port: 443
-  server: 54.185.253.219
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
   name: 美国-7
   password: amazonskr05
   port: 443
-  server: 35.89.254.58
+  server: 35.161.163.245
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
   name: 美国-9
   password: amazonskr05
   port: 443
-  server: 35.94.124.230
+  server: 44.242.208.211
   type: ss
-  udp: true
 - alterId: 0
   cipher: aes-256-cfb
-  name: 美国-10
+  name: 美国-8
   password: amazonskr05
   port: 443
-  server: 35.161.163.245
+  server: 35.87.29.54
   type: ss
 proxy-groups:
 - name: 漏网之鱼
@@ -167,26 +179,29 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 新加坡
+  - 日本
   - 美国
+  - 新加坡
   - 加拿大
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-8
-  - 新加坡-2
-  - 美国-3
+  - 日本-1
+  - 新加坡-3
+  - 日本-2
   - 新加坡-1
-  - 美国-6
   - 美国-1
-  - 美国-2
-  - 加拿大-1
+  - 新加坡-2
   - 美国-4
+  - 美国-3
   - 美国-5
+  - 美国-2
+  - 美国-6
+  - 加拿大-1
   - 美国-7
   - 美国-9
-  - 美国-10
+  - 美国-8
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -203,10 +218,10 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 新加坡
+  name: 日本
   proxies:
-  - 新加坡-1
-  - 新加坡-2
+  - 日本-1
+  - 日本-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -221,7 +236,14 @@ proxy-groups:
   - 美国-7
   - 美国-8
   - 美国-9
-  - 美国-10
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
