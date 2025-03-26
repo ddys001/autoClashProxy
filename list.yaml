@@ -27,49 +27,76 @@ profile:
 proxies:
 - alterId: 0
   cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 新加坡-2
+  password: amazonskr05
+  port: 443
+  server: 18.140.70.168
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 日本-3
+  password: amazonskr05
+  port: 443
+  server: 18.181.175.212
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
   name: 新加坡-1
   password: amazonskr05
   port: 443
-  server: 54.169.103.201
+  server: 13.229.233.60
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 18.181.194.77
+  server: 18.179.8.12
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 美国-7
+  client-fingerprint: chrome
+  name: 新加坡-3
   password: amazonskr05
   port: 443
-  server: 13.213.69.248
+  server: 3.0.50.161
+  tfo: false
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
   name: 日本-2
   password: amazonskr05
   port: 443
-  server: 18.179.8.12
+  server: 18.181.194.77
   type: ss
-- alterId: 0
-  name: 新加坡-2
-  password: 86920f59-7e5e-4272-abec-271bb931121c
-  port: 443
-  server: sg.lyyyds.club
-  skip-cert-verify: true
-  type: trojan
-- alterId: 0
+- alpn:
+  - http/1.1
+  alterId: 0
   name: 英国-1
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 13.41.43.230
-  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
-  tfo: false
   type: trojan
-  udp: true
+- alterId: 0
+  name: 荷兰-1
+  network: ws
+  port: 80
+  server: 45.131.5.111
+  servername: feng4.l1ut8bi9.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
+  ws-opts:
+    headers:
+      Host: feng4.l1ut8bi9.workers.dev
+    path: /Telegram
 - alterId: 0
   name: 美国-5
   network: ws
@@ -86,20 +113,32 @@ proxies:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - alterId: 0
-  name: 美国-4
+  name: 美国-2
   network: ws
   port: 8880
-  server: 154.83.2.230
-  servername: redw.pooriam.ir
+  server: 66.235.200.94
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+      Host: channel-falcunargo.efa180b5d7.workers.Dev
+    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-1
+  network: ws
+  port: 8080
+  server: 104.18.56.155
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
+  ws-opts:
+    headers:
+      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
+    path: /
 - alterId: 0
   name: 美国-3
   network: ws
@@ -115,13 +154,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-6
-  password: amazonskr05
-  port: 443
-  server: 52.27.128.220
-  type: ss
 - alpn:
   - h3
   alterId: 0
@@ -136,33 +168,49 @@ proxies:
   type: hysteria
   up: 11 Mbps
 - alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-2
-  password: amazonskr05
-  port: 443
-  server: 35.161.163.245
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-1
-  password: amazonskr05
-  port: 443
-  server: 35.89.254.58
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-9
-  password: amazonskr05
-  port: 443
-  server: 44.242.208.211
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
   name: 美国-8
+  network: ws
+  port: 8880
+  server: 154.83.2.230
+  servername: redw.pooriam.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-4
+  password: amazonskr05
+  port: 443
+  server: 54.185.253.219
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-6
   password: amazonskr05
   port: 443
   server: 54.187.221.114
   type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-4
+  password: amazonskr05
+  port: 443
+  server: 54.169.103.201
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-7
+  password: amazonskr05
+  port: 443
+  server: 35.94.124.230
+  type: ss
+  udp: true
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -182,30 +230,34 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
-  - 新加坡
   - 日本
+  - 新加坡
+  - 美国
   - 英国
   - 加拿大
+  - 荷兰
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
+  - 新加坡-2
+  - 日本-3
   - 新加坡-1
   - 日本-1
-  - 美国-7
+  - 新加坡-3
   - 日本-2
-  - 新加坡-2
   - 英国-1
+  - 荷兰-1
   - 美国-5
-  - 美国-4
-  - 美国-3
-  - 美国-6
-  - 加拿大-1
   - 美国-2
   - 美国-1
-  - 美国-9
+  - 美国-3
+  - 加拿大-1
   - 美国-8
+  - 美国-4
+  - 美国-6
+  - 新加坡-4
+  - 美国-7
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -222,6 +274,23 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
+  - 日本-3
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
+  - 新加坡-4
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -232,21 +301,6 @@ proxy-groups:
   - 美国-6
   - 美国-7
   - 美国-8
-  - 美国-9
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  - 新加坡-2
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -259,6 +313,12 @@ proxy-groups:
   name: 加拿大
   proxies:
   - 加拿大-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 荷兰
+  proxies:
+  - 荷兰-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
