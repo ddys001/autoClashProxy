@@ -36,22 +36,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 54.169.103.201
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 新加坡-3
-  password: amazonskr05
-  port: 443
-  server: 3.0.50.161
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 日本-1
   password: amazonskr05
@@ -61,27 +45,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 新加坡-2
+  password: amazonskr05
+  port: 443
+  server: 3.0.50.161
+  tfo: false
+  type: ss
+- alterId: 0
   name: 美国-6
-  password: amazonskr05
-  port: 443
-  server: 13.213.69.248
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 43.203.206.73
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-2
-  password: amazonskr05
-  port: 443
-  server: 43.203.249.105
-  type: ss
-- alterId: 0
-  name: 美国-7
   password: c017fb27-a4b4-48f9-80f6-2bdb504adf75
   port: 42168
   server: 35ba5dc4c753892feb3270a8e745e72b.lianjianode.xyz
@@ -89,29 +61,34 @@ proxies:
   sni: data.bilibili.com
   type: trojan
 - alterId: 0
-  name: 英国-1
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.175.32.69
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tfo: false
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 荷兰-1
+  client-fingerprint: chrome
+  name: 美国-7
   network: ws
   port: 80
-  server: 45.131.5.111
-  servername: feng4.l1ut8bi9.workers.dev
+  server: 104.16.1.47
+  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+  tls: false
+  type: vless
+  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
+  ws-opts:
+    headers:
+      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-2
+  network: ws
+  port: 8880
+  server: 154.83.2.156
+  servername: redw.pooriam.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: feng4.l1ut8bi9.workers.dev
-    path: /Telegram
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - alterId: 0
   name: 美国-8
   network: ws
@@ -128,34 +105,6 @@ proxies:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
 - alterId: 0
-  name: 美国-3
-  network: ws
-  port: 8880
-  server: 154.83.2.156
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- alterId: 0
-  name: 美国-9
-  network: ws
-  port: 8880
-  server: 66.235.200.94
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
-  ws-opts:
-    headers:
-      Host: channel-falcunargo.efa180b5d7.workers.Dev
-    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
-- alterId: 0
   name: 美国-4
   network: ws
   port: 8880
@@ -170,6 +119,33 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- alterId: 0
+  name: 荷兰-1
+  network: ws
+  port: 80
+  server: 45.131.5.111
+  servername: feng4.l1ut8bi9.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
+  ws-opts:
+    headers:
+      Host: feng4.l1ut8bi9.workers.dev
+    path: /Telegram
+- alterId: 0
+  name: 美国-1
+  network: ws
+  port: 8880
+  server: 66.235.200.94
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
+  ws-opts:
+    headers:
+      Host: channel-falcunargo.efa180b5d7.workers.Dev
+    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
 - alpn:
   - h3
   alterId: 0
@@ -185,13 +161,13 @@ proxies:
   up: 11 Mbps
 - alterId: 0
   cipher: aes-256-cfb
-  name: 美国-11
+  name: 美国-9
   password: amazonskr05
   port: 443
-  server: 54.185.253.219
+  server: 52.27.128.220
   type: ss
 - alterId: 0
-  name: 美国-2
+  name: 美国-3
   network: ws
   port: 2052
   server: 172.67.135.195
@@ -207,6 +183,19 @@ proxies:
     path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
   xudp: true
 - alterId: 0
+  name: 美国-10
+  network: ws
+  port: 80
+  server: 104.24.37.192
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
+  ws-opts:
+    headers:
+      Host: ppal03.dolobe7975.workers.dev
+    path: /?ed=2560
+- alterId: 0
   name: 美国-5
   network: ws
   port: 80
@@ -221,17 +210,10 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: aes-256-cfb
-  name: 美国-10
+  name: 美国-11
   password: amazonskr05
   port: 443
-  server: 54.187.221.114
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-1
-  password: amazonskr05
-  port: 443
-  server: 44.242.208.211
+  server: 35.89.254.58
   type: ss
 proxy-groups:
 - name: 漏网之鱼
@@ -255,8 +237,6 @@ proxy-groups:
   - 美国
   - 新加坡
   - 日本
-  - 韩国
-  - 英国
   - 荷兰
   - 加拿大
   type: select
@@ -264,25 +244,21 @@ proxy-groups:
   name: 延迟最低
   proxies: &id001
   - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
   - 日本-1
+  - 新加坡-2
   - 美国-6
-  - 韩国-1
-  - 韩国-2
   - 美国-7
-  - 英国-1
-  - 荷兰-1
-  - 美国-8
-  - 美国-3
-  - 美国-9
-  - 美国-4
-  - 加拿大-1
-  - 美国-11
   - 美国-2
-  - 美国-5
-  - 美国-10
+  - 美国-8
+  - 美国-4
+  - 荷兰-1
   - 美国-1
+  - 加拿大-1
+  - 美国-9
+  - 美国-3
+  - 美国-10
+  - 美国-5
+  - 美国-11
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -319,26 +295,12 @@ proxy-groups:
   proxies:
   - 新加坡-1
   - 新加坡-2
-  - 新加坡-3
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
   name: 日本
   proxies:
   - 日本-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 英国
-  proxies:
-  - 英国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
