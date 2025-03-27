@@ -27,42 +27,21 @@ profile:
 proxies:
 - alterId: 0
   cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 43.207.203.164
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 日本-3
+  name: 日本-2
   password: amazonskr05
   port: 443
   server: 18.179.8.12
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 日本-4
+  name: 日本-1
   password: amazonskr05
   port: 443
   server: 54.178.177.97
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 18.181.194.77
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-1
-  password: amazonskr05
-  port: 443
-  server: 13.213.69.248
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 新加坡-1
+  name: 新加坡-3
   password: amazonskr05
   port: 443
   server: 54.169.64.23
@@ -76,7 +55,14 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 韩国-1
+  name: 美国-7
+  password: amazonskr05
+  port: 443
+  server: 13.213.69.248
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-3
   password: amazonskr05
   port: 443
   server: 43.203.206.73
@@ -86,17 +72,17 @@ proxies:
   name: 韩国-2
   password: amazonskr05
   port: 443
-  server: 43.203.249.105
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-3
-  password: amazonskr05
-  port: 443
   server: 3.38.92.181
   type: ss
 - alterId: 0
-  name: 新加坡-3
+  cipher: aes-256-cfb
+  name: 韩国-1
+  password: amazonskr05
+  port: 443
+  server: 43.203.249.105
+  type: ss
+- alterId: 0
+  name: 新加坡-1
   password: 86920f59-7e5e-4272-abec-271bb931121c
   port: 443
   server: sg.lyyyds.club
@@ -105,31 +91,17 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 美国-2
+  name: 美国-1
   network: ws
   port: 80
-  server: 104.16.178.238
-  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
+  server: 104.16.171.121
+  skip-cert-verify: false
   tls: false
   type: vless
-  uuid: d4eddaf9-a660-4905-b835-cad98677b380
+  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
   ws-opts:
     headers:
-      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-3
-  network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
     path: /?ed=2560
 - alterId: 0
   name: 荷兰-1
@@ -146,20 +118,21 @@ proxies:
       Host: feng4.l1ut8bi9.workers.dev
     path: /Telegram
 - alterId: 0
-  name: 美国-5
+  client-fingerprint: chrome
+  name: 美国-2
   network: ws
   port: 80
-  server: 104.16.171.121
+  server: 104.16.86.2
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
+  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
   ws-opts:
     headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
+      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
     path: /?ed=2560
 - alterId: 0
-  name: 美国-4
+  name: 美国-3
   network: ws
   port: 8880
   server: 66.235.200.94
@@ -172,31 +145,18 @@ proxies:
       Host: channel-falcunargo.efa180b5d7.workers.Dev
     path: /✦❰+𝗝𝗼𝗶𝗻+➪+
 - alterId: 0
-  name: 美国-6
+  name: 美国-4
   network: ws
   port: 80
-  server: 104.16.76.55
-  skip-cert-verify: false
+  server: 104.16.178.238
+  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
   tls: false
   type: vless
-  uuid: 5d8bc42a-d345-4bd3-a844-4b90afc44670
+  uuid: d4eddaf9-a660-4905-b835-cad98677b380
   ws-opts:
     headers:
-      Host: patient-shadow-baf1-ppal03.hohel98085.workers.dev
+      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
     path: /?ed=2560
-- alterId: 0
-  name: 美国-7
-  network: ws
-  port: 80
-  server: 172.67.189.174
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 19b3cbba-e6ac-485a-9481-926a0415eab2
-  ws-opts:
-    headers:
-      Host: sHrill-tErm-639b.TageLIT414.workeRs.dEv
-    path: /
 - alpn:
   - h3
   alterId: 0
@@ -212,27 +172,20 @@ proxies:
   up: 11 Mbps
 - alterId: 0
   cipher: aes-256-cfb
-  name: 美国-8
+  name: 美国-6
   password: amazonskr05
   port: 443
-  server: 34.216.142.212
+  server: 54.185.253.219
   type: ss
 - alterId: 0
   cipher: rc4-md5
-  name: 美国-9
+  name: 美国-5
   obfs: plain
   password: dfa917baa06bee2e
   port: 23691
   protocol: origin
   server: 38.107.226.99
   type: ssr
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-10
-  password: amazonskr05
-  port: 443
-  server: 35.161.163.245
-  type: ss
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -252,38 +205,33 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 日本
-  - 韩国
   - 新加坡
+  - 韩国
+  - 日本
+  - 荷兰
   - 美国
   - 加拿大
-  - 荷兰
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-1
-  - 日本-3
-  - 日本-4
   - 日本-2
-  - 美国-1
-  - 新加坡-1
-  - 新加坡-2
-  - 韩国-1
-  - 韩国-2
-  - 韩国-3
+  - 日本-1
   - 新加坡-3
+  - 新加坡-2
+  - 美国-7
+  - 韩国-3
+  - 韩国-2
+  - 韩国-1
+  - 新加坡-1
+  - 美国-1
+  - 荷兰-1
   - 美国-2
   - 美国-3
-  - 荷兰-1
-  - 美国-5
   - 美国-4
-  - 美国-6
-  - 美国-7
   - 加拿大-1
-  - 美国-8
-  - 美国-9
-  - 美国-10
+  - 美国-6
+  - 美国-5
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -300,12 +248,11 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 日本
+  name: 新加坡
   proxies:
-  - 日本-1
-  - 日本-2
-  - 日本-3
-  - 日本-4
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -317,11 +264,16 @@ proxy-groups:
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 新加坡
+  name: 日本
   proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
+  - 日本-1
+  - 日本-2
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 荷兰
+  proxies:
+  - 荷兰-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -334,21 +286,12 @@ proxy-groups:
   - 美国-5
   - 美国-6
   - 美国-7
-  - 美国-8
-  - 美国-9
-  - 美国-10
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
   name: 加拿大
   proxies:
   - 加拿大-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 荷兰
-  proxies:
-  - 荷兰-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
