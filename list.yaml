@@ -27,24 +27,38 @@ profile:
 proxies:
 - alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 13.229.73.58
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 54.169.103.201
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
   server: 54.199.103.26
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-5
+  password: amazonskr05
+  port: 443
+  server: 54.169.134.156
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-2
+  password: amazonskr05
+  port: 443
+  server: 52.76.22.133
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-4
+  password: amazonskr05
+  port: 443
+  server: 54.169.188.214
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-3
+  password: amazonskr05
+  port: 443
+  server: 54.169.103.201
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
@@ -55,20 +69,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 美国-1
-  password: amazonskr05
-  port: 443
-  server: 47.129.51.201
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 新加坡-4
-  password: amazonskr05
-  port: 443
-  server: 18.141.139.23
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
   name: 日本-2
   password: amazonskr05
   port: 443
@@ -76,28 +76,35 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-5
+  name: 美国-2
   password: amazonskr05
   port: 443
-  server: 13.250.106.255
+  server: 47.129.38.96
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-6
+  name: 新加坡-1
   password: amazonskr05
   port: 443
   server: 54.179.52.175
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 韩国-2
+  name: 新加坡-6
   password: amazonskr05
   port: 443
-  server: 43.201.54.89
+  server: 18.141.139.23
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 韩国-3
+  name: 韩国-4
+  password: amazonskr05
+  port: 443
+  server: 13.124.229.107
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-2
   password: amazonskr05
   port: 443
   server: 13.125.231.170
@@ -110,13 +117,18 @@ proxies:
   server: 3.36.72.86
   type: ss
 - alterId: 0
-  name: 新加坡-3
-  password: 86920f59-7e5e-4272-abec-271bb931121c
-  port: 443
-  server: sg.lyyyds.club
-  skip-cert-verify: true
-  sni: sg.lyyyds.club
-  type: trojan
+  name: 美国-1
+  network: ws
+  port: 80
+  server: 104.16.188.41
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: proud-queen-55500071.cexonoc962.workers.dev
+    path: /?ed=2560
 - alpn:
   - h3
   alterId: 0
@@ -130,6 +142,13 @@ proxies:
   sni: apple.com
   type: hysteria
   up: 11 Mbps
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-3
+  password: amazonskr05
+  port: 443
+  server: 3.36.26.148
+  type: ss
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -149,29 +168,31 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 加拿大
-  - 新加坡
   - 韩国
   - 美国
+  - 新加坡
   - 日本
+  - 加拿大
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-2
-  - 新加坡-1
   - 日本-1
-  - 日本-3
-  - 美国-1
-  - 新加坡-4
-  - 日本-2
   - 新加坡-5
-  - 新加坡-6
-  - 韩国-2
-  - 韩国-3
-  - 韩国-1
+  - 新加坡-2
+  - 新加坡-4
   - 新加坡-3
+  - 日本-3
+  - 日本-2
+  - 美国-2
+  - 新加坡-1
+  - 新加坡-6
+  - 韩国-4
+  - 韩国-2
+  - 韩国-1
+  - 美国-1
   - 加拿大-1
+  - 韩国-3
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -188,9 +209,19 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 加拿大
+  name: 韩国
   proxies:
-  - 加拿大-1
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 美国
+  proxies:
+  - 美国-1
+  - 美国-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -205,25 +236,17 @@ proxy-groups:
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
-  - 韩国-3
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 美国
-  proxies:
-  - 美国-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
   name: 日本
   proxies:
   - 日本-1
   - 日本-2
   - 日本-3
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 加拿大
+  proxies:
+  - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
