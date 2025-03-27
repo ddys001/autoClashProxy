@@ -27,52 +27,59 @@ profile:
 proxies:
 - alterId: 0
   cipher: aes-256-cfb
-  name: 日本-5
+  name: 日本-2
   password: amazonskr05
   port: 443
-  server: 43.207.203.164
+  server: 54.199.103.26
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 日本-1
+  name: 日本-5
   password: amazonskr05
   port: 443
   server: 54.178.177.97
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 日本-4
+  name: 日本-3
   password: amazonskr05
   port: 443
-  server: 54.199.64.156
+  server: 43.207.157.253
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-3
+  name: 美国-2
   password: amazonskr05
   port: 443
-  server: 13.229.73.58
+  server: 47.129.51.201
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
   name: 新加坡-2
   password: amazonskr05
   port: 443
-  server: 13.250.106.255
+  server: 52.76.22.133
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 日本-3
+  name: 新加坡-3
   password: amazonskr05
   port: 443
-  server: 52.195.209.247
+  server: 54.169.134.156
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 54.179.52.175
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
   name: 新加坡-5
   password: amazonskr05
   port: 443
-  server: 52.76.22.133
+  server: 18.141.139.23
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
@@ -82,26 +89,18 @@ proxies:
   server: 47.129.38.96
   type: ss
 - alterId: 0
-  name: 日本-2
-  password: 6aqnYj7NA2CAeSeZpY34RIC3KzNzDO33aOOaZSxFSc5ETBcwXeyaDF3qC9A907y2nXT8S
-  port: 443
-  server: visual.superpokemon.com
-  skip-cert-verify: true
-  sni: visual.superpokemon.com
-  type: trojan
-- alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-1
+  name: 日本-4
   password: amazonskr05
   port: 443
-  server: 54.169.64.23
+  server: 43.207.150.238
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-4
+  name: 日本-1
   password: amazonskr05
   port: 443
-  server: 54.169.103.201
+  server: 43.207.203.164
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
@@ -112,6 +111,13 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
+  name: 韩国-2
+  password: amazonskr05
+  port: 443
+  server: 43.201.54.89
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
   name: 韩国-4
   password: amazonskr05
   port: 443
@@ -119,24 +125,24 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 韩国-2
+  name: 韩国-3
   password: amazonskr05
   port: 443
-  server: 13.125.231.170
+  server: 3.36.26.148
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
   name: 韩国-5
   password: amazonskr05
   port: 443
-  server: 3.36.72.86
+  server: 13.125.231.170
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 韩国-3
+  name: 韩国-6
   password: amazonskr05
   port: 443
-  server: 3.36.26.148
+  server: 3.36.72.86
   type: ss
 - alpn:
   - h3
@@ -151,6 +157,15 @@ proxies:
   sni: apple.com
   type: hysteria
   up: 11 Mbps
+- alterId: 0
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 新加坡-4
+  password: amazonskr05
+  port: 443
+  server: 18.140.70.168
+  tfo: false
+  type: ss
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -170,32 +185,34 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 日本
-  - 新加坡
-  - 美国
   - 韩国
+  - 日本
+  - 美国
+  - 新加坡
   - 加拿大
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
+  - 日本-2
   - 日本-5
-  - 日本-1
-  - 日本-4
-  - 新加坡-3
-  - 新加坡-2
   - 日本-3
+  - 美国-2
+  - 新加坡-2
+  - 新加坡-3
+  - 新加坡-1
   - 新加坡-5
   - 美国-1
-  - 日本-2
-  - 新加坡-1
-  - 新加坡-4
+  - 日本-4
+  - 日本-1
   - 韩国-1
-  - 韩国-4
   - 韩国-2
-  - 韩国-5
+  - 韩国-4
   - 韩国-3
+  - 韩国-5
+  - 韩国-6
   - 加拿大-1
+  - 新加坡-4
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -212,6 +229,17 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
+  - 韩国-5
+  - 韩国-6
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
   name: 日本
   proxies:
   - 日本-1
@@ -222,6 +250,13 @@ proxy-groups:
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
+  name: 美国
+  proxies:
+  - 美国-1
+  - 美国-2
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
@@ -229,22 +264,6 @@ proxy-groups:
   - 新加坡-3
   - 新加坡-4
   - 新加坡-5
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 美国
-  proxies:
-  - 美国-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
-  - 韩国-3
-  - 韩国-4
-  - 韩国-5
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
