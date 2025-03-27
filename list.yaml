@@ -34,21 +34,42 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-4
+  name: 新加坡-2
+  password: amazonskr05
+  port: 443
+  server: 54.169.188.214
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-2
+  password: amazonskr05
+  port: 443
+  server: 47.129.38.96
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-5
   password: amazonskr05
   port: 443
   server: 18.141.139.23
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 日本-3
+  name: 新加坡-4
   password: amazonskr05
   port: 443
-  server: 52.195.209.247
+  server: 13.229.73.58
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
   name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 54.199.103.26
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 未知地区-1
   password: amazonskr05
   port: 443
   server: 54.199.64.156
@@ -62,39 +83,74 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 美国-2
-  password: amazonskr05
-  port: 443
-  server: 47.129.38.96
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 13.250.106.255
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
   name: 新加坡-3
   password: amazonskr05
   port: 443
   server: 3.1.205.82
   type: ss
-- alterId: 0
-  cipher: aes-256-cfb
+- allowInsecure: ''
+  alterId: 0
   name: 新加坡-1
+  network: ws
+  password: Aimer
+  port: 443
+  server: 124.156.202.172
+  skip-cert-verify: false
+  sni: agepn.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: agepn.ambercc.filegear-sg.me
+    path: /?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-1
   password: amazonskr05
   port: 443
-  server: 54.169.64.23
+  server: 43.201.54.89
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 未知地区-1
+  name: 韩国-2
   password: amazonskr05
   port: 443
-  server: 43.203.249.105
+  server: 43.203.206.73
   type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-4
+  password: amazonskr05
+  port: 443
+  server: 43.202.67.225
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-3
+  password: amazonskr05
+  port: 443
+  server: 3.36.26.148
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 英国-1
+  password: shadowsocks
+  port: 443
+  server: uk-dc1.yangon.club
+  type: ss
+- alpn:
+  - h3
+  alterId: 0
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  name: 加拿大-1
+  port: 11512
+  protocol: udp
+  server: 108.181.24.77
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -114,8 +170,11 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 日本
+  - 加拿大
+  - 韩国
   - 美国
+  - 日本
+  - 英国
   - 新加坡
   - 未知地区
   type: select
@@ -123,15 +182,21 @@ proxy-groups:
   name: 延迟最低
   proxies: &id001
   - 日本-1
-  - 新加坡-4
-  - 日本-3
-  - 日本-2
-  - 美国-1
-  - 美国-2
   - 新加坡-2
+  - 美国-2
+  - 新加坡-5
+  - 新加坡-4
+  - 日本-2
+  - 未知地区-1
+  - 美国-1
   - 新加坡-3
   - 新加坡-1
-  - 未知地区-1
+  - 韩国-1
+  - 韩国-2
+  - 韩国-4
+  - 韩国-3
+  - 英国-1
+  - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -148,11 +213,18 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 日本
+  name: 加拿大
   proxies:
-  - 日本-1
-  - 日本-2
-  - 日本-3
+  - 加拿大-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -163,12 +235,26 @@ proxy-groups:
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
   - 新加坡-2
   - 新加坡-3
   - 新加坡-4
+  - 新加坡-5
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
