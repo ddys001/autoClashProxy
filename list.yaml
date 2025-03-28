@@ -27,24 +27,55 @@ profile:
 proxies:
 - alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 18.140.70.168
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 日本-2
+  name: 日本-1
   password: amazonskr05
   port: 443
   server: 54.199.64.156
   type: ss
 - alterId: 0
+  name: 美国-3
+  network: ws
+  port: 18026
+  server: 38.22.88.199
+  servername: edfgv.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edfgv.aimercc.filegear-sg.me
+    path: /?ed=2560
+- alterId: 0
   cipher: aes-256-cfb
-  name: 日本-1
+  name: 新加坡-1
   password: amazonskr05
   port: 443
-  server: 54.178.177.97
+  server: 54.254.9.107
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 日本-4
+  password: amazonskr05
+  port: 443
+  server: 13.112.73.126
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-3
+  password: amazonskr05
+  port: 443
+  server: 18.141.139.23
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  country: 🇸🇬SG
+  delay: 863
+  name: 新加坡-6
+  password: amazonskr05
+  port: 443
+  server: 54.169.103.201
   type: ss
 - alterId: 0
   client-fingerprint: chrome
@@ -66,30 +97,62 @@ proxies:
   cipher: aes-256-cfb
   country: 🇺🇸US
   delay: 1222
-  name: 美国-3
+  name: 美国-2
   password: amazonskr05
   port: 443
   server: 47.129.38.96
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-1
+  name: 日本-3
   password: amazonskr05
   port: 443
-  server: 54.254.9.107
+  server: 18.179.8.12
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-3
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 18.183.170.175
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-2
+  password: amazonskr05
+  port: 443
+  server: 13.229.73.58
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-5
+  password: amazonskr05
+  port: 443
+  server: 3.1.205.82
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-4
   password: amazonskr05
   port: 443
   server: 54.169.64.23
   type: ss
+  udp: true
 - alterId: 0
-  name: 荷兰-1
-  network: ws
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-1
+  password: amazonskr05
   port: 443
-  server: 185.133.35.125
+  server: 13.125.21.61
+  tfo: false
+  type: ss
+- alterId: 0
+  name: 韩国-5
+  network: ws
+  port: 30012
+  server: 211.218.223.130
   servername: vv.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -101,40 +164,56 @@ proxies:
       host: vv.dong2025.cfd
     path: /?ed=2560
 - alterId: 0
-  name: 美国-7
-  network: ws
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-2
+  password: amazonskr05
   port: 443
-  server: 192.200.160.99
-  servername: vv.dong2025.cfd
+  server: 43.201.54.89
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-7
+  password: amazonskr05
+  port: 443
+  server: 3.36.26.148
+  type: ss
+- alterId: 0
+  name: 韩国-3
+  network: ws
+  port: 16403
+  server: 14.44.32.251
+  servername: edfgv.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: vv.dong2025.cfd
+      host: edfgv.aimercc.filegear-sg.me
     path: /?ed=2560
 - alterId: 0
-  name: 美国-2
+  name: 韩国-4
   network: ws
-  port: 443
-  server: 135.84.76.105
-  servername: vv.dong2025.cfd
+  port: 12336
+  server: 125.141.54.180
+  servername: edfgv.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: vv.dong2025.cfd
+      host: edfgv.aimercc.filegear-sg.me
     path: /?ed=2560
 - alterId: 0
-  name: 美国-6
+  name: 韩国-6
   network: ws
-  port: 443
-  server: 192.0.54.168
+  port: 50000
+  server: 221.162.185.151
   servername: vv.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -154,36 +233,66 @@ proxies:
   protocol: origin
   server: 62.100.205.48
   type: ssr
-- alpn:
-  - h3
-  alterId: 0
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  name: 加拿大-1
-  port: 11512
-  protocol: udp
-  server: 108.181.24.77
+- alterId: 0
+  name: 荷兰-1
+  network: ws
+  port: 443
+  server: 185.133.35.125
+  servername: vv.dong2025.cfd
   skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 11 Mbps
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-5
-  password: amazonskr05
-  port: 443
-  server: 35.87.29.54
-  type: ss
+  tls: true
+  type: vless
   udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vv.dong2025.cfd
+    path: /?ed=2560
 - alterId: 0
-  cipher: aes-256-cfb
-  ip-version: dual
-  name: 美国-4
-  password: amazonskr05
+  name: 美国-6
+  network: ws
   port: 443
-  server: 34.219.71.252
-  tls: false
-  type: ss
+  server: 63.141.128.96
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vv.dong2025.cfd
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-5
+  network: ws
+  port: 443
+  server: 135.84.76.105
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vv.dong2025.cfd
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-4
+  network: ws
+  port: 443
+  server: 192.0.54.168
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vv.dong2025.cfd
+    path: /?ed=2560
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -203,29 +312,39 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 英国
-  - 美国
   - 新加坡
+  - 美国
   - 日本
-  - 加拿大
+  - 韩国
+  - 英国
   - 荷兰
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-2
-  - 日本-2
   - 日本-1
-  - 美国-1
   - 美国-3
   - 新加坡-1
+  - 日本-4
   - 新加坡-3
-  - 荷兰-1
-  - 美国-7
+  - 新加坡-6
+  - 美国-1
   - 美国-2
-  - 美国-6
+  - 日本-3
+  - 日本-2
+  - 新加坡-2
+  - 新加坡-5
+  - 新加坡-4
+  - 韩国-1
+  - 韩国-5
+  - 韩国-2
+  - 韩国-7
+  - 韩国-3
+  - 韩国-4
+  - 韩国-6
   - 英国-1
-  - 加拿大-1
+  - 荷兰-1
+  - 美国-6
   - 美国-5
   - 美国-4
   type: url-test
@@ -244,9 +363,14 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 英国
+  name: 新加坡
   proxies:
-  - 英国-1
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
+  - 新加坡-4
+  - 新加坡-5
+  - 新加坡-6
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -258,15 +382,6 @@ proxy-groups:
   - 美国-4
   - 美国-5
   - 美国-6
-  - 美国-7
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -274,12 +389,26 @@ proxy-groups:
   proxies:
   - 日本-1
   - 日本-2
+  - 日本-3
+  - 日本-4
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 加拿大
+  name: 韩国
   proxies:
-  - 加拿大-1
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
+  - 韩国-5
+  - 韩国-6
+  - 韩国-7
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
