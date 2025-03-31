@@ -1,4 +1,4 @@
-allow-lan: false
+allow-lan: false 
 dns:
   enable: true
   enhanced-mode: fake-ip
